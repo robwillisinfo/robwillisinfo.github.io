@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>VMWare Backup | RobWillis.info</title>
+	<atom:link href="/tag/vmware-backup/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Wed, 02 Jan 2013 06:39:26 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Veeam Backup &#038; Recovery V6 Free install &#8211; Unable to install new SQL instance Error</title>
+		<link>/2012/08/veeam-backup-recovery-v6-free-install-unable-to-install-new-sql-instance-error/</link>
+					<comments>/2012/08/veeam-backup-recovery-v6-free-install-unable-to-install-new-sql-instance-error/#respond</comments>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 20 Aug 2012 07:53:03 +0000</pubDate>
+				<category><![CDATA[Servers]]></category>
+		<category><![CDATA[FastSCP]]></category>
+		<category><![CDATA[Veeam Backup and Recovery]]></category>
+		<category><![CDATA[VMWare Backup]]></category>
+		<guid isPermaLink="false">/?p=977</guid>
+
+					<description><![CDATA[<p>Veeam B&#038;R V6 SQL Issue &#160;&#160;&#160;&#160;&#160;I was trying to install Veeam B&#038;R V6 on a fresh Windows 7 Ultimate x64 install and could not get it to go past the SQL install. I was using all of the default settings, to be honest I really just wanted FastSCP, none of the SQL Reporting crap that [&#8230;]</p>
+The post <a href="/2012/08/veeam-backup-recovery-v6-free-install-unable-to-install-new-sql-instance-error/">Veeam Backup & Recovery V6 Free install – Unable to install new SQL instance Error</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+					<wfw:commentRss>/2012/08/veeam-backup-recovery-v6-free-install-unable-to-install-new-sql-instance-error/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

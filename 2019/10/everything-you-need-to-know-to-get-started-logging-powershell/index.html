@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		<!-- All in One SEO 4.8.7.2 - aioseo.com -->
+	<meta name="description" content="In this post I am going to cover everything you need to know to get started with PowerShell logging. I am going to cover what events to monitor, how the data will look, and enabling additional logging...">
+	<meta name="robots" content="max-image-preview:large">
+	<meta name="author" content="robwillisinfo">
+	<meta name="keywords" content="powershell,script block,module,transcription,obfuscated,downgrade attacks,4103,4104,tool,get-pseventlogsize,elk,group policy,gpo,sd,security descriptor,restricted">
+	<link rel="canonical" href="/2019/10/everything-you-need-to-know-to-get-started-logging-powershell/">
+	<meta name="generator" content="All in One SEO (AIOSEO) 4.8.7.2">
+		<meta property="og:locale" content="en_US">
+		<meta property="og:site_name" content="RobWillis.info | #yolosec">
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="Everything You Need To Know About PowerShell Logging | RobWillis.info">
+		<meta property="og:description" content="In this post I am going to cover everything you need to know to get started with PowerShell logging. I am going to cover what events to monitor, how the data will look, and enabling additional logging...">
+		<meta property="og:url" content="/2019/10/everything-you-need-to-know-to-get-started-logging-powershell/">
+		<meta property="article:published_time" content="2019-10-07T00:15:30+00:00">
+		<meta property="article:modified_time" content="2019-10-07T00:15:30+00:00">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="Everything You Need To Know About PowerShell Logging | RobWillis.info">
+		<meta name="twitter:description" content="In this post I am going to cover everything you need to know to get started with PowerShell logging. I am going to cover what events to monitor, how the data will look, and enabling additional logging...">
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"Article","@id":"\/2019\/10\/everything-you-need-to-know-to-get-started-logging-powershell\/#article","name":"Everything You Need To Know About PowerShell Logging | RobWillis.info","headline":"Everything You Need To Know To Get Started Logging PowerShell","author":{"@id":"\/author\/bit_rot\/#author"},"publisher":{"@id":"\/#organization"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2019\/09\/feat.jpg","width":803,"height":559},"datePublished":"2019-10-06T19:15:30-05:00","dateModified":"2019-10-06T19:15:30-05:00","inLanguage":"en-US","mainEntityOfPage":{"@id":"\/2019\/10\/everything-you-need-to-know-to-get-started-logging-powershell\/#webpage"},"isPartOf":{"@id":"\/2019\/10\/everything-you-need-to-know-to-get-started-logging-powershell\/#webpage"},"articleSection":"Blog, Computers, Pen Testing, PowerShell\/Scripting, Security, Servers, Tools, 4103, 4104, Downgrade Attacks, ELK, Get-PSEventLogSize, GPO, Group Policy, Module, Obfuscated, Powershell, Restricted, Script block, SD, Security Descriptor, Tool, Transcription"},{"@type":"BreadcrumbList","@id":"\/2019\/10\/everything-you-need-to-know-to-get-started-logging-powershell\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"#listItem","position":1,"name":"Home","item":"","nextItem":{"@type":"ListItem","@id":"\/category\/computers\/#listItem","name":"Computers"}},{"@type":"ListItem","@id":"\/category\/computers\/#listItem","position":2,"name":"Computers","item":"\/category\/computers\/","nextItem":{"@type":"ListItem","@id":"\/2019\/10\/everything-you-need-to-know-to-get-started-logging-powershell\/#listItem","name":"Everything You Need To Know To Get Started Logging PowerShell"},"previousItem":{"@type":"ListItem","@id":"#listItem","name":"Home"}},{"@type":"ListItem","@id":"\/2019\/10\/everything-you-need-to-know-to-get-started-logging-powershell\/#listItem","position":3,"name":"Everything You Need To Know To Get Started Logging PowerShell","previousItem":{"@type":"ListItem","@id":"\/category\/computers\/#listItem","name":"Computers"}}]},{"@type":"Organization","@id":"\/#organization","name":"RobWillis.info","description":"#yolosec","url":"\/"},{"@type":"Person","@id":"\/author\/bit_rot\/#author","url":"\/author\/bit_rot\/","name":"robwillisinfo","image":{"@type":"ImageObject","@id":"\/2019\/10\/everything-you-need-to-know-to-get-started-logging-powershell\/#authorImage","url":"https:\/\/secure.gravatar.com\/avatar\/5abe3ae45b388410a815ca1c5ff124c1e418cd7b13ef7401ce6393d362cd1c90?s=96&d=mm&r=r","width":96,"height":96,"caption":"robwillisinfo"}},{"@type":"WebPage","@id":"\/2019\/10\/everything-you-need-to-know-to-get-started-logging-powershell\/#webpage","url":"\/2019\/10\/everything-you-need-to-know-to-get-started-logging-powershell\/","name":"Everything You Need To Know About PowerShell Logging | RobWillis.info","description":"In this post I am going to cover everything you need to know to get started with PowerShell logging. I am going to cover what events to monitor, how the data will look, and enabling additional logging...","inLanguage":"en-US","isPartOf":{"@id":"\/#website"},"breadcrumb":{"@id":"\/2019\/10\/everything-you-need-to-know-to-get-started-logging-powershell\/#breadcrumblist"},"author":{"@id":"\/author\/bit_rot\/#author"},"creator":{"@id":"\/author\/bit_rot\/#author"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2019\/09\/feat.jpg","@id":"\/2019\/10\/everything-you-need-to-know-to-get-started-logging-powershell\/#mainImage","width":803,"height":559},"primaryImageOfPage":{"@id":"\/2019\/10\/everything-you-need-to-know-to-get-started-logging-powershell\/#mainImage"},"datePublished":"2019-10-06T19:15:30-05:00","dateModified":"2019-10-06T19:15:30-05:00"},{"@type":"WebSite","@id":"\/#website","url":"\/","name":"RobWillis.info","description":"#yolosec","inLanguage":"en-US","publisher":{"@id":"\/#organization"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+<title>Everything You Need To Know About PowerShell Logging | RobWillis.info</title>
+<link rel="alternate" type="application/rss+xml" title="RobWillis.info &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="RobWillis.info &raquo; Comments Feed" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="RobWillis.info &raquo; Everything You Need To Know To Get Started Logging PowerShell Comments Feed" href="/2019/10/everything-you-need-to-know-to-get-started-logging-powershell/feed/">
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"🏳️‍⚧️","🏳️​⚧️")?!1:!n(e,"🇨🇶","🇨​🇶")&&!n(e,"🏴󠁧󠁢󠁥󠁮󠁧󠁿","🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿");case"emoji":return!a(e,"🫟")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style id="wp-block-site-title-inline-css">.wp-block-site-title{box-sizing:border-box}.wp-block-site-title :where(a){color:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}</style>
+<style id="wp-block-navigation-link-inline-css">.wp-block-navigation .wp-block-navigation-item__label{overflow-wrap:break-word}.wp-block-navigation .wp-block-navigation-item__description{display:none}.link-ui-tools{border-top:1px solid #f0f0f0;padding:8px}.link-ui-block-inserter{padding-top:8px}.link-ui-block-inserter__back{margin-left:8px;text-transform:uppercase}</style>
+<link rel="stylesheet" id="wp-block-navigation-css" href="/wp-includes/blocks/navigation/style.min.css?ver=6.8.3" media="all">
+<style id="wp-block-group-inline-css">.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}</style>
+<style id="wp-block-post-title-inline-css">.wp-block-post-title{box-sizing:border-box;word-break:break-word}.wp-block-post-title :where(a){display:inline-block;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}</style>
+<style id="wp-block-paragraph-inline-css">.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}</style>
+<style id="wp-block-post-author-name-inline-css">.wp-block-post-author-name{box-sizing:border-box}</style>
+<style id="wp-block-post-terms-inline-css">.wp-block-post-terms{box-sizing:border-box}.wp-block-post-terms .wp-block-post-terms__separator{white-space:pre-wrap}</style>
+<style id="wp-block-post-content-inline-css">.wp-block-post-content{display:flow-root}</style>
+<style id="wp-block-post-navigation-link-inline-css">.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-previous{display:inline-block;margin-right:1ch}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-previous:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-next{display:inline-block;margin-left:1ch}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-next:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-post-navigation-link.has-text-align-left[style*="writing-mode: vertical-lr"],.wp-block-post-navigation-link.has-text-align-right[style*="writing-mode: vertical-rl"]{rotate:180deg}</style>
+<style id="wp-block-comments-inline-css">.wp-block-post-comments{box-sizing:border-box}.wp-block-post-comments .alignleft{float:left}.wp-block-post-comments .alignright{float:right}.wp-block-post-comments .navigation:after{clear:both;content:"";display:table}.wp-block-post-comments .commentlist{clear:both;list-style:none;margin:0;padding:0}.wp-block-post-comments .commentlist .comment{min-height:2.25em;padding-left:3.25em}.wp-block-post-comments .commentlist .comment p{font-size:1em;line-height:1.8;margin:1em 0}.wp-block-post-comments .commentlist .children{list-style:none;margin:0;padding:0}.wp-block-post-comments .comment-author{line-height:1.5}.wp-block-post-comments .comment-author .avatar{border-radius:1.5em;display:block;float:left;height:2.5em;margin-right:.75em;margin-top:.5em;width:2.5em}.wp-block-post-comments .comment-author cite{font-style:normal}.wp-block-post-comments .comment-meta{font-size:.875em;line-height:1.5}.wp-block-post-comments .comment-meta b{font-weight:400}.wp-block-post-comments .comment-meta .comment-awaiting-moderation{display:block;margin-bottom:1em;margin-top:1em}.wp-block-post-comments .comment-body .commentmetadata{font-size:.875em}.wp-block-post-comments .comment-form-author label,.wp-block-post-comments .comment-form-comment label,.wp-block-post-comments .comment-form-email label,.wp-block-post-comments .comment-form-url label{display:block;margin-bottom:.25em}.wp-block-post-comments .comment-form input:not([type=submit]):not([type=checkbox]),.wp-block-post-comments .comment-form textarea{box-sizing:border-box;display:block;width:100%}.wp-block-post-comments .comment-form-cookies-consent{display:flex;gap:.25em}.wp-block-post-comments .comment-form-cookies-consent #wp-comment-cookies-consent{margin-top:.35em}.wp-block-post-comments .comment-reply-title{margin-bottom:0}.wp-block-post-comments .comment-reply-title :where(small){font-size:var(--wp--preset--font-size--medium,smaller);margin-left:.5em}.wp-block-post-comments .reply{font-size:.875em;margin-bottom:1.4em}.wp-block-post-comments input:not([type=submit]),.wp-block-post-comments textarea{border:1px solid #949494;font-family:inherit;font-size:1em}.wp-block-post-comments input:not([type=submit]):not([type=checkbox]),.wp-block-post-comments textarea{padding:calc(.667em + 2px)}:where(.wp-block-post-comments input[type=submit]){border:none}.wp-block-comments{box-sizing:border-box}</style>
+<style id="wp-block-heading-inline-css">h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-background,h6.has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}</style>
+<style id="wp-block-post-date-inline-css">.wp-block-post-date{box-sizing:border-box}</style>
+<style id="wp-block-post-template-inline-css">.wp-block-post-template{box-sizing:border-box;list-style:none;margin-bottom:0;margin-top:0;max-width:100%;padding:0}.wp-block-post-template.is-flex-container{display:flex;flex-direction:row;flex-wrap:wrap;gap:1.25em}.wp-block-post-template.is-flex-container>li{margin:0;width:100%}@media (min-width:600px){.wp-block-post-template.is-flex-container.is-flex-container.columns-2>li{width:calc(50% - .625em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-3>li{width:calc(33.33333% - .83333em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-4>li{width:calc(25% - .9375em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-5>li{width:calc(20% - 1em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-6>li{width:calc(16.66667% - 1.04167em)}}@media (max-width:600px){.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid{grid-template-columns:1fr}}.wp-block-post-template-is-layout-constrained>li>.alignright,.wp-block-post-template-is-layout-flow>li>.alignright{float:right;margin-inline-end:0;margin-inline-start:2em}.wp-block-post-template-is-layout-constrained>li>.alignleft,.wp-block-post-template-is-layout-flow>li>.alignleft{float:left;margin-inline-end:2em;margin-inline-start:0}.wp-block-post-template-is-layout-constrained>li>.aligncenter,.wp-block-post-template-is-layout-flow>li>.aligncenter{margin-inline-end:auto;margin-inline-start:auto}</style>
+<link rel="stylesheet" id="wp-block-social-links-css" href="/wp-includes/blocks/social-links/style.min.css?ver=6.8.3" media="all">
+<style id="wp-block-library-inline-css">:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color)}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}</style>
+<style id="global-styles-inline-css">:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--base: #1B1B1B;--wp--preset--color--contrast: #F0F0F0;--wp--preset--color--accent-1: #786D0A;--wp--preset--color--accent-2: #442369;--wp--preset--color--accent-3: #D1D0EA;--wp--preset--color--accent-4: #CBCBCB;--wp--preset--color--accent-5: #353535;--wp--preset--color--accent-6: #FFFFFF33;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 0.875rem;--wp--preset--font-size--medium: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.196), 1.125rem);--wp--preset--font-size--large: clamp(1.125rem, 1.125rem + ((1vw - 0.2rem) * 0.392), 1.375rem);--wp--preset--font-size--x-large: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 0.392), 2rem);--wp--preset--font-size--xx-large: clamp(2.15rem, 2.15rem + ((1vw - 0.2rem) * 1.333), 3rem);--wp--preset--font-family--manrope: Manrope, sans-serif;--wp--preset--font-family--fira-code: "Fira Code", monospace;--wp--preset--spacing--20: 10px;--wp--preset--spacing--30: 20px;--wp--preset--spacing--40: 30px;--wp--preset--spacing--50: clamp(30px, 5vw, 50px);--wp--preset--spacing--60: clamp(30px, 7vw, 70px);--wp--preset--spacing--70: clamp(50px, 7vw, 90px);--wp--preset--spacing--80: clamp(70px, 10vw, 140px);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 645px;--wp--style--global--wide-size: 1340px; }:where(body) { margin: 0; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) { padding-right: 0; padding-left: 0; }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) > .alignfull { margin-left: 0; margin-right: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 1.2rem; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 1.2rem; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 1.2rem;}:root :where(.is-layout-grid){gap: 1.2rem;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{background-color: var(--wp--preset--color--base);color: var(--wp--preset--color--accent-4);font-family: var(--wp--preset--font-family--manrope);font-size: var(--wp--preset--font-size--large);font-weight: 300;letter-spacing: -0.1px;line-height: 1.4;--wp--style--root--padding-top: 0px;--wp--style--root--padding-right: var(--wp--preset--spacing--50);--wp--style--root--padding-bottom: 0px;--wp--style--root--padding-left: var(--wp--preset--spacing--50);}a:where(:not(.wp-element-button)){color: #0099ff;text-decoration: underline;}:root :where(a:where(:not(.wp-element-button)):hover){text-decoration: none;}h1, h2, h3, h4, h5, h6{font-weight: 400;letter-spacing: -0.1px;line-height: 1.125;}h1{font-size: var(--wp--preset--font-size--xx-large);}h2{font-size: var(--wp--preset--font-size--x-large);}h3{font-size: var(--wp--preset--font-size--large);}h4{font-size: var(--wp--preset--font-size--medium);}h5{font-size: var(--wp--preset--font-size--small);letter-spacing: 0.5px;}h6{font-size: var(--wp--preset--font-size--small);font-weight: 700;letter-spacing: 1.4px;text-transform: uppercase;}:root :where(.wp-element-button, .wp-block-button__link){background-color: var(--wp--preset--color--contrast);border-width: 0;color: var(--wp--preset--color--base);font-family: inherit;font-size: var(--wp--preset--font-size--medium);line-height: inherit;padding-top: 0.6rem;padding-right: 1.6rem;padding-bottom: 0.6rem;padding-left: 1.6rem;text-decoration: none;}:root :where(.wp-element-button:hover, .wp-block-button__link:hover){background-color: color-mix(in srgb, var(--wp--preset--color--contrast) 85%, transparent);border-color: transparent;color: var(--wp--preset--color--base);}:root :where(.wp-element-button:focus, .wp-block-button__link:focus){outline-color: var(--wp--preset--color--accent-4);outline-offset: 2px;}:root :where(.wp-element-caption, .wp-block-audio figcaption, .wp-block-embed figcaption, .wp-block-gallery figcaption, .wp-block-image figcaption, .wp-block-table figcaption, .wp-block-video figcaption){font-size: var(--wp--preset--font-size--small);line-height: 1.4;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-base-color{color: var(--wp--preset--color--base) !important;}.has-contrast-color{color: var(--wp--preset--color--contrast) !important;}.has-accent-1-color{color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-color{color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-color{color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-color{color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-color{color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-color{color: var(--wp--preset--color--accent-6) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-background-color{background-color: var(--wp--preset--color--base) !important;}.has-contrast-background-color{background-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-background-color{background-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-background-color{background-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-background-color{background-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-background-color{background-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-background-color{background-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-background-color{background-color: var(--wp--preset--color--accent-6) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-border-color{border-color: var(--wp--preset--color--base) !important;}.has-contrast-border-color{border-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-border-color{border-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-border-color{border-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-border-color{border-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-border-color{border-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-border-color{border-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-border-color{border-color: var(--wp--preset--color--accent-6) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-xx-large-font-size{font-size: var(--wp--preset--font-size--xx-large) !important;}.has-manrope-font-family{font-family: var(--wp--preset--font-family--manrope) !important;}.has-fira-code-font-family{font-family: var(--wp--preset--font-family--fira-code) !important;}img.aligncenter{margin-left:auto;margin-right:auto;display:block;max-width:100%;height:auto;}
+
+th, td {
+  border-bottom: 1px solid #404040;
+padding: 5px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+pre {
+  font-size: 18px;
+  background-color: #101010;
+  white-space: pre-wrap;
+  word-break: keep-all; 
+  border-radius: 8px;
+  padding: 1em;
+  color: #fff;
+  font-weight: normal;
+  font-family: "Source Code Pro", monospace;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+:root :where(.wp-block-post-date){color: var(--wp--preset--color--accent-4);font-size: var(--wp--preset--font-size--small);}
+:root :where(.wp-block-post-date a:where(:not(.wp-element-button))){color: var(--wp--preset--color--accent-4);text-decoration: none;}
+:root :where(.wp-block-post-date a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+:root :where(.wp-block-post-navigation-link){font-size: var(--wp--preset--font-size--medium);}
+:root :where(.wp-block-post-terms){font-size: var(--wp--preset--font-size--small);font-weight: 600;}:root :where(.wp-block-post-terms a){white-space: nowrap;}
+:root :where(.wp-block-post-title a:where(:not(.wp-element-button))){text-decoration: none;}
+:root :where(.wp-block-post-title a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+:root :where(.wp-block-site-title){font-weight: 700;letter-spacing: -.5px;}
+:root :where(.wp-block-site-title a:where(:not(.wp-element-button))){text-decoration: none;}
+:root :where(.wp-block-site-title a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+:root :where(.wp-block-navigation){font-size: var(--wp--preset--font-size--medium);}
+:root :where(.wp-block-navigation a:where(:not(.wp-element-button))){text-decoration: none;}
+:root :where(.wp-block-navigation a:where(:not(.wp-element-button)):hover){text-decoration: underline;}</style>
+<style id="block-style-variation-styles-inline-css">:root :where(.is-style-post-terms-1--1 a:where(:not(.wp-element-button))){border-radius: 20px;border-color: var(--wp--preset--color--accent-6);border-width: 0.8px;border-style: solid;font-weight: 400;line-height: 2.8;padding-top: 5px;padding-right: 10px;padding-bottom: 5px;padding-left: 10px;text-decoration: none;}:root :where(.is-style-post-terms-1--1 a:where(:not(.wp-element-button)):hover){text-decoration: underline;}</style>
+<style id="wp-emoji-styles-inline-css">img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}</style>
+<style id="core-block-supports-inline-css">.wp-container-core-navigation-is-layout-a89b3969{justify-content:center;}.wp-container-core-group-is-layout-4efaea1e{gap:0.2em;}.wp-container-core-post-content-is-layout-68124974 > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width:1440px;margin-left:auto !important;margin-right:auto !important;}.wp-container-core-post-content-is-layout-68124974 > .alignwide{max-width:1440px;}.wp-container-core-post-content-is-layout-68124974 .alignfull{max-width:none;}.wp-container-core-group-is-layout-9b36172e{flex-wrap:nowrap;justify-content:space-between;}.wp-container-core-group-is-layout-154222c2{flex-wrap:nowrap;justify-content:space-between;align-items:center;}.wp-container-core-post-template-is-layout-3ee800f6 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-post-template-is-layout-3ee800f6 > * + *{margin-block-start:0;margin-block-end:0;}.wp-container-content-b0223bd5{flex-basis:25%;}.wp-container-core-social-links-is-layout-ad1cd33a{flex-wrap:nowrap;gap:0 12px;justify-content:flex-end;}.wp-container-core-group-is-layout-cc97c919{flex-wrap:nowrap;gap:0;justify-content:space-between;}</style>
+<style id="wp-block-template-skip-link-inline-css">.skip-link.screen-reader-text {
+			border: 0;
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}</style>
+<link rel="stylesheet" id="lbwps-styles-photoswipe5-main-css" href="/wp-content/plugins/lightbox-photoswipe/assets/ps5/styles/main.css?ver=5.7.3" media="all">
+<link rel="stylesheet" id="twentytwentyfive-style-css" href="/wp-content/themes/twentytwentyfive/style.css?ver=1.3" media="all">
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/posts/4432">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.8.3">
+<link rel="shortlink" href="/?p=4432">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2019%2F10%2Feverything-you-need-to-know-to-get-started-logging-powershell%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2019%2F10%2Feverything-you-need-to-know-to-get-started-logging-powershell%2F&#038;format=xml">
+<script type="importmap" id="wp-importmap">
+{"imports":{"@wordpress\/interactivity":"\/wp-includes\/js\/dist\/script-modules\/interactivity\/index.min.js?ver=55aebb6e0a16726baffb"}}
+</script>
+<script type="module" src="/wp-includes/js/dist/script-modules/block-library/navigation/view.min.js?ver=61572d447d60c0aa5240" id="@wordpress/block-library/navigation/view-js-module"></script>
+<link rel="modulepreload" href="/wp-includes/js/dist/script-modules/interactivity/index.min.js?ver=55aebb6e0a16726baffb" id="@wordpress/interactivity-js-modulepreload">
+<style class="wp-fonts-local">@font-face{font-family:Manrope;font-style:normal;font-weight:200 800;font-display:fallback;src:url('/wp-content/themes/twentytwentyfive/assets/fonts/manrope/Manrope-VariableFont_wght.woff2') format('woff2');}
+@font-face{font-family:"Fira Code";font-style:normal;font-weight:300 700;font-display:fallback;src:url('/wp-content/themes/twentytwentyfive/assets/fonts/fira-code/FiraCode-VariableFont_wght.woff2') format('woff2');}</style>
+</head>
+
+<body class="wp-singular post-template-default single single-post postid-4432 single-format-standard wp-embed-responsive wp-theme-twentytwentyfive">
+
+<div class="wp-site-blocks">
+<header class="wp-block-template-part">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--30)">
+<p class="has-text-align-center alignwide wp-block-site-title has-x-large-font-size"><a href="/" target="_self" rel="home">RobWillis.info</a></p>
+
+
+<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"><nav class="items-justified-center wp-block-navigation is-content-justification-center is-layout-flex wp-container-core-navigation-is-layout-a89b3969 wp-block-navigation-is-layout-flex" aria-label="Menu"><ul class="wp-block-navigation__container items-justified-center wp-block-navigation">
+<li class=" wp-block-navigation-item  menu-item menu-item-type-custom menu-item-object-custom menu-item-home wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/" title=""><span class="wp-block-navigation-item__label">Home</span></a></li>
+<li data-wp-context="{ &quot;submenuOpenedBy&quot;: { &quot;click&quot;: false, &quot;hover&quot;: false, &quot;focus&quot;: false }, &quot;type&quot;: &quot;submenu&quot;, &quot;modal&quot;: null }" data-wp-interactive="core/navigation" data-wp-on--focusout="actions.handleMenuFocusout" data-wp-on--keydown="actions.handleMenuKeydown" data-wp-on-async--mouseenter="actions.openMenuOnHover" data-wp-on-async--mouseleave="actions.closeMenuOnHover" data-wp-watch="callbacks.initMenu" tabindex="-1" class="wp-block-navigation-item has-child open-on-hover-click  menu-item menu-item-type-custom menu-item-object-custom wp-block-navigation-submenu">
+<a class="wp-block-navigation-item__content" href="#" title=""><span class="wp-block-navigation-item__label">Categories</span></a><button data-wp-bind--aria-expanded="state.isMenuOpen" data-wp-on-async--click="actions.toggleMenuOnClick" aria-label="Categories submenu" class="wp-block-navigation__submenu-icon wp-block-navigation-submenu__toggle"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" fill="none" aria-hidden="true" focusable="false"><path d="M1.50002 4L6.00002 8L10.5 4" stroke-width="1.5"></path></svg></button><ul data-wp-on-async--focus="actions.openMenuOnFocus" class="wp-block-navigation__submenu-container has-text-color has-contrast-color has-background has-base-background-color  menu-item menu-item-type-custom menu-item-object-custom wp-block-navigation-submenu">
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/servers/" title=""><span class="wp-block-navigation-item__label">Servers &#8211; Win, *nix, ESXi</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/security/" title=""><span class="wp-block-navigation-item__label">Security</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/pen-testing/" title=""><span class="wp-block-navigation-item__label">Pen Testing</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/scripting/" title=""><span class="wp-block-navigation-item__label">PowerShell/Scripting</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/computers/" title=""><span class="wp-block-navigation-item__label">Computers</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/android-hacks/" title=""><span class="wp-block-navigation-item__label">Android Hacks</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/software/" title=""><span class="wp-block-navigation-item__label">Software</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/gaming/" title=""><span class="wp-block-navigation-item__label">Gaming &#8211; PC/PS3/Xbox 360</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/air-guns/" title=""><span class="wp-block-navigation-item__label">Air Guns</span></a></li>
+</ul>
+</li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/about/" title=""><span class="wp-block-navigation-item__label">About</span></a></li>
+</ul></nav></div>
+</div>
+</div>
+</header>
+
+
+<main class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="margin-top:var(--wp--preset--spacing--60)">
+<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+<h1 class="wp-block-post-title">Everything You Need To Know To Get Started Logging PowerShell</h1>
+
+
+<div class="wp-block-group has-link-color has-accent-4-color has-text-color has-small-font-size is-layout-flex wp-container-core-group-is-layout-4efaea1e wp-block-group-is-layout-flex" style="margin-bottom:var(--wp--preset--spacing--60)">
+<p>Written by </p>
+
+
+<div class="wp-block-post-author-name"><a href="/author/bit_rot/" target="_self" class="wp-block-post-author-name__link">robwillisinfo</a></div>
+
+
+<p>in</p>
+
+
+<div style="font-weight:300" class="taxonomy-category wp-block-post-terms">
+<a href="/category/blog/" rel="tag">Blog</a><span class="wp-block-post-terms__separator">, </span><a href="/category/computers/" rel="tag">Computers</a><span class="wp-block-post-terms__separator">, </span><a href="/category/pen-testing/" rel="tag">Pen Testing</a><span class="wp-block-post-terms__separator">, </span><a href="/category/scripting/" rel="tag">PowerShell/Scripting</a><span class="wp-block-post-terms__separator">, </span><a href="/category/security/" rel="tag">Security</a><span class="wp-block-post-terms__separator">, </span><a href="/category/servers/" rel="tag">Servers</a><span class="wp-block-post-terms__separator">, </span><a href="/category/tools/" rel="tag">Tools</a>
+</div>
+</div>
+
+
+<div class="entry-content alignfull wp-block-post-content has-global-padding is-layout-constrained wp-container-core-post-content-is-layout-68124974 wp-block-post-content-is-layout-constrained">
+<p><a href="/wp-content/uploads/2019/09/feat.jpg" data-lbwps-width="803" data-lbwps-height="559" data-lbwps-srcsmall="/wp-content/uploads/2019/09/feat-500x348.jpg"><img fetchpriority="high" decoding="async" src="/wp-content/uploads/2019/09/feat-500x348.jpg" alt="" width="500" height="348" class="aligncenter size-medium wp-image-4605" srcset="/wp-content/uploads/2019/09/feat-500x348.jpg 500w, /wp-content/uploads/2019/09/feat-768x535.jpg 768w, /wp-content/uploads/2019/09/feat.jpg 803w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+<h3>Intro</h3>
+<p>Recently, I have been spending a lot of time researching and working with PowerShell logging. Since PowerShell is readily available (built-in to the OS) and has an assortment of functionality that can be used across the entire kill chain right out of the box, it is an ideal candidate for virtually any type of attack scenario. As a blue teamer, these logs can be an invaluable resource providing a level of visibility that is not available in any EDR (Endpoint Detection and Response) solution that I have seen. As a red teamer, it can be extremely useful to know how PowerShell based tools look as they are logged and help aid in attempting to avoid detection. </p>
+<p>Unfortunately, it often seems when it comes to getting started with PowerShell logging, there can be some confusion and uncertainty around what logs are available, where the logs are, enabling the additional logging, what exactly gets logged, and how it will all look from an end user perspective. So that is why I am writing this post, in attempt to put all of my recent research into a single place with plenty of visual examples while also covering some of the nuances and issues that will come up along the way. </p>
+<p>If you would like more information on PowerShell based tools and attacks, the Mitre technique page for PowerShell is packed with information:<br>
+<a href="https://attack.mitre.org/techniques/T1086/" target="_blank" rel="noopener noreferrer"><strong>Mitre ATT&#038;CK Technique T1086 &#8211; PowerShell</strong></a></p>
+<h3>What to monitor and where?</h3>
+<p><a href="/wp-content/uploads/2019/09/Clients-gt-servers.jpg" data-lbwps-width="694" data-lbwps-height="278" data-lbwps-srcsmall="/wp-content/uploads/2019/09/Clients-gt-servers-500x200.jpg"><img decoding="async" src="/wp-content/uploads/2019/09/Clients-gt-servers-500x200.jpg" alt="" width="500" height="200" class="aligncenter size-medium wp-image-4601" srcset="/wp-content/uploads/2019/09/Clients-gt-servers-500x200.jpg 500w, /wp-content/uploads/2019/09/Clients-gt-servers.jpg 694w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+<p>One of the biggest things to recognize about PowerShell is that it is basically an entire tool kit that is available to everyone from non-admin users on Windows workstations all the way up to Windows servers where privileged accounts are often used. This makes PowerShell extremely attractive to leverage from the very beginning of a penetration test or attack type scenario, even with a low privilege account.</p>
+<p>The point I am trying to make here is that it is just as critical to monitor workstations as it is servers. The downside to this is that there are often considerably more workstations than servers in a given environment, and when ingesting all of this data into a central location or SIEM (Security Information and Event Management), volume will quickly become a primary concern.</p>
+<p>With all of this in mind, one of the goals for this post is to target the most valuable data from these logs, while attempting to keep the overall volume as reasonable as possible.</p>
+<h3>What logs are available?</h3>
+<p>The following command will list what PowerShell Logs are available in the Event Viewer:<br>
+PS> <strong>Get-WinEvent -ListLog *PowerShell*</strong></p>
+<p><a href="/wp-content/uploads/2019/09/PS_Logs.jpg" data-lbwps-width="1078" data-lbwps-height="305" data-lbwps-srcsmall="/wp-content/uploads/2019/09/PS_Logs-500x141.jpg"><img decoding="async" src="/wp-content/uploads/2019/09/PS_Logs-500x141.jpg" alt="" width="500" height="141" class="aligncenter size-medium wp-image-4437" srcset="/wp-content/uploads/2019/09/PS_Logs-500x141.jpg 500w, /wp-content/uploads/2019/09/PS_Logs-768x217.jpg 768w, /wp-content/uploads/2019/09/PS_Logs-1024x290.jpg 1024w, /wp-content/uploads/2019/09/PS_Logs.jpg 1078w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+<p>These are the main PowerShell logs to monitor:</p>
+<ul>
+<li>
+<strong>Windows PowerShell</strong>
+<ul>
+<li>Location: Event Viewer > Application and Services Logs > Microsoft > Windows PowerShell<br>
+<a href="/wp-content/uploads/2019/09/EventVwr_PS_Log.jpg" data-lbwps-width="309" data-lbwps-height="306" data-lbwps-srcsmall="/wp-content/uploads/2019/09/EventVwr_PS_Log.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/EventVwr_PS_Log.jpg" alt="" width="309" height="306" class="aligncenter size-full wp-image-4520" srcset="/wp-content/uploads/2019/09/EventVwr_PS_Log.jpg 309w, /wp-content/uploads/2019/09/EventVwr_PS_Log-150x150.jpg 150w" sizes="auto, (max-width: 309px) 100vw, 309px"></a>
+    </li>
+</ul>
+</li>
+</ul>
+<ul>
+    
+<li>
+<strong>Microsoft-Windows-PowerShell/Operational</strong>
+<ul>
+<li>Location: Event Viewer > Application and Services Logs > Microsoft > Windows > PowerShell > Operational<br>
+<a href="/wp-content/uploads/2019/09/EventVwr_PS_Ops_Log.jpg" data-lbwps-width="397" data-lbwps-height="117" data-lbwps-srcsmall="/wp-content/uploads/2019/09/EventVwr_PS_Ops_Log.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/EventVwr_PS_Ops_Log.jpg" alt="" width="397" height="117" class="aligncenter size-full wp-image-4521"></a>
+         </li>
+</ul>
+</li>
+</ul>
+<p>The <strong>Windows PowerShell</strong> log can be a mixed bag, varying greatly with what gets logged and how, it also seems to fluctuate depending on the version of PowerShell in use. Not to mention, it can be very high in volume. Instead, I would suggest focusing on the <strong>Microsoft-Windows-PowerShell/Operational</strong> log since it tends to be highest value and lowest volume. Narrowing things down a little bit more, there are two event ID&#8217;s to focus on in this log, <strong>Module (4103)</strong> and <strong>Script block (4104)</strong>.</p>
+<p>There are also the <strong>PowerShell Transcription</strong> logs which are not saved to the event log but instead as flat text files. I will talk about these in more detail in just a little bit, but for now I want mention that the default location for these logs is <strong><em>C:\Users\%USERNAME%\Documents\</em></strong>. These logs are saved with a unique name and time stamp to prevent collisions.</p>
+<h3>Sounds great, but what does this all look like?</h3>
+<p>Let&#8217;s take the following sample script and see how it looks as it runs through the PowerShell pipeline and how it gets logged:</p>
+<p><a href="/wp-content/uploads/2019/09/Source_Code.jpg" data-lbwps-width="809" data-lbwps-height="571" data-lbwps-srcsmall="/wp-content/uploads/2019/09/Source_Code-500x353.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/Source_Code-500x353.jpg" alt="" width="500" height="353" class="aligncenter size-medium wp-image-4446" srcset="/wp-content/uploads/2019/09/Source_Code-500x353.jpg 500w, /wp-content/uploads/2019/09/Source_Code-768x542.jpg 768w, /wp-content/uploads/2019/09/Source_Code.jpg 809w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<ul>
+<li>
+<strong>Script block Logs &#8211; Event ID 4104</strong>
+<p><a href="/wp-content/uploads/2019/09/4104.jpg" data-lbwps-width="1380" data-lbwps-height="932" data-lbwps-srcsmall="/wp-content/uploads/2019/09/4104-500x338.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/4104-500x338.jpg" alt="" width="500" height="338" class="aligncenter size-medium wp-image-4510" srcset="/wp-content/uploads/2019/09/4104-500x338.jpg 500w, /wp-content/uploads/2019/09/4104-768x519.jpg 768w, /wp-content/uploads/2019/09/4104-1024x692.jpg 1024w, /wp-content/uploads/2019/09/4104.jpg 1380w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<ul>
+<li>Script block logs show all of the commands and/or source for any PowerShell ran on the system along with the user who ran it and the path to the script. It is identical to the the sample script source and even has the comments. Longer scripts are broken up into multiple events with numbered chunks of script block. Think of this log as having all of the details as to <strong><em>what</em></strong> ran on the system.
+        </li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<strong>Module Logs &#8211; Event ID 4103</strong>
+<p><a href="/wp-content/uploads/2019/09/4103.jpg" data-lbwps-width="1379" data-lbwps-height="939" data-lbwps-srcsmall="/wp-content/uploads/2019/09/4103-500x340.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/4103-500x340.jpg" alt="" width="500" height="340" class="aligncenter size-medium wp-image-4508" srcset="/wp-content/uploads/2019/09/4103-500x340.jpg 500w, /wp-content/uploads/2019/09/4103-768x523.jpg 768w, /wp-content/uploads/2019/09/4103-1024x697.jpg 1024w, /wp-content/uploads/2019/09/4103.jpg 1379w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<ul>
+<li>Module logs show how PowerShell commands/code are executed in PowerShell, capturing tons of useful information like variable initialization and other useful data not captured by any of the other logs. Module log data will be logged as each command is processed, creating individual events for each one. In this example, the given script generated 20 &#8211; 4103 events, with each of these events containing portions of the script as it was expanded across the pipeline. This behavior is important to keep in mind as this can lead to bursts in log volume depending on what is running at a given time. This type of logging has been available since PowerShell 3.0. Think of this log as having the details of <strong><em>how</em></strong> PowerShell executed on the system.
+        </li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<strong>Transcription Logs</strong>
+<p><a href="/wp-content/uploads/2019/09/Trans_Log-1.jpg" data-lbwps-width="1535" data-lbwps-height="819" data-lbwps-srcsmall="/wp-content/uploads/2019/09/Trans_Log-1-500x267.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/Trans_Log-1-500x267.jpg" alt="" width="500" height="267" class="aligncenter size-medium wp-image-4494" srcset="/wp-content/uploads/2019/09/Trans_Log-1-500x267.jpg 500w, /wp-content/uploads/2019/09/Trans_Log-1-768x410.jpg 768w, /wp-content/uploads/2019/09/Trans_Log-1-1024x546.jpg 1024w, /wp-content/uploads/2019/09/Trans_Log-1.jpg 1535w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<ul>
+<li>Transcription logs are more of an <strong><em>over the shoulder</em></strong> style log as you will see everything that was input or output to the PowerShell console during the session. These can be extremely useful for determining if the commands/script ran successfully as error output is captured. While these logs are very useful to have, due to the format they present additional challenges with parsing when ingesting to SIEM.
+        </li>
+</ul>
+</li>
+</ul>
+<p>When it comes to central logging, I would recommend at the very least ingesting the 4104 (script block) logs, and if the storage/network bandwidth is available, it is worth grabbing the 4103 (module) logs as well. With these two events together, it should be fairly easy to create high fidelity alerts while also providing plenty of additional evidence/artifacts to string together the series of events that took place.</p>
+<p>Transcription logs make a great addition to the event data, but as mentioned due to the format they present additional challenges with parsing the data and add to the concern around storage/network bandwidth. My recommendation here, would be to at least store the Transcription logs on a central share, if possible. This way if there is a time where it is decided that a Transcript log is needed based off of the analysis of the 4103/4104 events, the data is still readily available and easily retrievable.</p>
+<h3>PowerShell 5.0 auto logging</h3>
+<p>By default, PowerShell does not log everything and to get the most out of the logging capabilities there are additional policies that need to be enabled. However, it is worth noting that starting with PowerShell 5.0, anything that is determined as <strong><em>suspicious</em></strong> by AMSI (Antimalware Scan Interface), will automatically log a Script block/4104 event with a level of <strong><em>Warning</em></strong>. If script block logging is explicitly disabled, these events will not be logged.</p>
+<p>To demo the auto logging behavior, let&#8217;s take the same script that was used in the initial demo that was not flagged, but this time run it with <strong><em>-ExecutionPolicy Bypass</em></strong>:</p>
+<p><a href="/wp-content/uploads/2019/09/Warning_01.jpg" data-lbwps-width="988" data-lbwps-height="399" data-lbwps-srcsmall="/wp-content/uploads/2019/09/Warning_01-500x202.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/Warning_01-500x202.jpg" alt="" width="500" height="202" class="aligncenter size-medium wp-image-4461" srcset="/wp-content/uploads/2019/09/Warning_01-500x202.jpg 500w, /wp-content/uploads/2019/09/Warning_01-768x310.jpg 768w, /wp-content/uploads/2019/09/Warning_01.jpg 988w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>This is what the log looks like:</p>
+<p><a href="/wp-content/uploads/2019/09/4104-Warning.jpg" data-lbwps-width="1384" data-lbwps-height="877" data-lbwps-srcsmall="/wp-content/uploads/2019/09/4104-Warning-500x317.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/4104-Warning-500x317.jpg" alt="" width="500" height="317" class="aligncenter size-medium wp-image-4506" srcset="/wp-content/uploads/2019/09/4104-Warning-500x317.jpg 500w, /wp-content/uploads/2019/09/4104-Warning-768x487.jpg 768w, /wp-content/uploads/2019/09/4104-Warning-1024x649.jpg 1024w, /wp-content/uploads/2019/09/4104-Warning.jpg 1384w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Of course not everything flagged at the warning level is going to be malicious, but it is a great place to start when hunting through logs for <strong><em>potentially</em></strong> malicious activity.</p>
+<h3>Enabling the additional PowerShell logging policies</h3>
+<p>The following policies will enable PowerShell to log Event ID 4103 (Module), 4104 (Script block), and Transcription logs.</p>
+<p>These policies can be found under the following section in the Group Policy Management Editor console:<br>
+<strong>Computer Configuration > Policies > Administrative Templates > Windows Components > Windows PowerShell</strong></p>
+<p><a href="/wp-content/uploads/2019/09/GPO_1.jpg" data-lbwps-width="1328" data-lbwps-height="450" data-lbwps-srcsmall="/wp-content/uploads/2019/09/GPO_1-500x169.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/GPO_1-500x169.jpg" alt="" width="500" height="169" class="aligncenter size-medium wp-image-4465" srcset="/wp-content/uploads/2019/09/GPO_1-500x169.jpg 500w, /wp-content/uploads/2019/09/GPO_1-768x260.jpg 768w, /wp-content/uploads/2019/09/GPO_1-1024x347.jpg 1024w, /wp-content/uploads/2019/09/GPO_1.jpg 1328w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>The following GPO settings need to be enabled:</p>
+<table>
+<tr>
+<td><strong>Turn on Module Logging:</strong></td>
+<td>Enabled</td>
+</tr>
+<tr>
+<td><strong>Turn on PowerShell Script Block Logging:</strong></td>
+<td>Enabled</td>
+</tr>
+<tr>
+<td><strong>Turn on PowerShell Transcription:</strong></td>
+<td>Enabled</td>
+</tr>
+</table>
+<p>The Script Block Logging policy is pretty straight forward, just enable the policy and I would suggest leaving the box for invocation start / stop events (4105/4106) <strong><em>unchecked</em></strong>. The invocation events can be very high in volume and provide little value:</p>
+<p><a href="/wp-content/uploads/2019/10/Scriptblock-GPO.jpg" data-lbwps-width="711" data-lbwps-height="650" data-lbwps-srcsmall="/wp-content/uploads/2019/10/Scriptblock-GPO-500x457.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/10/Scriptblock-GPO-500x457.jpg" alt="" width="500" height="457" class="aligncenter size-medium wp-image-4828" srcset="/wp-content/uploads/2019/10/Scriptblock-GPO-500x457.jpg 500w, /wp-content/uploads/2019/10/Scriptblock-GPO.jpg 711w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>For the Module logs, I generally recommend starting off capturing everything, which is represented by <strong><em>Microsoft.PowerShell.*</em></strong>:</p>
+<p><a href="/wp-content/uploads/2019/09/GPO_3.jpg" data-lbwps-width="1082" data-lbwps-height="651" data-lbwps-srcsmall="/wp-content/uploads/2019/09/GPO_3-500x301.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/GPO_3-500x301.jpg" alt="" width="500" height="301" class="aligncenter size-medium wp-image-4467" srcset="/wp-content/uploads/2019/09/GPO_3-500x301.jpg 500w, /wp-content/uploads/2019/09/GPO_3-768x462.jpg 768w, /wp-content/uploads/2019/09/GPO_3-1024x616.jpg 1024w, /wp-content/uploads/2019/09/GPO_3.jpg 1082w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Ideally, the Transcription logs should be configured to go to a central share:</p>
+<p><a href="/wp-content/uploads/2019/09/GPO_2.jpg" data-lbwps-width="1081" data-lbwps-height="648" data-lbwps-srcsmall="/wp-content/uploads/2019/09/GPO_2-500x300.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/GPO_2-500x300.jpg" alt="" width="500" height="300" class="aligncenter size-medium wp-image-4466" srcset="/wp-content/uploads/2019/09/GPO_2-500x300.jpg 500w, /wp-content/uploads/2019/09/GPO_2-768x460.jpg 768w, /wp-content/uploads/2019/09/GPO_2-1024x614.jpg 1024w, /wp-content/uploads/2019/09/GPO_2.jpg 1081w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>The link below is to a Microsoft blog that explains how to set up the permissions on a central share for this exact reason. Check out the section about the <strong><em>Over-the-shoulder transcription &#8211; outputdirectory</em></strong>:<br>
+<a href="https://devblogs.microsoft.com/powershell/powershell-the-blue-team/" target="_blank" rel="noopener noreferrer"><strong>PowerShell ♥ the Blue Team</strong></a></p>
+<h3>Restricting access to the PowerShell logs</h3>
+<p>One setting that often gets over looked is that the PowerShell logs in the Event Viewer are readable by interactive users by default. So in the typical situation on an Active Directory domain, where you have low privileged (Non-Admin) user accounts logging into workstations interactively, this is a less than ideal setting as the logs can potentially contain sensitive information like passwords that have been entered or hard coded in clear text (bad practice!).</p>
+<p>The <strong><em>Windows Security</em></strong> log has a considerably better default configuration, limiting access to Administrators or higher. That makes this setting a great place to start when building out the initial baseline settings for restricting access to the PowerShell logs.</p>
+<p><a href="/wp-content/uploads/2019/09/Security_Log.jpg" data-lbwps-width="1191" data-lbwps-height="565" data-lbwps-srcsmall="/wp-content/uploads/2019/09/Security_Log-500x237.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/Security_Log-500x237.jpg" alt="" width="500" height="237" class="aligncenter size-medium wp-image-4525" srcset="/wp-content/uploads/2019/09/Security_Log-500x237.jpg 500w, /wp-content/uploads/2019/09/Security_Log-768x364.jpg 768w, /wp-content/uploads/2019/09/Security_Log-1024x486.jpg 1024w, /wp-content/uploads/2019/09/Security_Log.jpg 1191w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>The permissions for event logs are configured through <strong><em>security descriptors</em></strong>. If you have never worked with security descriptors, you can find a wealth of information to help understand them here:<br>
+<a href="https://blogs.msdn.microsoft.com/sergey_babkins_blog/2015/02/26/security-descriptors-part-1-what-they-are-in-simple-words/" target="_blank" rel="noopener noreferrer"><strong>Security descriptors, part 1: what they are, in simple words</strong></a></p>
+<p>Additionally, all of the information to further break down the individual portions of a security descriptor can be found here:<br>
+<a href="https://docs.microsoft.com/en-us/windows/win32/secauthz/security-descriptor-definition-language" target="_blank" rel="noopener noreferrer"><strong>Security Descriptor Definition Language</strong></a></p>
+<p>First let&#8217;s take a look at the security descriptors for the PowerShell logs using the following command:<br>
+PS> <strong>Get-WinEvent -ListLog *PowerShell* | Format-Table -Property LogName, SecurityDescriptor</strong></p>
+<p><a href="/wp-content/uploads/2019/09/PS_SD.jpg" data-lbwps-width="1897" data-lbwps-height="470" data-lbwps-srcsmall="/wp-content/uploads/2019/09/PS_SD-500x124.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/PS_SD-500x124.jpg" alt="" width="500" height="124" class="aligncenter size-medium wp-image-4533" srcset="/wp-content/uploads/2019/09/PS_SD-500x124.jpg 500w, /wp-content/uploads/2019/09/PS_SD-768x190.jpg 768w, /wp-content/uploads/2019/09/PS_SD-1024x254.jpg 1024w, /wp-content/uploads/2019/09/PS_SD.jpg 1897w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>As you can see in the screenshot above, the security descriptors for all of the PowerShell logs are on the long side and seem to have a few extra permissions. This includes the interactive users (IU) group mentioned earlier.</p>
+<p>Now let&#8217;s take a look at the security descriptor for the Windows Security log:<br>
+PS> <strong>Get-WinEvent -ListLog Security | Format-Table -Property LogName, SecurityDescriptor</strong></p>
+<p><a href="/wp-content/uploads/2019/09/Security_SD.jpg" data-lbwps-width="1900" data-lbwps-height="472" data-lbwps-srcsmall="/wp-content/uploads/2019/09/Security_SD-500x124.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/Security_SD-500x124.jpg" alt="" width="500" height="124" class="aligncenter size-medium wp-image-4534" srcset="/wp-content/uploads/2019/09/Security_SD-500x124.jpg 500w, /wp-content/uploads/2019/09/Security_SD-768x191.jpg 768w, /wp-content/uploads/2019/09/Security_SD-1024x254.jpg 1024w, /wp-content/uploads/2019/09/Security_SD.jpg 1900w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>The security descriptor for the Security log is noticeably shorter:<br>
+<strong>O:BAG:SYD:(A;;0xf0005;;;SY)(A;;0x5;;;BA)(A;;0x1;;;S-1-5-32-573)</strong></p>
+<p>I also want mention that there is a super useful cmdlet named <strong><em>ConvertFrom-SddlString</em></strong> that can be used to break down security descriptor strings:<br>
+PS> <strong>ConvertFrom-SddlString &#8220;O:BAG:SYD:(A;;0xf0005;;;SY)(A;;0x5;;;BA)(A;;0x1;;;S-1-5-32-573)&#8221;</strong></p>
+<p><a href="/wp-content/uploads/2019/09/Convertfrom-sddlstring.jpg" data-lbwps-width="1789" data-lbwps-height="428" data-lbwps-srcsmall="/wp-content/uploads/2019/09/Convertfrom-sddlstring-500x120.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/Convertfrom-sddlstring-500x120.jpg" alt="" width="500" height="120" class="aligncenter size-medium wp-image-4742" srcset="/wp-content/uploads/2019/09/Convertfrom-sddlstring-500x120.jpg 500w, /wp-content/uploads/2019/09/Convertfrom-sddlstring-768x184.jpg 768w, /wp-content/uploads/2019/09/Convertfrom-sddlstring-1024x245.jpg 1024w, /wp-content/uploads/2019/09/Convertfrom-sddlstring.jpg 1789w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>There is one gotcha with using the Security log security descriptor, it will work fine for restricting access to the <strong>Microsoft-Windows-PowerShell/Operational</strong> log but the <strong>Windows PowerShell</strong> log requires one additional SID:<br>
+<strong>ALL_APP_PACKAGES &#8211; S-1-15-2-1</strong></p>
+<p>The updated security descriptor for the <strong>Windows PowerShell</strong> log would look like this:<br>
+<strong>O:BAG:SYD:(A;;0x2;;;S-1-15-2-1)(A;;0xf0005;;;SY)(A;;0x7;;;BA)(A;;0x1;;;S-1-5-32-573)</strong></p>
+<h3>Updating security descriptors via GPO</h3>
+<p>In order to push out the updated security descriptor permissions the following Group Policy can be used:<br>
+<strong>Computer Configuration > Preferences > Windows Settings > Registry</strong></p>
+<p><a href="/wp-content/uploads/2019/09/Reg.jpg" data-lbwps-width="265" data-lbwps-height="392" data-lbwps-srcsmall="/wp-content/uploads/2019/09/Reg.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/Reg.jpg" alt="" width="265" height="392" class="aligncenter size-full wp-image-4570"></a></p>
+<p>From there, right click in the center pane and go to New > Registry Item.<br>
+<a href="/wp-content/uploads/2019/09/SD_GPO_2.jpg" data-lbwps-width="474" data-lbwps-height="314" data-lbwps-srcsmall="/wp-content/uploads/2019/09/SD_GPO_2.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/SD_GPO_2.jpg" alt="" width="474" height="314" class="aligncenter size-full wp-image-4549"></a></p>
+<p>Two separate items need to be created, one for each log, with the following settings:<br>
+<strong><br>
+Microsoft-Windows-PowerShell/Operational log:</strong></p>
+<p><a href="/wp-content/uploads/2019/09/Ops_SD.jpg" data-lbwps-width="423" data-lbwps-height="470" data-lbwps-srcsmall="/wp-content/uploads/2019/09/Ops_SD.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/Ops_SD.jpg" alt="" width="423" height="470" class="aligncenter size-full wp-image-4554"></a></p>
+<table>
+<tr>
+<td width="100"><strong>Action:</strong></td>
+<td>Update</td>
+</tr>
+<tr>
+<td><strong>Hive:</strong></td>
+<td>HKEY_LOCAL_MACHINE</td>
+</tr>
+<tr>
+<td><strong>Key Path:</strong></td>
+<td>SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Microsoft-Windows-PowerShell/Operational</td>
+</tr>
+<tr>
+<td><strong>Value Name:</strong></td>
+<td>ChannelAccess</td>
+</tr>
+<tr>
+<td><strong>Value Type:</strong></td>
+<td>REG_SZ</td>
+</tr>
+<tr>
+<td><strong>Value Data:</strong></td>
+<td>O:BAG:SYD:(A;;0xf0005;;;SY)(A;;0x5;;;BA)(A;;0x1;;;S-1-5-32-573)</td>
+</tr>
+</table>
+<p><strong>Windows PowerShell log:</strong></p>
+<p><a href="/wp-content/uploads/2019/09/CustomSD.jpg" data-lbwps-width="422" data-lbwps-height="467" data-lbwps-srcsmall="/wp-content/uploads/2019/09/CustomSD.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/CustomSD.jpg" alt="" width="422" height="467" class="aligncenter size-full wp-image-4569"></a></p>
+<table>
+<tr>
+<td width="100"><strong>Action:</strong></td>
+<td>Update</td>
+</tr>
+<tr>
+<td><strong>Hive:</strong></td>
+<td>HKEY_LOCAL_MACHINE</td>
+</tr>
+<tr>
+<td><strong>Key Path:</strong></td>
+<td>SYSTEM\CurrentControlSet\Services\EventLog\Windows PowerShell</td>
+</tr>
+<tr>
+<td><strong>Value Name:</strong></td>
+<td>CustomSD</td>
+</tr>
+<tr>
+<td><strong>Value Type:</strong></td>
+<td>REG_SZ</td>
+</tr>
+<tr>
+<td><strong>Value Data:</strong></td>
+<td>O:BAG:SYD:(A;;0x2;;;S-1-15-2-1)(A;;0xf0005;;;SY)(A;;0x7;;;BA)(A;;0x1;;;S-1-5-32-573)</td>
+</tr>
+</table>
+<p>This is what it should look like with the items created:</p>
+<p><a href="/wp-content/uploads/2019/09/GP_Reg.jpg" data-lbwps-width="1689" data-lbwps-height="763" data-lbwps-srcsmall="/wp-content/uploads/2019/09/GP_Reg-500x226.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/GP_Reg-500x226.jpg" alt="" width="500" height="226" class="aligncenter size-medium wp-image-4571" srcset="/wp-content/uploads/2019/09/GP_Reg-500x226.jpg 500w, /wp-content/uploads/2019/09/GP_Reg-768x347.jpg 768w, /wp-content/uploads/2019/09/GP_Reg-1024x463.jpg 1024w, /wp-content/uploads/2019/09/GP_Reg.jpg 1689w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Finally, it is time to verify the logs are restricted to non-admin accounts:</p>
+<p><a href="/wp-content/uploads/2019/09/Access_Denied.jpg" data-lbwps-width="1496" data-lbwps-height="804" data-lbwps-srcsmall="/wp-content/uploads/2019/09/Access_Denied-500x269.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/Access_Denied-500x269.jpg" alt="" width="500" height="269" class="aligncenter size-medium wp-image-4588" srcset="/wp-content/uploads/2019/09/Access_Denied-500x269.jpg 500w, /wp-content/uploads/2019/09/Access_Denied-768x413.jpg 768w, /wp-content/uploads/2019/09/Access_Denied-1024x550.jpg 1024w, /wp-content/uploads/2019/09/Access_Denied.jpg 1496w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>It is important to keep in mind that these logs can potentially contain sensitive information when moving on to collecting the logs centrally, access to the data will need to be restricted there as well.</p>
+<h3>Downgrade attacks</h3>
+<p>PowerShell 2.0 is officially deprecated, and you should do everything you can to remove it from your environment. The following Microsoft blog post has a ton of useful information around this topic, along with ways to check to see it if is enabled/installed:<br>
+<a href="https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/" target="_blank" rel="noopener noreferrer"><strong>Windows PowerShell 2.0 Deprecation</strong></a></p>
+<p>PowerShell 2.0 requires .Net 2.0/3.5, which as of Windows 8 and Server 2012 is no longer installed by default but can be added as an additional package later on. Unfortunately, .Net 3.5 is a requirement for Microsoft Office, so if you are running Office you more than likely have .Net 3.5 installed and more often than not PowerShell 2.0 will also be available.</p>
+<p>Why is this a concern when it comes to PowerShell logging? PowerShell 2.0 doesn&#8217;t support most of the logging features, so by downgrading to v2 in what is referred to as <strong><em>downgrade attack</em></strong>, logging can be evaded.</p>
+<p>Let&#8217;s take a look at what this looks like from a logging perspective. The most common ways to downgrade is to use one of the following commands, the first one will drop into a full PowerShell 2.0 session:<br>
+PS> <strong>powershell.exe -Version 2 -ExecutionPolicy Bypass</strong></p>
+<p><a href="/wp-content/uploads/2019/09/Downgrade_1.jpg" data-lbwps-width="1501" data-lbwps-height="612" data-lbwps-srcsmall="/wp-content/uploads/2019/09/Downgrade_1-500x204.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/Downgrade_1-500x204.jpg" alt="" width="500" height="204" class="aligncenter size-medium wp-image-4575" srcset="/wp-content/uploads/2019/09/Downgrade_1-500x204.jpg 500w, /wp-content/uploads/2019/09/Downgrade_1-768x313.jpg 768w, /wp-content/uploads/2019/09/Downgrade_1-1024x418.jpg 1024w, /wp-content/uploads/2019/09/Downgrade_1.jpg 1501w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p><a href="/wp-content/uploads/2019/09/Downgrade_Log1.jpg" data-lbwps-width="1311" data-lbwps-height="803" data-lbwps-srcsmall="/wp-content/uploads/2019/09/Downgrade_Log1-500x306.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/Downgrade_Log1-500x306.jpg" alt="" width="500" height="306" class="aligncenter size-medium wp-image-4576" srcset="/wp-content/uploads/2019/09/Downgrade_Log1-500x306.jpg 500w, /wp-content/uploads/2019/09/Downgrade_Log1-768x470.jpg 768w, /wp-content/uploads/2019/09/Downgrade_Log1-1024x627.jpg 1024w, /wp-content/uploads/2019/09/Downgrade_Log1.jpg 1311w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>While the initial command is observed in the logs as a 4104 event, the <strong>$PSVersionTable</strong> command that followed was missed entirely and so would any additional commands. This does still allow for some room to create an alertable condition based off of the initial event.</p>
+<p>The second example will run a single command or script block under the PowerShell 2.0 engine, returning to the current version when complete:<br>
+PS> <strong>powershell.exe -Version 2 -ExecutionPolicy Bypass -Command {script block/command}</strong></p>
+<p><a href="/wp-content/uploads/2019/09/Downgrade_2.jpg" data-lbwps-width="1501" data-lbwps-height="615" data-lbwps-srcsmall="/wp-content/uploads/2019/09/Downgrade_2-500x205.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/Downgrade_2-500x205.jpg" alt="" width="500" height="205" class="aligncenter size-medium wp-image-4577" srcset="/wp-content/uploads/2019/09/Downgrade_2-500x205.jpg 500w, /wp-content/uploads/2019/09/Downgrade_2-768x315.jpg 768w, /wp-content/uploads/2019/09/Downgrade_2-1024x420.jpg 1024w, /wp-content/uploads/2019/09/Downgrade_2.jpg 1501w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p><a href="/wp-content/uploads/2019/09/Downgrade_Log2.jpg" data-lbwps-width="1319" data-lbwps-height="805" data-lbwps-srcsmall="/wp-content/uploads/2019/09/Downgrade_Log2-500x305.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/Downgrade_Log2-500x305.jpg" alt="" width="500" height="305" class="aligncenter size-medium wp-image-4578" srcset="/wp-content/uploads/2019/09/Downgrade_Log2-500x305.jpg 500w, /wp-content/uploads/2019/09/Downgrade_Log2-768x469.jpg 768w, /wp-content/uploads/2019/09/Downgrade_Log2-1024x625.jpg 1024w, /wp-content/uploads/2019/09/Downgrade_Log2.jpg 1319w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Since the command was entered inline, the entire string was captured as a 4104 event. As you can see from the output though, it was indeed executed under the 2.0 engine.</p>
+<p>This is one of the few situations where the <strong>Windows PowerShell</strong> log can be useful. Lee Holmes has an excellent post on leveraging this log for detecting downgrade attacks:<br>
+<a href="https://www.leeholmes.com/blog/2017/03/17/detecting-and-preventing-powershell-downgrade-attacks/" target="_blank" rel="noopener noreferrer"><strong>Detecting and Preventing PowerShell Downgrade Attacks</strong></a></p>
+<p>This is how a downgrade attack is logged under <strong>Event ID 400</strong> in the <strong>Windows PowerShell</strong> log when using the commands mentioned above:</p>
+<p><a href="/wp-content/uploads/2019/09/Downgrade_Log3-1.jpg" data-lbwps-width="1315" data-lbwps-height="872" data-lbwps-srcsmall="/wp-content/uploads/2019/09/Downgrade_Log3-1-500x332.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/Downgrade_Log3-1-500x332.jpg" alt="" width="500" height="332" class="aligncenter size-medium wp-image-4586" srcset="/wp-content/uploads/2019/09/Downgrade_Log3-1-500x332.jpg 500w, /wp-content/uploads/2019/09/Downgrade_Log3-1-768x509.jpg 768w, /wp-content/uploads/2019/09/Downgrade_Log3-1-1024x679.jpg 1024w, /wp-content/uploads/2019/09/Downgrade_Log3-1.jpg 1315w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>The main takeaway from this section is that while downgrade attacks can be detected, it still creates a visibility gap and you should do everything possible to remove the PowerShell 2.0 engine.</p>
+<h3>Obfuscation</h3>
+<p>One of the greatest benefits of PowerShell 5.0 is that it introduces <strong><em>deep script block logging</em></strong>, which means it will break down most obfuscated PowerShell into more human readable chunks of data as it is processed by PowerShell engine. The following blog has some really great information relating to this particular feature under the <strong><em>Deep script block logging</em></strong> section:<br>
+<a href="https://devblogs.microsoft.com/powershell/powershell-the-blue-team/" target="_blank" rel="noopener noreferrer"><strong>PowerShell ♥ the Blue Team</strong></a></p>
+<p>I also want to mention another post that has some additional information that is really useful in understanding what obfuscated PowerShell code can look like and how the deobfuscated code can be combined with AMSI for enhanced detections:<br>
+<a href="https://www.microsoft.com/security/blog/2015/06/09/windows-10-to-offer-application-developers-new-malware-defenses/" target="_blank" rel="noopener noreferrer"><strong>Windows 10 to offer application developers new malware defenses</strong></a></p>
+<p>This all sounds awesome, but it can be a little tough to find more examples of what this looks like in the actual logs and if there are any limitations or gotchas. After learning about this behavior and then reviewing logs of malicious activity, you may come across an event like the following and wonder if this even really works:</p>
+<p><a href="/wp-content/uploads/2019/09/Obfuscated.jpg" data-lbwps-width="1120" data-lbwps-height="774" data-lbwps-srcsmall="/wp-content/uploads/2019/09/Obfuscated-500x346.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/Obfuscated-500x346.jpg" alt="" width="500" height="346" class="aligncenter size-medium wp-image-4615" srcset="/wp-content/uploads/2019/09/Obfuscated-500x346.jpg 500w, /wp-content/uploads/2019/09/Obfuscated-768x531.jpg 768w, /wp-content/uploads/2019/09/Obfuscated-1024x708.jpg 1024w, /wp-content/uploads/2019/09/Obfuscated.jpg 1120w" sizes="auto, (max-width: 500px) 100vw, 500px"></a>  </p>
+<p>The thing to understand here is that PowerShell is going to break the code down, stripping away the layers of obfuscation as the code is processed through the pipeline, logging each iteration individually. While one event may be heavily obfuscated, it is the events that follow that you will want to pay attention to.</p>
+<p>Let&#8217;s take a look at what this looks like by using the simple script I used in the beginning of this post for the initial logging examples and combining it with something like <a href="https://github.com/danielbohannon/Invoke-Obfuscation" target="_blank" rel="noopener noreferrer"><strong>Invoke-Obfuscation</strong></a> from Daniel Bohannon. If you are interested in this particular topic, I highly suggest checking out Daniel&#8217;s blog and any of his talks that you can find online, he has done some pretty amazing research:<br>
+<a href="https://www.danielbohannon.com/" target="_blank" rel="noopener noreferrer"><strong>https://www.danielbohannon.com/</strong></a></p>
+<p>Taking the initial demo script:<br>
+<a href="/wp-content/uploads/2019/09/source.jpg" data-lbwps-width="793" data-lbwps-height="326" data-lbwps-srcsmall="/wp-content/uploads/2019/09/source-500x206.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/source-500x206.jpg" alt="" width="500" height="206" class="aligncenter size-medium wp-image-4618" srcset="/wp-content/uploads/2019/09/source-500x206.jpg 500w, /wp-content/uploads/2019/09/source-768x316.jpg 768w, /wp-content/uploads/2019/09/source-300x125.jpg 300w, /wp-content/uploads/2019/09/source.jpg 793w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Loading <strong><em>Invoke-Obfuscation</em></strong> into the PowerShell session:<br>
+PS> <strong>Import-Module -name .\Invoke-Obfuscation.psd1</strong><br>
+PS> <strong>Invoke-Obfuscation</strong></p>
+<p><a href="/wp-content/uploads/2019/09/Import-Module.jpg" data-lbwps-width="900" data-lbwps-height="95" data-lbwps-srcsmall="/wp-content/uploads/2019/09/Import-Module-500x53.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/Import-Module-500x53.jpg" alt="" width="500" height="53" class="aligncenter size-medium wp-image-4619" srcset="/wp-content/uploads/2019/09/Import-Module-500x53.jpg 500w, /wp-content/uploads/2019/09/Import-Module-768x81.jpg 768w, /wp-content/uploads/2019/09/Import-Module.jpg 900w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p><a href="/wp-content/uploads/2019/09/Invoke-Obfuscation.jpg" data-lbwps-width="1554" data-lbwps-height="975" data-lbwps-srcsmall="/wp-content/uploads/2019/09/Invoke-Obfuscation-500x314.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/Invoke-Obfuscation-500x314.jpg" alt="" width="500" height="314" class="aligncenter size-medium wp-image-4620" srcset="/wp-content/uploads/2019/09/Invoke-Obfuscation-500x314.jpg 500w, /wp-content/uploads/2019/09/Invoke-Obfuscation-768x482.jpg 768w, /wp-content/uploads/2019/09/Invoke-Obfuscation-1024x642.jpg 1024w, /wp-content/uploads/2019/09/Invoke-Obfuscation.jpg 1554w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Now to obfuscate the script:<br>
+Invoke-Obfuscation> <strong>set scriptpath c:\users\administrator\desktop\demo.ps1</strong><br>
+Invoke-Obfuscation>  <strong>compress</strong><br>
+Invoke-Obfuscation\Compress> <strong>1 </strong></p>
+<p><a href="/wp-content/uploads/2019/09/Invoke-Obfuscation-2.jpg" data-lbwps-width="1553" data-lbwps-height="975" data-lbwps-srcsmall="/wp-content/uploads/2019/09/Invoke-Obfuscation-2-500x314.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/Invoke-Obfuscation-2-500x314.jpg" alt="" width="500" height="314" class="aligncenter size-medium wp-image-4621" srcset="/wp-content/uploads/2019/09/Invoke-Obfuscation-2-500x314.jpg 500w, /wp-content/uploads/2019/09/Invoke-Obfuscation-2-768x482.jpg 768w, /wp-content/uploads/2019/09/Invoke-Obfuscation-2-1024x643.jpg 1024w, /wp-content/uploads/2019/09/Invoke-Obfuscation-2.jpg 1553w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>This is what it looks like as it is logged:</p>
+<p><a href="/wp-content/uploads/2019/09/Obfuscated-2-1.jpg" data-lbwps-width="1120" data-lbwps-height="823" data-lbwps-srcsmall="/wp-content/uploads/2019/09/Obfuscated-2-1-500x367.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/Obfuscated-2-1-500x367.jpg" alt="" width="500" height="367" class="aligncenter size-medium wp-image-4623" srcset="/wp-content/uploads/2019/09/Obfuscated-2-1-500x367.jpg 500w, /wp-content/uploads/2019/09/Obfuscated-2-1-768x564.jpg 768w, /wp-content/uploads/2019/09/Obfuscated-2-1-1024x752.jpg 1024w, /wp-content/uploads/2019/09/Obfuscated-2-1.jpg 1120w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>And then in one of the 4104 events that follows, we see the deobfuscated script block:</p>
+<p><a href="/wp-content/uploads/2019/09/Obfuscated-2-2.jpg" data-lbwps-width="1121" data-lbwps-height="824" data-lbwps-srcsmall="/wp-content/uploads/2019/09/Obfuscated-2-2-500x368.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/Obfuscated-2-2-500x368.jpg" alt="" width="500" height="368" class="aligncenter size-medium wp-image-4624" srcset="/wp-content/uploads/2019/09/Obfuscated-2-2-500x368.jpg 500w, /wp-content/uploads/2019/09/Obfuscated-2-2-768x565.jpg 768w, /wp-content/uploads/2019/09/Obfuscated-2-2-1024x753.jpg 1024w, /wp-content/uploads/2019/09/Obfuscated-2-2.jpg 1121w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>This behavior can be a little less obvious when reviewing logs in a SIEM, but it helps once you understand what is actually going on under the hood.</p>
+<h3>Estimating PowerShell log storage requirements</h3>
+<p>Now that we see the value of the PowerShell logs, know what the data looks like, and what events to monitor, it is time to start thinking about collecting this data into a central location or SIEM. When adding a new log source like this, it is always a good idea to have a rough idea of how much storage is going to be required.</p>
+<p>There are two ways to go about this with the PowerShell logs:</p>
+<ul>
+<li>
+<strong>Option 1:</strong> Use the data that is already available in the local logs to build out some basic statistics and sizing information. This is a great way to get some initial numbers, unfortunately Windows doesn&#8217;t really provide a simple way to do this out of this box.
+</li>
+<li>
+<strong>Option 2:</strong> Start ingesting logs from a few machines to get some sample data to run statistics on and gather sizing information. This method will provide very accurate data, but also has quite a few moving parts which will take time and resources for the implementation.
+</li>
+</ul>
+<p>Ideally, you would really want to go with Option 1 and then follow up with Option 2. To help make the first option a little more feasible of an approach, I am releasing a proof of concept tool with this post that uses PowerShell to help analyze the logs. You can find this tool, <strong><em>Get-PSLogSizeEstimate</em></strong>, on my GitHub:<br>
+<a href="https://github.com/robwillisinfo/Get-PSLogSizeEstimate" target="_blank" rel="noopener noreferrer"><strong>Get-PSLogSizeEstimate</strong></a></p>
+<p>Here is the basic idea of how the estimate is calculated:</p>
+<ol>
+<li>
+The size of the log divided by the total number of events in the log = The average event size
+</li>
+<li>Retention period divided by timespan of the newest and oldest events in the log = Log Rotations per<br>
+the defined retention period
+</li>
+<li>
+Building off the data from the two previous steps:<br>
+Number of events x average event size x estimated log rotations per specified rentention period =<br>
+Estimated storage requirement
+</li>
+</ol>
+<p>Use the following command to load the script into the current PowerShell session:<br>
+PS> <strong><em>. .\Get-PSLogSizeEstimate.ps1</em></strong></p>
+<p>Get-PSLogSizeEstimate accepts the following command line parameters:</p>
+<ul>
+<li>
+<strong>-EventID / -e:</strong> Required, the event ID&#8217;s to filter out, ex <strong><em>4103, 4104</em></strong>.</li>
+<li>
+<strong>-Retention / -r:</strong> Required, the retention period in days, ex <strong><em>30</em></strong>.</li>
+<li>
+<strong>-ComputerName / -c:</strong> Optional, a remote machine to gather the PowerShell logs from, ex <strong><em>Win-DC01</em></strong>.</li>
+<li>
+<strong>-OutputFile / -o:</strong> Optional, the name of the file to save the output to, ex <strong><em>test-output.txt</em></strong>.<br>
+Default value &#8211; Get-PSLogSizeEstimate-output.txt.</li>
+</ul>
+<p>Example usage:<br>
+PS> <strong>Get-PSLogSizeEstimate -EventID 4103,4104 -Retention 30 -ComputerName DC01 -OutputFile Get-PSLogSizeEstimate-DC01.txt -Verbose</strong></p>
+<p>And the shorthand version:<br>
+PS> <strong>Get-PSLogSizeEstimate -e 4103,4104 -r 30 -c DC01 -o Get-PSLogSizeEstimate-DC01.txt -Verbose</strong></p>
+<p><a href="/wp-content/uploads/2019/09/Get-PSLogSizeEstimate.jpg" data-lbwps-width="1579" data-lbwps-height="454" data-lbwps-srcsmall="/wp-content/uploads/2019/09/Get-PSLogSizeEstimate-500x144.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/Get-PSLogSizeEstimate-500x144.jpg" alt="" width="500" height="144" class="aligncenter size-medium wp-image-4646" srcset="/wp-content/uploads/2019/09/Get-PSLogSizeEstimate-500x144.jpg 500w, /wp-content/uploads/2019/09/Get-PSLogSizeEstimate-768x221.jpg 768w, /wp-content/uploads/2019/09/Get-PSLogSizeEstimate-1024x294.jpg 1024w, /wp-content/uploads/2019/09/Get-PSLogSizeEstimate.jpg 1579w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Here is what the output looks like:</p>
+<p><a href="/wp-content/uploads/2019/09/Get-PSLogSizeEstimate2.jpg" data-lbwps-width="1208" data-lbwps-height="617" data-lbwps-srcsmall="/wp-content/uploads/2019/09/Get-PSLogSizeEstimate2-500x255.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/Get-PSLogSizeEstimate2-500x255.jpg" alt="" width="500" height="255" class="aligncenter size-medium wp-image-4647" srcset="/wp-content/uploads/2019/09/Get-PSLogSizeEstimate2-500x255.jpg 500w, /wp-content/uploads/2019/09/Get-PSLogSizeEstimate2-768x392.jpg 768w, /wp-content/uploads/2019/09/Get-PSLogSizeEstimate2-1024x523.jpg 1024w, /wp-content/uploads/2019/09/Get-PSLogSizeEstimate2.jpg 1208w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>As you can see from the output, by filtering the data down to just 4103 and 4104 events, it saves about .5 MB in this particular scenerio. Keep in mind, while this may not seem like much of a difference, this is a lab machine that is not very busy and the sizing gap between all events vs filtered events will likely grow significantly on production machines.</p>
+<p>Let&#8217;s take a quick look at the output from a busier machine, like the one that I have been writing and running this script on:<br>
+<a href="/wp-content/uploads/2019/09/W10-Dev.jpg" data-lbwps-width="1200" data-lbwps-height="615" data-lbwps-srcsmall="/wp-content/uploads/2019/09/W10-Dev-500x256.jpg"><img loading="lazy" decoding="async" src="/wp-content/uploads/2019/09/W10-Dev-500x256.jpg" alt="" width="500" height="256" class="aligncenter size-medium wp-image-4752" srcset="/wp-content/uploads/2019/09/W10-Dev-500x256.jpg 500w, /wp-content/uploads/2019/09/W10-Dev-768x394.jpg 768w, /wp-content/uploads/2019/09/W10-Dev-1024x525.jpg 1024w, /wp-content/uploads/2019/09/W10-Dev.jpg 1200w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>As you can see from the output, the estimate drops from just over 23MB for 30 days of retention to under 3MB by targeting the events with the most useful data.</p>
+<h3>Wrap Up</h3>
+<p>I think that pretty much covers everything you need to know to get up and running with PowerShell logging. At this point you should have the basic idea of how to enable the logging, what logs/events to monitor, what that data looks like, and some of the gotchas around this type of logging.</p>
+<p>If you are interested in getting these logs into a central SIEM like the Elastic stack, I have another series of posts that covers setting up ELK (Elasticsearch, Logstash, and Kibana) and then gathering these logs (and a few others) from remote hosts with Winlogbeat:<br>
+<a href="/2019/05/installing-elk-7-elasticsearch-logstash-and-kibana-windows-server-2016/" target="_blank" rel="noopener noreferrer"><strong>Installing ELK 7 (Elasticsearch, Logstash and Kibana) – Windows Server 2016 (Part I)</strong></a><br>
+<a href="/2019/05/gathering-windows-powershell-and-sysmon-events-with-winlogbeat-elk-7-windows-server-2016/" target="_blank" rel="noopener noreferrer"><strong>Gathering Windows, PowerShell and Sysmon Events with Winlogbeat – ELK 7 – Windows Server 2016 (Part II)</strong></a></p>
+</div>
+
+
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)"><div class="taxonomy-post_tag is-style-post-terms-1 is-style-post-terms-1--1 wp-block-post-terms">
+<a href="/tag/4103/" rel="tag">4103</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/4104/" rel="tag">4104</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/downgrade-attacks/" rel="tag">Downgrade Attacks</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/elk/" rel="tag">ELK</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/get-pseventlogsize/" rel="tag">Get-PSEventLogSize</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/gpo/" rel="tag">GPO</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/group-policy/" rel="tag">Group Policy</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/module/" rel="tag">Module</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/obfuscated/" rel="tag">Obfuscated</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/powershell/" rel="tag">Powershell</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/restricted/" rel="tag">Restricted</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/script-block/" rel="tag">Script block</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/sd/" rel="tag">SD</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/security-descriptor/" rel="tag">Security Descriptor</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/tool/" rel="tag">Tool</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/transcription/" rel="tag">Transcription</a>
+</div></div>
+
+
+
+<div class="wp-block-group alignwide is-layout-flow wp-block-group-is-layout-flow" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)">
+<nav class="wp-block-group alignwide is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-9b36172e wp-block-group-is-layout-flex" aria-label="Post navigation" style="border-top-color:var(--wp--preset--color--accent-6);border-top-width:1px;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><div class="post-navigation-link-previous wp-block-post-navigation-link">
+<span class="wp-block-post-navigation-link__arrow-previous is-arrow-arrow" aria-hidden="true">←</span><a href="/2019/08/dell-xps-15-9570-thermal-mods/" rel="prev">Dell XPS 15 9570 &#8211; Thermal Mods</a>
+</div>
+
+<div class="post-navigation-link-next wp-block-post-navigation-link">
+<a href="/2020/01/disabling-powershell-v2-with-group-policy/" rel="next">Disabling PowerShell v2 with Group Policy</a><span class="wp-block-post-navigation-link__arrow-next is-arrow-arrow" aria-hidden="true">→</span>
+</div></nav>
+</div>
+
+
+</div>
+
+
+
+<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+<h2 class="wp-block-heading alignwide has-small-font-size" style="font-style:normal;font-weight:700;letter-spacing:1.4px;text-transform:uppercase">More posts</h2>
+
+
+
+<div class="wp-block-query alignwide is-layout-flow wp-block-query-is-layout-flow"><ul class="alignfull wp-block-post-template is-layout-flow wp-container-core-post-template-is-layout-3ee800f6 wp-block-post-template-is-layout-flow">
+<li class="wp-block-post post-7729 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-computers category-pen-testing category-security category-software category-tools tag-linux tag-omarchy tag-vmware">
+
+<div class="wp-block-group alignfull is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-154222c2 wp-block-group-is-layout-flex" style="border-bottom-color:var(--wp--preset--color--accent-6);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+<h3 class="wp-block-post-title has-large-font-size"><a href="/2025/11/installing-omarchy-on-vmware-workstation/" target="_self">Installing Omarchy On VMware Workstation</a></h3>
+
+<div class="has-text-align-right wp-block-post-date"><time datetime="2025-11-05T05:12:29-06:00"><a href="/2025/11/installing-omarchy-on-vmware-workstation/">November 5, 2025</a></time></div>
+</div>
+
+</li>
+<li class="wp-block-post post-7452 post type-post status-publish format-standard has-post-thumbnail hentry category-ai category-blog category-computers category-pen-testing category-security category-servers tag-dell tag-esxi tag-home-lab tag-linux tag-servers tag-windows">
+
+<div class="wp-block-group alignfull is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-154222c2 wp-block-group-is-layout-flex" style="border-bottom-color:var(--wp--preset--color--accent-6);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+<h3 class="wp-block-post-title has-large-font-size"><a href="/2025/10/home-lab-office-2025/" target="_self">Home Lab &#038; Office &#8211; 2025</a></h3>
+
+<div class="has-text-align-right wp-block-post-date"><time datetime="2025-10-04T18:10:14-05:00"><a href="/2025/10/home-lab-office-2025/">October 4, 2025</a></time></div>
+</div>
+
+</li>
+<li class="wp-block-post post-7442 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-pen-testing category-security category-servers tag-blue tag-bypass tag-edr tag-internals tag-purple tag-red tag-team tag-windows">
+
+<div class="wp-block-group alignfull is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-154222c2 wp-block-group-is-layout-flex" style="border-bottom-color:var(--wp--preset--color--accent-6);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+<h3 class="wp-block-post-title has-large-font-size"><a href="/2025/09/windows-edr-telemetry-sensors/" target="_self">Windows EDR: Telemetry &#038; Sensors &#8211; Mind Map</a></h3>
+
+<div class="has-text-align-right wp-block-post-date"><time datetime="2025-09-18T06:57:32-05:00"><a href="/2025/09/windows-edr-telemetry-sensors/">September 18, 2025</a></time></div>
+</div>
+
+</li>
+<li class="wp-block-post post-6836 post type-post status-publish format-standard has-post-thumbnail hentry category-ai category-blog category-pen-testing category-security category-servers category-tools tag-ai tag-llm tag-ollama tag-open-webui tag-ubuntu">
+
+<div class="wp-block-group alignfull is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-154222c2 wp-block-group-is-layout-flex" style="border-bottom-color:var(--wp--preset--color--accent-6);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+<h3 class="wp-block-post-title has-large-font-size"><a href="/2025/05/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui/" target="_self">Ultimate Local AI Setup Guide: Ubuntu, Ollama, &#038; Open WebUI</a></h3>
+
+<div class="has-text-align-right wp-block-post-date"><time datetime="2025-05-14T11:30:07-05:00"><a href="/2025/05/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui/">May 14, 2025</a></time></div>
+</div>
+
+</li>
+</ul></div>
+</div>
+</main>
+
+
+<footer class="wp-block-template-part">
+<div class="wp-block-group alignfull has-background-color is-layout-flow wp-block-group-is-layout-flow" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--30)"><footer class="wp-block-template-part">
+<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-group alignfull has-background-color is-layout-flow wp-block-group-is-layout-flow" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--30)">
+<div class="wp-block-group alignfull has-small-font-size is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-cc97c919 wp-block-group-is-layout-flex">
+<p class="has-text-align-left wp-block-site-title has-small-font-size wp-container-content-b0223bd5"><a href="/" target="_self" rel="home">RobWillis.info</a></p>
+
+
+<ul class="wp-block-social-links has-normal-icon-size is-style-logos-only wp-container-content-b0223bd5 is-content-justification-right is-nowrap is-layout-flex wp-container-core-social-links-is-layout-ad1cd33a wp-block-social-links-is-layout-flex">
+<li class="wp-social-link wp-social-link-twitter  wp-block-social-link"><a rel="https://x.com/b1t_r0t noopener nofollow" target="_blank" href="https://x.com/b1t_r0t" class="wp-block-social-link-anchor"><svg width="24" height="24" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M22.23,5.924c-0.736,0.326-1.527,0.547-2.357,0.646c0.847-0.508,1.498-1.312,1.804-2.27 c-0.793,0.47-1.671,0.812-2.606,0.996C18.324,4.498,17.257,4,16.077,4c-2.266,0-4.103,1.837-4.103,4.103 c0,0.322,0.036,0.635,0.106,0.935C8.67,8.867,5.647,7.234,3.623,4.751C3.27,5.357,3.067,6.062,3.067,6.814 c0,1.424,0.724,2.679,1.825,3.415c-0.673-0.021-1.305-0.206-1.859-0.513c0,0.017,0,0.034,0,0.052c0,1.988,1.414,3.647,3.292,4.023 c-0.344,0.094-0.707,0.144-1.081,0.144c-0.264,0-0.521-0.026-0.772-0.074c0.522,1.63,2.038,2.816,3.833,2.85 c-1.404,1.1-3.174,1.756-5.096,1.756c-0.331,0-0.658-0.019-0.979-0.057c1.816,1.164,3.973,1.843,6.29,1.843 c7.547,0,11.675-6.252,11.675-11.675c0-0.178-0.004-0.355-0.012-0.531C20.985,7.47,21.68,6.747,22.23,5.924z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Twitter</span></a></li>
+
+<li class="wp-social-link wp-social-link-github  wp-block-social-link"><a rel="https://github.com/robwillisinfo noopener nofollow" target="_blank" href="https://github.com/robwillisinfo" class="wp-block-social-link-anchor"><svg width="24" height="24" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12,2C6.477,2,2,6.477,2,12c0,4.419,2.865,8.166,6.839,9.489c0.5,0.09,0.682-0.218,0.682-0.484 c0-0.236-0.009-0.866-0.014-1.699c-2.782,0.602-3.369-1.34-3.369-1.34c-0.455-1.157-1.11-1.465-1.11-1.465 c-0.909-0.62,0.069-0.608,0.069-0.608c1.004,0.071,1.532,1.03,1.532,1.03c0.891,1.529,2.341,1.089,2.91,0.833 c0.091-0.647,0.349-1.086,0.635-1.337c-2.22-0.251-4.555-1.111-4.555-4.943c0-1.091,0.39-1.984,1.03-2.682 C6.546,8.54,6.202,7.524,6.746,6.148c0,0,0.84-0.269,2.75,1.025C10.295,6.95,11.15,6.84,12,6.836 c0.85,0.004,1.705,0.114,2.504,0.336c1.909-1.294,2.748-1.025,2.748-1.025c0.546,1.376,0.202,2.394,0.1,2.646 c0.64,0.699,1.026,1.591,1.026,2.682c0,3.841-2.337,4.687-4.565,4.935c0.359,0.307,0.679,0.917,0.679,1.852 c0,1.335-0.012,2.415-0.012,2.741c0,0.269,0.18,0.579,0.688,0.481C19.138,20.161,22,16.416,22,12C22,6.477,17.523,2,12,2z"></path></svg><span class="wp-block-social-link-label screen-reader-text">GitHub</span></a></li>
+
+<li class="wp-social-link wp-social-link-youtube  wp-block-social-link"><a rel="noopener nofollow" target="_blank" href="https://www.youtube.com/robwillisinfo" class="wp-block-social-link-anchor"><svg width="24" height="24" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M21.8,8.001c0,0-0.195-1.378-0.795-1.985c-0.76-0.797-1.613-0.801-2.004-0.847c-2.799-0.202-6.997-0.202-6.997-0.202 h-0.009c0,0-4.198,0-6.997,0.202C4.608,5.216,3.756,5.22,2.995,6.016C2.395,6.623,2.2,8.001,2.2,8.001S2,9.62,2,11.238v1.517 c0,1.618,0.2,3.237,0.2,3.237s0.195,1.378,0.795,1.985c0.761,0.797,1.76,0.771,2.205,0.855c1.6,0.153,6.8,0.201,6.8,0.201 s4.203-0.006,7.001-0.209c0.391-0.047,1.243-0.051,2.004-0.847c0.6-0.607,0.795-1.985,0.795-1.985s0.2-1.618,0.2-3.237v-1.517 C22,9.62,21.8,8.001,21.8,8.001z M9.935,14.594l-0.001-5.62l5.404,2.82L9.935,14.594z"></path></svg><span class="wp-block-social-link-label screen-reader-text">YouTube</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer></div>
+</footer>
+</div>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/twentytwentyfive\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="wp-block-template-skip-link-js-after">
+	( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
+
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
+
+		/*
+		 * Get the site wrapper.
+		 * The skip-link will be injected in the beginning of it.
+		 */
+		sibling = document.querySelector( '.wp-site-blocks' );
+
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
+
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
+
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.id = 'wp-skip-link';
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerText = 'Skip to content';
+
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );
+	
+</script>
+<script id="lbwps-photoswipe5-js-extra">
+var lbwpsOptions = {"label_facebook":"Share on Facebook","label_twitter":"Tweet","label_pinterest":"Pin it","label_download":"Download image","label_copyurl":"Copy image URL","label_ui_close":"Close [Esc]","label_ui_zoom":"Zoom","label_ui_prev":"Previous [←]","label_ui_next":"Next [→]","label_ui_error":"The image cannot be loaded","label_ui_fullscreen":"Toggle fullscreen [F]","share_facebook":"1","share_twitter":"1","share_pinterest":"1","share_download":"1","share_direct":"0","share_copyurl":"0","close_on_drag":"1","history":"1","show_counter":"1","show_fullscreen":"1","show_zoom":"1","show_caption":"1","loop":"0","pinchtoclose":"1","taptotoggle":"1","close_on_click":"1","fulldesktop":"0","use_alt":"0","usecaption":"1","desktop_slider":"1","share_custom_label":"","share_custom_link":"","wheelmode":"zoom","spacing":"12","idletime":"4000","hide_scrollbars":"1","caption_type":"overlay","bg_opacity":"100","padding_left":"0","padding_top":"0","padding_right":"0","padding_bottom":"0"};
+</script>
+<script type="module" src="/wp-content/plugins/lightbox-photoswipe/assets/ps5/frontend.min.js?ver=5.7.3"></script>
+</body>
+</html>

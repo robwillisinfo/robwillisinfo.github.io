@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Powershell | RobWillis.info</title>
+	<atom:link href="/tag/powershell/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Tue, 22 Apr 2025 09:00:01 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Introducing Invoke-EncryptionSimulator: A PowerShell Tool for Simulating Late-Stage Ransomware Attacks</title>
+		<link>/2024/03/powershell-script-invoke-encryptionsimulator/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Thu, 14 Mar 2024 04:53:37 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[AES]]></category>
+		<category><![CDATA[Detection Engineering]]></category>
+		<category><![CDATA[Encryption]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[Ransomware]]></category>
+		<category><![CDATA[script]]></category>
+		<guid isPermaLink="false">/?p=6120</guid>
+
+					<description><![CDATA[<p>Invoke-EncryptionSimulator Invoke-EncryptionSimulator is designed to be a simple and safe way to emulate the encryption stage of a ransomware deployment to aid in development and testing of controls focusing on file system level changes rather than process related telemetry. Invoke-EncryptionSimulator is designed to be a simple and safe way to emulate the encryption stage of [&#8230;]</p>
+The post <a href="/2024/03/powershell-script-invoke-encryptionsimulator/">Introducing Invoke-EncryptionSimulator: A PowerShell Tool for Simulating Late-Stage Ransomware Attacks</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Analyzing &#038; Detecting IIS Backdoors</title>
+		<link>/2022/11/analyzing-detecting-iis-backdoors/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sat, 05 Nov 2022 08:00:12 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[Detection]]></category>
+		<category><![CDATA[Extensions]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[Kali]]></category>
+		<category><![CDATA[Logs]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[SIEM]]></category>
+		<category><![CDATA[Sysmon]]></category>
+		<category><![CDATA[Web Shell]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=5452</guid>
+
+					<description><![CDATA[<p>IIS Extensions As Backdoors Microsoft recently published an interesting blog explaining how they&#8217;ve noticed a new trend where attackers have been leveraging Internet Information Services (IIS) extensions to covertly backdoor Windows servers: https://www.microsoft.com/security/blog/2022/07/26/malicious-iis-extensions-quietly-open-persistent-backdoors-into-servers/ The Microsoft post contains a wealth of information on this topic, but I really wanted to dig through the specifics in order [&#8230;]</p>
+The post <a href="/2022/11/analyzing-detecting-iis-backdoors/">Analyzing & Detecting IIS Backdoors</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>New Tool! Invoke-RPCMap: PowerShell Script for Remote RPC Service Enumeration</title>
+		<link>/2022/06/powershell-script-invoke-rpcmap/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 27 Jun 2022 02:13:00 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[RPC]]></category>
+		<category><![CDATA[Scanner]]></category>
+		<category><![CDATA[script]]></category>
+		<category><![CDATA[Tool]]></category>
+		<guid isPermaLink="false">/?p=5365</guid>
+
+					<description><![CDATA[<p>Invoke-RPCMap Invoke-RPCMap can be used to enumerate local and remote RPC services/ports via the RPC Endpoint Mapper service. This information can useful during an investigation where a connection to a remote port is known, but the service is running under a generic process like svchost.exe. This script will do the following: Create a local log [&#8230;]</p>
+The post <a href="/2022/06/powershell-script-invoke-rpcmap/">New Tool! Invoke-RPCMap: PowerShell Script for Remote RPC Service Enumeration</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Revisiting &#038; Revising An Old PowerShell Tool &#8211; Quickly Find The Largest Files</title>
+		<link>/2021/04/powershell-script-quickly-find-the-largest-files/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Tue, 06 Apr 2021 07:05:37 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[Scripts]]></category>
+		<guid isPermaLink="false">/?p=5334</guid>
+
+					<description><![CDATA[<p>A few years ago I wrote a script to help find the largest files on a drive using PowerShell without the need to install any additional software. This script was extremely useful for quickly narrowing in on files that may be easy to remove in order to help free up disk space, particularly in situations [&#8230;]</p>
+The post <a href="/2021/04/powershell-script-quickly-find-the-largest-files/">Revisiting & Revising An Old PowerShell Tool – Quickly Find The Largest Files</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>VMware vCenter CVE-2021-21972 Scanner</title>
+		<link>/2021/02/vmware-vcenter-cve-2021-21972-scan-tool/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sat, 27 Feb 2021 10:31:52 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[CVE-2021-21972]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[scan]]></category>
+		<category><![CDATA[Tool]]></category>
+		<category><![CDATA[vCenter]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[vulnerability]]></category>
+		<guid isPermaLink="false">/?p=5318</guid>
+
+					<description><![CDATA[<p>In this post, I am releasing a PowerShell POC script that will scan the specified target hosts and attempt to detect those that are vulnerable to VMware vCenter CVE-2021-21972. You can find the script, Invoke-CVE-2021-21972-Scan.ps1, on my github here: https://github.com/robwillisinfo/VMware_vCenter_CVE-2021-21972 The script executes in the following order: Create a log file, default log name is [&#8230;]</p>
+The post <a href="/2021/02/vmware-vcenter-cve-2021-21972-scan-tool/">VMware vCenter CVE-2021-21972 Scanner</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Defending Against PowerShell Attacks</title>
+		<link>/2021/02/defending-against-powershell-attacks/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 22 Feb 2021 04:07:54 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[AppLocker]]></category>
+		<category><![CDATA[CLM]]></category>
+		<category><![CDATA[JEA]]></category>
+		<category><![CDATA[Logging]]></category>
+		<category><![CDATA[Pentesting]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[Red Team]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[SIEM]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=4971</guid>
+
+					<description><![CDATA[<p>It&#8217;s no secret that I am a big fan of PowerShell and recently I have been spending a considerable amount of time researching and testing it from a security perspective. While there is a lot of solid information out there, I have found it can still be a challenge to really get a solid grasp [&#8230;]</p>
+The post <a href="/2021/02/defending-against-powershell-attacks/">Defending Against PowerShell Attacks</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Invoke-Decoder &#8211; A PowerShell script to decode/deobfuscate malware samples</title>
+		<link>/2020/08/invoke-decoder-a-powershell-script-to-decode-deobfuscate-malware-samples/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sun, 02 Aug 2020 03:57:08 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[base64]]></category>
+		<category><![CDATA[compress]]></category>
+		<category><![CDATA[Decode]]></category>
+		<category><![CDATA[gzip]]></category>
+		<category><![CDATA[Invoke-Decoder]]></category>
+		<category><![CDATA[Malware]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[xor]]></category>
+		<guid isPermaLink="false">/?p=4931</guid>
+
+					<description><![CDATA[<p>I have been spending a lot of time reviewing PowerShell based attacks and malware over the last few months and I wanted to take some time to really understand how some of the common obfuscation techniques really work under the hood. The best way for me to learn more about something like this is to [&#8230;]</p>
+The post <a href="/2020/08/invoke-decoder-a-powershell-script-to-decode-deobfuscate-malware-samples/">Invoke-Decoder – A PowerShell script to decode/deobfuscate malware samples</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Disabling PowerShell v2 with Group Policy</title>
+		<link>/2020/01/disabling-powershell-v2-with-group-policy/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 20 Jan 2020 11:39:09 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[10]]></category>
+		<category><![CDATA[2012]]></category>
+		<category><![CDATA[2016]]></category>
+		<category><![CDATA[2019]]></category>
+		<category><![CDATA[Disable]]></category>
+		<category><![CDATA[Dism]]></category>
+		<category><![CDATA[DismOpenSession failed]]></category>
+		<category><![CDATA[Downgrade Attack]]></category>
+		<category><![CDATA[Error code = 0x80040154]]></category>
+		<category><![CDATA[GPO]]></category>
+		<category><![CDATA[Group Policy]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[v2]]></category>
+		<category><![CDATA[Windows]]></category>
+		<category><![CDATA[WindowsOptionalFeature]]></category>
+		<guid isPermaLink="false">/?p=4855</guid>
+
+					<description><![CDATA[<p>In this post I am going to tackle something that I have been wanting to play around with for awhile, disabling PowerShell v2 at an enterprise scale. As a former systems engineer and now a security engineer, I have a love/hate relationship with PowerShell since it is amazingly useful but also incredibly dangerous in the [&#8230;]</p>
+The post <a href="/2020/01/disabling-powershell-v2-with-group-policy/">Disabling PowerShell v2 with Group Policy</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Everything You Need To Know To Get Started Logging PowerShell</title>
+		<link>/2019/10/everything-you-need-to-know-to-get-started-logging-powershell/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 07 Oct 2019 00:15:30 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[4103]]></category>
+		<category><![CDATA[4104]]></category>
+		<category><![CDATA[Downgrade Attacks]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[Get-PSEventLogSize]]></category>
+		<category><![CDATA[GPO]]></category>
+		<category><![CDATA[Group Policy]]></category>
+		<category><![CDATA[Module]]></category>
+		<category><![CDATA[Obfuscated]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[Restricted]]></category>
+		<category><![CDATA[Script block]]></category>
+		<category><![CDATA[SD]]></category>
+		<category><![CDATA[Security Descriptor]]></category>
+		<category><![CDATA[Tool]]></category>
+		<category><![CDATA[Transcription]]></category>
+		<guid isPermaLink="false">/?p=4432</guid>
+
+					<description><![CDATA[<p>Intro Recently, I have been spending a lot of time researching and working with PowerShell logging. Since PowerShell is readily available (built-in to the OS) and has an assortment of functionality that can be used across the entire kill chain right out of the box, it is an ideal candidate for virtually any type of [&#8230;]</p>
+The post <a href="/2019/10/everything-you-need-to-know-to-get-started-logging-powershell/">Everything You Need To Know To Get Started Logging PowerShell</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Gathering Windows, PowerShell and Sysmon Events with Winlogbeat &#8211; ELK 7 &#8211; Windows Server 2016 (Part II)</title>
+		<link>/2019/05/gathering-windows-powershell-and-sysmon-events-with-winlogbeat-elk-7-windows-server-2016/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Tue, 07 May 2019 02:43:19 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[2016]]></category>
+		<category><![CDATA[Elasticsearch]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[Kibana]]></category>
+		<category><![CDATA[Logs]]></category>
+		<category><![CDATA[Logstash]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[SIEM]]></category>
+		<category><![CDATA[Sysmon]]></category>
+		<category><![CDATA[Windows]]></category>
+		<category><![CDATA[Winlogbeat]]></category>
+		<guid isPermaLink="false">/?p=4162</guid>
+
+					<description><![CDATA[<p>In part I of this series, Installing ELK 7 (Elasticsearch, Logstash and Kibana) on Windows Server 2016, I covered the following: Installing and configuring Elasticsearch, Logstash, and Kibana as Windows services Installing and configuring Winlogbeat to forward logs from the ELK server into ELK Installing and configuring Curator as a scheduled task (optional) Now, in [&#8230;]</p>
+The post <a href="/2019/05/gathering-windows-powershell-and-sysmon-events-with-winlogbeat-elk-7-windows-server-2016/">Gathering Windows, PowerShell and Sysmon Events with Winlogbeat – ELK 7 – Windows Server 2016 (Part II)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

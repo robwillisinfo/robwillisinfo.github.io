@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>PCI compliance | RobWillis.info</title>
+	<atom:link href="/tag/pci-compliance/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Thu, 13 Apr 2017 09:03:38 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Hardening SSL &#038; TLS connections on Windows Server 2008 R2 &#038; 2012 R2</title>
+		<link>/2015/10/hardening-ssl-tls-connections-on-windows-server-2008-r2-2012-r2/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Wed, 21 Oct 2015 10:02:34 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Cipher]]></category>
+		<category><![CDATA[DHE]]></category>
+		<category><![CDATA[Disable]]></category>
+		<category><![CDATA[hardening]]></category>
+		<category><![CDATA[https]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[MS SQL]]></category>
+		<category><![CDATA[PCI compliance]]></category>
+		<category><![CDATA[qualys]]></category>
+		<category><![CDATA[ssl]]></category>
+		<category><![CDATA[SSL V3]]></category>
+		<category><![CDATA[Suite]]></category>
+		<category><![CDATA[tls]]></category>
+		<category><![CDATA[TLS 1]]></category>
+		<guid isPermaLink="false">/?p=2455</guid>
+
+					<description><![CDATA[<p>Hardening your SSL/TLS connections is a pretty common thing to do on any Windows Server running IIS and web applications that utilize HTTPS, especially if they require some sort of compliance. It is generally a good idea to do this on all of your servers though, to ensure your secure connections really are secure. On [&#8230;]</p>
+The post <a href="/2015/10/hardening-ssl-tls-connections-on-windows-server-2008-r2-2012-r2/">Hardening SSL & TLS connections on Windows Server 2008 R2 & 2012 R2</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

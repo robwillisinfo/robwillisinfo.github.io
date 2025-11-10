@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Software | RobWillis.info</title>
+	<atom:link href="/category/software/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Wed, 05 Nov 2025 11:19:05 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Installing Omarchy On VMware Workstation</title>
+		<link>/2025/11/installing-omarchy-on-vmware-workstation/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Wed, 05 Nov 2025 11:12:29 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Omarchy]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<guid isPermaLink="false">/?p=7729</guid>
+
+					<description><![CDATA[<p>If you&#8217;re trying to run Omarchy on VMware Workstation, you might be experiencing some issues with the GUI after what appears to be a successful installation. With the basic graphics option configured on the virtual machine, Omarchy will boot but then fall to a black screen right after entering the password. Enabling accelerated graphics gets [&#8230;]</p>
+The post <a href="/2025/11/installing-omarchy-on-vmware-workstation/">Installing Omarchy On VMware Workstation</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Gathering Windows, PowerShell and Sysmon Events with Winlogbeat &#8211; ELK 7 &#8211; Windows Server 2016 (Part II)</title>
+		<link>/2019/05/gathering-windows-powershell-and-sysmon-events-with-winlogbeat-elk-7-windows-server-2016/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Tue, 07 May 2019 02:43:19 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[2016]]></category>
+		<category><![CDATA[Elasticsearch]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[Kibana]]></category>
+		<category><![CDATA[Logs]]></category>
+		<category><![CDATA[Logstash]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[SIEM]]></category>
+		<category><![CDATA[Sysmon]]></category>
+		<category><![CDATA[Windows]]></category>
+		<category><![CDATA[Winlogbeat]]></category>
+		<guid isPermaLink="false">/?p=4162</guid>
+
+					<description><![CDATA[<p>In part I of this series, Installing ELK 7 (Elasticsearch, Logstash and Kibana) on Windows Server 2016, I covered the following: Installing and configuring Elasticsearch, Logstash, and Kibana as Windows services Installing and configuring Winlogbeat to forward logs from the ELK server into ELK Installing and configuring Curator as a scheduled task (optional) Now, in [&#8230;]</p>
+The post <a href="/2019/05/gathering-windows-powershell-and-sysmon-events-with-winlogbeat-elk-7-windows-server-2016/">Gathering Windows, PowerShell and Sysmon Events with Winlogbeat – ELK 7 – Windows Server 2016 (Part II)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Installing ELK 7 (Elasticsearch, Logstash and Kibana) &#8211; Windows Server 2016 (Part I)</title>
+		<link>/2019/05/installing-elk-7-elasticsearch-logstash-and-kibana-windows-server-2016/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Tue, 07 May 2019 02:42:55 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[2016]]></category>
+		<category><![CDATA[Elasticsearch]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[Kibana]]></category>
+		<category><![CDATA[Logs]]></category>
+		<category><![CDATA[Logstash]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[SIEM]]></category>
+		<category><![CDATA[Sysmon]]></category>
+		<category><![CDATA[Windows]]></category>
+		<category><![CDATA[Winlogbeat]]></category>
+		<guid isPermaLink="false">/?p=4058</guid>
+
+					<description><![CDATA[<p>I am a huge fan of the Elastic stack as it can provide a great deal of visibility into even the largest of environments, which can help enable both engineering and security teams rapidly triage technical issues or incidents at scale. There&#8217;s also the fact that unlike Splunk, the Elastic software is free to use [&#8230;]</p>
+The post <a href="/2019/05/installing-elk-7-elasticsearch-logstash-and-kibana-windows-server-2016/">Installing ELK 7 (Elasticsearch, Logstash and Kibana) – Windows Server 2016 (Part I)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>ESXi 6.5 &#8211; Error Loading /xorg.v00 Fatal Error: 33 (inconsistent data)</title>
+		<link>/2018/04/esxi-6-5-error-loading-xorg-v00-fatal-error-33-inconsistent-data/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Fri, 20 Apr 2018 10:13:58 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[ESXi 6.5]]></category>
+		<category><![CDATA[Fatal Error]]></category>
+		<category><![CDATA[Fatal Error 33]]></category>
+		<category><![CDATA[fix]]></category>
+		<category><![CDATA[s.v00]]></category>
+		<category><![CDATA[sb.v00]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[xorg.v00]]></category>
+		<guid isPermaLink="false">/?p=3716</guid>
+
+					<description><![CDATA[<p>The Error During a recent thunderstorm one of the ESXi 6.5 hosts in my lab environment that was not on a UPS, rebooted from a power fluctuation and when it rebooted I received the following error: Error loading /xorg.v00 Compressed MD5: d04cc03dd29bbe3fe547e9566f79674c Decompressed MD5: 00000000000000000000000000000000 As the error indicates, the file /xorg.v00 appears to be [&#8230;]</p>
+The post <a href="/2018/04/esxi-6-5-error-loading-xorg-v00-fatal-error-33-inconsistent-data/">ESXi 6.5 – Error Loading /xorg.v00 Fatal Error: 33 (inconsistent data)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>PowerEdge R610 &#8211; Updating Firmwares When the LifeCycle Controller Fails</title>
+		<link>/2018/03/poweredge-r610-updating-firmwares-when-the-lifecycle-controller-fails/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 12 Mar 2018 14:32:54 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[BIOS]]></category>
+		<category><![CDATA[Dell]]></category>
+		<category><![CDATA[iDrac]]></category>
+		<category><![CDATA[LifeCycle Controller]]></category>
+		<category><![CDATA[PowerEdge]]></category>
+		<category><![CDATA[R610]]></category>
+		<category><![CDATA[Update]]></category>
+		<guid isPermaLink="false">/?p=3626</guid>
+
+					<description><![CDATA[<p>Why You Should Always Update Firmwares! Security patches, new features and bug fixes – These are all very good reasons to ensure firmwares are up to date before moving your new servers into production. Things like the BIOS, RAID Controller, iDrac and network controllers will all usually have updates available. Some of these patches may [&#8230;]</p>
+The post <a href="/2018/03/poweredge-r610-updating-firmwares-when-the-lifecycle-controller-fails/">PowerEdge R610 – Updating Firmwares When the LifeCycle Controller Fails</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Installing VMware ESXi on an Internal USB?!</title>
+		<link>/2018/02/installing-vmware-esxi-on-an-internal-usb/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Tue, 13 Feb 2018 16:09:07 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Dell]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[Home Lab]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[PowerEdge]]></category>
+		<category><![CDATA[R610]]></category>
+		<category><![CDATA[Virtualization]]></category>
+		<category><![CDATA[VM]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3611</guid>
+
+					<description><![CDATA[<p>One of the things I get the most questions about with my VMware ESXi posts/videos is about installing ESXi onto USB drives and booting it from there, and that question is usually followed by the concern of someone accidentally or even maliciously removing the drive from the chassis. In the case of the Dell PowerEdge [&#8230;]</p>
+The post <a href="/2018/02/installing-vmware-esxi-on-an-internal-usb/">Installing VMware ESXi on an Internal USB?!</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Home Lab Setup (2017)</title>
+		<link>/2018/02/home-lab-setup/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sun, 04 Feb 2018 15:51:15 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[blue]]></category>
+		<category><![CDATA[Elastic]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[firewall]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[Home Lab]]></category>
+		<category><![CDATA[IDS]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[OPNsense]]></category>
+		<category><![CDATA[pfSense]]></category>
+		<category><![CDATA[red]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[snort]]></category>
+		<category><![CDATA[team]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3508</guid>
+
+					<description><![CDATA[<p>In this post and video I give a quick run down of my Home Lab &#8211; everything from the rack itself, to the hardware and the basics of what everything is being used for. I started this project towards the end of 2012 with a single Dell PowerEdge 2950 GII and was hoping to teach [&#8230;]</p>
+The post <a href="/2018/02/home-lab-setup/">Home Lab Setup (2017)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>ELK Stack &#8211; Installing and Configuring Curator</title>
+		<link>/2017/11/elk-stack-installing-and-configuring-curator/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Thu, 16 Nov 2017 15:42:29 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[Curator]]></category>
+		<category><![CDATA[Elastic]]></category>
+		<category><![CDATA[Elasticsearch]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[Kibana]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Logs]]></category>
+		<category><![CDATA[Logstash]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[SIEM]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3462</guid>
+
+					<description><![CDATA[<p>In this post I am going to quickly cover what is needed to get Curator up and running on the ELK stack. In the last few posts about the ELK stack I covered everything needed to get it installed, configured and ingesting logs reliably. If you missed those posts, you can find them here: ELK [&#8230;]</p>
+The post <a href="/2017/11/elk-stack-installing-and-configuring-curator/">ELK Stack – Installing and Configuring Curator</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Installing and Configuring VMware vCenter 6.5 (VCSA)</title>
+		<link>/2017/11/installing-and-configuring-vmware-vcenter-6-5-vcsa/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Wed, 01 Nov 2017 13:35:24 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[6.5]]></category>
+		<category><![CDATA[Appliance]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[how to]]></category>
+		<category><![CDATA[Install]]></category>
+		<category><![CDATA[vCenter]]></category>
+		<category><![CDATA[VCSA]]></category>
+		<category><![CDATA[Virtual Machine]]></category>
+		<category><![CDATA[VM]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[VSphere]]></category>
+		<category><![CDATA[Web Console]]></category>
+		<guid isPermaLink="false">/?p=3380</guid>
+
+					<description><![CDATA[<p>In this third and final part of my VMware series, I go over all of the basics of getting the VMware vCenter 6.5 Server Appliance up and running. Everything that I show in the video can be done with the evaluation version of vCenter, which gives you up to 2 months of time to play [&#8230;]</p>
+The post <a href="/2017/11/installing-and-configuring-vmware-vcenter-6-5-vcsa/">Installing and Configuring VMware vCenter 6.5 (VCSA)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Exploiting Apache Struts &#8211; CVE-2017-9805</title>
+		<link>/2017/09/exploiting-apache-struts-cve-2017-9805/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sat, 16 Sep 2017 03:53:16 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[CVE-2017-9805]]></category>
+		<category><![CDATA[exploit]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Python]]></category>
+		<category><![CDATA[Reverse Shell]]></category>
+		<category><![CDATA[Struts]]></category>
+		<category><![CDATA[Tomcat]]></category>
+		<category><![CDATA[vulnerability]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3255</guid>
+
+					<description><![CDATA[<p>CVE-2017-9805 is yet another very legitimate vulnerability in the Apache Struts framework. In the video, I demonstrate how easy it is to run a simple public python script against a vulnerable remote server, ultimately resulting in a reverse shell back to the attacker. In this post, I will cover all the steps shown in the [&#8230;]</p>
+The post <a href="/2017/09/exploiting-apache-struts-cve-2017-9805/">Exploiting Apache Struts – CVE-2017-9805</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

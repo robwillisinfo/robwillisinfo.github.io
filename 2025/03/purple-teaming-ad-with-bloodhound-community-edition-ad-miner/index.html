@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		<!-- All in One SEO 4.8.7.2 - aioseo.com -->
+	<meta name="description" content="BloodHound is one of those tools that everyone in the industry seems to have heard of and it tends to generate a buzz amongst engineers anytime it&#039;s brought up. This reputation is well-deserved with it being such a game changer when it comes to attacking and auditing Active Directory domains. Every organization running Active Directory">
+	<meta name="robots" content="max-image-preview:large">
+	<meta name="author" content="robwillisinfo">
+	<meta name="keywords" content="active directory,ad,bloodhound,blue,purple,red,team">
+	<link rel="canonical" href="/2025/03/purple-teaming-ad-with-bloodhound-community-edition-ad-miner/">
+	<meta name="generator" content="All in One SEO (AIOSEO) 4.8.7.2">
+		<meta property="og:locale" content="en_US">
+		<meta property="og:site_name" content="RobWillis.info | #yolosec">
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="Purple Teaming AD with BloodHound CE &amp; AD-Miner | RobWillis.info">
+		<meta property="og:description" content="BloodHound is one of those tools that everyone in the industry seems to have heard of and it tends to generate a buzz amongst engineers anytime it&#039;s brought up. This reputation is well-deserved with it being such a game changer when it comes to attacking and auditing Active Directory domains. Every organization running Active Directory">
+		<meta property="og:url" content="/2025/03/purple-teaming-ad-with-bloodhound-community-edition-ad-miner/">
+		<meta property="article:published_time" content="2025-03-12T13:42:51+00:00">
+		<meta property="article:modified_time" content="2025-09-18T11:53:10+00:00">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="Purple Teaming AD with BloodHound CE &amp; AD-Miner | RobWillis.info">
+		<meta name="twitter:description" content="BloodHound is one of those tools that everyone in the industry seems to have heard of and it tends to generate a buzz amongst engineers anytime it&#039;s brought up. This reputation is well-deserved with it being such a game changer when it comes to attacking and auditing Active Directory domains. Every organization running Active Directory">
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"Article","@id":"\/2025\/03\/purple-teaming-ad-with-bloodhound-community-edition-ad-miner\/#article","name":"Purple Teaming AD with BloodHound CE & AD-Miner | RobWillis.info","headline":"Purple Teaming AD with BloodHound CE &#038; AD-Miner","author":{"@id":"\/author\/bit_rot\/#author"},"publisher":{"@id":"\/#organization"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2025\/03\/AD-miner-report-1.png","width":1585,"height":980},"datePublished":"2025-03-12T08:42:51-05:00","dateModified":"2025-09-18T06:53:10-05:00","inLanguage":"en-US","mainEntityOfPage":{"@id":"\/2025\/03\/purple-teaming-ad-with-bloodhound-community-edition-ad-miner\/#webpage"},"isPartOf":{"@id":"\/2025\/03\/purple-teaming-ad-with-bloodhound-community-edition-ad-miner\/#webpage"},"articleSection":"Blog, Pen Testing, Security, Servers, Tools, Active Directory, AD, BloodHound, blue, Purple, red, team"},{"@type":"BreadcrumbList","@id":"\/2025\/03\/purple-teaming-ad-with-bloodhound-community-edition-ad-miner\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"#listItem","position":1,"name":"Home","item":"","nextItem":{"@type":"ListItem","@id":"\/category\/servers\/#listItem","name":"Servers"}},{"@type":"ListItem","@id":"\/category\/servers\/#listItem","position":2,"name":"Servers","item":"\/category\/servers\/","nextItem":{"@type":"ListItem","@id":"\/2025\/03\/purple-teaming-ad-with-bloodhound-community-edition-ad-miner\/#listItem","name":"Purple Teaming AD with BloodHound CE &#038; AD-Miner"},"previousItem":{"@type":"ListItem","@id":"#listItem","name":"Home"}},{"@type":"ListItem","@id":"\/2025\/03\/purple-teaming-ad-with-bloodhound-community-edition-ad-miner\/#listItem","position":3,"name":"Purple Teaming AD with BloodHound CE &#038; AD-Miner","previousItem":{"@type":"ListItem","@id":"\/category\/servers\/#listItem","name":"Servers"}}]},{"@type":"Organization","@id":"\/#organization","name":"RobWillis.info","description":"#yolosec","url":"\/"},{"@type":"Person","@id":"\/author\/bit_rot\/#author","url":"\/author\/bit_rot\/","name":"robwillisinfo","image":{"@type":"ImageObject","@id":"\/2025\/03\/purple-teaming-ad-with-bloodhound-community-edition-ad-miner\/#authorImage","url":"https:\/\/secure.gravatar.com\/avatar\/5abe3ae45b388410a815ca1c5ff124c1e418cd7b13ef7401ce6393d362cd1c90?s=96&d=mm&r=r","width":96,"height":96,"caption":"robwillisinfo"}},{"@type":"WebPage","@id":"\/2025\/03\/purple-teaming-ad-with-bloodhound-community-edition-ad-miner\/#webpage","url":"\/2025\/03\/purple-teaming-ad-with-bloodhound-community-edition-ad-miner\/","name":"Purple Teaming AD with BloodHound CE & AD-Miner | RobWillis.info","description":"BloodHound is one of those tools that everyone in the industry seems to have heard of and it tends to generate a buzz amongst engineers anytime it's brought up. This reputation is well-deserved with it being such a game changer when it comes to attacking and auditing Active Directory domains. Every organization running Active Directory","inLanguage":"en-US","isPartOf":{"@id":"\/#website"},"breadcrumb":{"@id":"\/2025\/03\/purple-teaming-ad-with-bloodhound-community-edition-ad-miner\/#breadcrumblist"},"author":{"@id":"\/author\/bit_rot\/#author"},"creator":{"@id":"\/author\/bit_rot\/#author"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2025\/03\/AD-miner-report-1.png","@id":"\/2025\/03\/purple-teaming-ad-with-bloodhound-community-edition-ad-miner\/#mainImage","width":1585,"height":980},"primaryImageOfPage":{"@id":"\/2025\/03\/purple-teaming-ad-with-bloodhound-community-edition-ad-miner\/#mainImage"},"datePublished":"2025-03-12T08:42:51-05:00","dateModified":"2025-09-18T06:53:10-05:00"},{"@type":"WebSite","@id":"\/#website","url":"\/","name":"RobWillis.info","description":"#yolosec","inLanguage":"en-US","publisher":{"@id":"\/#organization"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+<title>Purple Teaming AD with BloodHound CE &amp; AD-Miner | RobWillis.info</title>
+<link rel="alternate" type="application/rss+xml" title="RobWillis.info &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="RobWillis.info &raquo; Comments Feed" href="/comments/feed/">
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"🏳️‍⚧️","🏳️​⚧️")?!1:!n(e,"🇨🇶","🇨​🇶")&&!n(e,"🏴󠁧󠁢󠁥󠁮󠁧󠁿","🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿");case"emoji":return!a(e,"🫟")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style id="wp-block-site-title-inline-css">.wp-block-site-title{box-sizing:border-box}.wp-block-site-title :where(a){color:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}</style>
+<style id="wp-block-navigation-link-inline-css">.wp-block-navigation .wp-block-navigation-item__label{overflow-wrap:break-word}.wp-block-navigation .wp-block-navigation-item__description{display:none}.link-ui-tools{border-top:1px solid #f0f0f0;padding:8px}.link-ui-block-inserter{padding-top:8px}.link-ui-block-inserter__back{margin-left:8px;text-transform:uppercase}</style>
+<link rel="stylesheet" id="wp-block-navigation-css" href="/wp-includes/blocks/navigation/style.min.css?ver=6.8.3" media="all">
+<style id="wp-block-group-inline-css">.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}</style>
+<style id="wp-block-post-title-inline-css">.wp-block-post-title{box-sizing:border-box;word-break:break-word}.wp-block-post-title :where(a){display:inline-block;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}</style>
+<style id="wp-block-paragraph-inline-css">.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}</style>
+<style id="wp-block-post-author-name-inline-css">.wp-block-post-author-name{box-sizing:border-box}</style>
+<style id="wp-block-post-terms-inline-css">.wp-block-post-terms{box-sizing:border-box}.wp-block-post-terms .wp-block-post-terms__separator{white-space:pre-wrap}</style>
+<style id="wp-block-post-content-inline-css">.wp-block-post-content{display:flow-root}</style>
+<style id="wp-block-post-navigation-link-inline-css">.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-previous{display:inline-block;margin-right:1ch}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-previous:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-next{display:inline-block;margin-left:1ch}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-next:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-post-navigation-link.has-text-align-left[style*="writing-mode: vertical-lr"],.wp-block-post-navigation-link.has-text-align-right[style*="writing-mode: vertical-rl"]{rotate:180deg}</style>
+<style id="wp-block-comments-inline-css">.wp-block-post-comments{box-sizing:border-box}.wp-block-post-comments .alignleft{float:left}.wp-block-post-comments .alignright{float:right}.wp-block-post-comments .navigation:after{clear:both;content:"";display:table}.wp-block-post-comments .commentlist{clear:both;list-style:none;margin:0;padding:0}.wp-block-post-comments .commentlist .comment{min-height:2.25em;padding-left:3.25em}.wp-block-post-comments .commentlist .comment p{font-size:1em;line-height:1.8;margin:1em 0}.wp-block-post-comments .commentlist .children{list-style:none;margin:0;padding:0}.wp-block-post-comments .comment-author{line-height:1.5}.wp-block-post-comments .comment-author .avatar{border-radius:1.5em;display:block;float:left;height:2.5em;margin-right:.75em;margin-top:.5em;width:2.5em}.wp-block-post-comments .comment-author cite{font-style:normal}.wp-block-post-comments .comment-meta{font-size:.875em;line-height:1.5}.wp-block-post-comments .comment-meta b{font-weight:400}.wp-block-post-comments .comment-meta .comment-awaiting-moderation{display:block;margin-bottom:1em;margin-top:1em}.wp-block-post-comments .comment-body .commentmetadata{font-size:.875em}.wp-block-post-comments .comment-form-author label,.wp-block-post-comments .comment-form-comment label,.wp-block-post-comments .comment-form-email label,.wp-block-post-comments .comment-form-url label{display:block;margin-bottom:.25em}.wp-block-post-comments .comment-form input:not([type=submit]):not([type=checkbox]),.wp-block-post-comments .comment-form textarea{box-sizing:border-box;display:block;width:100%}.wp-block-post-comments .comment-form-cookies-consent{display:flex;gap:.25em}.wp-block-post-comments .comment-form-cookies-consent #wp-comment-cookies-consent{margin-top:.35em}.wp-block-post-comments .comment-reply-title{margin-bottom:0}.wp-block-post-comments .comment-reply-title :where(small){font-size:var(--wp--preset--font-size--medium,smaller);margin-left:.5em}.wp-block-post-comments .reply{font-size:.875em;margin-bottom:1.4em}.wp-block-post-comments input:not([type=submit]),.wp-block-post-comments textarea{border:1px solid #949494;font-family:inherit;font-size:1em}.wp-block-post-comments input:not([type=submit]):not([type=checkbox]),.wp-block-post-comments textarea{padding:calc(.667em + 2px)}:where(.wp-block-post-comments input[type=submit]){border:none}.wp-block-comments{box-sizing:border-box}</style>
+<style id="wp-block-heading-inline-css">h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-background,h6.has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}</style>
+<style id="wp-block-post-date-inline-css">.wp-block-post-date{box-sizing:border-box}</style>
+<style id="wp-block-post-template-inline-css">.wp-block-post-template{box-sizing:border-box;list-style:none;margin-bottom:0;margin-top:0;max-width:100%;padding:0}.wp-block-post-template.is-flex-container{display:flex;flex-direction:row;flex-wrap:wrap;gap:1.25em}.wp-block-post-template.is-flex-container>li{margin:0;width:100%}@media (min-width:600px){.wp-block-post-template.is-flex-container.is-flex-container.columns-2>li{width:calc(50% - .625em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-3>li{width:calc(33.33333% - .83333em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-4>li{width:calc(25% - .9375em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-5>li{width:calc(20% - 1em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-6>li{width:calc(16.66667% - 1.04167em)}}@media (max-width:600px){.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid{grid-template-columns:1fr}}.wp-block-post-template-is-layout-constrained>li>.alignright,.wp-block-post-template-is-layout-flow>li>.alignright{float:right;margin-inline-end:0;margin-inline-start:2em}.wp-block-post-template-is-layout-constrained>li>.alignleft,.wp-block-post-template-is-layout-flow>li>.alignleft{float:left;margin-inline-end:2em;margin-inline-start:0}.wp-block-post-template-is-layout-constrained>li>.aligncenter,.wp-block-post-template-is-layout-flow>li>.aligncenter{margin-inline-end:auto;margin-inline-start:auto}</style>
+<link rel="stylesheet" id="wp-block-social-links-css" href="/wp-includes/blocks/social-links/style.min.css?ver=6.8.3" media="all">
+<style id="wp-block-library-inline-css">:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color)}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}</style>
+<style id="global-styles-inline-css">:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--base: #1B1B1B;--wp--preset--color--contrast: #F0F0F0;--wp--preset--color--accent-1: #786D0A;--wp--preset--color--accent-2: #442369;--wp--preset--color--accent-3: #D1D0EA;--wp--preset--color--accent-4: #CBCBCB;--wp--preset--color--accent-5: #353535;--wp--preset--color--accent-6: #FFFFFF33;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 0.875rem;--wp--preset--font-size--medium: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.196), 1.125rem);--wp--preset--font-size--large: clamp(1.125rem, 1.125rem + ((1vw - 0.2rem) * 0.392), 1.375rem);--wp--preset--font-size--x-large: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 0.392), 2rem);--wp--preset--font-size--xx-large: clamp(2.15rem, 2.15rem + ((1vw - 0.2rem) * 1.333), 3rem);--wp--preset--font-family--manrope: Manrope, sans-serif;--wp--preset--font-family--fira-code: "Fira Code", monospace;--wp--preset--spacing--20: 10px;--wp--preset--spacing--30: 20px;--wp--preset--spacing--40: 30px;--wp--preset--spacing--50: clamp(30px, 5vw, 50px);--wp--preset--spacing--60: clamp(30px, 7vw, 70px);--wp--preset--spacing--70: clamp(50px, 7vw, 90px);--wp--preset--spacing--80: clamp(70px, 10vw, 140px);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 645px;--wp--style--global--wide-size: 1340px; }:where(body) { margin: 0; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) { padding-right: 0; padding-left: 0; }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) > .alignfull { margin-left: 0; margin-right: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 1.2rem; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 1.2rem; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 1.2rem;}:root :where(.is-layout-grid){gap: 1.2rem;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{background-color: var(--wp--preset--color--base);color: var(--wp--preset--color--accent-4);font-family: var(--wp--preset--font-family--manrope);font-size: var(--wp--preset--font-size--large);font-weight: 300;letter-spacing: -0.1px;line-height: 1.4;--wp--style--root--padding-top: 0px;--wp--style--root--padding-right: var(--wp--preset--spacing--50);--wp--style--root--padding-bottom: 0px;--wp--style--root--padding-left: var(--wp--preset--spacing--50);}a:where(:not(.wp-element-button)){color: #0099ff;text-decoration: underline;}:root :where(a:where(:not(.wp-element-button)):hover){text-decoration: none;}h1, h2, h3, h4, h5, h6{font-weight: 400;letter-spacing: -0.1px;line-height: 1.125;}h1{font-size: var(--wp--preset--font-size--xx-large);}h2{font-size: var(--wp--preset--font-size--x-large);}h3{font-size: var(--wp--preset--font-size--large);}h4{font-size: var(--wp--preset--font-size--medium);}h5{font-size: var(--wp--preset--font-size--small);letter-spacing: 0.5px;}h6{font-size: var(--wp--preset--font-size--small);font-weight: 700;letter-spacing: 1.4px;text-transform: uppercase;}:root :where(.wp-element-button, .wp-block-button__link){background-color: var(--wp--preset--color--contrast);border-width: 0;color: var(--wp--preset--color--base);font-family: inherit;font-size: var(--wp--preset--font-size--medium);line-height: inherit;padding-top: 0.6rem;padding-right: 1.6rem;padding-bottom: 0.6rem;padding-left: 1.6rem;text-decoration: none;}:root :where(.wp-element-button:hover, .wp-block-button__link:hover){background-color: color-mix(in srgb, var(--wp--preset--color--contrast) 85%, transparent);border-color: transparent;color: var(--wp--preset--color--base);}:root :where(.wp-element-button:focus, .wp-block-button__link:focus){outline-color: var(--wp--preset--color--accent-4);outline-offset: 2px;}:root :where(.wp-element-caption, .wp-block-audio figcaption, .wp-block-embed figcaption, .wp-block-gallery figcaption, .wp-block-image figcaption, .wp-block-table figcaption, .wp-block-video figcaption){font-size: var(--wp--preset--font-size--small);line-height: 1.4;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-base-color{color: var(--wp--preset--color--base) !important;}.has-contrast-color{color: var(--wp--preset--color--contrast) !important;}.has-accent-1-color{color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-color{color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-color{color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-color{color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-color{color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-color{color: var(--wp--preset--color--accent-6) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-background-color{background-color: var(--wp--preset--color--base) !important;}.has-contrast-background-color{background-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-background-color{background-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-background-color{background-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-background-color{background-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-background-color{background-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-background-color{background-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-background-color{background-color: var(--wp--preset--color--accent-6) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-border-color{border-color: var(--wp--preset--color--base) !important;}.has-contrast-border-color{border-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-border-color{border-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-border-color{border-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-border-color{border-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-border-color{border-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-border-color{border-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-border-color{border-color: var(--wp--preset--color--accent-6) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-xx-large-font-size{font-size: var(--wp--preset--font-size--xx-large) !important;}.has-manrope-font-family{font-family: var(--wp--preset--font-family--manrope) !important;}.has-fira-code-font-family{font-family: var(--wp--preset--font-family--fira-code) !important;}img.aligncenter{margin-left:auto;margin-right:auto;display:block;max-width:100%;height:auto;}
+
+th, td {
+  border-bottom: 1px solid #404040;
+padding: 5px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+pre {
+  font-size: 18px;
+  background-color: #101010;
+  white-space: pre-wrap;
+  word-break: keep-all; 
+  border-radius: 8px;
+  padding: 1em;
+  color: #fff;
+  font-weight: normal;
+  font-family: "Source Code Pro", monospace;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+:root :where(.wp-block-post-date){color: var(--wp--preset--color--accent-4);font-size: var(--wp--preset--font-size--small);}
+:root :where(.wp-block-post-date a:where(:not(.wp-element-button))){color: var(--wp--preset--color--accent-4);text-decoration: none;}
+:root :where(.wp-block-post-date a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+:root :where(.wp-block-post-navigation-link){font-size: var(--wp--preset--font-size--medium);}
+:root :where(.wp-block-post-terms){font-size: var(--wp--preset--font-size--small);font-weight: 600;}:root :where(.wp-block-post-terms a){white-space: nowrap;}
+:root :where(.wp-block-post-title a:where(:not(.wp-element-button))){text-decoration: none;}
+:root :where(.wp-block-post-title a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+:root :where(.wp-block-site-title){font-weight: 700;letter-spacing: -.5px;}
+:root :where(.wp-block-site-title a:where(:not(.wp-element-button))){text-decoration: none;}
+:root :where(.wp-block-site-title a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+:root :where(.wp-block-navigation){font-size: var(--wp--preset--font-size--medium);}
+:root :where(.wp-block-navigation a:where(:not(.wp-element-button))){text-decoration: none;}
+:root :where(.wp-block-navigation a:where(:not(.wp-element-button)):hover){text-decoration: underline;}</style>
+<style id="block-style-variation-styles-inline-css">:root :where(.is-style-post-terms-1--1 a:where(:not(.wp-element-button))){border-radius: 20px;border-color: var(--wp--preset--color--accent-6);border-width: 0.8px;border-style: solid;font-weight: 400;line-height: 2.8;padding-top: 5px;padding-right: 10px;padding-bottom: 5px;padding-left: 10px;text-decoration: none;}:root :where(.is-style-post-terms-1--1 a:where(:not(.wp-element-button)):hover){text-decoration: underline;}</style>
+<style id="wp-emoji-styles-inline-css">img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}</style>
+<style id="core-block-supports-inline-css">.wp-container-core-navigation-is-layout-a89b3969{justify-content:center;}.wp-container-core-group-is-layout-4efaea1e{gap:0.2em;}.wp-container-core-post-content-is-layout-68124974 > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width:1440px;margin-left:auto !important;margin-right:auto !important;}.wp-container-core-post-content-is-layout-68124974 > .alignwide{max-width:1440px;}.wp-container-core-post-content-is-layout-68124974 .alignfull{max-width:none;}.wp-container-core-group-is-layout-9b36172e{flex-wrap:nowrap;justify-content:space-between;}.wp-container-core-group-is-layout-154222c2{flex-wrap:nowrap;justify-content:space-between;align-items:center;}.wp-container-core-post-template-is-layout-3ee800f6 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-post-template-is-layout-3ee800f6 > * + *{margin-block-start:0;margin-block-end:0;}.wp-container-content-b0223bd5{flex-basis:25%;}.wp-container-core-social-links-is-layout-ad1cd33a{flex-wrap:nowrap;gap:0 12px;justify-content:flex-end;}.wp-container-core-group-is-layout-cc97c919{flex-wrap:nowrap;gap:0;justify-content:space-between;}</style>
+<style id="wp-block-template-skip-link-inline-css">.skip-link.screen-reader-text {
+			border: 0;
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}</style>
+<link rel="stylesheet" id="lbwps-styles-photoswipe5-main-css" href="/wp-content/plugins/lightbox-photoswipe/assets/ps5/styles/main.css?ver=5.7.3" media="all">
+<link rel="stylesheet" id="twentytwentyfive-style-css" href="/wp-content/themes/twentytwentyfive/style.css?ver=1.3" media="all">
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/posts/6147">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.8.3">
+<link rel="shortlink" href="/?p=6147">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2025%2F03%2Fpurple-teaming-ad-with-bloodhound-community-edition-ad-miner%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2025%2F03%2Fpurple-teaming-ad-with-bloodhound-community-edition-ad-miner%2F&#038;format=xml">
+<script type="importmap" id="wp-importmap">
+{"imports":{"@wordpress\/interactivity":"\/wp-includes\/js\/dist\/script-modules\/interactivity\/index.min.js?ver=55aebb6e0a16726baffb"}}
+</script>
+<script type="module" src="/wp-includes/js/dist/script-modules/block-library/navigation/view.min.js?ver=61572d447d60c0aa5240" id="@wordpress/block-library/navigation/view-js-module"></script>
+<link rel="modulepreload" href="/wp-includes/js/dist/script-modules/interactivity/index.min.js?ver=55aebb6e0a16726baffb" id="@wordpress/interactivity-js-modulepreload">
+<style class="wp-fonts-local">@font-face{font-family:Manrope;font-style:normal;font-weight:200 800;font-display:fallback;src:url('/wp-content/themes/twentytwentyfive/assets/fonts/manrope/Manrope-VariableFont_wght.woff2') format('woff2');}
+@font-face{font-family:"Fira Code";font-style:normal;font-weight:300 700;font-display:fallback;src:url('/wp-content/themes/twentytwentyfive/assets/fonts/fira-code/FiraCode-VariableFont_wght.woff2') format('woff2');}</style>
+</head>
+
+<body class="wp-singular post-template-default single single-post postid-6147 single-format-standard wp-embed-responsive wp-theme-twentytwentyfive">
+
+<div class="wp-site-blocks">
+<header class="wp-block-template-part">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--30)">
+<p class="has-text-align-center alignwide wp-block-site-title has-x-large-font-size"><a href="/" target="_self" rel="home">RobWillis.info</a></p>
+
+
+<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"><nav class="items-justified-center wp-block-navigation is-content-justification-center is-layout-flex wp-container-core-navigation-is-layout-a89b3969 wp-block-navigation-is-layout-flex" aria-label="Menu"><ul class="wp-block-navigation__container items-justified-center wp-block-navigation">
+<li class=" wp-block-navigation-item  menu-item menu-item-type-custom menu-item-object-custom menu-item-home wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/" title=""><span class="wp-block-navigation-item__label">Home</span></a></li>
+<li data-wp-context="{ &quot;submenuOpenedBy&quot;: { &quot;click&quot;: false, &quot;hover&quot;: false, &quot;focus&quot;: false }, &quot;type&quot;: &quot;submenu&quot;, &quot;modal&quot;: null }" data-wp-interactive="core/navigation" data-wp-on--focusout="actions.handleMenuFocusout" data-wp-on--keydown="actions.handleMenuKeydown" data-wp-on-async--mouseenter="actions.openMenuOnHover" data-wp-on-async--mouseleave="actions.closeMenuOnHover" data-wp-watch="callbacks.initMenu" tabindex="-1" class="wp-block-navigation-item has-child open-on-hover-click  menu-item menu-item-type-custom menu-item-object-custom wp-block-navigation-submenu">
+<a class="wp-block-navigation-item__content" href="#" title=""><span class="wp-block-navigation-item__label">Categories</span></a><button data-wp-bind--aria-expanded="state.isMenuOpen" data-wp-on-async--click="actions.toggleMenuOnClick" aria-label="Categories submenu" class="wp-block-navigation__submenu-icon wp-block-navigation-submenu__toggle"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" fill="none" aria-hidden="true" focusable="false"><path d="M1.50002 4L6.00002 8L10.5 4" stroke-width="1.5"></path></svg></button><ul data-wp-on-async--focus="actions.openMenuOnFocus" class="wp-block-navigation__submenu-container has-text-color has-contrast-color has-background has-base-background-color  menu-item menu-item-type-custom menu-item-object-custom wp-block-navigation-submenu">
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/servers/" title=""><span class="wp-block-navigation-item__label">Servers &#8211; Win, *nix, ESXi</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/security/" title=""><span class="wp-block-navigation-item__label">Security</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/pen-testing/" title=""><span class="wp-block-navigation-item__label">Pen Testing</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/scripting/" title=""><span class="wp-block-navigation-item__label">PowerShell/Scripting</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/computers/" title=""><span class="wp-block-navigation-item__label">Computers</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/android-hacks/" title=""><span class="wp-block-navigation-item__label">Android Hacks</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/software/" title=""><span class="wp-block-navigation-item__label">Software</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/gaming/" title=""><span class="wp-block-navigation-item__label">Gaming &#8211; PC/PS3/Xbox 360</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/air-guns/" title=""><span class="wp-block-navigation-item__label">Air Guns</span></a></li>
+</ul>
+</li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/about/" title=""><span class="wp-block-navigation-item__label">About</span></a></li>
+</ul></nav></div>
+</div>
+</div>
+</header>
+
+
+<main class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="margin-top:var(--wp--preset--spacing--60)">
+<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+<h1 class="wp-block-post-title">Purple Teaming AD with BloodHound CE &#038; AD-Miner</h1>
+
+
+<div class="wp-block-group has-link-color has-accent-4-color has-text-color has-small-font-size is-layout-flex wp-container-core-group-is-layout-4efaea1e wp-block-group-is-layout-flex" style="margin-bottom:var(--wp--preset--spacing--60)">
+<p>Written by </p>
+
+
+<div class="wp-block-post-author-name"><a href="/author/bit_rot/" target="_self" class="wp-block-post-author-name__link">robwillisinfo</a></div>
+
+
+<p>in</p>
+
+
+<div style="font-weight:300" class="taxonomy-category wp-block-post-terms">
+<a href="/category/blog/" rel="tag">Blog</a><span class="wp-block-post-terms__separator">, </span><a href="/category/pen-testing/" rel="tag">Pen Testing</a><span class="wp-block-post-terms__separator">, </span><a href="/category/security/" rel="tag">Security</a><span class="wp-block-post-terms__separator">, </span><a href="/category/servers/" rel="tag">Servers</a><span class="wp-block-post-terms__separator">, </span><a href="/category/tools/" rel="tag">Tools</a>
+</div>
+</div>
+
+
+<div class="entry-content alignfull wp-block-post-content has-global-padding is-layout-constrained wp-container-core-post-content-is-layout-68124974 wp-block-post-content-is-layout-constrained">
+<p><a href="/wp-content/uploads/2025/03/AD-miner-evo-report-3.png" data-lbwps-width="1811" data-lbwps-height="977" data-lbwps-srcsmall="/wp-content/uploads/2025/03/AD-miner-evo-report-3-500x270.png"><img fetchpriority="high" decoding="async" src="/wp-content/uploads/2025/03/AD-miner-evo-report-3-500x270.png" alt="" width="500" height="270" class="aligncenter size-medium wp-image-6641" srcset="/wp-content/uploads/2025/03/AD-miner-evo-report-3-500x270.png 500w, /wp-content/uploads/2025/03/AD-miner-evo-report-3-1024x552.png 1024w, /wp-content/uploads/2025/03/AD-miner-evo-report-3-768x414.png 768w, /wp-content/uploads/2025/03/AD-miner-evo-report-3-1536x829.png 1536w, /wp-content/uploads/2025/03/AD-miner-evo-report-3.png 1811w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+<p>BloodHound is one of those tools that everyone in the industry seems to have heard of and it tends to generate a buzz amongst engineers anytime it&#8217;s brought up. This reputation is well-deserved with it being such a game changer when it comes to attacking and auditing Active Directory domains. Every organization running Active Directory should be running BloodHound on a regular basis, not just during penetration tests and red team engagements. However, there seems to be a limited pool of engineers with hands-on experience when it comes to deploying and <strong><em>operationalizing</em></strong> BloodHound, especially on the defensive/blue team side. </p>
+<p>Understandably, frustration/issues/bugs with the tools and technology stack (Neo4j, Docker) used by BloodHound causes many engineers to throw in the towel during the initial deployment or first data ingest phases. Even with everything up and working, there is still the final hurdle of figuring out a way to get the data out of the BloodHound UI and into a usable format that can be easily reviewed by the teams that can act on it. I know because I&#8217;ve personally experienced all of these pain points.</p>
+<p>This is exactly what I want to tackle with this post, everything from deploying and troubleshooting a local <a href="https://github.com/SpecterOps/BloodHound" target="_blank" rel="noopener">BloodHound Community Edition</a> instance capable of generating <a href="https://github.com/AD-Security/AD_Miner" target="_blank" rel="noopener">AD-Miner</a> reports with automated attack path analysis &#8211; all for free, well minus the cost of an engineer and the infrastructure to run it.</p>
+<h3>Post Outline &#038; Goals</h3>
+<p>To keep this post concise, I’ll assume a general familiarity with Active Directory and BloodHound. For example, I won’t cover setting up a domain controller or explain the history of BloodHound or its development team (<a href="https://specterops.io/" target="_blank" rel="noopener">SpecterOps</a>). However, I will do my best to include all relevant details and background information where necessary. </p>
+<p>Here is a brief outline of what will be covered:</p>
+<ul>
+<li>BloodHound Enterprise vs BloodHound Community Edition</li>
+<li>Retroactive vs Proactive Approach</li>
+<li>Purple Teaming Active Directory</li>
+<li>What Components Make Up BloodHound CE?</li>
+<li>Host &#038; System Requirements</li>
+<li>Lab Environment</li>
+<li>Building The BloodHound Server</li>
+<ul>
+<li>Installing Docker</li>
+<li>Installing BloodHound</li>
+<li>Running &#038; Managing The BloodHound Server</li>
+</ul>
+<li>Installing AD-Miner</li>
+<li>Domain Data Collection</li>
+<ul>
+<li>Domain-Joined System</li>
+<li>Non Domain-Joined System</li>
+</ul>
+<li>BloodHound File Ingest</li>
+<li>Generating Reports With AD-Miner</li>
+<li>Tracking Changes Over Time With AD-Miner</li>
+<li>Repeating The Process</li>
+<li>Downloads</li>
+<li>Cheat Sheets</li>
+</ul>
+<h3>BloodHound Enterprise vs BloodHound Community Edition</h3>
+<p>The team at SpecterOps recognized the challenges users were experiencing running BloodHound, and they now offer a much more streamlined cloud based version known as BloodHound Enterprise &#8211; for a price of course. At the same time, as this space continues to mature, additional vendors have popped up with their own offerings. Unfortunately, nearly all of these services charge based off of the scale of the environment, which can easily lead to tens if not hundreds of thousands of dollars when talking about 100k+ user domains. Don&#8217;t get me wrong, most of the offerings I&#8217;ve seen are actually solid solutions and the built in automation makes continuous operation a breeze, but it may still be difficult to get budget for something like this even with Active Directory being considered a &#8220;crown jewel&#8221;.</p>
+<p>Remaining true to their open source roots, SpecterOps still offers and maintains <a href="https://github.com/SpecterOps/BloodHound" target="_blank" rel="noopener">BloodHound Community Edition (aka BloodHound CE)</a>. The Community Edition offers all of the critical BloodHound features and when combined with another open source project like <a href="https://github.com/AD-Security/AD_Miner" target="_blank" rel="noopener">AD_Miner</a>, can really rival some of these pay-for offerings. This combo can also serve as a great proof-of-concept to help justify the cost of those enterprise versions.</p>
+<h3>Retroactive vs Proactive</h3>
+<p>When it comes to how BloodHound is leveraged in the industry, the most common trend seems to be offensive/red teams use BloodHound on an engagement, typically only focusing on attack paths targeted during the operation. This leads to limited/scoped information being provided to the defensive/blue teams in the form of the final post-operation report.</p>
+<p>By doing this, the blue teams are at an immediate disadvantage as they are forced to <em><strong>retroactively</strong></em> investigate and remediate, often without the necessary logs due to retention issues or limitations in telemetry. As a result, additional time and resources are required to recreate the original test, assess the available telemetry, and validate any developed content. </p>
+<p>Furthermore, the inability to analyze the original BloodHound data captured during the operation often means valuable insights are missed, insights that could help put the Active Directory and security teams in a position to <em><strong>proactively</strong></em> harden and monitor potential attack paths within the environment. Keep in mind though, the dump data by itself is not very useful without access to a functioning BloodHound instance and someone with the expertise to analyze the data. </p>
+<p>Moving beyond attack path analysis, it can also be tricky to detect the &#8220;collector&#8221; tooling used by BloodHound for enumeration, partly due to the challenges of separating out normal Active Directory traffic vs &#8220;malicious&#8221; on the domain controller side, and then there is everything that can go wrong at the end point &#8211; telemetry/visibility limitations, evasion techniques, etc. However, by using a proactive approach and actively auditing, monitoring and remediating any potential attack paths, the output from the collector tools is essentially rendered useless.</p>
+<h3>Purple Teaming Active Directory</h3>
+<p>This is an ideal scenario to leverage Purple Teaming, where offensive and defensive teams collaborate on an ongoing, long-term testing operation. There’s no need for evasion or secretive tactics, as these approaches often hinder progress rather than help.</p>
+<p>Think of it going something like this:</p>
+<ol>
+<li>Engineer captures domain information using dedicated internal host</li>
+<li>Engineer uploads capture to BloodHound server and generates AD_Miner Report</li>
+<li>Offensive Engineers optionally review and augment the data/report</li>
+<li>Defensive and Active Directory Engineers review and address all issues that can be resolved</li>
+<li>Defensive and Content Engineers review logs and develop content to monitor any critical non-resolvable issues</li>
+<li>Rinse and repeat &#8211; Monthly? Quarterly? Annually?</li>
+</ol>
+<p>Most of these steps can be accomplished with just a few commands, making it easy to create a streamlined/automated process.</p>
+<h3>What Components Make Up BloodHound CE?</h3>
+<p>In its most basic form, BloodHound CE is a web application deployed as a series of containers along with &#8220;collectors&#8221; that are to be executed on the client hosts used to gather domain information.</p>
+<ul>
+<li><a href="https://github.com/SpecterOps/BloodHound" target="_blank" rel="noopener">BloodHound CE Server</a></li>
+<ul>
+<li>BloodHound CE (Application)</li>
+<li>Neo4j (Graph DB)</li>
+<li>Postgresql (App DB)</li>
+</ul>
+<li>Collectors</li>
+<ul>
+<li><a href="https://github.com/SpecterOps/SharpHound" target="_blank" rel="noopener">SharpHound</a></li>
+<li><a href="https://github.com/SpecterOps/AzureHound" target="_blank" rel="noopener">AzureHound</a></li>
+<li><a href="https://github.com/FalconForceTeam/SOAPHound" target="_blank" rel="noopener">SOAPHound</a></li>
+<li><a href="https://github.com/dirkjanm/BloodHound.py" target="_blank" rel="noopener">BloodHound.py</a></li>
+</ul>
+</ul>
+<h3>Host &#038; System Requirements</h3>
+<h4>Hosts</h4>
+<p>BloodHound CE will require a server host to deploy the BloodHound related containers and a client host that will be used to execute the collector software. </p>
+<p><strong>Additional Requirements/Notes:</strong></p>
+<ul>
+<li>
+<strong>Whitelisting &#038; Exceptions</strong> &#8211; It is highly likely that security tooling will detect/block the operation of the BloodHound server and client side collector components. Do not fall into the trap of trying to flex and bypass or evade controls here, that is not the goal. Use the initial testing to validate any existing detections but ultimately expect and plan to make exceptions/whitelist as needed.
+</li>
+</ul>
+<h4>Server Host &#8211; System Requirements</h4>
+<p>Server OS &#8211; Windows, Linux, Mac with Docker Support</p>
+<p>Hardware recommendations from <a href="https://github.com/SpecterOps/BloodHound" target="_blank" rel="noopener">SpecterOps</a>:</p>
+<ul>
+<li>Minimum specifications:
+<ul>
+<li>4GB of RAM</li>
+<li>4 processor cores</li>
+<li>10GB hard disk space</li>
+</ul>
+</li>
+<li>For large environments (>50,000 users):
+<ul>
+<li>96GB of RAM</li>
+<li>12 processor cores</li>
+<li>50GB hard disk space</li>
+</ul>
+</li>
+</ul>
+<p>I&#8217;d recommend starting somewhere in the middle, especially with the additional load from AD_Miner:</p>
+<ul>
+<li>32GB of RAM</li>
+<li>8 processor cores</li>
+<li>120GB hard disk space</li>
+</ul>
+<p><strong>Additional Requirements/Notes:</strong></p>
+<ul>
+<li>
+<strong>Docker &#038; Nested Virtualization</strong> &#8211; Docker on Windows virtual machines will require hardware-assisted virtualization, but does not appear to have the same requirement on Linux. This is important as many production virtualization environments do not enable these features by default, and it will prevent the service from running.
+</li>
+<li>
+<strong>PodMan</strong> &#8211; Need to run BloodHound using PodMan? I highly suggest checking out the following project:<br>
+<a href="https://github.com/SySS-Research/Single-User-BloodHound" target="_blank" rel="noopener">https://github.com/SySS-Research/Single-User-BloodHound</a>
+</li>
+<li>
+<strong>AD_Miner Memory/CPU</strong> &#8211; AD_Miner is very resource intensive, the more you RAM/CPU you can throw at it the better.
+</li>
+<li>
+<strong>HDD Space</strong> &#8211; When analyzing larger environments, the collector dumps can really expand as they are processed. 150MB of zipped SharpHound output can easily expand to 4GB once uploaded to BloodHound and then expand another 20GB after AD_Miner.
+</li>
+<li>
+<strong>Crashing </strong>&#8211; BloodHound/Neo4j can be super sensitive, if you run out of system resources while uploading or processing collector dump data, Neo4j usually explodes and then takes everything else out, often requiring a complete reset of the containers.
+</li>
+</ul>
+<h4>Collector Host &#8211; System Requirements</h4>
+<p>The Collector host can be pretty low powered, the following requirements are a great place to start:</p>
+<ul>
+<li>Host OS &#8211; Windows, Linux, Mac</li>
+<li>4GB of RAM</li>
+<li>4 processor cores</li>
+<li>60GB hard disk space</li>
+</ul>
+<p>The main requirement here is that the host must be able to run one of the collectors mentioned earlier, which is generally going to be .Net or Python. The output from the collector will be stored as a series of json files that are then compressed into a zip, depending on the environment this can range from just a few megabytes up to a couple hundred megabytes.</p>
+<p><strong>Additional Requirements/Notes:</strong></p>
+<ul>
+<li>
+<strong>Domain Joined?</strong> &#8211; Host does not have to be domain joined, but must be able to resolve DNS to the AD Domain and requires valid credentials.</li>
+<li>
+<strong>Location, location, location</strong> &#8211; Be cognizant of the network location (LAN vs VPN) of this host and what data is being collected, for example local and session related collections can create a large amount of connections to many hosts.</li>
+</ul>
+<h3>Lab Environment</h3>
+<p>The lab environment I will be using for this post consists of 3 virtual machines that are all on the same local network:</p>
+<table>
+<tr>
+<td><strong>Hostname</strong></td>
+<td><strong>Address</strong></td>
+<td><strong>OS</strong></td>
+<td><strong>Notes</strong></td>
+</tr>
+<tr>
+<td>VMW-L-BHCE</td>
+<td>192.168.90.60</td>
+<td>Ubuntu 24.04.1</td>
+<td>BloodHound Server</td>
+</tr>
+<tr>
+<td>VMW-L-DC</td>
+<td>192.168.90.70</td>
+<td>Windows Server 2019</td>
+<td>Domain &#8211; adlab.robwillis.info<br>
+AD &#038; DNS Roles Installed<br>
+Domain Populated via <a href="https://github.com/davidprowe/BadBlood" target="_blank" rel="noopener">BadBlood</a> after initial collection</td>
+</tr>
+<tr>
+<td>VMW-L-W10</td>
+<td>192.168.90.71</td>
+<td>Windows 10</td>
+<td>Non domain-joined system</td>
+</tr>
+</table>
+<h3>Building The BloodHound Server</h3>
+<p>There are three main parts to building out the BloodHound server:</p>
+<ul>
+<li>Installing Docker</li>
+<li>Installing BloodHound CE</li>
+<ul>
+<li><a href="https://github.com/SpecterOps/BloodHound" target="_blank" rel="noopener">https://github.com/SpecterOps/BloodHound</a></li>
+</ul>
+<li>Installing AD_Miner</li>
+<ul>
+<li><a href="https://github.com/AD-Security/AD_Miner" target="_blank" rel="noopener">https://github.com/AD-Security/AD_Miner</a></li>
+</ul>
+</ul>
+<p>I will be installing AD_Miner on the same server as BloodHound, but it can also be hosted separately as long as it has network access to the Neo4j instance. To get the most out of AD_Miner, there are some changes that need to be made to the base BloodHound docker-compose.yml, but more on that later.</p>
+<p>I am only going to focus on installing BloodHound with Docker, but as previously mentioned if you prefer PodMan, check out the following project:<br>
+<a href="https://github.com/SySS-Research/Single-User-BloodHound" target="_blank" rel="noopener">https://github.com/SySS-Research/Single-User-BloodHound</a></p>
+<p>Ubuntu 24.04 is going to be the OS of choice for my server side, all commands referenced will reflect this.</p>
+<h4>Installing Docker</h4>
+<p>Before BloodHound can be deployed, we need to verify a working Docker environment. You can use the following commands to check the version and status:</p>
+<pre>
+root@vmw-l-bhce:/home/bit_rot# <strong>docker --version</strong>
+root@vmw-l-bhce:/home/bit_rot# <strong>docker info</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/03/docker-info-version.png" data-lbwps-width="693" data-lbwps-height="831" data-lbwps-srcsmall="/wp-content/uploads/2025/03/docker-info-version-438x525.png"><img decoding="async" src="/wp-content/uploads/2025/03/docker-info-version-438x525.png" alt="" width="438" height="525" class="aligncenter size-medium wp-image-6392" srcset="/wp-content/uploads/2025/03/docker-info-version-438x525.png 438w, /wp-content/uploads/2025/03/docker-info-version.png 693w" sizes="(max-width: 438px) 100vw, 438px"></a></p>
+<p>If Docker is not installed, you can locate the available packages using apt-cache:</p>
+<pre>
+root@vmw-l-bhce:/home/bit_rot# <strong>apt-cache search docker</strong>
+</pre>
+<p>We&#8217;re looking for the &#8220;docker.io&#8221; and &#8220;docker-compose&#8221; packages:</p>
+<p><a href="/wp-content/uploads/2025/03/apt-cache-edit.png" data-lbwps-width="779" data-lbwps-height="833" data-lbwps-srcsmall="/wp-content/uploads/2025/03/apt-cache-edit-491x525.png"><img decoding="async" src="/wp-content/uploads/2025/03/apt-cache-edit-491x525.png" alt="" width="491" height="525" class="aligncenter size-medium wp-image-6389" srcset="/wp-content/uploads/2025/03/apt-cache-edit-491x525.png 491w, /wp-content/uploads/2025/03/apt-cache-edit-768x821.png 768w, /wp-content/uploads/2025/03/apt-cache-edit.png 779w" sizes="(max-width: 491px) 100vw, 491px"></a></p>
+<p>To install the Docker and Docker-Compose packages:</p>
+<pre>
+root@vmw-l-bhce:/home/bit_rot# <strong>apt -y install docker.io docker-compose</strong>
+</pre>
+<h4>Installing BloodHound</h4>
+<p>Installing BloodHound is very straight forward when following the official documentation:<br>
+<a href="https://github.com/SpecterOps/BloodHound" target="_blank" rel="noopener">https://github.com/SpecterOps/BloodHound</a></p>
+<p>As mentioned earlier, I am going to deviate from the BloodHound documentation just a bit, adding in some changes to help optimize AD-miner.</p>
+<p>Let&#8217;s start by making a directory for BloodHound in /opt:</p>
+<pre>
+root@vmw-l-bhce:/home/bit_rot# <strong>mkdir /opt/BloodHoundCE</strong>
+root@vmw-l-bhce:/home/bit_rot# <strong>cd /opt/BloodHoundCE</strong>
+</pre>
+<p>Next, we want to download but not execute the docker-compose.yml file from the SpecterOps github:</p>
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>curl -L https://ghst.ly/getbhce -o docker-compose.yml</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/03/docker-compose-yaml-download.png" data-lbwps-width="754" data-lbwps-height="284" data-lbwps-srcsmall="/wp-content/uploads/2025/03/docker-compose-yaml-download-500x188.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/docker-compose-yaml-download-500x188.png" alt="" width="500" height="188" class="aligncenter size-medium wp-image-6399" srcset="/wp-content/uploads/2025/03/docker-compose-yaml-download-500x188.png 500w, /wp-content/uploads/2025/03/docker-compose-yaml-download.png 754w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>There&#8217;s a few changes and additions that need to be made to the docker-compose.yml before the containers are started, open it in your editor of choice:</p>
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>nano docker-compose.yml</strong>
+</pre>
+<p>Add the following line under the graph-db environment section to load the Graph Data Science Plugin for Neo4j/AD_Miner:</p>
+<pre>
+- NEO4J_PLUGINS=["graph-data-science"]
+</pre>
+<p>While this plugin is optional, AD_Miner will perform better if it is available and it enables use of Smartest Path vs the built-in shortestPath(), resulting in paths that are easier to exploit rather than the least amount of hops. AD_Miner will still function without this plugin.</p>
+<p>Another optional step, depending how you want to expose the BloodHound server instance, you change the following line to make the BloodHound instance accessible via IP:</p>
+<pre>
+# Original
+- ${BLOODHOUND_HOST:-127.0.0.1}:${BLOODHOUND_PORT:-8080}:8080
+# Updated
+- ${BLOODHOUND_HOST:-0.0.0.0}:${BLOODHOUND_PORT:-8080}:8080
+</pre>
+<p>If you would like the containers to restart with the host, add the &#8220;restart: always&#8221; line under each of the three services:</p>
+<pre>
+services:
+  &lt;Service-Name&gt;:
+    <strong>restart: always</strong>
+</pre>
+<p>The docker-compose.yml should look something like this when done:</p>
+<p><a href="/wp-content/uploads/2025/03/docker-compose-yaml-edit.png" data-lbwps-width="1693" data-lbwps-height="917" data-lbwps-srcsmall="/wp-content/uploads/2025/03/docker-compose-yaml-edit-500x271.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/docker-compose-yaml-edit-500x271.png" alt="" width="500" height="271" class="aligncenter size-medium wp-image-6407" srcset="/wp-content/uploads/2025/03/docker-compose-yaml-edit-500x271.png 500w, /wp-content/uploads/2025/03/docker-compose-yaml-edit-1024x555.png 1024w, /wp-content/uploads/2025/03/docker-compose-yaml-edit-768x416.png 768w, /wp-content/uploads/2025/03/docker-compose-yaml-edit-1536x832.png 1536w, /wp-content/uploads/2025/03/docker-compose-yaml-edit.png 1693w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>You can find an example copy of the modified docker-compose.yml in the Downloads section at the bottom of this post.</p>
+<p><strong>Additional Notes:</strong></p>
+<ul>
+<li>
+<strong>YAML/.yml Is Indentation Sensitive</strong> &#8211; Make sure to follow the structure!</li>
+<li>
+<strong>Docker-compose.yml &#8211; &#8220;restart: always&#8221;</strong> &#8211; The &#8220;restart: always&#8221; option requires that Docker also be enabled at system start:
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>systemctl is-enabled docker</strong>
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>systemctl enable docker</strong>
+</pre>
+</li>
+<li>
+<strong>Crashing After Changes?</strong> &#8211; If you recently made changes to the docker-compose.yml and the containers have been previously started and were in a working state but will not start now, try resetting the BloodHound containers back to their original state:
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>docker-compose down -v</strong>
+</pre>
+</li>
+<li>
+<strong>Bloodhound.config.json</strong> &#8211; You can also make some of these changes in the bloodhound.config.json file, like exposing the BloodHound service via IP. I like to keep things simple &#8211; #yolosec.
+</li>
+</ul>
+<h4>Running &#038; Managing The BloodHound Server</h4>
+<p>Now that the docker-compose.yml has been modified, it&#8217;s time to start the containers, making sure to be in the same path where the docker-compose.yml exists:</p>
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>docker-compose up</strong>
+</pre>
+<p>What you will see next is the main logging associated with the BloodHound containers, you will want to monitor this output for any critical errors as this will be the starting point for any troubleshooting. Hopefully the containers start successfully, and you see something like the following:</p>
+<p><a href="/wp-content/uploads/2025/03/docker-compose-up-first-run.png" data-lbwps-width="1692" data-lbwps-height="832" data-lbwps-srcsmall="/wp-content/uploads/2025/03/docker-compose-up-first-run-500x246.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/docker-compose-up-first-run-500x246.png" alt="" width="500" height="246" class="aligncenter size-medium wp-image-6422" srcset="/wp-content/uploads/2025/03/docker-compose-up-first-run-500x246.png 500w, /wp-content/uploads/2025/03/docker-compose-up-first-run-1024x504.png 1024w, /wp-content/uploads/2025/03/docker-compose-up-first-run-768x378.png 768w, /wp-content/uploads/2025/03/docker-compose-up-first-run-1536x755.png 1536w, /wp-content/uploads/2025/03/docker-compose-up-first-run.png 1692w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>And then to verify the instance is working via web browser by browsing to the server IP on port 8080 &#8211; which in this case is will be http://192.168.90.60:8080/:</p>
+<p><a href="/wp-content/uploads/2025/03/BloodHound-UI.png" data-lbwps-width="1295" data-lbwps-height="981" data-lbwps-srcsmall="/wp-content/uploads/2025/03/BloodHound-UI-500x379.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/BloodHound-UI-500x379.png" alt="" width="500" height="379" class="aligncenter size-medium wp-image-6448" srcset="/wp-content/uploads/2025/03/BloodHound-UI-500x379.png 500w, /wp-content/uploads/2025/03/BloodHound-UI-1024x776.png 1024w, /wp-content/uploads/2025/03/BloodHound-UI-768x582.png 768w, /wp-content/uploads/2025/03/BloodHound-UI.png 1295w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Scrolling back up through initial docker container logs seen within the SSH session, there are a few items that are important to review. First up is the status of the Neo4j Graph Data Science plugin and whether or not it loaded successfully. It is fairly common to have version mismatches between Neo4j and the plugin which will result in a failure but in this case it appears the plugin did register successfully:</p>
+<p><a href="/wp-content/uploads/2025/03/Graph-data-science.png" data-lbwps-width="1692" data-lbwps-height="833" data-lbwps-srcsmall="/wp-content/uploads/2025/03/Graph-data-science-500x246.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/Graph-data-science-500x246.png" alt="" width="500" height="246" class="aligncenter size-medium wp-image-6424" srcset="/wp-content/uploads/2025/03/Graph-data-science-500x246.png 500w, /wp-content/uploads/2025/03/Graph-data-science-1024x504.png 1024w, /wp-content/uploads/2025/03/Graph-data-science-768x378.png 768w, /wp-content/uploads/2025/03/Graph-data-science-1536x756.png 1536w, /wp-content/uploads/2025/03/Graph-data-science.png 1692w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>This is also where you will find the initial admin account password:</p>
+<p><a href="/wp-content/uploads/2025/03/BloodHoundCE-Password.png" data-lbwps-width="1691" data-lbwps-height="833" data-lbwps-srcsmall="/wp-content/uploads/2025/03/BloodHoundCE-Password-500x246.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/BloodHoundCE-Password-500x246.png" alt="" width="500" height="246" class="aligncenter size-medium wp-image-6426" srcset="/wp-content/uploads/2025/03/BloodHoundCE-Password-500x246.png 500w, /wp-content/uploads/2025/03/BloodHoundCE-Password-1024x504.png 1024w, /wp-content/uploads/2025/03/BloodHoundCE-Password-768x378.png 768w, /wp-content/uploads/2025/03/BloodHoundCE-Password-1536x757.png 1536w, /wp-content/uploads/2025/03/BloodHoundCE-Password.png 1691w" sizes="auto, (max-width: 500px) 100vw, 500px"></a> </p>
+<p>Exiting this session or hitting CTRL+C at this point, will result in the containers shutting down:</p>
+<p><a href="/wp-content/uploads/2025/03/Exit-BloodHound.png" data-lbwps-width="1692" data-lbwps-height="832" data-lbwps-srcsmall="/wp-content/uploads/2025/03/Exit-BloodHound-500x246.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/Exit-BloodHound-500x246.png" alt="" width="500" height="246" class="aligncenter size-medium wp-image-6428" srcset="/wp-content/uploads/2025/03/Exit-BloodHound-500x246.png 500w, /wp-content/uploads/2025/03/Exit-BloodHound-1024x504.png 1024w, /wp-content/uploads/2025/03/Exit-BloodHound-768x378.png 768w, /wp-content/uploads/2025/03/Exit-BloodHound-1536x755.png 1536w, /wp-content/uploads/2025/03/Exit-BloodHound.png 1692w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>To work around this behavior, you can start the Docker containers in detached mode with the -d flag:</p>
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>docker-compose up -d</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/03/docker-compose-d.png" data-lbwps-width="563" data-lbwps-height="144" data-lbwps-srcsmall="/wp-content/uploads/2025/03/docker-compose-d-500x128.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/docker-compose-d-500x128.png" alt="" width="500" height="128" class="aligncenter size-medium wp-image-6433" srcset="/wp-content/uploads/2025/03/docker-compose-d-500x128.png 500w, /wp-content/uploads/2025/03/docker-compose-d.png 563w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>The downside to doing this is that we no longer see the useful logging output from the containers, but this is easily resolved with the logs option:</p>
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>docker-compose logs</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/03/docker-compose-logs.png" data-lbwps-width="1685" data-lbwps-height="694" data-lbwps-srcsmall="/wp-content/uploads/2025/03/docker-compose-logs-500x206.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/docker-compose-logs-500x206.png" alt="" width="500" height="206" class="aligncenter size-medium wp-image-6504" srcset="/wp-content/uploads/2025/03/docker-compose-logs-500x206.png 500w, /wp-content/uploads/2025/03/docker-compose-logs-1024x422.png 1024w, /wp-content/uploads/2025/03/docker-compose-logs-768x316.png 768w, /wp-content/uploads/2025/03/docker-compose-logs-1536x633.png 1536w, /wp-content/uploads/2025/03/docker-compose-logs-300x125.png 300w, /wp-content/uploads/2025/03/docker-compose-logs.png 1685w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>To view the running containers:</p>
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>docker ps</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/03/docker-ps.png" data-lbwps-width="1690" data-lbwps-height="163" data-lbwps-srcsmall="/wp-content/uploads/2025/03/docker-ps-500x48.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/docker-ps-500x48.png" alt="" width="500" height="48" class="aligncenter size-medium wp-image-6435" srcset="/wp-content/uploads/2025/03/docker-ps-500x48.png 500w, /wp-content/uploads/2025/03/docker-ps-1024x99.png 1024w, /wp-content/uploads/2025/03/docker-ps-768x74.png 768w, /wp-content/uploads/2025/03/docker-ps-1536x148.png 1536w, /wp-content/uploads/2025/03/docker-ps.png 1690w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>To stop the running containers:</p>
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>docker-compose stop</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/03/docker-compose-stop.png" data-lbwps-width="459" data-lbwps-height="160" data-lbwps-srcsmall="/wp-content/uploads/2025/03/docker-compose-stop.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/docker-compose-stop.png" alt="" width="459" height="160" class="aligncenter size-full wp-image-6438"></a></p>
+<p>To view the available local docker images:</p>
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>docker images</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/03/docker-image.png" data-lbwps-width="591" data-lbwps-height="176" data-lbwps-srcsmall="/wp-content/uploads/2025/03/docker-image-500x149.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/docker-image-500x149.png" alt="" width="500" height="149" class="aligncenter size-medium wp-image-6442" srcset="/wp-content/uploads/2025/03/docker-image-500x149.png 500w, /wp-content/uploads/2025/03/docker-image.png 591w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>To update the BloodHound containers to the latest images:</p>
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>docker-compose pull</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/03/docker-compose-pull.png" data-lbwps-width="469" data-lbwps-height="163" data-lbwps-srcsmall="/wp-content/uploads/2025/03/docker-compose-pull.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/docker-compose-pull.png" alt="" width="469" height="163" class="aligncenter size-full wp-image-6445"></a></p>
+<p>And finally, when all else fails, to reset the BloodHound containers back to their original state:</p>
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>docker-compose down -v</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/03/docker-compose-down.png" data-lbwps-width="578" data-lbwps-height="193" data-lbwps-srcsmall="/wp-content/uploads/2025/03/docker-compose-down-500x167.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/docker-compose-down-500x167.png" alt="" width="500" height="167" class="aligncenter size-medium wp-image-6440" srcset="/wp-content/uploads/2025/03/docker-compose-down-500x167.png 500w, /wp-content/uploads/2025/03/docker-compose-down.png 578w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<h4>Installing AD-miner</h4>
+<p>The AD-miner install is super simple and just a few commands that are all found on the project page here:<br>
+<a href="https://github.com/AD-Security/AD_Miner" target="_blank" rel="noopener">https://github.com/AD-Security/AD_Miner</a></p>
+<p>Verify pipx is installed:</p>
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>apt install pipx</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/03/apt-install-pipx.png" data-lbwps-width="656" data-lbwps-height="290" data-lbwps-srcsmall="/wp-content/uploads/2025/03/apt-install-pipx-500x221.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/apt-install-pipx-500x221.png" alt="" width="500" height="221" class="aligncenter size-medium wp-image-6462" srcset="/wp-content/uploads/2025/03/apt-install-pipx-500x221.png 500w, /wp-content/uploads/2025/03/apt-install-pipx.png 656w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Installing AD-miner:</p>
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>pipx install 'git+https://github.com/Mazars-Tech/AD_Miner.git'</strong>
+</pre>
+<p>Ensure that AD-miner is accessible via system path (will require a restart of the terminal session):</p>
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>pipx ensurepath</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/03/AD-miner-install.png" data-lbwps-width="1573" data-lbwps-height="317" data-lbwps-srcsmall="/wp-content/uploads/2025/03/AD-miner-install-500x101.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/AD-miner-install-500x101.png" alt="" width="500" height="101" class="aligncenter size-medium wp-image-6464" srcset="/wp-content/uploads/2025/03/AD-miner-install-500x101.png 500w, /wp-content/uploads/2025/03/AD-miner-install-1024x206.png 1024w, /wp-content/uploads/2025/03/AD-miner-install-768x155.png 768w, /wp-content/uploads/2025/03/AD-miner-install-1536x310.png 1536w, /wp-content/uploads/2025/03/AD-miner-install.png 1573w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Verify AD-miner is installed:</p>
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>AD-miner --help</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/03/AD-miner.png" data-lbwps-width="1571" data-lbwps-height="697" data-lbwps-srcsmall="/wp-content/uploads/2025/03/AD-miner-500x222.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/AD-miner-500x222.png" alt="" width="500" height="222" class="aligncenter size-medium wp-image-6466" srcset="/wp-content/uploads/2025/03/AD-miner-500x222.png 500w, /wp-content/uploads/2025/03/AD-miner-1024x454.png 1024w, /wp-content/uploads/2025/03/AD-miner-768x341.png 768w, /wp-content/uploads/2025/03/AD-miner-1536x681.png 1536w, /wp-content/uploads/2025/03/AD-miner.png 1571w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<h3>Domain Data Collection</h3>
+<p>Now that the BloodHound server is up and running with AD-miner installed, it&#8217;s time to collect some information from the domain and validate everything is working.</p>
+<p>To keep things as simple and reliable as possible I am going to stick with using SharpHound as my collector of choice. There is nothing wrong with using the other collector options, but you have to be careful matching up the collector versions to the BloodHound version. I generally recommend to test and verify the BloodHound instance using the SharpHound version provided via the BloodHound server and then move on to the other ones if interested. Again, the focus here is not on evasion or bypassing controls, it&#8217;s about ensuring reliability for continuous retesting.</p>
+<p>You can find a copy of SharpHound on the BloodHound server by going to &#8220;Download Collectors&#8221; on the left-hand menu:</p>
+<p><a href="/wp-content/uploads/2025/03/BloodHound-Collector.png" data-lbwps-width="1920" data-lbwps-height="1040" data-lbwps-srcsmall="/wp-content/uploads/2025/03/BloodHound-Collector-500x271.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/BloodHound-Collector-500x271.png" alt="" width="500" height="271" class="aligncenter size-medium wp-image-6471" srcset="/wp-content/uploads/2025/03/BloodHound-Collector-500x271.png 500w, /wp-content/uploads/2025/03/BloodHound-Collector-1024x555.png 1024w, /wp-content/uploads/2025/03/BloodHound-Collector-768x416.png 768w, /wp-content/uploads/2025/03/BloodHound-Collector-1536x832.png 1536w, /wp-content/uploads/2025/03/BloodHound-Collector.png 1920w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p><strong>Additional Notes:</strong></p>
+<ul>
+<li>
+<strong>SharpHound Errors</strong> &#8211; While SharpHound is running, it&#8217;s super common to see errors related to additional domains, don&#8217;t sweat it as long as it runs to completion.</li>
+<li>
+<strong>Run Time</strong> &#8211; Depending on the size of the domain and network conditions, I usually expect SharpHound to take anywhere from a few minutes to an hour to run.</li>
+<li>
+<strong>Network Location</strong> &#8211; As mentioned previously, pay close attention to the network location (LAN vs VPN) of this host and what data is being collected, SharpHound can create many connections depending on the level of collection.</li>
+</ul>
+<h4>Domain-Joined System</h4>
+<p>To view all of the SharpHound options are available, use &#8211;help:</p>
+<pre>
+PS C:\Users\Administrator\Downloads\sharphound-v2.5.13> <strong>.\Sharphound.exe --help</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/03/SharpHound-Help.png" data-lbwps-width="1526" data-lbwps-height="800" data-lbwps-srcsmall="/wp-content/uploads/2025/03/SharpHound-Help-500x262.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/SharpHound-Help-500x262.png" alt="" width="500" height="262" class="aligncenter size-medium wp-image-6474" srcset="/wp-content/uploads/2025/03/SharpHound-Help-500x262.png 500w, /wp-content/uploads/2025/03/SharpHound-Help-1024x537.png 1024w, /wp-content/uploads/2025/03/SharpHound-Help-768x403.png 768w, /wp-content/uploads/2025/03/SharpHound-Help.png 1526w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>I usually start out with a simple but fairly limited collection just to keep the run time down, verify everything is working and of course make sure there is no impact to production.</p>
+<p>For a first run, I try to avoid using caches by leveraging the &#8220;&#8211;memcache&#8221; option to keep everything in memory, collect only from the domain controllers using the dconly collection method and finally limit the scope to the targeted domain:</p>
+<pre>
+PS C:\Users\Administrator\Downloads\sharphound-v2.5.13> <strong>.\SharpHound.exe --memcache --collectionmethods dconly --domain adlab.robwillis.info</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/03/SharpHound-Run.png" data-lbwps-width="1527" data-lbwps-height="392" data-lbwps-srcsmall="/wp-content/uploads/2025/03/SharpHound-Run-500x128.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/SharpHound-Run-500x128.png" alt="" width="500" height="128" class="aligncenter size-medium wp-image-6475" srcset="/wp-content/uploads/2025/03/SharpHound-Run-500x128.png 500w, /wp-content/uploads/2025/03/SharpHound-Run-1024x263.png 1024w, /wp-content/uploads/2025/03/SharpHound-Run-768x197.png 768w, /wp-content/uploads/2025/03/SharpHound-Run.png 1527w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Once everything is verified working, I&#8217;ll follow up with the &#8220;&#8211;collectionmethods all&#8221; to grab everything else including the session information:</p>
+<pre>
+PS C:\Users\Administrator\Downloads\sharphound-v2.5.13> <strong>.\SharpHound.exe --collectionmethods all --domain adlab.robwillis.info</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/03/SharpHound-All.png" data-lbwps-width="1528" data-lbwps-height="492" data-lbwps-srcsmall="/wp-content/uploads/2025/03/SharpHound-All-500x161.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/SharpHound-All-500x161.png" alt="" width="500" height="161" class="aligncenter size-medium wp-image-6476" srcset="/wp-content/uploads/2025/03/SharpHound-All-500x161.png 500w, /wp-content/uploads/2025/03/SharpHound-All-1024x330.png 1024w, /wp-content/uploads/2025/03/SharpHound-All-768x247.png 768w, /wp-content/uploads/2025/03/SharpHound-All.png 1528w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>The output will be a series of json files compressed as zip:</p>
+<p><a href="/wp-content/uploads/2025/03/SharpHound-Zip.png" data-lbwps-width="1178" data-lbwps-height="740" data-lbwps-srcsmall="/wp-content/uploads/2025/03/SharpHound-Zip-500x314.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/SharpHound-Zip-500x314.png" alt="" width="500" height="314" class="aligncenter size-medium wp-image-6481" srcset="/wp-content/uploads/2025/03/SharpHound-Zip-500x314.png 500w, /wp-content/uploads/2025/03/SharpHound-Zip-1024x643.png 1024w, /wp-content/uploads/2025/03/SharpHound-Zip-768x482.png 768w, /wp-content/uploads/2025/03/SharpHound-Zip.png 1178w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<h4>Non Domain-Joined System</h4>
+<p>Collecting from a non domain-joined system is very similar to a domain-joined system with the addition of the RunAs command, but the host must be able to resolve DNS to the domain:</p>
+<p><a href="/wp-content/uploads/2025/03/Ping-domain-failed.png" data-lbwps-width="1372" data-lbwps-height="522" data-lbwps-srcsmall="/wp-content/uploads/2025/03/Ping-domain-failed-500x190.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/Ping-domain-failed-500x190.png" alt="" width="500" height="190" class="aligncenter size-medium wp-image-6484" srcset="/wp-content/uploads/2025/03/Ping-domain-failed-500x190.png 500w, /wp-content/uploads/2025/03/Ping-domain-failed-1024x390.png 1024w, /wp-content/uploads/2025/03/Ping-domain-failed-768x292.png 768w, /wp-content/uploads/2025/03/Ping-domain-failed.png 1372w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>The easiest way to accomplish this by pointing the DNS entry on the network adapter to the IP of an AD DNS server:</p>
+<p><a href="/wp-content/uploads/2025/03/Ping-Success.png" data-lbwps-width="1233" data-lbwps-height="717" data-lbwps-srcsmall="/wp-content/uploads/2025/03/Ping-Success-500x291.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/Ping-Success-500x291.png" alt="" width="500" height="291" class="aligncenter size-medium wp-image-6485" srcset="/wp-content/uploads/2025/03/Ping-Success-500x291.png 500w, /wp-content/uploads/2025/03/Ping-Success-1024x595.png 1024w, /wp-content/uploads/2025/03/Ping-Success-768x447.png 768w, /wp-content/uploads/2025/03/Ping-Success.png 1233w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>A local host file entry will also usually do the trick.</p>
+<p>Now to launch a cmd.exe prompt using the domain user credentials (it will interactively ask for the password):</p>
+<pre>
+C:\> <strong>runas /netonly /user:adlab.robwillis.info\administrator cmd.exe</strong>
+</pre>
+<p><strong>Note:</strong> I am using the domain administrator account here to keep things simple, but this user only needs to be a normal domain user account.</p>
+<p>And then to verify the access is working by attempting to view the domain shares, you should see the SYSVOL and NETLOGON:</p>
+<pre>
+C:\> <strong>net view \\adlab.robwillis.info\</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/03/Runas-Granted.png" data-lbwps-width="1168" data-lbwps-height="610" data-lbwps-srcsmall="/wp-content/uploads/2025/03/Runas-Granted-500x261.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/Runas-Granted-500x261.png" alt="" width="500" height="261" class="aligncenter size-medium wp-image-6487" srcset="/wp-content/uploads/2025/03/Runas-Granted-500x261.png 500w, /wp-content/uploads/2025/03/Runas-Granted-1024x535.png 1024w, /wp-content/uploads/2025/03/Runas-Granted-768x401.png 768w, /wp-content/uploads/2025/03/Runas-Granted.png 1168w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>If it didn&#8217;t work you&#8217;d see something like this:</p>
+<p><a href="/wp-content/uploads/2025/03/Runas-Access-Denied.png" data-lbwps-width="1168" data-lbwps-height="617" data-lbwps-srcsmall="/wp-content/uploads/2025/03/Runas-Access-Denied-500x264.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/Runas-Access-Denied-500x264.png" alt="" width="500" height="264" class="aligncenter size-medium wp-image-6488" srcset="/wp-content/uploads/2025/03/Runas-Access-Denied-500x264.png 500w, /wp-content/uploads/2025/03/Runas-Access-Denied-1024x541.png 1024w, /wp-content/uploads/2025/03/Runas-Access-Denied-768x406.png 768w, /wp-content/uploads/2025/03/Runas-Access-Denied.png 1168w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Running SharpHound via the RunAs cmd prompt works the same as the domain-joined system:</p>
+<pre>
+C:\> <strong>.\SharpHound.exe --memcache --collectionmethods dconly --domain adlab.robwillis.info</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/03/Runas-SharpHound.png" data-lbwps-width="1400" data-lbwps-height="631" data-lbwps-srcsmall="/wp-content/uploads/2025/03/Runas-SharpHound-500x225.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/Runas-SharpHound-500x225.png" alt="" width="500" height="225" class="aligncenter size-medium wp-image-6491" srcset="/wp-content/uploads/2025/03/Runas-SharpHound-500x225.png 500w, /wp-content/uploads/2025/03/Runas-SharpHound-1024x462.png 1024w, /wp-content/uploads/2025/03/Runas-SharpHound-768x346.png 768w, /wp-content/uploads/2025/03/Runas-SharpHound.png 1400w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<h3>BloodHound File Ingest</h3>
+<p>Now that we have successfully acquired some information about the domain, it is finally time to start uploading and analyzing data in the BloodHound UI. </p>
+<p>Start by browsing to the BloodHound instance and going to Administration > Data Collection > File Ingest:</p>
+<p><a href="/wp-content/uploads/2025/03/BloodHound-Upload-1.png" data-lbwps-width="1733" data-lbwps-height="947" data-lbwps-srcsmall="/wp-content/uploads/2025/03/BloodHound-Upload-1-500x273.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/BloodHound-Upload-1-500x273.png" alt="" width="500" height="273" class="aligncenter size-medium wp-image-6524" srcset="/wp-content/uploads/2025/03/BloodHound-Upload-1-500x273.png 500w, /wp-content/uploads/2025/03/BloodHound-Upload-1-1024x560.png 1024w, /wp-content/uploads/2025/03/BloodHound-Upload-1-768x420.png 768w, /wp-content/uploads/2025/03/BloodHound-Upload-1-1536x839.png 1536w, /wp-content/uploads/2025/03/BloodHound-Upload-1.png 1733w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Click &#8220;Upload File(s)&#8221; and then select the zipped file generated by SharpHound:</p>
+<p><a href="/wp-content/uploads/2025/03/BloodHound-Upload-2.png" data-lbwps-width="1736" data-lbwps-height="951" data-lbwps-srcsmall="/wp-content/uploads/2025/03/BloodHound-Upload-2-500x274.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/BloodHound-Upload-2-500x274.png" alt="" width="500" height="274" class="aligncenter size-medium wp-image-6525" srcset="/wp-content/uploads/2025/03/BloodHound-Upload-2-500x274.png 500w, /wp-content/uploads/2025/03/BloodHound-Upload-2-1024x561.png 1024w, /wp-content/uploads/2025/03/BloodHound-Upload-2-768x421.png 768w, /wp-content/uploads/2025/03/BloodHound-Upload-2-1536x841.png 1536w, /wp-content/uploads/2025/03/BloodHound-Upload-2.png 1736w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Give it a few minutes to ingest the files:</p>
+<p><a href="/wp-content/uploads/2025/03/BloodHound-Upload-3.png" data-lbwps-width="1730" data-lbwps-height="946" data-lbwps-srcsmall="/wp-content/uploads/2025/03/BloodHound-Upload-3-500x273.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/BloodHound-Upload-3-500x273.png" alt="" width="500" height="273" class="aligncenter size-medium wp-image-6526" srcset="/wp-content/uploads/2025/03/BloodHound-Upload-3-500x273.png 500w, /wp-content/uploads/2025/03/BloodHound-Upload-3-1024x560.png 1024w, /wp-content/uploads/2025/03/BloodHound-Upload-3-768x420.png 768w, /wp-content/uploads/2025/03/BloodHound-Upload-3-1536x840.png 1536w, /wp-content/uploads/2025/03/BloodHound-Upload-3.png 1730w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Assuming the versions of everything match, during the &#8220;ingesting&#8221; phase is where I&#8217;ve experienced the most failures, see the notes section below for more tips if you are experiencing issues. </p>
+<p>Once it has completed it should look like this:</p>
+<p><a href="/wp-content/uploads/2025/03/BloodHound-Upload-4.png" data-lbwps-width="1734" data-lbwps-height="949" data-lbwps-srcsmall="/wp-content/uploads/2025/03/BloodHound-Upload-4-500x274.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/BloodHound-Upload-4-500x274.png" alt="" width="500" height="274" class="aligncenter size-medium wp-image-6527" srcset="/wp-content/uploads/2025/03/BloodHound-Upload-4-500x274.png 500w, /wp-content/uploads/2025/03/BloodHound-Upload-4-1024x560.png 1024w, /wp-content/uploads/2025/03/BloodHound-Upload-4-768x420.png 768w, /wp-content/uploads/2025/03/BloodHound-Upload-4-1536x841.png 1536w, /wp-content/uploads/2025/03/BloodHound-Upload-4.png 1734w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Verify everything is working by running some basic built-in cypher queries:</p>
+<p><a href="/wp-content/uploads/2025/03/BH-UI.png" data-lbwps-width="1914" data-lbwps-height="915" data-lbwps-srcsmall="/wp-content/uploads/2025/03/BH-UI-500x239.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/BH-UI-500x239.png" alt="" width="500" height="239" class="aligncenter size-medium wp-image-6536" srcset="/wp-content/uploads/2025/03/BH-UI-500x239.png 500w, /wp-content/uploads/2025/03/BH-UI-1024x490.png 1024w, /wp-content/uploads/2025/03/BH-UI-768x367.png 768w, /wp-content/uploads/2025/03/BH-UI-1536x734.png 1536w, /wp-content/uploads/2025/03/BH-UI.png 1914w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p><strong>Additional Notes:</strong></p>
+<ul>
+<li>
+<strong>Upload &#038; Analysis Time</strong> &#8211; Depending on the size of the domain, it usually takes anywhere from a few minutes up to an hour to upload and analyze a collection.</li>
+<li>
+<strong>Docker-Compose Container Output/Logging</strong> &#8211; While uploading/ingesting the collector data, make sure to monitor the container output for any errors:
+<pre>root@vmw-l-bhce:/opt/BloodHoundCE# <strong>docker-compose logs</strong></pre>
+<p><a href="/wp-content/uploads/2025/03/docker-compose-logs.png" data-lbwps-width="1685" data-lbwps-height="694" data-lbwps-srcsmall="/wp-content/uploads/2025/03/docker-compose-logs-500x206.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/docker-compose-logs-500x206.png" alt="" width="500" height="206" class="aligncenter size-medium wp-image-6504" srcset="/wp-content/uploads/2025/03/docker-compose-logs-500x206.png 500w, /wp-content/uploads/2025/03/docker-compose-logs-1024x422.png 1024w, /wp-content/uploads/2025/03/docker-compose-logs-768x316.png 768w, /wp-content/uploads/2025/03/docker-compose-logs-1536x633.png 1536w, /wp-content/uploads/2025/03/docker-compose-logs-300x125.png 300w, /wp-content/uploads/2025/03/docker-compose-logs.png 1685w" sizes="auto, (max-width: 500px) 100vw, 500px"></a>
+</p>
+</li>
+<li>
+<strong>Upload Failures</strong> &#8211; This is one of the most frustrating parts of BloodHound, you made it all this way and then run into issues getting the collection analyzed. Luckily this usually boils down to one of the following issues:
+<ul>
+<li>
+<strong>BloodHound &#038; Collector Version Mismatch</strong> &#8211; Make sure the collector version is supported by the version of BloodHound being used.</li>
+<li>
+<strong>Split Large Collector Output</strong> &#8211; If experiencing upload failures while trying to analyze a very large domain, sometimes it can be beneficial to split up the collector json output using something like the following:<br>
+<a href="https://github.com/ustayready/ShredHound" target="_blank" rel="noopener">ShredHound</a>
+</li>
+<li>
+<strong>System Resources</strong> &#8211; If you run out of system resources (disk or memory) while uploading, Neo4j is usually the first to crash, often with cryptic messages in the container output (Failed to unwind $p into $p). It is critical to monitor and ensure enough system resources are available while processing uploads. As mentioned previously a 150MB SharpHound dump can easily expand into a few GB while uploading, and then even more when running AD-miner. Make sure you have the disk space.
+</li>
+<li>
+<strong>BloodHound Crashing &#8220;Unexpected Error&#8221; After A Failed Upload</strong> &#8211; If Neo4j crashes while uploading, the BloodHound UI will often display a blue banner that says &#8220;Unexpected Error&#8221;, this often requires a complete reset of the containers:
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>docker-compose down -v</strong>
+</pre>
+</li>
+</ul>
+</li>
+</ul>
+<h3>Generating Reports With AD_Miner</h3>
+<p>This is usually the part where we would be excited to finally dig into the collector data and start exploring attack paths, instead AD-miner is going to do the majority of the heavy lifting for us. Plus just being honest here, the Active Directory team was probably not going to want to be logging into BloodHound to run stuff&#8230;</p>
+<p>The reports will be generated under the path where the AD-miner command is initially executed from, so the first thing I usually do is create a reports directory under the BloodHoundCE directory and move into it:</p>
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>mkdir Reports</strong>
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>cd Reports</strong>
+</pre>
+<p>Using the &#8211;help option provides all of the useful options available:</p>
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE/Reports# <strong>AD-miner --help</strong>
+</pre>
+<p>A basic run, leveraging the caching options and default neo4j credentials should look something like this: </p>
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE/Reports# <strong>AD-miner -c -cf adlab_Report_baseline_3_8_25 -u neo4j -p bloodhoundcommunityedition</strong>
+</pre>
+<p>AD-miner generates a considerable amount of console output, but you can see that there&#8217;s over a 100+ modules and that the graph data science plugin appears to be working:</p>
+<p><a href="/wp-content/uploads/2025/03/AD-miner-output-1-1.png" data-lbwps-width="1643" data-lbwps-height="848" data-lbwps-srcsmall="/wp-content/uploads/2025/03/AD-miner-output-1-1-500x258.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/AD-miner-output-1-1-500x258.png" alt="" width="500" height="258" class="aligncenter size-medium wp-image-6586" srcset="/wp-content/uploads/2025/03/AD-miner-output-1-1-500x258.png 500w, /wp-content/uploads/2025/03/AD-miner-output-1-1-1024x529.png 1024w, /wp-content/uploads/2025/03/AD-miner-output-1-1-768x396.png 768w, /wp-content/uploads/2025/03/AD-miner-output-1-1-1536x793.png 1536w, /wp-content/uploads/2025/03/AD-miner-output-1-1.png 1643w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>And this is what it looks like once the report has completed:</p>
+<p><a href="/wp-content/uploads/2025/03/AD-miner-output.png" data-lbwps-width="1555" data-lbwps-height="832" data-lbwps-srcsmall="/wp-content/uploads/2025/03/AD-miner-output-500x268.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/AD-miner-output-500x268.png" alt="" width="500" height="268" class="aligncenter size-medium wp-image-6549" srcset="/wp-content/uploads/2025/03/AD-miner-output-500x268.png 500w, /wp-content/uploads/2025/03/AD-miner-output-1024x548.png 1024w, /wp-content/uploads/2025/03/AD-miner-output-768x411.png 768w, /wp-content/uploads/2025/03/AD-miner-output-1536x822.png 1536w, /wp-content/uploads/2025/03/AD-miner-output.png 1555w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>The output is a static HTML style report:</p>
+<p><a href="/wp-content/uploads/2025/03/AD-miner-output-2.png" data-lbwps-width="1643" data-lbwps-height="850" data-lbwps-srcsmall="/wp-content/uploads/2025/03/AD-miner-output-2-500x259.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/AD-miner-output-2-500x259.png" alt="" width="500" height="259" class="aligncenter size-medium wp-image-6588" srcset="/wp-content/uploads/2025/03/AD-miner-output-2-500x259.png 500w, /wp-content/uploads/2025/03/AD-miner-output-2-1024x530.png 1024w, /wp-content/uploads/2025/03/AD-miner-output-2-768x397.png 768w, /wp-content/uploads/2025/03/AD-miner-output-2-1536x795.png 1536w, /wp-content/uploads/2025/03/AD-miner-output-2.png 1643w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>The reports can be fairly large, so I usually compress it down into a tar.gz:</p>
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE/Reports# <strong>tar -zcvf adlab_Report_baseline_3_8_25.tar.gz render_adlab_Report_baseline_3_8_25/</strong>
+</pre>
+<p>Viewing the final report in a browser:</p>
+<p><a href="/wp-content/uploads/2025/03/AD-miner-report-1.png" data-lbwps-width="1585" data-lbwps-height="980" data-lbwps-srcsmall="/wp-content/uploads/2025/03/AD-miner-report-1-500x309.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/AD-miner-report-1-500x309.png" alt="" width="500" height="309" class="aligncenter size-medium wp-image-6589" srcset="/wp-content/uploads/2025/03/AD-miner-report-1-500x309.png 500w, /wp-content/uploads/2025/03/AD-miner-report-1-1024x633.png 1024w, /wp-content/uploads/2025/03/AD-miner-report-1-768x475.png 768w, /wp-content/uploads/2025/03/AD-miner-report-1-1536x950.png 1536w, /wp-content/uploads/2025/03/AD-miner-report-1.png 1585w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>You may notice from the report, that this domain is looking a little&#8230;empty. This is intentional since the next section will be focusing on tracking changes over time. After this report was executed, the test domain was populated out with 5k+ users, 7.5k+ computers, and 500+ groups using <a href="https://github.com/davidprowe/BadBlood" target="_blank" rel="noopener">BadBlood</a>.</p>
+<p><strong>Additional Notes:</strong></p>
+<ul>
+<li>
+<strong>Credentials</strong> &#8211; The credentials referenced in the AD-miner command are just the default BloodHound container credentials.</li>
+<li>
+<strong>Long Run Times</strong> &#8211; AD-miner can be a very long running process, depending on the size of the environment and local system resources, I&#8217;ve seen it take anywhere from a few minutes to days to reach completion. This is part of the reason for making sure the Neo4j Graph Data Science plugin is present and working, it can help cut down on runtime.</li>
+<li>
+<strong>Resource Usage</strong> &#8211; As mentioned AD-miner runs long but it also runs hard on resources, CPU usage will typically spike to and stay at 90+%, monitor accordingly. Make sure to leverage the caching options to enable resuming.</li>
+<li>
+<strong>Disable Problematic Modules</strong> &#8211; Depending on the environment, some modules may never complete, you can try disabling these modules in the config.json:
+<ol>
+<li>Find the AD-Miner modules directory:
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE/Reports# <strong>sudo find / -type d -name modules</strong>
+<em><strong>/root/.local/share/pipx/venvs/ad-miner/lib/python3.12/site-packages/ad_miner/sources/modules</strong></em>
+</pre>
+</li>
+<li>Edit the configuration file:
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE/Reports# <strong>nano /root/.local/share/pipx/venvs/ad-miner/lib/python3.12/site-packages/ad_miner/sources/modules/config.json</strong>
+</pre>
+</li>
+<li>Set the problematic module to &#8220;false&#8221;:<br>
+<a href="/wp-content/uploads/2025/03/AD-Miner-jsonconfig.png" data-lbwps-width="1692" data-lbwps-height="833" data-lbwps-srcsmall="/wp-content/uploads/2025/03/AD-Miner-jsonconfig-500x246.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/AD-Miner-jsonconfig-500x246.png" alt="" width="500" height="246" class="aligncenter size-medium wp-image-6539" srcset="/wp-content/uploads/2025/03/AD-Miner-jsonconfig-500x246.png 500w, /wp-content/uploads/2025/03/AD-Miner-jsonconfig-1024x504.png 1024w, /wp-content/uploads/2025/03/AD-Miner-jsonconfig-768x378.png 768w, /wp-content/uploads/2025/03/AD-Miner-jsonconfig-1536x756.png 1536w, /wp-content/uploads/2025/03/AD-Miner-jsonconfig.png 1692w" sizes="auto, (max-width: 500px) 100vw, 500px"></a>
+</li>
+</ol>
+</li>
+<li>
+<strong>Compressed Report Extraction Issues</strong> &#8211; Running into issues extracting a report compressed into .zip format on Windows? Try using tar.gz and then extracting it using 7-zip.</li>
+<li>
+<strong>Clustering</strong> &#8211; AD-Miner supports an interesting &#8220;&#8211;cluster&#8221; argument that can be used to spread the workload across multiple hosts/threads, definitely something worth looking into if you are running into issues or have a very large data set.</li>
+</ul>
+<h3>Tracking Changes Over Time With AD_Miner</h3>
+<p>All of this work would be for nothing is there wasn&#8217;t a way to show and sell the value observed over time, and that&#8217;s where AD-Miner&#8217;s Evolution feature comes in.</p>
+<p>With each AD-Miner report, a data_(reportname)_(timestamp).json file is generated in the root directory with various information and statistics about the domains current state:</p>
+<p><a href="/wp-content/uploads/2025/03/ad-miner-evo-1.png" data-lbwps-width="763" data-lbwps-height="402" data-lbwps-srcsmall="/wp-content/uploads/2025/03/ad-miner-evo-1-500x263.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/ad-miner-evo-1-500x263.png" alt="" width="500" height="263" class="aligncenter size-medium wp-image-6596" srcset="/wp-content/uploads/2025/03/ad-miner-evo-1-500x263.png 500w, /wp-content/uploads/2025/03/ad-miner-evo-1.png 763w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p><a href="/wp-content/uploads/2025/03/ad-miner-evo-json.png" data-lbwps-width="1646" data-lbwps-height="852" data-lbwps-srcsmall="/wp-content/uploads/2025/03/ad-miner-evo-json-500x259.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/ad-miner-evo-json-500x259.png" alt="" width="500" height="259" class="aligncenter size-medium wp-image-6600" srcset="/wp-content/uploads/2025/03/ad-miner-evo-json-500x259.png 500w, /wp-content/uploads/2025/03/ad-miner-evo-json-1024x530.png 1024w, /wp-content/uploads/2025/03/ad-miner-evo-json-768x398.png 768w, /wp-content/uploads/2025/03/ad-miner-evo-json-1536x795.png 1536w, /wp-content/uploads/2025/03/ad-miner-evo-json.png 1646w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>By gathering these files into a single folder and using the &#8220;&#8211;evolution&#8221; argument at the next report run, AD-Miner will add-in a &#8220;Evolution over time&#8221; tab on the report.</p>
+<p>I&#8217;ll start by creating an &#8220;Evolution&#8221; directory under /opt/BloodHound/Reporting:</p>
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE/Reports# <strong>mkdir Evolution</strong>
+root@vmw-l-bhce:/opt/BloodHoundCE/Reports# <strong>cd Evolution/</strong>
+</pre>
+<p>Then to copy over the json file from the previous report:</p>
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE/Reports/Evolution# <strong>cp ../render_adlab_Report_baseline_3_8_25/data_adlab_Report_baseline_3_8_25_20250308.json .</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/03/ad-miner-evo-2.png" data-lbwps-width="1184" data-lbwps-height="212" data-lbwps-srcsmall="/wp-content/uploads/2025/03/ad-miner-evo-2-500x90.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/ad-miner-evo-2-500x90.png" alt="" width="500" height="90" class="aligncenter size-medium wp-image-6597" srcset="/wp-content/uploads/2025/03/ad-miner-evo-2-500x90.png 500w, /wp-content/uploads/2025/03/ad-miner-evo-2-1024x183.png 1024w, /wp-content/uploads/2025/03/ad-miner-evo-2-768x138.png 768w, /wp-content/uploads/2025/03/ad-miner-evo-2.png 1184w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Everything should be good to go at this point, we just need a new domain collection dump and to generate another report.</p>
+<p>I&#8217;ve gone ahead populated out the domain with <a href="https://github.com/davidprowe/BadBlood" target="_blank" rel="noopener">BadBlood</a>, captured a new collection following the same SharpHound commands used previously and the collection has been uploaded to BloodHound.</p>
+<p>Now to generate a new AD-Miner report making sure to use the &#8220;&#8211;evolution&#8221; feature:</p>
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE/Reports# <strong>AD-miner -c -cf adlab_Report_badblood_3_11_25 -u neo4j -p bloodhoundcommunityedition --evolution Evolution/</strong>
+</pre>
+<p>The output looks very similar to the first run, but does take a bit longer now with the domain filled out:</p>
+<p><a href="/wp-content/uploads/2025/03/AD-miner-evo-report-1.png" data-lbwps-width="1763" data-lbwps-height="853" data-lbwps-srcsmall="/wp-content/uploads/2025/03/AD-miner-evo-report-1-500x242.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/AD-miner-evo-report-1-500x242.png" alt="" width="500" height="242" class="aligncenter size-medium wp-image-6610" srcset="/wp-content/uploads/2025/03/AD-miner-evo-report-1-500x242.png 500w, /wp-content/uploads/2025/03/AD-miner-evo-report-1-1024x495.png 1024w, /wp-content/uploads/2025/03/AD-miner-evo-report-1-768x372.png 768w, /wp-content/uploads/2025/03/AD-miner-evo-report-1-1536x743.png 1536w, /wp-content/uploads/2025/03/AD-miner-evo-report-1.png 1763w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p><a href="/wp-content/uploads/2025/03/AD-miner-evo-report-2.png" data-lbwps-width="1765" data-lbwps-height="853" data-lbwps-srcsmall="/wp-content/uploads/2025/03/AD-miner-evo-report-2-500x242.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/AD-miner-evo-report-2-500x242.png" alt="" width="500" height="242" class="aligncenter size-medium wp-image-6611" srcset="/wp-content/uploads/2025/03/AD-miner-evo-report-2-500x242.png 500w, /wp-content/uploads/2025/03/AD-miner-evo-report-2-1024x495.png 1024w, /wp-content/uploads/2025/03/AD-miner-evo-report-2-768x371.png 768w, /wp-content/uploads/2025/03/AD-miner-evo-report-2-1536x742.png 1536w, /wp-content/uploads/2025/03/AD-miner-evo-report-2.png 1765w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Viewing the report in a browser, a bunch of new attack path issues have shown up (BadBlood) and the Evolution tab is present:</p>
+<p><a href="/wp-content/uploads/2025/03/AD-miner-evo-report-3-edit.png" data-lbwps-width="1811" data-lbwps-height="977" data-lbwps-srcsmall="/wp-content/uploads/2025/03/AD-miner-evo-report-3-edit-500x270.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/AD-miner-evo-report-3-edit-500x270.png" alt="" width="500" height="270" class="aligncenter size-medium wp-image-6613" srcset="/wp-content/uploads/2025/03/AD-miner-evo-report-3-edit-500x270.png 500w, /wp-content/uploads/2025/03/AD-miner-evo-report-3-edit-1024x552.png 1024w, /wp-content/uploads/2025/03/AD-miner-evo-report-3-edit-768x414.png 768w, /wp-content/uploads/2025/03/AD-miner-evo-report-3-edit-1536x829.png 1536w, /wp-content/uploads/2025/03/AD-miner-evo-report-3-edit.png 1811w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Click on the Evolution tab to view the graphs:</p>
+<p><a href="/wp-content/uploads/2025/03/AD-miner-evo-report-4.png" data-lbwps-width="1812" data-lbwps-height="976" data-lbwps-srcsmall="/wp-content/uploads/2025/03/AD-miner-evo-report-4-500x269.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/AD-miner-evo-report-4-500x269.png" alt="" width="500" height="269" class="aligncenter size-medium wp-image-6614" srcset="/wp-content/uploads/2025/03/AD-miner-evo-report-4-500x269.png 500w, /wp-content/uploads/2025/03/AD-miner-evo-report-4-1024x552.png 1024w, /wp-content/uploads/2025/03/AD-miner-evo-report-4-768x414.png 768w, /wp-content/uploads/2025/03/AD-miner-evo-report-4-1536x827.png 1536w, /wp-content/uploads/2025/03/AD-miner-evo-report-4.png 1812w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Here are some addition screens of the AD-Miner report:</p>
+<p><a href="/wp-content/uploads/2025/03/AD-miner-evo-report-5.png" data-lbwps-width="1732" data-lbwps-height="932" data-lbwps-srcsmall="/wp-content/uploads/2025/03/AD-miner-evo-report-5-500x269.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/AD-miner-evo-report-5-500x269.png" alt="" width="500" height="269" class="aligncenter size-medium wp-image-6683" srcset="/wp-content/uploads/2025/03/AD-miner-evo-report-5-500x269.png 500w, /wp-content/uploads/2025/03/AD-miner-evo-report-5-1024x551.png 1024w, /wp-content/uploads/2025/03/AD-miner-evo-report-5-768x413.png 768w, /wp-content/uploads/2025/03/AD-miner-evo-report-5-1536x827.png 1536w, /wp-content/uploads/2025/03/AD-miner-evo-report-5.png 1732w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p><a href="/wp-content/uploads/2025/03/AD-miner-evo-report-6.png" data-lbwps-width="1735" data-lbwps-height="931" data-lbwps-srcsmall="/wp-content/uploads/2025/03/AD-miner-evo-report-6-500x268.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/AD-miner-evo-report-6-500x268.png" alt="" width="500" height="268" class="aligncenter size-medium wp-image-6684" srcset="/wp-content/uploads/2025/03/AD-miner-evo-report-6-500x268.png 500w, /wp-content/uploads/2025/03/AD-miner-evo-report-6-1024x549.png 1024w, /wp-content/uploads/2025/03/AD-miner-evo-report-6-768x412.png 768w, /wp-content/uploads/2025/03/AD-miner-evo-report-6-1536x824.png 1536w, /wp-content/uploads/2025/03/AD-miner-evo-report-6.png 1735w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p><a href="/wp-content/uploads/2025/03/AD-miner-evo-report-7.png" data-lbwps-width="1733" data-lbwps-height="931" data-lbwps-srcsmall="/wp-content/uploads/2025/03/AD-miner-evo-report-7-500x269.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/03/AD-miner-evo-report-7-500x269.png" alt="" width="500" height="269" class="aligncenter size-medium wp-image-6685" srcset="/wp-content/uploads/2025/03/AD-miner-evo-report-7-500x269.png 500w, /wp-content/uploads/2025/03/AD-miner-evo-report-7-1024x550.png 1024w, /wp-content/uploads/2025/03/AD-miner-evo-report-7-768x413.png 768w, /wp-content/uploads/2025/03/AD-miner-evo-report-7-1536x825.png 1536w, /wp-content/uploads/2025/03/AD-miner-evo-report-7.png 1733w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>And with that, we have finally reached the end! </p>
+<h3>Repeating The Process</h3>
+<p>It seems like a lot at first glance and even working through all of the steps, but the bulk of the work is really around getting the server side components deployed. If you get the server part right, you should only have to do it once and then just keep it running with the expected regular maintainence.</p>
+<p>Moving forward, it now takes only 5 steps to repeat this process going from domain collection to report:</p>
+<ol>
+<li>Capture new domain collection:
+<pre>
+PS C:\Users\Administrator\Downloads\sharphound-v2.5.13> <strong>.\SharpHound.exe --collectionmethods all --domain adlab.robwillis.info</strong>
+</pre>
+</li>
+<li>
+Upload collection to BloodHound server.
+</li>
+<li>
+Generate new AD-miner report:
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE/Reports# <strong>AD-miner -c -cf adlab_Report_badblood_3_11_25 -u neo4j -p bloodhoundcommunityedition --evolution Evolution/</strong>
+</pre>
+</li>
+<li>
+Copy the new reports evolution json file into the Evolution folder for the next report.
+</li>
+<li>
+Package it up:
+<pre>
+root@vmw-l-bhce:/opt/BloodHoundCE/Reports# <strong>tar -zcvf adlab_Report_badblood_3_11_25.tar.gz render_adlab_Report_badblood_3_11_25/</strong>
+</pre>
+</li>
+<li>
+Rinse and repeat.
+</li>
+</ol>
+<h3>Downloads</h3>
+<p>Just in case anyone is interested, I&#8217;ve put all of the files created during this post into a single zip that can be found here:</p>
+<ul>
+<li><a href="/wp-content/uploads/2025/03/BHCE_AD-Miner_Files_robwillisinfo.zip"><strong>BHCE_AD-Miner_Files_robwillisinfo.zip</strong></a></li>
+<ul>
+<li>
+<strong>docker-compose.yml</strong> &#8211; The modified docker-compose.yml</li>
+<li>
+<strong>20250308023917_BloodHound-Base-All.zip</strong> &#8211; SharpHound baseline collection</li>
+<li>
+<strong>20250311033936_BloodHound-BadBlood-All.zip</strong> &#8211; SharpHound BadBlood collection</li>
+<li>
+<strong>adlab_Report_baseline_3_8_25.tar.gz</strong> &#8211; SharpHound baseline AD-Miner report</li>
+<li>
+<strong>adlab_Report_badblood_3_11_25.tar.gz</strong> &#8211; SharpHound BadBlood AD-Miner report</li>
+</ul>
+</ul>
+<h3>Cheat Sheets</h3>
+<p>This section is designed to be a quick reference of all of the commands used throughout the post.</p>
+<h5>Building The BloodHound Server</h5>
+<p></p>
+<pre>
+<strong># Installing Docker</strong>
+
+# Check the docker version and info
+root@vmw-l-bhce:/home/bit_rot# <strong>docker --version</strong>
+root@vmw-l-bhce:/home/bit_rot# <strong>docker info</strong>
+
+# Find available docker packages
+root@vmw-l-bhce:/home/bit_rot# <strong>apt-cache search docker</strong>
+
+# Installing the docker packages
+root@vmw-l-bhce:/home/bit_rot# <strong>apt -y install docker.io docker-compose</strong>
+
+<strong># Installing BloodHound</strong>
+
+# Make the directory
+root@vmw-l-bhce:/home/bit_rot# <strong>mkdir /opt/BloodHoundCE</strong>
+root@vmw-l-bhce:/home/bit_rot# <strong>cd /opt/BloodHoundCE</strong>
+
+# Download the docker-compose.yml
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>curl -L https://ghst.ly/getbhce -o docker-compose.yml</strong>
+
+# Edit the docker-compose.yml
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>nano docker-compose.yml</strong>
+
+# Settings to modify:
+# graph-db
+- NEO4J_PLUGINS=["graph-data-science"]
+# bloodhound
+# Original
+- ${BLOODHOUND_HOST:-127.0.0.1}:${BLOODHOUND_PORT:-8080}:8080
+# Updated
+- ${BLOODHOUND_HOST:-0.0.0.0}:${BLOODHOUND_PORT:-8080}:8080
+
+<strong># Running & Managing The BloodHound Server</strong>
+
+# Starting the containers
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>docker-compose up</strong>
+
+# Starting the containers in detached mode
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>docker-compose up -d</strong>
+
+# Docker-compose logs
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>docker-compose logs</strong>
+
+# View running docker containers
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>docker ps</strong>
+
+# Stop the running containers
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>docker-compose stop</strong>
+
+# View the available local docker images
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>docker images</strong>
+
+# Update the BloodHound containers to the latest images:
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>docker-compose pull</strong>
+
+# Reset the BloodHound containers back to their original state:
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>docker-compose down -v</strong>
+</pre>
+<h5>Installing AD-Miner</h5>
+<p></p>
+<pre>
+# Verify pipx is installed
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>apt install pipx</strong>
+
+# Installing AD-Miner
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>pipx install 'git+https://github.com/Mazars-Tech/AD_Miner.git'</strong>
+
+# Make sure AD-Miner accessible via system path
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>pipx ensurepath</strong>
+
+# Verify AD-Miner is working
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>AD-miner --help</strong>
+</pre>
+<h5>Domain Data Collection</h5>
+<p></p>
+<pre>
+<strong># Domain-Joined</strong>
+
+# SharpHound help
+PS C:\Users\Administrator\Downloads\sharphound-v2.5.13> <strong>.\Sharphound.exe --help</strong>
+
+# SharpHound - super limited in memory run
+PS C:\Users\Administrator\Downloads\sharphound-v2.5.13> <strong>.\SharpHound.exe --memcache --collectionmethods dconly --domain adlab.robwillis.info</strong>
+
+# SharpHound - Full collection
+PS C:\Users\Administrator\Downloads\sharphound-v2.5.13> <strong>.\SharpHound.exe --collectionmethods all --domain adlab.robwillis.info</strong>
+
+<strong># Non Domain-Joined</strong>
+
+# Verify DNS resolution to the AD domain via ping
+
+# Launch a new cmd prompt
+C:\> <strong>runas /netonly /user:adlab.robwillis.info\administrator cmd.exe</strong>
+
+# Verify access to domain shares
+C:\> <strong>net view \\adlab.robwillis.info\</strong>
+
+# Run SharpHound like normal in the RunAs window
+C:\> <strong>.\SharpHound.exe --memcache --collectionmethods dconly --domain adlab.robwillis.info</strong>
+</pre>
+<h5>Generating Reports With AD-Miner</h5>
+<p></p>
+<pre>
+# Make the directories
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>mkdir Reports</strong>
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>mkdir Evolution</strong>
+root@vmw-l-bhce:/opt/BloodHoundCE# <strong>cd Reports</strong>
+
+# AD-miner help
+root@vmw-l-bhce:/opt/BloodHoundCE/Reports# <strong>AD-miner --help</strong>
+
+# AD-miner basic run
+root@vmw-l-bhce:/opt/BloodHoundCE/Reports# <strong>AD-miner -c -cf adlab_Report_baseline_3_8_25 -u neo4j -p bloodhoundcommunityedition</strong>
+
+# Evolution report run - Make sure to copy the previous report json into the Evolution directory
+root@vmw-l-bhce:/opt/BloodHoundCE/Reports# <strong>AD-miner -c -cf adlab_Report_badblood_3_11_25 -u neo4j -p bloodhoundcommunityedition --evolution Evolution/</strong>
+
+# Compress report
+root@vmw-l-bhce:/opt/BloodHoundCE/Reports# <strong>tar -zcvf adlab_Report_baseline_3_8_25.tar.gz render_adlab_Report_baseline_3_8_25/</strong>
+</pre>
+</div>
+
+
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)"><div class="taxonomy-post_tag is-style-post-terms-1 is-style-post-terms-1--1 wp-block-post-terms">
+<a href="/tag/active-directory/" rel="tag">Active Directory</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/ad/" rel="tag">AD</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/bloodhound/" rel="tag">BloodHound</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/blue/" rel="tag">blue</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/purple/" rel="tag">Purple</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/red/" rel="tag">red</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/team/" rel="tag">team</a>
+</div></div>
+
+
+
+<div class="wp-block-group alignwide is-layout-flow wp-block-group-is-layout-flow" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)">
+<nav class="wp-block-group alignwide is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-9b36172e wp-block-group-is-layout-flex" aria-label="Post navigation" style="border-top-color:var(--wp--preset--color--accent-6);border-top-width:1px;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><div class="post-navigation-link-previous wp-block-post-navigation-link">
+<span class="wp-block-post-navigation-link__arrow-previous is-arrow-arrow" aria-hidden="true">←</span><a href="/2024/03/powershell-script-invoke-encryptionsimulator/" rel="prev">Introducing Invoke-EncryptionSimulator: A PowerShell Tool for Simulating Late-Stage Ransomware Attacks</a>
+</div>
+
+<div class="post-navigation-link-next wp-block-post-navigation-link">
+<a href="/2025/05/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui/" rel="next">Ultimate Local AI Setup Guide: Ubuntu, Ollama, &#038; Open WebUI</a><span class="wp-block-post-navigation-link__arrow-next is-arrow-arrow" aria-hidden="true">→</span>
+</div></nav>
+</div>
+
+
+</div>
+
+
+
+<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+<h2 class="wp-block-heading alignwide has-small-font-size" style="font-style:normal;font-weight:700;letter-spacing:1.4px;text-transform:uppercase">More posts</h2>
+
+
+
+<div class="wp-block-query alignwide is-layout-flow wp-block-query-is-layout-flow"><ul class="alignfull wp-block-post-template is-layout-flow wp-container-core-post-template-is-layout-3ee800f6 wp-block-post-template-is-layout-flow">
+<li class="wp-block-post post-7729 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-computers category-pen-testing category-security category-software category-tools tag-linux tag-omarchy tag-vmware">
+
+<div class="wp-block-group alignfull is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-154222c2 wp-block-group-is-layout-flex" style="border-bottom-color:var(--wp--preset--color--accent-6);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+<h3 class="wp-block-post-title has-large-font-size"><a href="/2025/11/installing-omarchy-on-vmware-workstation/" target="_self">Installing Omarchy On VMware Workstation</a></h3>
+
+<div class="has-text-align-right wp-block-post-date"><time datetime="2025-11-05T05:12:29-06:00"><a href="/2025/11/installing-omarchy-on-vmware-workstation/">November 5, 2025</a></time></div>
+</div>
+
+</li>
+<li class="wp-block-post post-7452 post type-post status-publish format-standard has-post-thumbnail hentry category-ai category-blog category-computers category-pen-testing category-security category-servers tag-dell tag-esxi tag-home-lab tag-linux tag-servers tag-windows">
+
+<div class="wp-block-group alignfull is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-154222c2 wp-block-group-is-layout-flex" style="border-bottom-color:var(--wp--preset--color--accent-6);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+<h3 class="wp-block-post-title has-large-font-size"><a href="/2025/10/home-lab-office-2025/" target="_self">Home Lab &#038; Office &#8211; 2025</a></h3>
+
+<div class="has-text-align-right wp-block-post-date"><time datetime="2025-10-04T18:10:14-05:00"><a href="/2025/10/home-lab-office-2025/">October 4, 2025</a></time></div>
+</div>
+
+</li>
+<li class="wp-block-post post-7442 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-pen-testing category-security category-servers tag-blue tag-bypass tag-edr tag-internals tag-purple tag-red tag-team tag-windows">
+
+<div class="wp-block-group alignfull is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-154222c2 wp-block-group-is-layout-flex" style="border-bottom-color:var(--wp--preset--color--accent-6);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+<h3 class="wp-block-post-title has-large-font-size"><a href="/2025/09/windows-edr-telemetry-sensors/" target="_self">Windows EDR: Telemetry &#038; Sensors &#8211; Mind Map</a></h3>
+
+<div class="has-text-align-right wp-block-post-date"><time datetime="2025-09-18T06:57:32-05:00"><a href="/2025/09/windows-edr-telemetry-sensors/">September 18, 2025</a></time></div>
+</div>
+
+</li>
+<li class="wp-block-post post-6836 post type-post status-publish format-standard has-post-thumbnail hentry category-ai category-blog category-pen-testing category-security category-servers category-tools tag-ai tag-llm tag-ollama tag-open-webui tag-ubuntu">
+
+<div class="wp-block-group alignfull is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-154222c2 wp-block-group-is-layout-flex" style="border-bottom-color:var(--wp--preset--color--accent-6);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+<h3 class="wp-block-post-title has-large-font-size"><a href="/2025/05/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui/" target="_self">Ultimate Local AI Setup Guide: Ubuntu, Ollama, &#038; Open WebUI</a></h3>
+
+<div class="has-text-align-right wp-block-post-date"><time datetime="2025-05-14T11:30:07-05:00"><a href="/2025/05/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui/">May 14, 2025</a></time></div>
+</div>
+
+</li>
+</ul></div>
+</div>
+</main>
+
+
+<footer class="wp-block-template-part">
+<div class="wp-block-group alignfull has-background-color is-layout-flow wp-block-group-is-layout-flow" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--30)"><footer class="wp-block-template-part">
+<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-group alignfull has-background-color is-layout-flow wp-block-group-is-layout-flow" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--30)">
+<div class="wp-block-group alignfull has-small-font-size is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-cc97c919 wp-block-group-is-layout-flex">
+<p class="has-text-align-left wp-block-site-title has-small-font-size wp-container-content-b0223bd5"><a href="/" target="_self" rel="home">RobWillis.info</a></p>
+
+
+<ul class="wp-block-social-links has-normal-icon-size is-style-logos-only wp-container-content-b0223bd5 is-content-justification-right is-nowrap is-layout-flex wp-container-core-social-links-is-layout-ad1cd33a wp-block-social-links-is-layout-flex">
+<li class="wp-social-link wp-social-link-twitter  wp-block-social-link"><a rel="https://x.com/b1t_r0t noopener nofollow" target="_blank" href="https://x.com/b1t_r0t" class="wp-block-social-link-anchor"><svg width="24" height="24" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M22.23,5.924c-0.736,0.326-1.527,0.547-2.357,0.646c0.847-0.508,1.498-1.312,1.804-2.27 c-0.793,0.47-1.671,0.812-2.606,0.996C18.324,4.498,17.257,4,16.077,4c-2.266,0-4.103,1.837-4.103,4.103 c0,0.322,0.036,0.635,0.106,0.935C8.67,8.867,5.647,7.234,3.623,4.751C3.27,5.357,3.067,6.062,3.067,6.814 c0,1.424,0.724,2.679,1.825,3.415c-0.673-0.021-1.305-0.206-1.859-0.513c0,0.017,0,0.034,0,0.052c0,1.988,1.414,3.647,3.292,4.023 c-0.344,0.094-0.707,0.144-1.081,0.144c-0.264,0-0.521-0.026-0.772-0.074c0.522,1.63,2.038,2.816,3.833,2.85 c-1.404,1.1-3.174,1.756-5.096,1.756c-0.331,0-0.658-0.019-0.979-0.057c1.816,1.164,3.973,1.843,6.29,1.843 c7.547,0,11.675-6.252,11.675-11.675c0-0.178-0.004-0.355-0.012-0.531C20.985,7.47,21.68,6.747,22.23,5.924z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Twitter</span></a></li>
+
+<li class="wp-social-link wp-social-link-github  wp-block-social-link"><a rel="https://github.com/robwillisinfo noopener nofollow" target="_blank" href="https://github.com/robwillisinfo" class="wp-block-social-link-anchor"><svg width="24" height="24" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12,2C6.477,2,2,6.477,2,12c0,4.419,2.865,8.166,6.839,9.489c0.5,0.09,0.682-0.218,0.682-0.484 c0-0.236-0.009-0.866-0.014-1.699c-2.782,0.602-3.369-1.34-3.369-1.34c-0.455-1.157-1.11-1.465-1.11-1.465 c-0.909-0.62,0.069-0.608,0.069-0.608c1.004,0.071,1.532,1.03,1.532,1.03c0.891,1.529,2.341,1.089,2.91,0.833 c0.091-0.647,0.349-1.086,0.635-1.337c-2.22-0.251-4.555-1.111-4.555-4.943c0-1.091,0.39-1.984,1.03-2.682 C6.546,8.54,6.202,7.524,6.746,6.148c0,0,0.84-0.269,2.75,1.025C10.295,6.95,11.15,6.84,12,6.836 c0.85,0.004,1.705,0.114,2.504,0.336c1.909-1.294,2.748-1.025,2.748-1.025c0.546,1.376,0.202,2.394,0.1,2.646 c0.64,0.699,1.026,1.591,1.026,2.682c0,3.841-2.337,4.687-4.565,4.935c0.359,0.307,0.679,0.917,0.679,1.852 c0,1.335-0.012,2.415-0.012,2.741c0,0.269,0.18,0.579,0.688,0.481C19.138,20.161,22,16.416,22,12C22,6.477,17.523,2,12,2z"></path></svg><span class="wp-block-social-link-label screen-reader-text">GitHub</span></a></li>
+
+<li class="wp-social-link wp-social-link-youtube  wp-block-social-link"><a rel="noopener nofollow" target="_blank" href="https://www.youtube.com/robwillisinfo" class="wp-block-social-link-anchor"><svg width="24" height="24" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M21.8,8.001c0,0-0.195-1.378-0.795-1.985c-0.76-0.797-1.613-0.801-2.004-0.847c-2.799-0.202-6.997-0.202-6.997-0.202 h-0.009c0,0-4.198,0-6.997,0.202C4.608,5.216,3.756,5.22,2.995,6.016C2.395,6.623,2.2,8.001,2.2,8.001S2,9.62,2,11.238v1.517 c0,1.618,0.2,3.237,0.2,3.237s0.195,1.378,0.795,1.985c0.761,0.797,1.76,0.771,2.205,0.855c1.6,0.153,6.8,0.201,6.8,0.201 s4.203-0.006,7.001-0.209c0.391-0.047,1.243-0.051,2.004-0.847c0.6-0.607,0.795-1.985,0.795-1.985s0.2-1.618,0.2-3.237v-1.517 C22,9.62,21.8,8.001,21.8,8.001z M9.935,14.594l-0.001-5.62l5.404,2.82L9.935,14.594z"></path></svg><span class="wp-block-social-link-label screen-reader-text">YouTube</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer></div>
+</footer>
+</div>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/twentytwentyfive\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="wp-block-template-skip-link-js-after">
+	( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
+
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
+
+		/*
+		 * Get the site wrapper.
+		 * The skip-link will be injected in the beginning of it.
+		 */
+		sibling = document.querySelector( '.wp-site-blocks' );
+
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
+
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
+
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.id = 'wp-skip-link';
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerText = 'Skip to content';
+
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );
+	
+</script>
+<script id="lbwps-photoswipe5-js-extra">
+var lbwpsOptions = {"label_facebook":"Share on Facebook","label_twitter":"Tweet","label_pinterest":"Pin it","label_download":"Download image","label_copyurl":"Copy image URL","label_ui_close":"Close [Esc]","label_ui_zoom":"Zoom","label_ui_prev":"Previous [←]","label_ui_next":"Next [→]","label_ui_error":"The image cannot be loaded","label_ui_fullscreen":"Toggle fullscreen [F]","share_facebook":"1","share_twitter":"1","share_pinterest":"1","share_download":"1","share_direct":"0","share_copyurl":"0","close_on_drag":"1","history":"1","show_counter":"1","show_fullscreen":"1","show_zoom":"1","show_caption":"1","loop":"0","pinchtoclose":"1","taptotoggle":"1","close_on_click":"1","fulldesktop":"0","use_alt":"0","usecaption":"1","desktop_slider":"1","share_custom_label":"","share_custom_link":"","wheelmode":"zoom","spacing":"12","idletime":"4000","hide_scrollbars":"1","caption_type":"overlay","bg_opacity":"100","padding_left":"0","padding_top":"0","padding_right":"0","padding_bottom":"0"};
+</script>
+<script type="module" src="/wp-content/plugins/lightbox-photoswipe/assets/ps5/frontend.min.js?ver=5.7.3"></script>
+</body>
+</html>

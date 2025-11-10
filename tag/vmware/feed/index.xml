@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>VMWare | RobWillis.info</title>
+	<atom:link href="/tag/vmware/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Wed, 05 Nov 2025 11:19:05 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Installing Omarchy On VMware Workstation</title>
+		<link>/2025/11/installing-omarchy-on-vmware-workstation/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Wed, 05 Nov 2025 11:12:29 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Omarchy]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<guid isPermaLink="false">/?p=7729</guid>
+
+					<description><![CDATA[<p>If you&#8217;re trying to run Omarchy on VMware Workstation, you might be experiencing some issues with the GUI after what appears to be a successful installation. With the basic graphics option configured on the virtual machine, Omarchy will boot but then fall to a black screen right after entering the password. Enabling accelerated graphics gets [&#8230;]</p>
+The post <a href="/2025/11/installing-omarchy-on-vmware-workstation/">Installing Omarchy On VMware Workstation</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>VMware vCenter CVE-2021-21972 Scanner</title>
+		<link>/2021/02/vmware-vcenter-cve-2021-21972-scan-tool/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sat, 27 Feb 2021 10:31:52 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[CVE-2021-21972]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[scan]]></category>
+		<category><![CDATA[Tool]]></category>
+		<category><![CDATA[vCenter]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[vulnerability]]></category>
+		<guid isPermaLink="false">/?p=5318</guid>
+
+					<description><![CDATA[<p>In this post, I am releasing a PowerShell POC script that will scan the specified target hosts and attempt to detect those that are vulnerable to VMware vCenter CVE-2021-21972. You can find the script, Invoke-CVE-2021-21972-Scan.ps1, on my github here: https://github.com/robwillisinfo/VMware_vCenter_CVE-2021-21972 The script executes in the following order: Create a log file, default log name is [&#8230;]</p>
+The post <a href="/2021/02/vmware-vcenter-cve-2021-21972-scan-tool/">VMware vCenter CVE-2021-21972 Scanner</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Manually Updating the Firmwares on a Dell PowerEdge R610</title>
+		<link>/2018/12/manually-updating-the-firmwares-on-a-dell-poweredge-r610/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 24 Dec 2018 03:44:47 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Dell]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[Firmware]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[PowerEdge]]></category>
+		<category><![CDATA[R610]]></category>
+		<category><![CDATA[SLI]]></category>
+		<category><![CDATA[Virtualization]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=4002</guid>
+
+					<description><![CDATA[<p>Updating firmwares yet again&#8230; Shortly after the last time I posted on updating firmwares on Dell PowerEdge R610, I found out that Dell dropped support for all 11G servers from the SUU package along with the Lifecycle controller packages which basically broke the entire method I posted. However all hope is not lost, and the [&#8230;]</p>
+The post <a href="/2018/12/manually-updating-the-firmwares-on-a-dell-poweredge-r610/">Manually Updating the Firmwares on a Dell PowerEdge R610</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Home Lab Cooling Upgrade!</title>
+		<link>/2018/10/home-lab-cooling-upgrade/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 29 Oct 2018 03:24:14 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Cooling]]></category>
+		<category><![CDATA[Elastic]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[firewall]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[Home Lab]]></category>
+		<category><![CDATA[IDS]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[OPNsense]]></category>
+		<category><![CDATA[pfSense]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[snort]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3979</guid>
+
+					<description><![CDATA[<p>In this video I show off my latest project &#8211; Upgrading the cooling system on my home lab in hopes of making it a little more efficient while quieting things down a bit. The original setup consisted of the following: 2 x 6&#8243; Ducts with Fans 6&#8243; Flexible Ducting Originally there was just a single [&#8230;]</p>
+The post <a href="/2018/10/home-lab-cooling-upgrade/">Home Lab Cooling Upgrade!</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>ESXi 6.5 &#8211; Error Loading /xorg.v00 Fatal Error: 33 (inconsistent data)</title>
+		<link>/2018/04/esxi-6-5-error-loading-xorg-v00-fatal-error-33-inconsistent-data/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Fri, 20 Apr 2018 10:13:58 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[ESXi 6.5]]></category>
+		<category><![CDATA[Fatal Error]]></category>
+		<category><![CDATA[Fatal Error 33]]></category>
+		<category><![CDATA[fix]]></category>
+		<category><![CDATA[s.v00]]></category>
+		<category><![CDATA[sb.v00]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[xorg.v00]]></category>
+		<guid isPermaLink="false">/?p=3716</guid>
+
+					<description><![CDATA[<p>The Error During a recent thunderstorm one of the ESXi 6.5 hosts in my lab environment that was not on a UPS, rebooted from a power fluctuation and when it rebooted I received the following error: Error loading /xorg.v00 Compressed MD5: d04cc03dd29bbe3fe547e9566f79674c Decompressed MD5: 00000000000000000000000000000000 As the error indicates, the file /xorg.v00 appears to be [&#8230;]</p>
+The post <a href="/2018/04/esxi-6-5-error-loading-xorg-v00-fatal-error-33-inconsistent-data/">ESXi 6.5 – Error Loading /xorg.v00 Fatal Error: 33 (inconsistent data)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Installing VMware ESXi on an Internal USB?!</title>
+		<link>/2018/02/installing-vmware-esxi-on-an-internal-usb/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Tue, 13 Feb 2018 16:09:07 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Dell]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[Home Lab]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[PowerEdge]]></category>
+		<category><![CDATA[R610]]></category>
+		<category><![CDATA[Virtualization]]></category>
+		<category><![CDATA[VM]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3611</guid>
+
+					<description><![CDATA[<p>One of the things I get the most questions about with my VMware ESXi posts/videos is about installing ESXi onto USB drives and booting it from there, and that question is usually followed by the concern of someone accidentally or even maliciously removing the drive from the chassis. In the case of the Dell PowerEdge [&#8230;]</p>
+The post <a href="/2018/02/installing-vmware-esxi-on-an-internal-usb/">Installing VMware ESXi on an Internal USB?!</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Dell PowerEdge R610 Review &#8211; Virtualization On The Cheap</title>
+		<link>/2018/02/dell-poweredge-r610-review-virtualization-on-the-cheap/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 12 Feb 2018 14:28:05 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Dell]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[Home Lab]]></category>
+		<category><![CDATA[iDrac]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[OPNsense]]></category>
+		<category><![CDATA[PowerEdge]]></category>
+		<category><![CDATA[R610]]></category>
+		<category><![CDATA[Virtualization]]></category>
+		<category><![CDATA[VM]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3603</guid>
+
+					<description><![CDATA[<p>One of the things I always find myself telling anyone wanting to build out a home lab, is that it does not have to be expensive. The Dell PowerEdge R610 is a prime example of this and in this case I was able to pick up a matching pair of decently spec&#8217;d R610s that are [&#8230;]</p>
+The post <a href="/2018/02/dell-poweredge-r610-review-virtualization-on-the-cheap/">Dell PowerEdge R610 Review – Virtualization On The Cheap</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Home Lab Setup (2017)</title>
+		<link>/2018/02/home-lab-setup/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sun, 04 Feb 2018 15:51:15 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[blue]]></category>
+		<category><![CDATA[Elastic]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[firewall]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[Home Lab]]></category>
+		<category><![CDATA[IDS]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[OPNsense]]></category>
+		<category><![CDATA[pfSense]]></category>
+		<category><![CDATA[red]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[snort]]></category>
+		<category><![CDATA[team]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3508</guid>
+
+					<description><![CDATA[<p>In this post and video I give a quick run down of my Home Lab &#8211; everything from the rack itself, to the hardware and the basics of what everything is being used for. I started this project towards the end of 2012 with a single Dell PowerEdge 2950 GII and was hoping to teach [&#8230;]</p>
+The post <a href="/2018/02/home-lab-setup/">Home Lab Setup (2017)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Installing and Configuring VMware vCenter 6.5 (VCSA)</title>
+		<link>/2017/11/installing-and-configuring-vmware-vcenter-6-5-vcsa/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Wed, 01 Nov 2017 13:35:24 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[6.5]]></category>
+		<category><![CDATA[Appliance]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[how to]]></category>
+		<category><![CDATA[Install]]></category>
+		<category><![CDATA[vCenter]]></category>
+		<category><![CDATA[VCSA]]></category>
+		<category><![CDATA[Virtual Machine]]></category>
+		<category><![CDATA[VM]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[VSphere]]></category>
+		<category><![CDATA[Web Console]]></category>
+		<guid isPermaLink="false">/?p=3380</guid>
+
+					<description><![CDATA[<p>In this third and final part of my VMware series, I go over all of the basics of getting the VMware vCenter 6.5 Server Appliance up and running. Everything that I show in the video can be done with the evaluation version of vCenter, which gives you up to 2 months of time to play [&#8230;]</p>
+The post <a href="/2017/11/installing-and-configuring-vmware-vcenter-6-5-vcsa/">Installing and Configuring VMware vCenter 6.5 (VCSA)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Installing VMware vSphere ESXi 6.5</title>
+		<link>/2017/07/installing-vmware-vsphere-esxi-6-5/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Wed, 26 Jul 2017 13:27:14 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[6.5]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[how to]]></category>
+		<category><![CDATA[Install]]></category>
+		<category><![CDATA[vCenter]]></category>
+		<category><![CDATA[Virtual Machine]]></category>
+		<category><![CDATA[VM]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[VSphere]]></category>
+		<category><![CDATA[Web Console]]></category>
+		<guid isPermaLink="false">/?p=3239</guid>
+
+					<description><![CDATA[<p>In this video I go over all of the basics of getting up and running with my favorite hypervisor, VMware vSphere ESXi 6.5. Here is a quick run down of everything covered: Where to install ESXi, hard drive or USB drive? Creating a bootable USB drive with the VMware ESXi ISO image and Rufus Booting [&#8230;]</p>
+The post <a href="/2017/07/installing-vmware-vsphere-esxi-6-5/">Installing VMware vSphere ESXi 6.5</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

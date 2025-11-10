@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Wii | RobWillis.info</title>
+	<atom:link href="/tag/wii/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Mon, 27 Jun 2022 05:00:42 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Nintendo Wii Homebrew Soft Hack</title>
+		<link>/2013/01/nintendo-wii-homebrew-soft-hack/</link>
+					<comments>/2013/01/nintendo-wii-homebrew-soft-hack/#respond</comments>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 14 Jan 2013 07:00:30 +0000</pubDate>
+				<category><![CDATA[Gaming PC/PS3/Xbox 360]]></category>
+		<category><![CDATA[Hack]]></category>
+		<category><![CDATA[Homebrew]]></category>
+		<category><![CDATA[Nintendo]]></category>
+		<category><![CDATA[Soft]]></category>
+		<category><![CDATA[Wii]]></category>
+		<guid isPermaLink="false">/?p=1253</guid>
+
+					<description><![CDATA[<p>Hack an old Wii? &#160;&#160;&#160;&#160;&#160;So I was bored one weekend and decided that I finally wanted to try and modify an old Wii to play some of my old favorite N64 games, like Mario 64 and GoldenEye 007. After searching the net, I found tons of useful information and a few youtube videos but some [&#8230;]</p>
+The post <a href="/2013/01/nintendo-wii-homebrew-soft-hack/">Nintendo Wii Homebrew Soft Hack</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+					<wfw:commentRss>/2013/01/nintendo-wii-homebrew-soft-hack/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

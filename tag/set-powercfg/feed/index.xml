@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Set-PowerCfg | RobWillis.info</title>
+	<atom:link href="/tag/set-powercfg/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Mon, 08 Sep 2025 07:00:57 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>PowerShell Script &#8211; Set-PowerCfg</title>
+		<link>/2018/08/powershell-script-set-powercfg/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Tue, 14 Aug 2018 14:01:29 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[script]]></category>
+		<category><![CDATA[Set-PowerCfg]]></category>
+		<guid isPermaLink="false">/?p=3810</guid>
+
+					<description><![CDATA[<p>Set-PowerCfg is a simple script that can be used to easily set or check the current power scheme being applied on a Windows host, these are the same settings found in Control Panel > Power Options. This is particularly useful on laptops where CPU throttling may be an issue and you need to easily switch [&#8230;]</p>
+The post <a href="/2018/08/powershell-script-set-powercfg/">PowerShell Script – Set-PowerCfg</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

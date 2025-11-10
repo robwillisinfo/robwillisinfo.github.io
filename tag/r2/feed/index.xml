@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>R2 | RobWillis.info</title>
+	<atom:link href="/tag/r2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Mon, 27 Jun 2022 04:52:59 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Powershell scripts fail when deployed via Group Policy as Startup scripts with Event ID 1055 and 1130</title>
+		<link>/2017/10/powershell-scripts-fail-when-deployed-via-group-policy-as-startup-scripts-with-event-id-1055-and-1130/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 02 Oct 2017 07:27:23 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[1055]]></category>
+		<category><![CDATA[1130]]></category>
+		<category><![CDATA[2012]]></category>
+		<category><![CDATA[Event ID]]></category>
+		<category><![CDATA[Failure]]></category>
+		<category><![CDATA[GPO]]></category>
+		<category><![CDATA[Group Policy]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[R2]]></category>
+		<category><![CDATA[script]]></category>
+		<category><![CDATA[Startup]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3354</guid>
+
+					<description><![CDATA[<p>I recently went to deploy a new Powershell based Startup script in my test environment, and while the majority of my Windows machines happily complied, 2 of my test servers that were running Remote Desktop Services did not like the new Startup policy. The script itself was pretty straight forward &#8211; it pulled some files [&#8230;]</p>
+The post <a href="/2017/10/powershell-scripts-fail-when-deployed-via-group-policy-as-startup-scripts-with-event-id-1055-and-1130/">Powershell scripts fail when deployed via Group Policy as Startup scripts with Event ID 1055 and 1130</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Using Windows Server 2012 R2 for Shared Storage via iSCSI with Microsoft Failover Clustering (Video How-to)</title>
+		<link>/2016/01/using-windows-server-2012-r2-for-shared-storage-with-microsoft-failover-clustering-video-how-to/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Fri, 29 Jan 2016 04:22:37 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[2012]]></category>
+		<category><![CDATA[Cluster]]></category>
+		<category><![CDATA[DAS]]></category>
+		<category><![CDATA[Failover]]></category>
+		<category><![CDATA[iSCSI]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[R2]]></category>
+		<category><![CDATA[SAN]]></category>
+		<category><![CDATA[Shared Storage]]></category>
+		<category><![CDATA[SQL]]></category>
+		<category><![CDATA[Windows Server]]></category>
+		<guid isPermaLink="false">/?p=2585</guid>
+
+					<description><![CDATA[<p>In this video I give a basic break down of how to install and configure shared storage on Windows Server 2012 R2 and then use that storage with a Microsoft Failover Cluster with Multi-path I/O (MPIO) support and 100% validation in cluster manager. Shared storage is often the biggest hurdle when getting into building your [&#8230;]</p>
+The post <a href="/2016/01/using-windows-server-2012-r2-for-shared-storage-with-microsoft-failover-clustering-video-how-to/">Using Windows Server 2012 R2 for Shared Storage via iSCSI with Microsoft Failover Clustering (Video How-to)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Simple BGInfo AD logon script</title>
+		<link>/2014/01/simple-bginfo-ad-logon-script/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 27 Jan 2014 16:43:50 +0000</pubDate>
+				<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[2008]]></category>
+		<category><![CDATA[Active Directory]]></category>
+		<category><![CDATA[AD]]></category>
+		<category><![CDATA[BGInfo]]></category>
+		<category><![CDATA[GPO]]></category>
+		<category><![CDATA[Group Policy]]></category>
+		<category><![CDATA[Login]]></category>
+		<category><![CDATA[Logon]]></category>
+		<category><![CDATA[R2]]></category>
+		<category><![CDATA[script]]></category>
+		<guid isPermaLink="false">/?p=2247</guid>
+
+					<description><![CDATA[<p>This is my simple logon script for the popular BGInfo utility that uses a few batch scripts along with Group Policy to run at each user login. What this script does: Checks to see if bginfo.exe exist on the local machine, if not copy it from the network share to c:\bginfo\ Copy bg.jpg and default.bgi [&#8230;]</p>
+The post <a href="/2014/01/simple-bginfo-ad-logon-script/">Simple BGInfo AD logon script</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

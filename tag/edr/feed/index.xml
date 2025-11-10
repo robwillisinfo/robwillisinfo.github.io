@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>EDR | RobWillis.info</title>
+	<atom:link href="/tag/edr/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Tue, 28 Oct 2025 00:13:38 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Windows EDR: Telemetry &#038; Sensors &#8211; Mind Map</title>
+		<link>/2025/09/windows-edr-telemetry-sensors/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Thu, 18 Sep 2025 11:57:32 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[blue]]></category>
+		<category><![CDATA[Bypass]]></category>
+		<category><![CDATA[EDR]]></category>
+		<category><![CDATA[Internals]]></category>
+		<category><![CDATA[Purple]]></category>
+		<category><![CDATA[red]]></category>
+		<category><![CDATA[team]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=7442</guid>
+
+					<description><![CDATA[<p>I recently read Evading EDR by Matt Hand. While not a lengthy book, it&#8217;s technically dense and packed with tons of valuable information about Windows and EDR internals. It&#8217;s a fantastic resource, and I highly recommend it: Evading EDR by Matt Hand To help solidify my understanding of the concepts and apply them in future [&#8230;]</p>
+The post <a href="/2025/09/windows-edr-telemetry-sensors/">Windows EDR: Telemetry & Sensors – Mind Map</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		<!-- All in One SEO 4.8.7.2 - aioseo.com -->
+	<meta name="description" content="Intro &amp; Background It seems safe to say that artificial intelligence (AI), particularly large language models (LLMs), are here to stay. As a cybersecurity professional, it has been pretty easy to find use cases for AI in my daily work, from general penetration testing and writing tools to forensics and reverse engineering. However, as with">
+	<meta name="robots" content="max-image-preview:large">
+	<meta name="author" content="robwillisinfo">
+	<meta name="keywords" content="ai,llm,ollama,open webui,ubuntu">
+	<link rel="canonical" href="/2025/05/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui/">
+	<meta name="generator" content="All in One SEO (AIOSEO) 4.8.7.2">
+		<meta property="og:locale" content="en_US">
+		<meta property="og:site_name" content="RobWillis.info | #yolosec">
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="Ultimate Local AI Setup Guide: Ubuntu, Ollama, &amp; Open WebUI | RobWillis.info">
+		<meta property="og:description" content="Intro &amp; Background It seems safe to say that artificial intelligence (AI), particularly large language models (LLMs), are here to stay. As a cybersecurity professional, it has been pretty easy to find use cases for AI in my daily work, from general penetration testing and writing tools to forensics and reverse engineering. However, as with">
+		<meta property="og:url" content="/2025/05/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui/">
+		<meta property="article:published_time" content="2025-05-14T16:30:07+00:00">
+		<meta property="article:modified_time" content="2025-10-28T00:08:56+00:00">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="Ultimate Local AI Setup Guide: Ubuntu, Ollama, &amp; Open WebUI | RobWillis.info">
+		<meta name="twitter:description" content="Intro &amp; Background It seems safe to say that artificial intelligence (AI), particularly large language models (LLMs), are here to stay. As a cybersecurity professional, it has been pretty easy to find use cases for AI in my daily work, from general penetration testing and writing tools to forensics and reverse engineering. However, as with">
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"Article","@id":"\/2025\/05\/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui\/#article","name":"Ultimate Local AI Setup Guide: Ubuntu, Ollama, & Open WebUI | RobWillis.info","headline":"Ultimate Local AI Setup Guide: Ubuntu, Ollama, &#038; Open WebUI","author":{"@id":"\/author\/bit_rot\/#author"},"publisher":{"@id":"\/#organization"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2025\/05\/PT5810-Edit-resize-feat.jpg","width":749,"height":556},"datePublished":"2025-05-14T11:30:07-05:00","dateModified":"2025-10-27T19:08:56-05:00","inLanguage":"en-US","mainEntityOfPage":{"@id":"\/2025\/05\/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui\/#webpage"},"isPartOf":{"@id":"\/2025\/05\/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui\/#webpage"},"articleSection":"AI, Blog, Pen Testing, Security, Servers, Tools, AI, LLM, Ollama, Open WebUI, Ubuntu"},{"@type":"BreadcrumbList","@id":"\/2025\/05\/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"#listItem","position":1,"name":"Home","item":"","nextItem":{"@type":"ListItem","@id":"\/category\/servers\/#listItem","name":"Servers"}},{"@type":"ListItem","@id":"\/category\/servers\/#listItem","position":2,"name":"Servers","item":"\/category\/servers\/","nextItem":{"@type":"ListItem","@id":"\/2025\/05\/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui\/#listItem","name":"Ultimate Local AI Setup Guide: Ubuntu, Ollama, &#038; Open WebUI"},"previousItem":{"@type":"ListItem","@id":"#listItem","name":"Home"}},{"@type":"ListItem","@id":"\/2025\/05\/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui\/#listItem","position":3,"name":"Ultimate Local AI Setup Guide: Ubuntu, Ollama, &#038; Open WebUI","previousItem":{"@type":"ListItem","@id":"\/category\/servers\/#listItem","name":"Servers"}}]},{"@type":"Organization","@id":"\/#organization","name":"RobWillis.info","description":"#yolosec","url":"\/"},{"@type":"Person","@id":"\/author\/bit_rot\/#author","url":"\/author\/bit_rot\/","name":"robwillisinfo","image":{"@type":"ImageObject","@id":"\/2025\/05\/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui\/#authorImage","url":"https:\/\/secure.gravatar.com\/avatar\/5abe3ae45b388410a815ca1c5ff124c1e418cd7b13ef7401ce6393d362cd1c90?s=96&d=mm&r=r","width":96,"height":96,"caption":"robwillisinfo"}},{"@type":"WebPage","@id":"\/2025\/05\/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui\/#webpage","url":"\/2025\/05\/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui\/","name":"Ultimate Local AI Setup Guide: Ubuntu, Ollama, & Open WebUI | RobWillis.info","description":"Intro & Background It seems safe to say that artificial intelligence (AI), particularly large language models (LLMs), are here to stay. As a cybersecurity professional, it has been pretty easy to find use cases for AI in my daily work, from general penetration testing and writing tools to forensics and reverse engineering. However, as with","inLanguage":"en-US","isPartOf":{"@id":"\/#website"},"breadcrumb":{"@id":"\/2025\/05\/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui\/#breadcrumblist"},"author":{"@id":"\/author\/bit_rot\/#author"},"creator":{"@id":"\/author\/bit_rot\/#author"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2025\/05\/PT5810-Edit-resize-feat.jpg","@id":"\/2025\/05\/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui\/#mainImage","width":749,"height":556},"primaryImageOfPage":{"@id":"\/2025\/05\/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui\/#mainImage"},"datePublished":"2025-05-14T11:30:07-05:00","dateModified":"2025-10-27T19:08:56-05:00"},{"@type":"WebSite","@id":"\/#website","url":"\/","name":"RobWillis.info","description":"#yolosec","inLanguage":"en-US","publisher":{"@id":"\/#organization"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+<title>Ultimate Local AI Setup Guide: Ubuntu, Ollama, &amp; Open WebUI | RobWillis.info</title>
+<link rel="alternate" type="application/rss+xml" title="RobWillis.info &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="RobWillis.info &raquo; Comments Feed" href="/comments/feed/">
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"🏳️‍⚧️","🏳️​⚧️")?!1:!n(e,"🇨🇶","🇨​🇶")&&!n(e,"🏴󠁧󠁢󠁥󠁮󠁧󠁿","🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿");case"emoji":return!a(e,"🫟")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style id="wp-block-site-title-inline-css">.wp-block-site-title{box-sizing:border-box}.wp-block-site-title :where(a){color:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}</style>
+<style id="wp-block-navigation-link-inline-css">.wp-block-navigation .wp-block-navigation-item__label{overflow-wrap:break-word}.wp-block-navigation .wp-block-navigation-item__description{display:none}.link-ui-tools{border-top:1px solid #f0f0f0;padding:8px}.link-ui-block-inserter{padding-top:8px}.link-ui-block-inserter__back{margin-left:8px;text-transform:uppercase}</style>
+<link rel="stylesheet" id="wp-block-navigation-css" href="/wp-includes/blocks/navigation/style.min.css?ver=6.8.3" media="all">
+<style id="wp-block-group-inline-css">.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}</style>
+<style id="wp-block-post-title-inline-css">.wp-block-post-title{box-sizing:border-box;word-break:break-word}.wp-block-post-title :where(a){display:inline-block;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}</style>
+<style id="wp-block-paragraph-inline-css">.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}</style>
+<style id="wp-block-post-author-name-inline-css">.wp-block-post-author-name{box-sizing:border-box}</style>
+<style id="wp-block-post-terms-inline-css">.wp-block-post-terms{box-sizing:border-box}.wp-block-post-terms .wp-block-post-terms__separator{white-space:pre-wrap}</style>
+<style id="wp-block-post-content-inline-css">.wp-block-post-content{display:flow-root}</style>
+<style id="wp-block-post-navigation-link-inline-css">.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-previous{display:inline-block;margin-right:1ch}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-previous:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-next{display:inline-block;margin-left:1ch}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-next:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-post-navigation-link.has-text-align-left[style*="writing-mode: vertical-lr"],.wp-block-post-navigation-link.has-text-align-right[style*="writing-mode: vertical-rl"]{rotate:180deg}</style>
+<style id="wp-block-comments-inline-css">.wp-block-post-comments{box-sizing:border-box}.wp-block-post-comments .alignleft{float:left}.wp-block-post-comments .alignright{float:right}.wp-block-post-comments .navigation:after{clear:both;content:"";display:table}.wp-block-post-comments .commentlist{clear:both;list-style:none;margin:0;padding:0}.wp-block-post-comments .commentlist .comment{min-height:2.25em;padding-left:3.25em}.wp-block-post-comments .commentlist .comment p{font-size:1em;line-height:1.8;margin:1em 0}.wp-block-post-comments .commentlist .children{list-style:none;margin:0;padding:0}.wp-block-post-comments .comment-author{line-height:1.5}.wp-block-post-comments .comment-author .avatar{border-radius:1.5em;display:block;float:left;height:2.5em;margin-right:.75em;margin-top:.5em;width:2.5em}.wp-block-post-comments .comment-author cite{font-style:normal}.wp-block-post-comments .comment-meta{font-size:.875em;line-height:1.5}.wp-block-post-comments .comment-meta b{font-weight:400}.wp-block-post-comments .comment-meta .comment-awaiting-moderation{display:block;margin-bottom:1em;margin-top:1em}.wp-block-post-comments .comment-body .commentmetadata{font-size:.875em}.wp-block-post-comments .comment-form-author label,.wp-block-post-comments .comment-form-comment label,.wp-block-post-comments .comment-form-email label,.wp-block-post-comments .comment-form-url label{display:block;margin-bottom:.25em}.wp-block-post-comments .comment-form input:not([type=submit]):not([type=checkbox]),.wp-block-post-comments .comment-form textarea{box-sizing:border-box;display:block;width:100%}.wp-block-post-comments .comment-form-cookies-consent{display:flex;gap:.25em}.wp-block-post-comments .comment-form-cookies-consent #wp-comment-cookies-consent{margin-top:.35em}.wp-block-post-comments .comment-reply-title{margin-bottom:0}.wp-block-post-comments .comment-reply-title :where(small){font-size:var(--wp--preset--font-size--medium,smaller);margin-left:.5em}.wp-block-post-comments .reply{font-size:.875em;margin-bottom:1.4em}.wp-block-post-comments input:not([type=submit]),.wp-block-post-comments textarea{border:1px solid #949494;font-family:inherit;font-size:1em}.wp-block-post-comments input:not([type=submit]):not([type=checkbox]),.wp-block-post-comments textarea{padding:calc(.667em + 2px)}:where(.wp-block-post-comments input[type=submit]){border:none}.wp-block-comments{box-sizing:border-box}</style>
+<style id="wp-block-heading-inline-css">h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-background,h6.has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}</style>
+<style id="wp-block-post-date-inline-css">.wp-block-post-date{box-sizing:border-box}</style>
+<style id="wp-block-post-template-inline-css">.wp-block-post-template{box-sizing:border-box;list-style:none;margin-bottom:0;margin-top:0;max-width:100%;padding:0}.wp-block-post-template.is-flex-container{display:flex;flex-direction:row;flex-wrap:wrap;gap:1.25em}.wp-block-post-template.is-flex-container>li{margin:0;width:100%}@media (min-width:600px){.wp-block-post-template.is-flex-container.is-flex-container.columns-2>li{width:calc(50% - .625em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-3>li{width:calc(33.33333% - .83333em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-4>li{width:calc(25% - .9375em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-5>li{width:calc(20% - 1em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-6>li{width:calc(16.66667% - 1.04167em)}}@media (max-width:600px){.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid{grid-template-columns:1fr}}.wp-block-post-template-is-layout-constrained>li>.alignright,.wp-block-post-template-is-layout-flow>li>.alignright{float:right;margin-inline-end:0;margin-inline-start:2em}.wp-block-post-template-is-layout-constrained>li>.alignleft,.wp-block-post-template-is-layout-flow>li>.alignleft{float:left;margin-inline-end:2em;margin-inline-start:0}.wp-block-post-template-is-layout-constrained>li>.aligncenter,.wp-block-post-template-is-layout-flow>li>.aligncenter{margin-inline-end:auto;margin-inline-start:auto}</style>
+<link rel="stylesheet" id="wp-block-social-links-css" href="/wp-includes/blocks/social-links/style.min.css?ver=6.8.3" media="all">
+<style id="wp-block-library-inline-css">:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color)}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}</style>
+<style id="global-styles-inline-css">:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--base: #1B1B1B;--wp--preset--color--contrast: #F0F0F0;--wp--preset--color--accent-1: #786D0A;--wp--preset--color--accent-2: #442369;--wp--preset--color--accent-3: #D1D0EA;--wp--preset--color--accent-4: #CBCBCB;--wp--preset--color--accent-5: #353535;--wp--preset--color--accent-6: #FFFFFF33;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 0.875rem;--wp--preset--font-size--medium: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.196), 1.125rem);--wp--preset--font-size--large: clamp(1.125rem, 1.125rem + ((1vw - 0.2rem) * 0.392), 1.375rem);--wp--preset--font-size--x-large: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 0.392), 2rem);--wp--preset--font-size--xx-large: clamp(2.15rem, 2.15rem + ((1vw - 0.2rem) * 1.333), 3rem);--wp--preset--font-family--manrope: Manrope, sans-serif;--wp--preset--font-family--fira-code: "Fira Code", monospace;--wp--preset--spacing--20: 10px;--wp--preset--spacing--30: 20px;--wp--preset--spacing--40: 30px;--wp--preset--spacing--50: clamp(30px, 5vw, 50px);--wp--preset--spacing--60: clamp(30px, 7vw, 70px);--wp--preset--spacing--70: clamp(50px, 7vw, 90px);--wp--preset--spacing--80: clamp(70px, 10vw, 140px);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 645px;--wp--style--global--wide-size: 1340px; }:where(body) { margin: 0; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) { padding-right: 0; padding-left: 0; }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) > .alignfull { margin-left: 0; margin-right: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 1.2rem; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 1.2rem; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 1.2rem;}:root :where(.is-layout-grid){gap: 1.2rem;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{background-color: var(--wp--preset--color--base);color: var(--wp--preset--color--accent-4);font-family: var(--wp--preset--font-family--manrope);font-size: var(--wp--preset--font-size--large);font-weight: 300;letter-spacing: -0.1px;line-height: 1.4;--wp--style--root--padding-top: 0px;--wp--style--root--padding-right: var(--wp--preset--spacing--50);--wp--style--root--padding-bottom: 0px;--wp--style--root--padding-left: var(--wp--preset--spacing--50);}a:where(:not(.wp-element-button)){color: #0099ff;text-decoration: underline;}:root :where(a:where(:not(.wp-element-button)):hover){text-decoration: none;}h1, h2, h3, h4, h5, h6{font-weight: 400;letter-spacing: -0.1px;line-height: 1.125;}h1{font-size: var(--wp--preset--font-size--xx-large);}h2{font-size: var(--wp--preset--font-size--x-large);}h3{font-size: var(--wp--preset--font-size--large);}h4{font-size: var(--wp--preset--font-size--medium);}h5{font-size: var(--wp--preset--font-size--small);letter-spacing: 0.5px;}h6{font-size: var(--wp--preset--font-size--small);font-weight: 700;letter-spacing: 1.4px;text-transform: uppercase;}:root :where(.wp-element-button, .wp-block-button__link){background-color: var(--wp--preset--color--contrast);border-width: 0;color: var(--wp--preset--color--base);font-family: inherit;font-size: var(--wp--preset--font-size--medium);line-height: inherit;padding-top: 0.6rem;padding-right: 1.6rem;padding-bottom: 0.6rem;padding-left: 1.6rem;text-decoration: none;}:root :where(.wp-element-button:hover, .wp-block-button__link:hover){background-color: color-mix(in srgb, var(--wp--preset--color--contrast) 85%, transparent);border-color: transparent;color: var(--wp--preset--color--base);}:root :where(.wp-element-button:focus, .wp-block-button__link:focus){outline-color: var(--wp--preset--color--accent-4);outline-offset: 2px;}:root :where(.wp-element-caption, .wp-block-audio figcaption, .wp-block-embed figcaption, .wp-block-gallery figcaption, .wp-block-image figcaption, .wp-block-table figcaption, .wp-block-video figcaption){font-size: var(--wp--preset--font-size--small);line-height: 1.4;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-base-color{color: var(--wp--preset--color--base) !important;}.has-contrast-color{color: var(--wp--preset--color--contrast) !important;}.has-accent-1-color{color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-color{color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-color{color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-color{color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-color{color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-color{color: var(--wp--preset--color--accent-6) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-background-color{background-color: var(--wp--preset--color--base) !important;}.has-contrast-background-color{background-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-background-color{background-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-background-color{background-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-background-color{background-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-background-color{background-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-background-color{background-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-background-color{background-color: var(--wp--preset--color--accent-6) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-border-color{border-color: var(--wp--preset--color--base) !important;}.has-contrast-border-color{border-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-border-color{border-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-border-color{border-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-border-color{border-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-border-color{border-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-border-color{border-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-border-color{border-color: var(--wp--preset--color--accent-6) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-xx-large-font-size{font-size: var(--wp--preset--font-size--xx-large) !important;}.has-manrope-font-family{font-family: var(--wp--preset--font-family--manrope) !important;}.has-fira-code-font-family{font-family: var(--wp--preset--font-family--fira-code) !important;}img.aligncenter{margin-left:auto;margin-right:auto;display:block;max-width:100%;height:auto;}
+
+th, td {
+  border-bottom: 1px solid #404040;
+padding: 5px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+pre {
+  font-size: 18px;
+  background-color: #101010;
+  white-space: pre-wrap;
+  word-break: keep-all; 
+  border-radius: 8px;
+  padding: 1em;
+  color: #fff;
+  font-weight: normal;
+  font-family: "Source Code Pro", monospace;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+:root :where(.wp-block-post-date){color: var(--wp--preset--color--accent-4);font-size: var(--wp--preset--font-size--small);}
+:root :where(.wp-block-post-date a:where(:not(.wp-element-button))){color: var(--wp--preset--color--accent-4);text-decoration: none;}
+:root :where(.wp-block-post-date a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+:root :where(.wp-block-post-navigation-link){font-size: var(--wp--preset--font-size--medium);}
+:root :where(.wp-block-post-terms){font-size: var(--wp--preset--font-size--small);font-weight: 600;}:root :where(.wp-block-post-terms a){white-space: nowrap;}
+:root :where(.wp-block-post-title a:where(:not(.wp-element-button))){text-decoration: none;}
+:root :where(.wp-block-post-title a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+:root :where(.wp-block-site-title){font-weight: 700;letter-spacing: -.5px;}
+:root :where(.wp-block-site-title a:where(:not(.wp-element-button))){text-decoration: none;}
+:root :where(.wp-block-site-title a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+:root :where(.wp-block-navigation){font-size: var(--wp--preset--font-size--medium);}
+:root :where(.wp-block-navigation a:where(:not(.wp-element-button))){text-decoration: none;}
+:root :where(.wp-block-navigation a:where(:not(.wp-element-button)):hover){text-decoration: underline;}</style>
+<style id="block-style-variation-styles-inline-css">:root :where(.is-style-post-terms-1--1 a:where(:not(.wp-element-button))){border-radius: 20px;border-color: var(--wp--preset--color--accent-6);border-width: 0.8px;border-style: solid;font-weight: 400;line-height: 2.8;padding-top: 5px;padding-right: 10px;padding-bottom: 5px;padding-left: 10px;text-decoration: none;}:root :where(.is-style-post-terms-1--1 a:where(:not(.wp-element-button)):hover){text-decoration: underline;}</style>
+<style id="wp-emoji-styles-inline-css">img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}</style>
+<style id="core-block-supports-inline-css">.wp-container-core-navigation-is-layout-a89b3969{justify-content:center;}.wp-container-core-group-is-layout-4efaea1e{gap:0.2em;}.wp-container-core-post-content-is-layout-68124974 > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width:1440px;margin-left:auto !important;margin-right:auto !important;}.wp-container-core-post-content-is-layout-68124974 > .alignwide{max-width:1440px;}.wp-container-core-post-content-is-layout-68124974 .alignfull{max-width:none;}.wp-container-core-group-is-layout-9b36172e{flex-wrap:nowrap;justify-content:space-between;}.wp-container-core-group-is-layout-154222c2{flex-wrap:nowrap;justify-content:space-between;align-items:center;}.wp-container-core-post-template-is-layout-3ee800f6 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-post-template-is-layout-3ee800f6 > * + *{margin-block-start:0;margin-block-end:0;}.wp-container-content-b0223bd5{flex-basis:25%;}.wp-container-core-social-links-is-layout-ad1cd33a{flex-wrap:nowrap;gap:0 12px;justify-content:flex-end;}.wp-container-core-group-is-layout-cc97c919{flex-wrap:nowrap;gap:0;justify-content:space-between;}</style>
+<style id="wp-block-template-skip-link-inline-css">.skip-link.screen-reader-text {
+			border: 0;
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}</style>
+<link rel="stylesheet" id="lbwps-styles-photoswipe5-main-css" href="/wp-content/plugins/lightbox-photoswipe/assets/ps5/styles/main.css?ver=5.7.3" media="all">
+<link rel="stylesheet" id="twentytwentyfive-style-css" href="/wp-content/themes/twentytwentyfive/style.css?ver=1.3" media="all">
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/posts/6836">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.8.3">
+<link rel="shortlink" href="/?p=6836">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2025%2F05%2Fultimate-local-ai-setup-guide-ubuntu-ollama-open-webui%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2025%2F05%2Fultimate-local-ai-setup-guide-ubuntu-ollama-open-webui%2F&#038;format=xml">
+<script type="importmap" id="wp-importmap">
+{"imports":{"@wordpress\/interactivity":"\/wp-includes\/js\/dist\/script-modules\/interactivity\/index.min.js?ver=55aebb6e0a16726baffb"}}
+</script>
+<script type="module" src="/wp-includes/js/dist/script-modules/block-library/navigation/view.min.js?ver=61572d447d60c0aa5240" id="@wordpress/block-library/navigation/view-js-module"></script>
+<link rel="modulepreload" href="/wp-includes/js/dist/script-modules/interactivity/index.min.js?ver=55aebb6e0a16726baffb" id="@wordpress/interactivity-js-modulepreload">
+<style class="wp-fonts-local">@font-face{font-family:Manrope;font-style:normal;font-weight:200 800;font-display:fallback;src:url('/wp-content/themes/twentytwentyfive/assets/fonts/manrope/Manrope-VariableFont_wght.woff2') format('woff2');}
+@font-face{font-family:"Fira Code";font-style:normal;font-weight:300 700;font-display:fallback;src:url('/wp-content/themes/twentytwentyfive/assets/fonts/fira-code/FiraCode-VariableFont_wght.woff2') format('woff2');}</style>
+</head>
+
+<body class="wp-singular post-template-default single single-post postid-6836 single-format-standard wp-embed-responsive wp-theme-twentytwentyfive">
+
+<div class="wp-site-blocks">
+<header class="wp-block-template-part">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--30)">
+<p class="has-text-align-center alignwide wp-block-site-title has-x-large-font-size"><a href="/" target="_self" rel="home">RobWillis.info</a></p>
+
+
+<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"><nav class="items-justified-center wp-block-navigation is-content-justification-center is-layout-flex wp-container-core-navigation-is-layout-a89b3969 wp-block-navigation-is-layout-flex" aria-label="Menu"><ul class="wp-block-navigation__container items-justified-center wp-block-navigation">
+<li class=" wp-block-navigation-item  menu-item menu-item-type-custom menu-item-object-custom menu-item-home wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/" title=""><span class="wp-block-navigation-item__label">Home</span></a></li>
+<li data-wp-context="{ &quot;submenuOpenedBy&quot;: { &quot;click&quot;: false, &quot;hover&quot;: false, &quot;focus&quot;: false }, &quot;type&quot;: &quot;submenu&quot;, &quot;modal&quot;: null }" data-wp-interactive="core/navigation" data-wp-on--focusout="actions.handleMenuFocusout" data-wp-on--keydown="actions.handleMenuKeydown" data-wp-on-async--mouseenter="actions.openMenuOnHover" data-wp-on-async--mouseleave="actions.closeMenuOnHover" data-wp-watch="callbacks.initMenu" tabindex="-1" class="wp-block-navigation-item has-child open-on-hover-click  menu-item menu-item-type-custom menu-item-object-custom wp-block-navigation-submenu">
+<a class="wp-block-navigation-item__content" href="#" title=""><span class="wp-block-navigation-item__label">Categories</span></a><button data-wp-bind--aria-expanded="state.isMenuOpen" data-wp-on-async--click="actions.toggleMenuOnClick" aria-label="Categories submenu" class="wp-block-navigation__submenu-icon wp-block-navigation-submenu__toggle"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" fill="none" aria-hidden="true" focusable="false"><path d="M1.50002 4L6.00002 8L10.5 4" stroke-width="1.5"></path></svg></button><ul data-wp-on-async--focus="actions.openMenuOnFocus" class="wp-block-navigation__submenu-container has-text-color has-contrast-color has-background has-base-background-color  menu-item menu-item-type-custom menu-item-object-custom wp-block-navigation-submenu">
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/servers/" title=""><span class="wp-block-navigation-item__label">Servers &#8211; Win, *nix, ESXi</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/security/" title=""><span class="wp-block-navigation-item__label">Security</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/pen-testing/" title=""><span class="wp-block-navigation-item__label">Pen Testing</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/scripting/" title=""><span class="wp-block-navigation-item__label">PowerShell/Scripting</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/computers/" title=""><span class="wp-block-navigation-item__label">Computers</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/android-hacks/" title=""><span class="wp-block-navigation-item__label">Android Hacks</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/software/" title=""><span class="wp-block-navigation-item__label">Software</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/gaming/" title=""><span class="wp-block-navigation-item__label">Gaming &#8211; PC/PS3/Xbox 360</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/air-guns/" title=""><span class="wp-block-navigation-item__label">Air Guns</span></a></li>
+</ul>
+</li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/about/" title=""><span class="wp-block-navigation-item__label">About</span></a></li>
+</ul></nav></div>
+</div>
+</div>
+</header>
+
+
+<main class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="margin-top:var(--wp--preset--spacing--60)">
+<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+<h1 class="wp-block-post-title">Ultimate Local AI Setup Guide: Ubuntu, Ollama, &#038; Open WebUI</h1>
+
+
+<div class="wp-block-group has-link-color has-accent-4-color has-text-color has-small-font-size is-layout-flex wp-container-core-group-is-layout-4efaea1e wp-block-group-is-layout-flex" style="margin-bottom:var(--wp--preset--spacing--60)">
+<p>Written by </p>
+
+
+<div class="wp-block-post-author-name"><a href="/author/bit_rot/" target="_self" class="wp-block-post-author-name__link">robwillisinfo</a></div>
+
+
+<p>in</p>
+
+
+<div style="font-weight:300" class="taxonomy-category wp-block-post-terms">
+<a href="/category/ai/" rel="tag">AI</a><span class="wp-block-post-terms__separator">, </span><a href="/category/blog/" rel="tag">Blog</a><span class="wp-block-post-terms__separator">, </span><a href="/category/pen-testing/" rel="tag">Pen Testing</a><span class="wp-block-post-terms__separator">, </span><a href="/category/security/" rel="tag">Security</a><span class="wp-block-post-terms__separator">, </span><a href="/category/servers/" rel="tag">Servers</a><span class="wp-block-post-terms__separator">, </span><a href="/category/tools/" rel="tag">Tools</a>
+</div>
+</div>
+
+
+<div class="entry-content alignfull wp-block-post-content has-global-padding is-layout-constrained wp-container-core-post-content-is-layout-68124974 wp-block-post-content-is-layout-constrained">
+<p></p>
+<center>
+<br>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/sA5g9OW-yXU" frameborder="0" allowfullscreen></iframe><br>
+</center>
+<h3>Intro &#038; Background</h3>
+<p>It seems safe to say that artificial intelligence (AI), particularly large language models (LLMs), are here to stay. As a cybersecurity professional, it has been pretty easy to find use cases for AI in my daily work, from general penetration testing and writing tools to forensics and reverse engineering. However, as with any cloud-based solution, privacy is a major concern, particularly when handling sensitive cyber information. This was the main issue holding me back from fully embracing AI.</p>
+<p>The open-source AI landscape has seen significant progress over the last year, so I figured it was finally time to invest in some hardware and see if I could find a solution that works for me.  Initially, I set out to find a back end for hosting LLMs, a front end for chat, and then likely look into building my own agents/tools (scrapers, scanners, etc) and orchestration solutions to handle stuff like Retrieval-Augmented Generation (RAG).</p>
+<p>After evaluating several solutions, I found that <a href="https://ollama.com/" target="_blank">Ollama</a> and <a href="https://openwebui.com/" target="_blank">Open WebUI</a> were the ultimate combination that I was looking for, offering a great deal of flexibility and extensibility while still being easy to use.</p>
+<h3>Post Outline &#038; Goals</h3>
+<p>For the sake of brevity, I’m going to assume you have a basic understanding of AI and LLMs. For example, I won&#8217;t be explaining the history or theory behind generative AI, but I will do my best to add relevant context when needed. My goal is to give you all the details, commands, and tips needed to get your own dedicated local AI host up and running reliably in the shortest amount of time possible. The end result will be a web based chat setup with RAG and web search capabilities that can also be extended with custom tools, functions, and pipelines.</p>
+<p>Here is a brief outline of what will be covered:</p>
+<ul>
+<li>Server Hardware</li>
+<li>Ollama</li>
+<ul>
+<li>Installing Ollama</li>
+<li>Managing Ollama</li>
+<li>Choosing Models</li>
+</ul>
+<li>Open WebUI</li>
+<ul>
+<li>Installing Docker</li>
+<li>Nvidia Container Support</li>
+<li>Installing Open WebUI</li>
+<li>Auto Updating With Watchtower</li>
+<li>Basic Usage</li>
+<li>Downloading &#038; Managing Models</li>
+<li>Documents &#038; Knowledge (RAG)</li>
+<ul>
+<li>Embedding Model Engine</li>
+<li>The Context Length Issue</li>
+<li>Chat Uploads</li>
+<li>Knowledge</li>
+</ul>
+<li>Web Search Configuration</li>
+<li>Tools, Functions, &#038; Pipelines</li>
+</ul>
+<li>Host Monitoring</li>
+<li>Cheat Sheets</li>
+</ul>
+<h3>Server Hardware</h3>
+<p><a href="/wp-content/uploads/2025/05/PT5810-Edit-resize.jpg" data-lbwps-width="749" data-lbwps-height="1080" data-lbwps-srcsmall="/wp-content/uploads/2025/05/PT5810-Edit-resize-364x525.jpg"><img fetchpriority="high" decoding="async" src="/wp-content/uploads/2025/05/PT5810-Edit-resize-364x525.jpg" alt="" width="364" height="525" class="aligncenter size-medium wp-image-7390" srcset="/wp-content/uploads/2025/05/PT5810-Edit-resize-364x525.jpg 364w, /wp-content/uploads/2025/05/PT5810-Edit-resize-710x1024.jpg 710w, /wp-content/uploads/2025/05/PT5810-Edit-resize.jpg 749w" sizes="(max-width: 364px) 100vw, 364px"></a></p>
+<p>Running large language models can get expensive, largely because they require substantial memory. Ideally, you should maximize your CPU, RAM, GPU, and VRAM within your budget. While a GPU isn’t essential, it’s necessary for good performance. If you plan to use a GPU, ensure it&#8217;s supported by the software you&#8217;re using.</p>
+<p>You can find a list of supported GPUs for Ollama here:<br>
+<a href="https://github.com/ollama/ollama/blob/main/docs/gpu.md" target="_blank">https://github.com/ollama/ollama/blob/main/docs/gpu.md</a></p>
+<p>To be frank, while AMD/ATI cards may seem attractive as they offer more budget-friendly options with increased memory, their support is considerably more limited compared to Nvidia cards.</p>
+<p>For my setup, I chose a refurbished Dell Precision Tower 5810 (Xeon CPU, 64GB RAM, 500GB SSD), which I found for around $300 US on Amazon. These older engineering workstations are excellent for this kind of project, offering features like server-grade CPUs, large power supplies, multi-GPU support, and extensive memory expandability. I also found an additional 128GB of RAM for about $150 US and a single RTX 4060 Ti 16GB GPU for $450 US, bringing the total cost of my AI rig to ~$900 US.</p>
+<p>Here are the detailed specifications:</p>
+<table>
+<tr>
+<td>
+<strong>Platform</strong>
+</td>
+<td>
+Dell Precision Tower 5810
+</td>
+</tr>
+<tr>
+<td>
+<strong>OS</strong>
+</td>
+<td>
+Ubuntu Server 24.04
+</td>
+</tr>
+<tr>
+<td>
+<strong>CPU</strong>
+</td>
+<td>
+Intel Xeon E5-2630 v4 @ 2.20GHz (10 Cores/20 Threads)
+</td>
+</tr>
+<tr>
+<td>
+<strong>GPU</strong>
+</td>
+<td>
+Gigabyte RTX 4060 Ti 16GB
+</td>
+</tr>
+<tr>
+<td>
+<strong>Memory</strong>
+</td>
+<td>
+192GB DDR4 2400MHz ECC (256GB Max)
+</td>
+</tr>
+<tr>
+<td>
+<strong>HDD</strong>
+</td>
+<td>
+2 x 500GB SSDs
+</td>
+</tr>
+</table>
+<p>Ubuntu 24.04 is going to be my OS of choice, all commands referenced will reflect this.</p>
+<p>Note: For those of you with a keen eye, technically the Ubuntu server in this post is going to be a virtual machine running via ESXi on the Dell Precision and the GPU has been passed through. I did this to simplify building and tearing down the host while I tried different solutions and for this post. Once all testing completed, Ubuntu was installed bare metal.</p>
+<h3>Ollama</h3>
+<p>Ollama will serve as the &#8220;backend&#8221; for this project, hosting all of the LLMs. I&#8217;ve found Ollama to be exceptionally easy to use and highly flexible, making it a great choice for development and experimentation. Plus, it&#8217;s open-source and free.</p>
+<p>You can find more about Ollama here:<br>
+<a href="https://ollama.com/" target="_blank">https://ollama.com/</a></p>
+<h4>Installing Ollama</h4>
+<p>Downloading and installing Ollama is very straight forward:<br>
+<a href="https://ollama.com/download" target="_blank">https://ollama.com/download</a></p>
+<p>On Ubuntu, you can install Ollama with one simple command:</p>
+<pre>
+# <strong>curl -fsSL https://ollama.com/install.sh | sh</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/04/Installing-Ollama-Ubuntu.png" data-lbwps-width="1595" data-lbwps-height="856" data-lbwps-srcsmall="/wp-content/uploads/2025/04/Installing-Ollama-Ubuntu-500x268.png"><img decoding="async" src="/wp-content/uploads/2025/04/Installing-Ollama-Ubuntu-500x268.png" alt="" width="500" height="268" class="aligncenter size-medium wp-image-6884" srcset="/wp-content/uploads/2025/04/Installing-Ollama-Ubuntu-500x268.png 500w, /wp-content/uploads/2025/04/Installing-Ollama-Ubuntu-1024x550.png 1024w, /wp-content/uploads/2025/04/Installing-Ollama-Ubuntu-768x412.png 768w, /wp-content/uploads/2025/04/Installing-Ollama-Ubuntu-1536x824.png 1536w, /wp-content/uploads/2025/04/Installing-Ollama-Ubuntu.png 1595w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+<p><a href="/wp-content/uploads/2025/04/Installing-Ollama-Ubuntu-2.png" data-lbwps-width="1596" data-lbwps-height="864" data-lbwps-srcsmall="/wp-content/uploads/2025/04/Installing-Ollama-Ubuntu-2-500x271.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/04/Installing-Ollama-Ubuntu-2-500x271.png" alt="" width="500" height="271" class="aligncenter size-medium wp-image-6885" srcset="/wp-content/uploads/2025/04/Installing-Ollama-Ubuntu-2-500x271.png 500w, /wp-content/uploads/2025/04/Installing-Ollama-Ubuntu-2-1024x554.png 1024w, /wp-content/uploads/2025/04/Installing-Ollama-Ubuntu-2-768x416.png 768w, /wp-content/uploads/2025/04/Installing-Ollama-Ubuntu-2-1536x832.png 1536w, /wp-content/uploads/2025/04/Installing-Ollama-Ubuntu-2.png 1596w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Reviewing the output, it looks like the install was successful with GPU support.</p>
+<p>Ollama should now be available at http://127.0.0.1:11434, meaning it should only be accessible from the host it&#8217;s running on, let&#8217;s take a look:</p>
+<pre>
+# <strong>ss -antp | grep :11434</strong>
+# <strong>curl http://localhost:11434 -v</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/04/Ollama-Service-Running-2.png" data-lbwps-width="1664" data-lbwps-height="754" data-lbwps-srcsmall="/wp-content/uploads/2025/04/Ollama-Service-Running-2-500x227.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/04/Ollama-Service-Running-2-500x227.png" alt="" width="500" height="227" class="aligncenter size-medium wp-image-6942" srcset="/wp-content/uploads/2025/04/Ollama-Service-Running-2-500x227.png 500w, /wp-content/uploads/2025/04/Ollama-Service-Running-2-1024x464.png 1024w, /wp-content/uploads/2025/04/Ollama-Service-Running-2-768x348.png 768w, /wp-content/uploads/2025/04/Ollama-Service-Running-2-1536x696.png 1536w, /wp-content/uploads/2025/04/Ollama-Service-Running-2.png 1664w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Ollama is now running as a local service and will restart with the system automatically.</p>
+<h4>Managing Ollama</h4>
+<p>Running the <strong>ollama</strong> command with <strong>&#8211;help</strong> provides everything you need to get started:</p>
+<pre>
+# <strong>ollama --help</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/04/Ollama-Help.png" data-lbwps-width="660" data-lbwps-height="752" data-lbwps-srcsmall="/wp-content/uploads/2025/04/Ollama-Help-461x525.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/04/Ollama-Help-461x525.png" alt="" width="461" height="525" class="aligncenter size-medium wp-image-6889" srcset="/wp-content/uploads/2025/04/Ollama-Help-461x525.png 461w, /wp-content/uploads/2025/04/Ollama-Help.png 660w" sizes="auto, (max-width: 461px) 100vw, 461px"></a></p>
+<p>I&#8217;ll talk a little but more about how to select a model in the <em>&#8220;Choosing Models&#8221;</em> section coming up next, but for now this is how to download (or update) a model:</p>
+<pre>
+# <strong>ollama pull gemma3:1b</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/04/Ollama-Pull.png" data-lbwps-width="1660" data-lbwps-height="307" data-lbwps-srcsmall="/wp-content/uploads/2025/04/Ollama-Pull-500x92.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/04/Ollama-Pull-500x92.png" alt="" width="500" height="92" class="aligncenter size-medium wp-image-6890" srcset="/wp-content/uploads/2025/04/Ollama-Pull-500x92.png 500w, /wp-content/uploads/2025/04/Ollama-Pull-1024x189.png 1024w, /wp-content/uploads/2025/04/Ollama-Pull-768x142.png 768w, /wp-content/uploads/2025/04/Ollama-Pull-1536x284.png 1536w, /wp-content/uploads/2025/04/Ollama-Pull.png 1660w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>List all locally installed models:</p>
+<pre>
+# <strong>ollama list</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/04/Ollama-List.png" data-lbwps-width="653" data-lbwps-height="186" data-lbwps-srcsmall="/wp-content/uploads/2025/04/Ollama-List-500x142.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/04/Ollama-List-500x142.png" alt="" width="500" height="142" class="aligncenter size-medium wp-image-6891" srcset="/wp-content/uploads/2025/04/Ollama-List-500x142.png 500w, /wp-content/uploads/2025/04/Ollama-List.png 653w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Remove a locally installed model:</p>
+<pre>
+# <strong>ollama rm deepseek-r1:1.5b</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/04/Ollama-Remove.png" data-lbwps-width="623" data-lbwps-height="183" data-lbwps-srcsmall="/wp-content/uploads/2025/04/Ollama-Remove-500x147.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/04/Ollama-Remove-500x147.png" alt="" width="500" height="147" class="aligncenter size-medium wp-image-6892" srcset="/wp-content/uploads/2025/04/Ollama-Remove-500x147.png 500w, /wp-content/uploads/2025/04/Ollama-Remove.png 623w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Run a model interactively in the terminal &#8211; add in the <strong>&#8211;verbose</strong> parameter to provide some useful additional stats about the session:</p>
+<pre>
+# <strong>ollama run gemma3:1b --verbose</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/04/Ollama-Run.png" data-lbwps-width="793" data-lbwps-height="183" data-lbwps-srcsmall="/wp-content/uploads/2025/04/Ollama-Run-500x115.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/04/Ollama-Run-500x115.png" alt="" width="500" height="115" class="aligncenter size-medium wp-image-6894" srcset="/wp-content/uploads/2025/04/Ollama-Run-500x115.png 500w, /wp-content/uploads/2025/04/Ollama-Run-768x177.png 768w, /wp-content/uploads/2025/04/Ollama-Run.png 793w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Within the run session, an additional help menu is available:</p>
+<pre>
+&gt;&gt;&gt; <strong>/?</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/04/Ollama-Run-Help.png" data-lbwps-width="843" data-lbwps-height="385" data-lbwps-srcsmall="/wp-content/uploads/2025/04/Ollama-Run-Help-500x228.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/04/Ollama-Run-Help-500x228.png" alt="" width="500" height="228" class="aligncenter size-medium wp-image-6895" srcset="/wp-content/uploads/2025/04/Ollama-Run-Help-500x228.png 500w, /wp-content/uploads/2025/04/Ollama-Run-Help-768x351.png 768w, /wp-content/uploads/2025/04/Ollama-Run-Help.png 843w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>The <strong>/show</strong> command is useful for seeing various information about the model itself:</p>
+<pre>
+&gt;&gt;&gt; <strong>/show</strong>
+&gt;&gt;&gt; <strong>/show info</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/04/Ollama-Run-Show.png" data-lbwps-width="763" data-lbwps-height="944" data-lbwps-srcsmall="/wp-content/uploads/2025/04/Ollama-Run-Show-424x525.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/04/Ollama-Run-Show-424x525.png" alt="" width="424" height="525" class="aligncenter size-medium wp-image-6896" srcset="/wp-content/uploads/2025/04/Ollama-Run-Show-424x525.png 424w, /wp-content/uploads/2025/04/Ollama-Run-Show.png 763w" sizes="auto, (max-width: 424px) 100vw, 424px"></a></p>
+<p>Let&#8217;s try asking it something:</p>
+<p><a href="/wp-content/uploads/2025/04/Ollama-Run-Chat-1.png" data-lbwps-width="1659" data-lbwps-height="878" data-lbwps-srcsmall="/wp-content/uploads/2025/04/Ollama-Run-Chat-1-500x265.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/04/Ollama-Run-Chat-1-500x265.png" alt="" width="500" height="265" class="aligncenter size-medium wp-image-6897" srcset="/wp-content/uploads/2025/04/Ollama-Run-Chat-1-500x265.png 500w, /wp-content/uploads/2025/04/Ollama-Run-Chat-1-1024x542.png 1024w, /wp-content/uploads/2025/04/Ollama-Run-Chat-1-768x406.png 768w, /wp-content/uploads/2025/04/Ollama-Run-Chat-1-1536x813.png 1536w, /wp-content/uploads/2025/04/Ollama-Run-Chat-1.png 1659w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p><a href="/wp-content/uploads/2025/04/Ollama-Run-Chat-2.png" data-lbwps-width="1657" data-lbwps-height="881" data-lbwps-srcsmall="/wp-content/uploads/2025/04/Ollama-Run-Chat-2-500x266.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/04/Ollama-Run-Chat-2-500x266.png" alt="" width="500" height="266" class="aligncenter size-medium wp-image-6898" srcset="/wp-content/uploads/2025/04/Ollama-Run-Chat-2-500x266.png 500w, /wp-content/uploads/2025/04/Ollama-Run-Chat-2-1024x544.png 1024w, /wp-content/uploads/2025/04/Ollama-Run-Chat-2-768x408.png 768w, /wp-content/uploads/2025/04/Ollama-Run-Chat-2-1536x817.png 1536w, /wp-content/uploads/2025/04/Ollama-Run-Chat-2.png 1657w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>To exit the running session:</p>
+<pre>
+&gt;&gt;&gt; <strong>/bye</strong>
+</pre>
+<p><strong>Additional Notes:</strong></p>
+<ul>
+<li>
+<strong>Allowing External Network Access</strong> &#8211; By default, Ollama is only accessible from the local machine (127.0.0.1). To access Ollama from a remote host, this setting needs to be adjusted to allow connections on all interfaces (0.0.0.0). Be aware that opening network access introduces a security risk, by default there is no authentication, allowing anyone with network access to manage the Ollama instance. Restrict access using network ACLs wherever possible and never expose Ollama directly to the internet.
+<ul>
+<li>
+To expose the Ollama instance via local IP, edit the Ollama service:
+<pre>
+# <strong>systemctl edit ollama.service</strong>
+</pre>
+</li>
+<li>
+Add the following configuration, modifying the value from &#8220;127.0.0.1&#8221; (loopback) to &#8220;0.0.0.0&#8221; (all interfaces):
+<pre>
+[Service]
+Environment="OLLAMA_HOST=0.0.0.0"
+</pre>
+<p><a href="/wp-content/uploads/2025/04/Ollama-External-Access.png" data-lbwps-width="1662" data-lbwps-height="884" data-lbwps-srcsmall="/wp-content/uploads/2025/04/Ollama-External-Access-500x266.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/04/Ollama-External-Access-500x266.png" alt="" width="500" height="266" class="aligncenter size-medium wp-image-6903" srcset="/wp-content/uploads/2025/04/Ollama-External-Access-500x266.png 500w, /wp-content/uploads/2025/04/Ollama-External-Access-1024x545.png 1024w, /wp-content/uploads/2025/04/Ollama-External-Access-768x408.png 768w, /wp-content/uploads/2025/04/Ollama-External-Access-1536x817.png 1536w, /wp-content/uploads/2025/04/Ollama-External-Access.png 1662w" sizes="auto, (max-width: 500px) 100vw, 500px"></a>
+</p>
+</li>
+<li>
+Restart the Ollama service:
+<pre>
+# <strong>systemctl restart ollama</strong>
+</pre>
+</li>
+<li>
+Verify the service is now listening on all interfaces:
+<pre>
+# <strong>ss -antp</strong>
+<em>Default configuration listening on 127.0.0.1:
+LISTEN 0      4096               127.0.0.1:11434                0.0.0.0:*     users:(("ollama",pid=2194,fd=3))
+Updated configuration listening on 0.0.0.0:
+LISTEN 0      4096                       *:11434                      *:*     users:(("ollama",pid=2101,fd=3))</em>
+</pre>
+</li>
+<li>
+Using a remote host, you should also be able to browse to the Ollama host using the local IP:
+<p><a href="/wp-content/uploads/2025/04/Ollama-Browser.png" data-lbwps-width="824" data-lbwps-height="289" data-lbwps-srcsmall="/wp-content/uploads/2025/04/Ollama-Browser-500x175.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/04/Ollama-Browser-500x175.png" alt="" width="500" height="175" class="aligncenter size-medium wp-image-6905" srcset="/wp-content/uploads/2025/04/Ollama-Browser-500x175.png 500w, /wp-content/uploads/2025/04/Ollama-Browser-768x269.png 768w, /wp-content/uploads/2025/04/Ollama-Browser.png 824w" sizes="auto, (max-width: 500px) 100vw, 500px"></a>
+</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4>Choosing Models</h4>
+<p>When it comes to choosing models to run with Ollama, I&#8217;d recommend starting with the following repositories:<br>
+<a href="https://ollama.com/search" target="_blank">https://ollama.com/search</a><br>
+<a href="https://huggingface.co/" target="_blank">https://huggingface.co</a> (GGUF Models)</p>
+<p>Based on my experience, the Ollama team is super proactive and consistently releases regularly updated and stable versions of the most popular models. This is a great starting point and should meet the LLM needs of most users.</p>
+<p>To download a model from Ollama&#8217;s repository, navigate to the &#8220;Models&#8221; section at the top, select a model and size, and the corresponding ollama run command will be displayed on the right:</p>
+<p><a href="/wp-content/uploads/2025/05/Ollama-Model-Download.png" data-lbwps-width="1569" data-lbwps-height="891" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Ollama-Model-Download-500x284.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Ollama-Model-Download-500x284.png" alt="" width="500" height="284" class="aligncenter size-medium wp-image-7017" srcset="/wp-content/uploads/2025/05/Ollama-Model-Download-500x284.png 500w, /wp-content/uploads/2025/05/Ollama-Model-Download-1024x582.png 1024w, /wp-content/uploads/2025/05/Ollama-Model-Download-768x436.png 768w, /wp-content/uploads/2025/05/Ollama-Model-Download-1536x872.png 1536w, /wp-content/uploads/2025/05/Ollama-Model-Download.png 1569w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>For those slightly more adventurous, Hugging Face is community based and is a little more like the cutting edge wild wild west of AI, maybe not as polished for specifically running with Ollama, but lot&#8217;s of very interesting projects.</p>
+<p>To download a model from Hugging Face, select &#8220;Models&#8221; on the top then &#8220;Libraries&#8221; and filter to &#8220;GGUF&#8221;:</p>
+<p><a href="/wp-content/uploads/2025/05/Huggingface-GGUF.png" data-lbwps-width="1563" data-lbwps-height="890" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Huggingface-GGUF-500x285.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Huggingface-GGUF-500x285.png" alt="" width="500" height="285" class="aligncenter size-medium wp-image-7018" srcset="/wp-content/uploads/2025/05/Huggingface-GGUF-500x285.png 500w, /wp-content/uploads/2025/05/Huggingface-GGUF-1024x583.png 1024w, /wp-content/uploads/2025/05/Huggingface-GGUF-768x437.png 768w, /wp-content/uploads/2025/05/Huggingface-GGUF-1536x875.png 1536w, /wp-content/uploads/2025/05/Huggingface-GGUF.png 1563w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>After selecting a model, towards the right there should be a &#8220;Use this model&#8221; button with an Ollama option:</p>
+<p><a href="/wp-content/uploads/2025/05/Huggingface-GGUF-2.png" data-lbwps-width="1565" data-lbwps-height="891" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Huggingface-GGUF-2-500x285.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Huggingface-GGUF-2-500x285.png" alt="" width="500" height="285" class="aligncenter size-medium wp-image-7019" srcset="/wp-content/uploads/2025/05/Huggingface-GGUF-2-500x285.png 500w, /wp-content/uploads/2025/05/Huggingface-GGUF-2-1024x583.png 1024w, /wp-content/uploads/2025/05/Huggingface-GGUF-2-768x437.png 768w, /wp-content/uploads/2025/05/Huggingface-GGUF-2-1536x874.png 1536w, /wp-content/uploads/2025/05/Huggingface-GGUF-2.png 1565w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>The Ollama run command will then be displayed:</p>
+<p><a href="/wp-content/uploads/2025/05/Huggingface-GGUF-3.png" data-lbwps-width="939" data-lbwps-height="296" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Huggingface-GGUF-3-500x158.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Huggingface-GGUF-3-500x158.png" alt="" width="500" height="158" class="aligncenter size-medium wp-image-7021" srcset="/wp-content/uploads/2025/05/Huggingface-GGUF-3-500x158.png 500w, /wp-content/uploads/2025/05/Huggingface-GGUF-3-768x242.png 768w, /wp-content/uploads/2025/05/Huggingface-GGUF-3.png 939w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Now as far as downloading correctly sized models for your hardware, that becomes considerably more complicated. Trying to keep things as simple as possible, most models are described in size by the amount of parameters in billions &#8211; 1b, 7b, 14b, etc. The more parameters, the more memory will be needed. The end goal is to be able to fit the model &#038; intermediate calculations observed during inference into memory to ensure optimal performance.</p>
+<p>As a general rule of thumb, I tend to take the size of the LLM on disk, multiply it by 1.5 and if it&#8217;s under the physical memory limit, I&#8217;ll give it a run but then verify the resource usage manually using the tools mentioned in the <em>&#8220;Host Monitoring&#8221;</em> section (see below).</p>
+<p>As an example, when selecting models to run on a GPU with 16GB of VRAM, here&#8217;s how I would begin. Let&#8217;s compare Gemma 3 12b versus Gemma 3 27b on Ollama&#8217;s repository.</p>
+<p>gemma3 12b:<br>
+<a href="/wp-content/uploads/2025/04/Ollama-Gemma-12B-edit.png" data-lbwps-width="1905" data-lbwps-height="954" data-lbwps-srcsmall="/wp-content/uploads/2025/04/Ollama-Gemma-12B-edit-500x250.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/04/Ollama-Gemma-12B-edit-500x250.png" alt="" width="500" height="250" class="aligncenter size-medium wp-image-6963" srcset="/wp-content/uploads/2025/04/Ollama-Gemma-12B-edit-500x250.png 500w, /wp-content/uploads/2025/04/Ollama-Gemma-12B-edit-1024x513.png 1024w, /wp-content/uploads/2025/04/Ollama-Gemma-12B-edit-768x385.png 768w, /wp-content/uploads/2025/04/Ollama-Gemma-12B-edit-1536x769.png 1536w, /wp-content/uploads/2025/04/Ollama-Gemma-12B-edit.png 1905w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>gemma3 27b:</p>
+<p><a href="/wp-content/uploads/2025/04/Ollama-Gemma-27B-Edit.png" data-lbwps-width="1901" data-lbwps-height="955" data-lbwps-srcsmall="/wp-content/uploads/2025/04/Ollama-Gemma-27B-Edit-500x251.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/04/Ollama-Gemma-27B-Edit-500x251.png" alt="" width="500" height="251" class="aligncenter size-medium wp-image-6964" srcset="/wp-content/uploads/2025/04/Ollama-Gemma-27B-Edit-500x251.png 500w, /wp-content/uploads/2025/04/Ollama-Gemma-27B-Edit-1024x514.png 1024w, /wp-content/uploads/2025/04/Ollama-Gemma-27B-Edit-768x386.png 768w, /wp-content/uploads/2025/04/Ollama-Gemma-27B-Edit-1536x772.png 1536w, /wp-content/uploads/2025/04/Ollama-Gemma-27B-Edit.png 1901w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Based on the information above and using the size on disk multiplied by 1.5 formula, it appears that Gemma 3.0 12b (8.1GB) would offer good performance on a GPU with 16GB VRAM, while Gemma 3.0 27b (17GB) likely would not. Again, this is a general guideline but proves to be pretty effective when combined with additional resource monitoring.</p>
+<p>Here are some models I really like and have been using regularly:</p>
+<ul>
+<li>gemma3</li>
+<li>phi4</li>
+<li>deepseek-r1</li>
+</ul>
+<h3>Open WebUI</h3>
+<p>For the &#8220;frontend&#8221; or chat portion of this setup, I will be using Open WebUI, which is also open-source and free:<br>
+<a href="https://openwebui.com/" target="_blank">https://openwebui.com/</a></p>
+<p>Open WebUI provides a sleek frontend with robust LLM connectivity and a variety of additional features, greatly reducing the need for additional projects or custom solutions.</p>
+<p>Here are just a few of the awesome features available:</p>
+<ul>
+<li>Local RAG Integration</li>
+<li>Web Search for RAG/Web Browsing</li>
+<li>Extensible using python based tools/functions in addition to pipelines for advanced workflows</li>
+<li>Arena &#8211; for comparing the response of models to a specific query</li>
+<li>Easily create, download, and manage Ollama models via the Web UI</li>
+<li>MCP Support</li>
+<li>OpenAI API Integration</li>
+</ul>
+<h4>Installing Docker</h4>
+<p>The easiest way to run Open WebUI is using Docker, so let&#8217;s check to see if Docker is installed:</p>
+<pre>
+# <strong>docker --version</strong>
+<em>Docker version 26.1.3, build 26.1.3-0ubuntu1~24.04.1</em>
+# <strong>docker info</strong>
+<em>Client:
+ Version:    26.1.3
+ Context:    default
+ Debug Mode: false
+...</em>
+</pre>
+<p>If docker is not installed, you can locate the available Docker packages using <strong>apt-cache</strong>:</p>
+<pre>
+# <strong>apt update && apt-cache search docker</strong>
+<em>docker.io - Linux container runtime</em>
+</pre>
+<p>To install Docker:</p>
+<pre>
+# <strong>apt install docker.io</strong>
+</pre>
+<p>Enable Docker to start with the host:</p>
+<pre>
+# <strong>systemctl enable docker</strong>
+</pre>
+<h4>Nvidia Container Support</h4>
+<p>To enable Nvidia support for Docker containers, there are a few additional packages that might need to be installed and configured:<br>
+<a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html" target="_blank">https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html</a></p>
+<p>Otherwise, you will likely receive the following error when attempting to start the Open WebUI container with GPU support:</p>
+<pre>
+<em>docker: Error response from daemon: could not select device driver "" with capabilities: [[gpu]]</em>
+</pre>
+<p>Install the Nvidia Docker packages:</p>
+<pre>
+# <strong>apt install nvidia-container-toolkit</strong>
+</pre>
+<p>Configure the container runtime:</p>
+<pre>
+# <strong>nvidia-ctk runtime configure --runtime=docker</strong>
+</pre>
+<p>Restart the Docker service:</p>
+<pre>
+# <strong>systemctl restart docker</strong>
+</pre>
+<h4>Installing Open WebUI</h4>
+<p>The Open WebUI documentation can be found here:<br>
+<a href="https://docs.openwebui.com/getting-started/quick-start" target="_blank">https://docs.openwebui.com/getting-started/quick-start</a><br>
+<a href="https://github.com/open-webui/open-webui" target="_blank">https://github.com/open-webui/open-webui</a></p>
+<p>Pulling down the Open WebUI Docker image:</p>
+<pre>
+# <strong>docker pull ghcr.io/open-webui/open-webui:main</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/04/Docker-Pull-OpenWebUI.png" data-lbwps-width="920" data-lbwps-height="481" data-lbwps-srcsmall="/wp-content/uploads/2025/04/Docker-Pull-OpenWebUI-500x261.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/04/Docker-Pull-OpenWebUI-500x261.png" alt="" width="500" height="261" class="aligncenter size-medium wp-image-6911" srcset="/wp-content/uploads/2025/04/Docker-Pull-OpenWebUI-500x261.png 500w, /wp-content/uploads/2025/04/Docker-Pull-OpenWebUI-768x402.png 768w, /wp-content/uploads/2025/04/Docker-Pull-OpenWebUI.png 920w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Before starting the Open WebUI container, be aware there&#8217;s a few issues that may come up if running Ollama on the same host. Open WebUI has some great troubleshooting tips that can be found here:<br>
+<a href="https://docs.openwebui.com/troubleshooting/connection-error/" target="_blank">https://docs.openwebui.com/troubleshooting/connection-error/</a> </p>
+<h5>Open WebUI &#8211; Docker Run Option 1</h5>
+<p>The typically recommended approach for running Ollama and Open WebUI on the same host is to leverage <strong>&#8211;add-host=host.docker.internal:host-gateway</strong>:</p>
+<pre>
+# docker run -d -p 3000:8080 --gpus all <strong>--add-host=host.docker.internal:host-gateway</strong> -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+</pre>
+<p>This should allow the Open WebUI container to reach the Ollama service running on the host by using http://host.docker.internal:11434. </p>
+<p>With Ollama listening on the default loopback IP (127.0.0.1), the connection fails:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Ollama-Fails.png" data-lbwps-width="1260" data-lbwps-height="653" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Ollama-Fails-500x259.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Ollama-Fails-500x259.png" alt="" width="500" height="259" class="aligncenter size-medium wp-image-7053" srcset="/wp-content/uploads/2025/05/Open-WebUI-Ollama-Fails-500x259.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Ollama-Fails-1024x531.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Ollama-Fails-768x398.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Ollama-Fails.png 1260w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>To resolve this, reconfigure Ollama to listen on all interfaces (0.0.0.0):</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Ollama-Success.png" data-lbwps-width="1261" data-lbwps-height="622" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Ollama-Success-500x247.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Ollama-Success-500x247.png" alt="" width="500" height="247" class="aligncenter size-medium wp-image-7054" srcset="/wp-content/uploads/2025/05/Open-WebUI-Ollama-Success-500x247.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Ollama-Success-1024x505.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Ollama-Success-768x379.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Ollama-Success.png 1261w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Check out the <em>&#8220;Additional Notes&#8221;</em> section under <em>&#8220;Managing Ollama&#8221;</em> (see above) for more information on how to make this adjustment.</p>
+<h5>Open WebUI &#8211; Docker Run Option 2</h5>
+<p>Another option is to use <strong>&#8211;network host</strong> in combination with the <strong>OLLAMA_BASE_URL</strong> environmental variable:</p>
+<pre>
+# docker run -d -p 80:8080 <strong>--network host</strong> --restart always --gpus all <strong>-e OLLAMA_BASE_URL=http://127.0.0.1:11434</strong> -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main
+</pre>
+<p>Using &#8220;&#8211;network host&#8221; is the more blunt and less preferred option since it bypasses the Docker network stack, losing the benefits of isolation, and exposes the Open WebUI container directly but also allows the Ollama service to remain internal on the default 127.0.0.1. Another gotcha that comes up when using &#8220;&#8211;network host&#8221; is that the setting will also override the port mapping settings (-p 3000:8080), resulting in Open WebUI listening on IP:8080. </p>
+<p>Both commands have their pro&#8217;s and con&#8217;s, but with this project being a single physical server I opted to use &#8220;&#8211;network host&#8221; since I trust the container to access the host and preferred not manage the overhead the comes with exposing Ollama while not having a need to.</p>
+<p>My slightly adjusted version:</p>
+<pre>
+# <strong>docker run -d --network host --restart always --gpus all -e OLLAMA_BASE_URL=http://127.0.0.1:11434 -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/05/Docker-Run-OpenWebUI.png" data-lbwps-width="1612" data-lbwps-height="190" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Docker-Run-OpenWebUI-500x59.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Docker-Run-OpenWebUI-500x59.png" alt="" width="500" height="59" class="aligncenter size-medium wp-image-7001" srcset="/wp-content/uploads/2025/05/Docker-Run-OpenWebUI-500x59.png 500w, /wp-content/uploads/2025/05/Docker-Run-OpenWebUI-1024x121.png 1024w, /wp-content/uploads/2025/05/Docker-Run-OpenWebUI-768x91.png 768w, /wp-content/uploads/2025/05/Docker-Run-OpenWebUI-1536x181.png 1536w, /wp-content/uploads/2025/05/Docker-Run-OpenWebUI.png 1612w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Additional arguments explained:</p>
+<ul>
+<li>
+<strong>-d</strong> &#8211; Detached mode executes the command and immediately returns you to the terminal prompt. Without detached mode, the terminal remains connected to the container, keeping it running until you manually stop it or close the terminal session.</li>
+<li>
+<strong>&#8211;restart always</strong> &#8211; Make sure the container always restarts with the host.</li>
+<li>
+<strong>&#8211;gpus all</strong> &#8211; Enable GPU support, important if you plan on using Open WebUI&#8217;s built-in engine for RAG.</li>
+<li>
+<strong>-e</strong> &#8211; Setup an environmental variable to update the connection to the Ollama server.</li>
+<li>
+<strong>-v</strong> &#8211; Establish a local storage volume for persistent storage.</li>
+</ul>
+<p>Now to browse over to the server via &#8220;http://IP:8080&#8221; or if you want to get fancy, create a local DNS A record so you can hit it by something like &#8220;http://chat.robwillis.info:8080&#8221; instead:</p>
+<p><a href="/wp-content/uploads/2025/05/OpenWebUI-Browser-DNS-1.png" data-lbwps-width="1502" data-lbwps-height="786" data-lbwps-srcsmall="/wp-content/uploads/2025/05/OpenWebUI-Browser-DNS-1-500x262.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/OpenWebUI-Browser-DNS-1-500x262.png" alt="" width="500" height="262" class="aligncenter size-medium wp-image-7073" srcset="/wp-content/uploads/2025/05/OpenWebUI-Browser-DNS-1-500x262.png 500w, /wp-content/uploads/2025/05/OpenWebUI-Browser-DNS-1-1024x536.png 1024w, /wp-content/uploads/2025/05/OpenWebUI-Browser-DNS-1-768x402.png 768w, /wp-content/uploads/2025/05/OpenWebUI-Browser-DNS-1.png 1502w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p><strong>Additional Notes:</strong></p>
+<ul>
+<li>
+<strong>Auto Restart With Host</strong>
+<ul>
+<li>
+To ensure the Open WebUI container restarts with the host, make sure the Docker service is enabled:
+<pre>
+# <strong>systemctl is-enabled docker</strong>
+<em>disabled</em>
+# <strong>systemctl enable docker</strong>
+<em>Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /usr/lib/systemd/system/docker.service.</em>
+</pre>
+</li>
+<li>
+And then make sure to use the <strong>&#8211;restart always</strong> parameter with the Docker run command:
+<pre>
+# docker run -d -p 3000:8080 --gpus all -v open-webui:/app/backend/data --name open-webui <strong>--restart always</strong> ghcr.io/open-webui/open-webui:main
+</pre>
+</li>
+</ul>
+</li>
+<li>
+<strong>DNS Trickery</strong> &#8211; The local DNS A record was accomplished using an unbound DNS host override via local firewall.
+</li>
+</ul>
+<h4>Auto Updating Open WebUI With Watchtower</h4>
+<p>All of the information covered below can be found in the Open WebUI documentation:<br>
+<a href="https://docs.openwebui.com/getting-started/updating/" target="_blank">https://docs.openwebui.com/getting-started/updating/</a></p>
+<p>You can manually update the Open WebUI container using the following commands:</p>
+<pre>
+# <strong>docker stop open-webui</strong>
+# <strong>docker rm open-webui</strong>
+# <strong>docker pull ghcr.io/open-webui/open-webui:main</strong>
+# <strong>docker run -d --network host --restart always --gpus all -e OLLAMA_BASE_URL=http://127.0.0.1:11434 -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main</strong>
+</pre>
+<p>Don&#8217;t be afraid of the <strong>docker rm</strong> command, it only removes the container and not the associated volume, no data will be lost. </p>
+<p>This step is not needed, but if you did want to wipe all data, the Open WebUI volume can be deleted using the following command:</p>
+<pre>
+# <strong>docker volume rm open-webui</strong>
+</pre>
+<p>These steps are pretty simple, but Open WebUI is updated pretty regularly, so to streamline the process you can use Watchtower, which will run as an additional container.</p>
+<p>My slightly modified version, adding restart always and changing it to run every 24 hrs:</p>
+<pre>
+# <strong>docker run -d --restart always --name watchtower --volume /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower -i 86400 open-webui</strong>
+</pre>
+<p><a href="/wp-content/uploads/2025/04/OpenWebUI-Watchtower.png" data-lbwps-width="1678" data-lbwps-height="411" data-lbwps-srcsmall="/wp-content/uploads/2025/04/OpenWebUI-Watchtower-500x122.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/04/OpenWebUI-Watchtower-500x122.png" alt="" width="500" height="122" class="aligncenter size-medium wp-image-6930" srcset="/wp-content/uploads/2025/04/OpenWebUI-Watchtower-500x122.png 500w, /wp-content/uploads/2025/04/OpenWebUI-Watchtower-1024x251.png 1024w, /wp-content/uploads/2025/04/OpenWebUI-Watchtower-768x188.png 768w, /wp-content/uploads/2025/04/OpenWebUI-Watchtower-1536x376.png 1536w, /wp-content/uploads/2025/04/OpenWebUI-Watchtower.png 1678w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<h4>Basic Usage</h4>
+<p>Now that Open WebUI is up and running, click on the &#8220;Get started&#8221; button to&#8230;.get started. 🙂</p>
+<p><a href="/wp-content/uploads/2025/05/OpenWebUI-Browser-DNS-1.png" data-lbwps-width="1502" data-lbwps-height="786" data-lbwps-srcsmall="/wp-content/uploads/2025/05/OpenWebUI-Browser-DNS-1-500x262.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/OpenWebUI-Browser-DNS-1-500x262.png" alt="" width="500" height="262" class="aligncenter size-medium wp-image-7073" srcset="/wp-content/uploads/2025/05/OpenWebUI-Browser-DNS-1-500x262.png 500w, /wp-content/uploads/2025/05/OpenWebUI-Browser-DNS-1-1024x536.png 1024w, /wp-content/uploads/2025/05/OpenWebUI-Browser-DNS-1-768x402.png 768w, /wp-content/uploads/2025/05/OpenWebUI-Browser-DNS-1.png 1502w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>The first user to access the instance will be prompted to create the Admin account:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Admin-Account-1.png" data-lbwps-width="1500" data-lbwps-height="786" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Admin-Account-1-500x262.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Admin-Account-1-500x262.png" alt="" width="500" height="262" class="aligncenter size-medium wp-image-7074" srcset="/wp-content/uploads/2025/05/Open-WebUI-Admin-Account-1-500x262.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Admin-Account-1-1024x537.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Admin-Account-1-768x402.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Admin-Account-1.png 1500w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>And we finally get to see the chat interface:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Interface.png" data-lbwps-width="1498" data-lbwps-height="783" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Interface-500x261.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Interface-500x261.png" alt="" width="500" height="261" class="aligncenter size-medium wp-image-7075" srcset="/wp-content/uploads/2025/05/Open-WebUI-Interface-500x261.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Interface-1024x535.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Interface-768x401.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Interface.png 1498w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Asking a simple question to verify everything is working:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Chat.png" data-lbwps-width="1495" data-lbwps-height="827" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Chat-500x277.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Chat-500x277.png" alt="" width="500" height="277" class="aligncenter size-medium wp-image-7138" srcset="/wp-content/uploads/2025/05/Open-WebUI-Chat-500x277.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Chat-1024x566.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Chat-768x425.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Chat.png 1495w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Let&#8217;s explore the interface in more detail.</p>
+<p>On the left, you&#8217;ll find your current and past chats, along with advanced options like Workspaces and Notes. </p>
+<p>To the right, you can select the model to be used, this is also where you can set the default model. It&#8217;s worth noting that you can switch models while you&#8217;re in the middle of a conversation or add (&#8220;+&#8221;) additional models for an &#8220;arena&#8221; style response showdown – pretty neat, right? </p>
+<p>Finally, on the far right are the &#8220;Chat Controls&#8221;, a collection of adjustable settings that influence the current session. While there are many options, key settings like the system prompt, temperature, and context length are readily accessible here. This is a great way to experiment with these settings and observe how they affect responses:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-webui-interface-breakdown-edit-1.png" data-lbwps-width="1504" data-lbwps-height="919" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-webui-interface-breakdown-edit-1-500x306.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-webui-interface-breakdown-edit-1-500x306.png" alt="" width="500" height="306" class="aligncenter size-medium wp-image-7126" srcset="/wp-content/uploads/2025/05/Open-webui-interface-breakdown-edit-1-500x306.png 500w, /wp-content/uploads/2025/05/Open-webui-interface-breakdown-edit-1-1024x626.png 1024w, /wp-content/uploads/2025/05/Open-webui-interface-breakdown-edit-1-768x469.png 768w, /wp-content/uploads/2025/05/Open-webui-interface-breakdown-edit-1.png 1504w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Clicking on the user avatar icons will display the main Open WebUI menu, which includes both the &#8220;Settings&#8221; and &#8220;Admin Panel&#8221;:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-webui-interface-breakdown-2-edit.png" data-lbwps-width="1502" data-lbwps-height="835" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-webui-interface-breakdown-2-edit-500x278.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-webui-interface-breakdown-2-edit-500x278.png" alt="" width="500" height="278" class="aligncenter size-medium wp-image-7124" srcset="/wp-content/uploads/2025/05/Open-webui-interface-breakdown-2-edit-500x278.png 500w, /wp-content/uploads/2025/05/Open-webui-interface-breakdown-2-edit-1024x569.png 1024w, /wp-content/uploads/2025/05/Open-webui-interface-breakdown-2-edit-768x427.png 768w, /wp-content/uploads/2025/05/Open-webui-interface-breakdown-2-edit.png 1502w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Within the &#8220;Admin Panel&#8221; &gt; &#8220;Users&#8221;, you&#8217;ll find the Open WebUI user management:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Admin-Settings.png" data-lbwps-width="1499" data-lbwps-height="827" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Admin-Settings-500x276.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Admin-Settings-500x276.png" alt="" width="500" height="276" class="aligncenter size-medium wp-image-7128" srcset="/wp-content/uploads/2025/05/Open-WebUI-Admin-Settings-500x276.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Admin-Settings-1024x565.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Admin-Settings-768x424.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Admin-Settings.png 1499w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>In the &#8220;Admin Panel&#8221; &gt; &#8220;Settings&#8221; &gt; &#8220;General&#8221; section, you can enable &#8220;New Sign Ups&#8221; along with a bunch of other advanced options:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-webui-interface-breakdown-3-edit.png" data-lbwps-width="1490" data-lbwps-height="822" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-webui-interface-breakdown-3-edit-500x276.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-webui-interface-breakdown-3-edit-500x276.png" alt="" width="500" height="276" class="aligncenter size-medium wp-image-7142" srcset="/wp-content/uploads/2025/05/Open-webui-interface-breakdown-3-edit-500x276.png 500w, /wp-content/uploads/2025/05/Open-webui-interface-breakdown-3-edit-1024x565.png 1024w, /wp-content/uploads/2025/05/Open-webui-interface-breakdown-3-edit-768x424.png 768w, /wp-content/uploads/2025/05/Open-webui-interface-breakdown-3-edit.png 1490w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>This is only a quick overview, but it should provide enough to get started. As you can see, there is a lot to Open WebUI, I highly recommend exploring the menus to get more familiar with all of the options available.</p>
+<h4>Downloading &#038; Managing Models</h4>
+<p>To get started with downloading and managing Ollama models in the Open WebUI interface, go to the &#8220;Admin Panel&#8221; &gt; &#8220;Settings&#8221; &gt; &#8220;Connections&#8221; section and click the &#8220;Manage&#8221; button under &#8220;Ollama API&#8221;:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-edit.png" data-lbwps-width="1498" data-lbwps-height="831" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-edit-500x277.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-edit-500x277.png" alt="" width="500" height="277" class="aligncenter size-medium wp-image-7131" srcset="/wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-edit-500x277.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-edit-1024x568.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-edit-768x426.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-edit.png 1498w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Here, you can download models from the <a href="https://ollama.com/library" target="_blank">Ollama.com</a> library, using the model tag found with the ollama run commands earlier. You can also delete and create models:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-2.png" data-lbwps-width="1495" data-lbwps-height="827" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-2-500x277.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-2-500x277.png" alt="" width="500" height="277" class="aligncenter size-medium wp-image-7132" srcset="/wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-2-500x277.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-2-1024x566.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-2-768x425.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-2.png 1495w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>The &#8220;Models&#8221; section (below &#8220;Connections&#8221;) allows you to enable/disable models and adjust their settings:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-3-edit.png" data-lbwps-width="1494" data-lbwps-height="828" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-3-edit-500x277.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-3-edit-500x277.png" alt="" width="500" height="277" class="aligncenter size-medium wp-image-7133" srcset="/wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-3-edit-500x277.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-3-edit-1024x568.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-3-edit-768x426.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-3-edit.png 1494w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Clicking the pencil icon to edit a model&#8217;s settings will reveal options similar to the &#8220;Chat Controls&#8221; seen earlier in the chat session. Unlike those controls, these settings are persistent. You&#8217;ll also find additional options for Knowledge, Tools, Filters, Actions, and more:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-4.png" data-lbwps-width="1496" data-lbwps-height="827" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-4-500x276.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-4-500x276.png" alt="" width="500" height="276" class="aligncenter size-medium wp-image-7134" srcset="/wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-4-500x276.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-4-1024x566.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-4-768x425.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-4.png 1496w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<h4>Documents &#038; Knowledge (RAG)</h4>
+<p>Retrieval Augmented Generation (RAG) allows you to search and enhance your own documents, such as PDFs, using AI. Open WebUI simplifies this process, while also offering some advanced options for greater flexibility.</p>
+<h5>Emedding Model Engine</h5>
+<p>Under the &#8220;Admin Panel&#8221; &gt; &#8220;Settings&#8221; is the &#8220;Documents&#8221; section, you can change the embedding model engine to use the default internal engine, or offload this load to a remote Ollama or OpenAI server. This choice is particularly important when considering GPU placement. If you&#8217;ll be using the Open WebUI RAG system, GPU support is recommended:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Documents-Edit-1.png" data-lbwps-width="1496" data-lbwps-height="827" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Documents-Edit-1-500x276.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Documents-Edit-1-500x276.png" alt="" width="500" height="276" class="aligncenter size-medium wp-image-7180" srcset="/wp-content/uploads/2025/05/Open-WebUI-Documents-Edit-1-500x276.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Documents-Edit-1-1024x566.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Documents-Edit-1-768x425.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Documents-Edit-1.png 1496w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<h5>The Context Length Issue</h5>
+<p>When looking at the Open WebUI documentation, there is a specific note about adjusting the context length to 8192+ tokens when using Ollama:<br>
+<a href="https://docs.openwebui.com/features/rag" target="_blank">https://docs.openwebui.com/features/rag</a></p>
+<p>Ollama&#8217;s default 2048-token context length is optimized for faster response times and reduced memory usage, but can limit its ability to retain information in extended conversations. </p>
+<p>This means the system might not use all retrieved data because it&#8217;s too large for the context window. To fix this, the context length should be increased to 8192 tokens or higher.</p>
+<p>To adjust this setting go to &#8220;Admin Panel&#8221; &gt; &#8220;Settings&#8221; &gt; &#8220;Models&#8221;, select the pencil icon on the model that you will be using:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-3-edit.png" data-lbwps-width="1494" data-lbwps-height="828" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-3-edit-500x277.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-3-edit-500x277.png" alt="" width="500" height="277" class="aligncenter size-medium wp-image-7133" srcset="/wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-3-edit-500x277.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-3-edit-1024x568.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-3-edit-768x426.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Manage-Ollama-3-edit.png 1494w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Click on &#8220;Show&#8221; under &#8220;Advanced Params&#8221;:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-RAG-Adv-Param-Edit-1.png" data-lbwps-width="1466" data-lbwps-height="764" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-RAG-Adv-Param-Edit-1-500x261.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-RAG-Adv-Param-Edit-1-500x261.png" alt="" width="500" height="261" class="aligncenter size-medium wp-image-7174" srcset="/wp-content/uploads/2025/05/Open-WebUI-RAG-Adv-Param-Edit-1-500x261.png 500w, /wp-content/uploads/2025/05/Open-WebUI-RAG-Adv-Param-Edit-1-1024x534.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-RAG-Adv-Param-Edit-1-768x400.png 768w, /wp-content/uploads/2025/05/Open-WebUI-RAG-Adv-Param-Edit-1.png 1466w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Locate the &#8220;Context Length (Ollama)&#8221; parameter and set it to 8192 as a starting point. Don&#8217;t be like me and use the slider that jumps around at like a million per pixel, you can just click the number and type it in:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-RAG-Adv-Param-2-edit-1.png" data-lbwps-width="1467" data-lbwps-height="764" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-RAG-Adv-Param-2-edit-1-500x260.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-RAG-Adv-Param-2-edit-1-500x260.png" alt="" width="500" height="260" class="aligncenter size-medium wp-image-7175" srcset="/wp-content/uploads/2025/05/Open-WebUI-RAG-Adv-Param-2-edit-1-500x260.png 500w, /wp-content/uploads/2025/05/Open-WebUI-RAG-Adv-Param-2-edit-1-1024x533.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-RAG-Adv-Param-2-edit-1-768x400.png 768w, /wp-content/uploads/2025/05/Open-WebUI-RAG-Adv-Param-2-edit-1.png 1467w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>If you are still running into issues where it seems like the RAG data is not being used and the context length has already been adjusted, try enabling &#8220;Full Context Mode&#8221; under the &#8220;Documents&#8221; section:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Rag-Full-Context-Edit-1.png" data-lbwps-width="1612" data-lbwps-height="730" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Rag-Full-Context-Edit-1-500x226.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Rag-Full-Context-Edit-1-500x226.png" alt="" width="500" height="226" class="aligncenter size-medium wp-image-7232" srcset="/wp-content/uploads/2025/05/Open-WebUI-Rag-Full-Context-Edit-1-500x226.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Rag-Full-Context-Edit-1-1024x464.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Rag-Full-Context-Edit-1-768x348.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Rag-Full-Context-Edit-1-1536x696.png 1536w, /wp-content/uploads/2025/05/Open-WebUI-Rag-Full-Context-Edit-1.png 1612w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>I find this setting particularly useful when using the Web Search features, we will talk about that more in an upcoming section.</p>
+<h5>Chat Uploads</h5>
+<p>You can upload files directly into the chat and begin using them immediately. However, these files are only available during the current session and will be deleted with the chat.</p>
+<p>Let&#8217;s try asking an obscure question the LLM probably shouldn&#8217;t be able to answer, like something you&#8217;d find in the owners manual for the Dell Precision powering this project &#8211; &#8220;How many memory slots are in a Dell Precision Tower 5810?&#8221;:</p>
+<p><a href="/wp-content/uploads/2025/05/WebUI-Documents-Pre.png" data-lbwps-width="1468" data-lbwps-height="766" data-lbwps-srcsmall="/wp-content/uploads/2025/05/WebUI-Documents-Pre-500x261.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/WebUI-Documents-Pre-500x261.png" alt="" width="500" height="261" class="aligncenter size-medium wp-image-7186" srcset="/wp-content/uploads/2025/05/WebUI-Documents-Pre-500x261.png 500w, /wp-content/uploads/2025/05/WebUI-Documents-Pre-1024x534.png 1024w, /wp-content/uploads/2025/05/WebUI-Documents-Pre-768x401.png 768w, /wp-content/uploads/2025/05/WebUI-Documents-Pre.png 1468w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Not quite&#8230;</p>
+<p>Clicking on the &#8220;+&#8221; icon in the chat and &#8220;Upload Files&#8221;, you can upload documents like a pdf:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-UploadFiles-Edit.png" data-lbwps-width="1467" data-lbwps-height="764" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-UploadFiles-Edit-500x260.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-UploadFiles-Edit-500x260.png" alt="" width="500" height="260" class="aligncenter size-medium wp-image-7188" srcset="/wp-content/uploads/2025/05/Open-WebUI-UploadFiles-Edit-500x260.png 500w, /wp-content/uploads/2025/05/Open-WebUI-UploadFiles-Edit-1024x533.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-UploadFiles-Edit-768x400.png 768w, /wp-content/uploads/2025/05/Open-WebUI-UploadFiles-Edit.png 1467w" sizes="auto, (max-width: 500px) 100vw, 500px"></a> </p>
+<p>Asking the same question again:</p>
+<p><a href="/wp-content/uploads/2025/05/WebUI-Documents-Post.png" data-lbwps-width="1467" data-lbwps-height="870" data-lbwps-srcsmall="/wp-content/uploads/2025/05/WebUI-Documents-Post-500x297.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/WebUI-Documents-Post-500x297.png" alt="" width="500" height="297" class="aligncenter size-medium wp-image-7190" srcset="/wp-content/uploads/2025/05/WebUI-Documents-Post-500x297.png 500w, /wp-content/uploads/2025/05/WebUI-Documents-Post-1024x607.png 1024w, /wp-content/uploads/2025/05/WebUI-Documents-Post-768x455.png 768w, /wp-content/uploads/2025/05/WebUI-Documents-Post.png 1467w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Much better, you don&#8217;t know until you know! But if we delete this chat session, the data is gone and which may or may not be desirable.</p>
+<h5>Knowledge</h5>
+<p>Knowledge works similar to the chat uploads, but is persistent and consists of a &#8220;collection&#8221;.</p>
+<p>To get started with Knowledge, go to &#8220;Workspace&#8221; &gt; &#8220;Knowledge&#8221; and click on the &#8220;+&#8221; icon:</p>
+<p><a href="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-1-Edit.png" data-lbwps-width="1618" data-lbwps-height="796" data-lbwps-srcsmall="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-1-Edit-500x246.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-1-Edit-500x246.png" alt="" width="500" height="246" class="aligncenter size-medium wp-image-7203" srcset="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-1-Edit-500x246.png 500w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-1-Edit-1024x504.png 1024w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-1-Edit-768x378.png 768w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-1-Edit-1536x756.png 1536w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-1-Edit.png 1618w" sizes="auto, (max-width: 500px) 100vw, 500px"></a> </p>
+<p>Fill out the form with all the necessary details to begin creating a knowledge base, I&#8217;m just going to go with a &#8220;Dell Support Tech&#8221; theme:</p>
+<p><a href="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-2.png" data-lbwps-width="1614" data-lbwps-height="795" data-lbwps-srcsmall="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-2-500x246.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-2-500x246.png" alt="" width="500" height="246" class="aligncenter size-medium wp-image-7204" srcset="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-2-500x246.png 500w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-2-1024x504.png 1024w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-2-768x378.png 768w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-2-1536x757.png 1536w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-2.png 1614w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>On the right, click the &#8220;+&#8221; to upload files or even entire directories. Sticking to our example, let&#8217;s upload the Dell pdf file:</p>
+<p><a href="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-3-edit.png" data-lbwps-width="1615" data-lbwps-height="796" data-lbwps-srcsmall="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-3-edit-500x246.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-3-edit-500x246.png" alt="" width="500" height="246" class="aligncenter size-medium wp-image-7206" srcset="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-3-edit-500x246.png 500w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-3-edit-1024x505.png 1024w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-3-edit-768x379.png 768w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-3-edit-1536x757.png 1536w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-3-edit.png 1615w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>We now have a Knowledge &#8220;Collection&#8221;:</p>
+<p><a href="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-4.png" data-lbwps-width="1615" data-lbwps-height="794" data-lbwps-srcsmall="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-4-500x246.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-4-500x246.png" alt="" width="500" height="246" class="aligncenter size-medium wp-image-7208" srcset="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-4-500x246.png 500w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-4-1024x503.png 1024w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-4-768x378.png 768w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-4-1536x755.png 1536w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-4.png 1615w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>To leverage the Knowledge Collection, use &#8220;#&#8221; with the name of the document or collection within a chat session:</p>
+<p><a href="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-5.png" data-lbwps-width="1615" data-lbwps-height="797" data-lbwps-srcsmall="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-5-500x247.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-5-500x247.png" alt="" width="500" height="247" class="aligncenter size-medium wp-image-7210" srcset="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-5-500x247.png 500w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-5-1024x505.png 1024w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-5-768x379.png 768w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-5-1536x758.png 1536w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-5.png 1615w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Asking the same question from before, we get the correct response without needing to upload additional documents:</p>
+<p><a href="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-6.png" data-lbwps-width="1615" data-lbwps-height="796" data-lbwps-srcsmall="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-6-500x246.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-6-500x246.png" alt="" width="500" height="246" class="aligncenter size-medium wp-image-7211" srcset="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-6-500x246.png 500w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-6-1024x505.png 1024w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-6-768x379.png 768w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-6-1536x757.png 1536w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-6.png 1615w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>You can also associate the Knowledge with a specific model by going to &#8220;Workspace&#8221; &gt; &#8220;Model&#8221; and clicking on the &#8220;+&#8221; icon:</p>
+<p><a href="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-7-Edit.png" data-lbwps-width="1614" data-lbwps-height="794" data-lbwps-srcsmall="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-7-Edit-500x246.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-7-Edit-500x246.png" alt="" width="500" height="246" class="aligncenter size-medium wp-image-7212" srcset="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-7-Edit-500x246.png 500w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-7-Edit-1024x504.png 1024w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-7-Edit-768x378.png 768w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-7-Edit-1536x756.png 1536w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-7-Edit.png 1614w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Name the new model, select a base model and then the knowledge to be associated with it: </p>
+<p><a href="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-8-edit.png" data-lbwps-width="1617" data-lbwps-height="885" data-lbwps-srcsmall="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-8-edit-500x274.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-8-edit-500x274.png" alt="" width="500" height="274" class="aligncenter size-medium wp-image-7214" srcset="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-8-edit-500x274.png 500w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-8-edit-1024x560.png 1024w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-8-edit-768x420.png 768w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-8-edit-1536x841.png 1536w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-8-edit.png 1617w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>There should now be a new model combined with the knowledge base data:</p>
+<p><a href="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-9.png" data-lbwps-width="1614" data-lbwps-height="886" data-lbwps-srcsmall="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-9-500x274.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-9-500x274.png" alt="" width="500" height="274" class="aligncenter size-medium wp-image-7215" srcset="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-9-500x274.png 500w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-9-1024x562.png 1024w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-9-768x422.png 768w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-9-1536x843.png 1536w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-9.png 1614w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>The new model can be selected from the normal chat drop down:</p>
+<p><a href="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-10-edit.png" data-lbwps-width="1615" data-lbwps-height="885" data-lbwps-srcsmall="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-10-edit-500x274.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-10-edit-500x274.png" alt="" width="500" height="274" class="aligncenter size-medium wp-image-7216" srcset="/wp-content/uploads/2025/05/OpenWebUI-Knowledge-10-edit-500x274.png 500w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-10-edit-1024x561.png 1024w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-10-edit-768x421.png 768w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-10-edit-1536x842.png 1536w, /wp-content/uploads/2025/05/OpenWebUI-Knowledge-10-edit.png 1615w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p><strong>Additional Notes:</strong></p>
+<ul>
+<li>
+<strong>Knowledge Needs To Be Maintained</strong> &#8211; Make sure to delete old versions of documents after uploading updated versions to prevent stale data.
+</li>
+</ul>
+<h4>Web Search Configuration</h4>
+<p>Web Search is disabled by default. To enable and configure it, navigate to the &#8220;Admin Panel&#8221; &gt; &#8220;Settings&#8221; &gt; &#8220;Web Search&#8221;:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Web-Search-1-Edit.png" data-lbwps-width="1616" data-lbwps-height="769" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Web-Search-1-Edit-500x238.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Web-Search-1-Edit-500x238.png" alt="" width="500" height="238" class="aligncenter size-medium wp-image-7234" srcset="/wp-content/uploads/2025/05/Open-WebUI-Web-Search-1-Edit-500x238.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Web-Search-1-Edit-1024x487.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Web-Search-1-Edit-768x365.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Web-Search-1-Edit-1536x731.png 1536w, /wp-content/uploads/2025/05/Open-WebUI-Web-Search-1-Edit.png 1616w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Once enabled, a search engine will need to be selected from the list. </p>
+<p>In my experience, Google Programmable Search Engine or &#8220;google_pse&#8221; tends to provide the most reliable results, but will require an API key. It is free (10k query limit &#8211; per day) and accessible via Google account:<br>
+<a href="https://programmablesearchengine.google.com/">https://programmablesearchengine.google.com/</a></p>
+<p>You&#8217;ll need to create a new search engine and then add &#8220;Programmatic Access&#8221; to retrieve the API key.</p>
+<p>Plug in the Engine ID/API key and make sure to save the settings:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Web-Search-2-Edit.png" data-lbwps-width="1615" data-lbwps-height="769" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Web-Search-2-Edit-500x238.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Web-Search-2-Edit-500x238.png" alt="" width="500" height="238" class="aligncenter size-medium wp-image-7236" srcset="/wp-content/uploads/2025/05/Open-WebUI-Web-Search-2-Edit-500x238.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Web-Search-2-Edit-1024x488.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Web-Search-2-Edit-768x366.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Web-Search-2-Edit-1536x731.png 1536w, /wp-content/uploads/2025/05/Open-WebUI-Web-Search-2-Edit.png 1615w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>In the chat session, there should be a new &#8220;Web Search&#8221; button:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Web-Search-4.png" data-lbwps-width="1615" data-lbwps-height="727" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Web-Search-4-500x225.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Web-Search-4-500x225.png" alt="" width="500" height="225" class="aligncenter size-medium wp-image-7239" srcset="/wp-content/uploads/2025/05/Open-WebUI-Web-Search-4-500x225.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Web-Search-4-1024x461.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Web-Search-4-768x346.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Web-Search-4-1536x691.png 1536w, /wp-content/uploads/2025/05/Open-WebUI-Web-Search-4.png 1615w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>To test it, let&#8217;s try asking the model something it shouldn&#8217;t know, like what content is currently on the index page of my site?</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Web-Search-5.png" data-lbwps-width="1617" data-lbwps-height="732" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Web-Search-5-500x226.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Web-Search-5-500x226.png" alt="" width="500" height="226" class="aligncenter size-medium wp-image-7240" srcset="/wp-content/uploads/2025/05/Open-WebUI-Web-Search-5-500x226.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Web-Search-5-1024x464.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Web-Search-5-768x348.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Web-Search-5-1536x695.png 1536w, /wp-content/uploads/2025/05/Open-WebUI-Web-Search-5.png 1617w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Without the Web Search feature, the model hallucinates all over the place.</p>
+<p>Trying the same query again, but enabling the Web Search feature this time:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Web-Search-6.png" data-lbwps-width="1612" data-lbwps-height="768" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Web-Search-6-500x238.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Web-Search-6-500x238.png" alt="" width="500" height="238" class="aligncenter size-medium wp-image-7241" srcset="/wp-content/uploads/2025/05/Open-WebUI-Web-Search-6-500x238.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Web-Search-6-1024x488.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Web-Search-6-768x366.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Web-Search-6-1536x732.png 1536w, /wp-content/uploads/2025/05/Open-WebUI-Web-Search-6.png 1612w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Much better!</p>
+<h4>Tools, Functions, &#038; Pipelines</h4>
+<p>This topic is complex enough to be its own post, and I plan to return to it later. For now, I just want to introduce the key concepts to help get started.</p>
+<p>If you want to dive deeper, check out the documentation here:<br>
+<a href="https://docs.openwebui.com/features/plugin/" target="_blank">https://docs.openwebui.com/features/plugin/</a></p>
+<p>Overview:</p>
+<ul>
+<li>
+<strong>Tools</strong> &#8211; Python scripts that extend the functionality of LLMs allowing for collection and analysis of real-time data:<br>
+<a href="https://openwebui.com/tools" target="_blank">https://openwebui.com/tools</a>
+</li>
+<li>
+<strong>Functions</strong> &#8211; Extend the functionality of Open WebUI, adding additional Model support or improving usability:<br>
+<a href="https://openwebui.com/functions" target="_blank">https://openwebui.com/functions</a>
+</li>
+<li>
+<strong>Pipelines</strong> &#8211; The most advanced but typically not needed option, extends Open WebUI tools and functions into OpenAI API-compatible formats.
+</li>
+</ul>
+<p><strong>Note:</strong> Make sure to to exercise caution here, we are talking about running 3rd party code, review any code before executing it.</p>
+<p>Again, there&#8217;s a ton to unpack here, so I am going to focus on tools since I think they are they most immediately useful of the group. What makes tools interesting is up until this point, this whole system has been text-in, text-out. Tools allow the LLMs to start interacting with the world beyond that.</p>
+<p>To get started, you&#8217;ll want to make sure to sign up for an Open WebUI community account, once logged in you should see something similar to the following:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Tools.png" data-lbwps-width="1614" data-lbwps-height="892" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Tools-500x276.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Tools-500x276.png" alt="" width="500" height="276" class="aligncenter size-medium wp-image-7255" srcset="/wp-content/uploads/2025/05/Open-WebUI-Tools-500x276.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Tools-1024x566.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Tools-768x424.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Tools-1536x849.png 1536w, /wp-content/uploads/2025/05/Open-WebUI-Tools.png 1614w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Select a tool to view more detailed information:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Tools-2.png" data-lbwps-width="1611" data-lbwps-height="892" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Tools-2-500x277.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Tools-2-500x277.png" alt="" width="500" height="277" class="aligncenter size-medium wp-image-7257" srcset="/wp-content/uploads/2025/05/Open-WebUI-Tools-2-500x277.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Tools-2-1024x567.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Tools-2-768x425.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Tools-2-1536x850.png 1536w, /wp-content/uploads/2025/05/Open-WebUI-Tools-2.png 1611w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Clicking &#8220;Get&#8221; will display a popup allowing you to either import the tool directly into the Open WebUI instance or download it as a JSON export:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Tools-3.png" data-lbwps-width="759" data-lbwps-height="872" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Tools-3-457x525.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Tools-3-457x525.png" alt="" width="457" height="525" class="aligncenter size-medium wp-image-7258" srcset="/wp-content/uploads/2025/05/Open-WebUI-Tools-3-457x525.png 457w, /wp-content/uploads/2025/05/Open-WebUI-Tools-3.png 759w" sizes="auto, (max-width: 457px) 100vw, 457px"></a></p>
+<p>When importing the tool into Open WebUI, you are presented with the opportunity to review the code:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Tools-Import.png" data-lbwps-width="1613" data-lbwps-height="892" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Tools-Import-500x277.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Tools-Import-500x277.png" alt="" width="500" height="277" class="aligncenter size-medium wp-image-7265" srcset="/wp-content/uploads/2025/05/Open-WebUI-Tools-Import-500x277.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Tools-Import-1024x566.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Tools-Import-768x425.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Tools-Import-1536x849.png 1536w, /wp-content/uploads/2025/05/Open-WebUI-Tools-Import.png 1613w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>And then an additional reminder to verify the code&#8217;s trustworthiness before saving:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Tools-Import-2.png" data-lbwps-width="1613" data-lbwps-height="892" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Tools-Import-2-500x277.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Tools-Import-2-500x277.png" alt="" width="500" height="277" class="aligncenter size-medium wp-image-7266" srcset="/wp-content/uploads/2025/05/Open-WebUI-Tools-Import-2-500x277.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Tools-Import-2-1024x566.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Tools-Import-2-768x425.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Tools-Import-2-1536x849.png 1536w, /wp-content/uploads/2025/05/Open-WebUI-Tools-Import-2.png 1613w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Navigating to &#8220;Workspace&#8221; &gt; &#8220;Tools&#8221;, shows all of the currently available tools along with the ability to import and create new tools (&#8220;+&#8221;):</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Tools-Import-3.png" data-lbwps-width="1615" data-lbwps-height="895" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Tools-Import-3-500x277.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Tools-Import-3-500x277.png" alt="" width="500" height="277" class="aligncenter size-medium wp-image-7267" srcset="/wp-content/uploads/2025/05/Open-WebUI-Tools-Import-3-500x277.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Tools-Import-3-1024x567.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Tools-Import-3-768x426.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Tools-Import-3-1536x851.png 1536w, /wp-content/uploads/2025/05/Open-WebUI-Tools-Import-3.png 1615w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>To use a tool, return to the main chat area and click the &#8220;+&#8221;. You should then see new options available, such as the weather tool in this example:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Tools-Chat-Edit.png" data-lbwps-width="1617" data-lbwps-height="896" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Tools-Chat-Edit-500x277.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Tools-Chat-Edit-500x277.png" alt="" width="500" height="277" class="aligncenter size-medium wp-image-7270" srcset="/wp-content/uploads/2025/05/Open-WebUI-Tools-Chat-Edit-500x277.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Tools-Chat-Edit-1024x567.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Tools-Chat-Edit-768x426.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Tools-Chat-Edit-1536x851.png 1536w, /wp-content/uploads/2025/05/Open-WebUI-Tools-Chat-Edit.png 1617w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>To test it out, let&#8217;s try asking about the weather without using the new weather tool:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Chat-3.png" data-lbwps-width="1617" data-lbwps-height="894" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Chat-3-500x276.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Chat-3-500x276.png" alt="" width="500" height="276" class="aligncenter size-medium wp-image-7273" srcset="/wp-content/uploads/2025/05/Open-WebUI-Chat-3-500x276.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Chat-3-1024x566.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Chat-3-768x425.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Chat-3-1536x849.png 1536w, /wp-content/uploads/2025/05/Open-WebUI-Chat-3.png 1617w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>It doesn&#8217;t know what day it is. 🙂</p>
+<p>Now to try it again, but calling the weather tool this time:</p>
+<p><a href="/wp-content/uploads/2025/05/Open-WebUI-Chat-4.png" data-lbwps-width="1612" data-lbwps-height="891" data-lbwps-srcsmall="/wp-content/uploads/2025/05/Open-WebUI-Chat-4-500x276.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/Open-WebUI-Chat-4-500x276.png" alt="" width="500" height="276" class="aligncenter size-medium wp-image-7274" srcset="/wp-content/uploads/2025/05/Open-WebUI-Chat-4-500x276.png 500w, /wp-content/uploads/2025/05/Open-WebUI-Chat-4-1024x566.png 1024w, /wp-content/uploads/2025/05/Open-WebUI-Chat-4-768x424.png 768w, /wp-content/uploads/2025/05/Open-WebUI-Chat-4-1536x849.png 1536w, /wp-content/uploads/2025/05/Open-WebUI-Chat-4.png 1612w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Beautiful!</p>
+<h3>Host Monitoring</h3>
+<p>Monitoring a host running AI/LLM workloads is quite similar to monitoring a high-end gaming computer. You’re going to want to keep a close eye on resource usage – CPU, RAM, GPU, and VRAM. And don&#8217;t forget about temperatures – those heavy AI workloads can generate a lot of heat!</p>
+<p>For Linux/Ubuntu systems, I recommend starting with btop for initial monitoring. It provides a comprehensive overview and includes the key features we&#8217;re looking for:</p>
+<pre>
+# apt install btop
+# btop
+</pre>
+<p>Let&#8217;s compare what happens when we run the same query on the same system, but use two different versions of the model: Gemma 3 12b vs Gemma 27b.</p>
+<p>Gemma3 12b:</p>
+<p><a href="/wp-content/uploads/2025/05/btop-gemma3-12b-4060ti.png" data-lbwps-width="1841" data-lbwps-height="955" data-lbwps-srcsmall="/wp-content/uploads/2025/05/btop-gemma3-12b-4060ti-500x259.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/btop-gemma3-12b-4060ti-500x259.png" alt="" width="500" height="259" class="aligncenter size-medium wp-image-7277" srcset="/wp-content/uploads/2025/05/btop-gemma3-12b-4060ti-500x259.png 500w, /wp-content/uploads/2025/05/btop-gemma3-12b-4060ti-1024x531.png 1024w, /wp-content/uploads/2025/05/btop-gemma3-12b-4060ti-768x398.png 768w, /wp-content/uploads/2025/05/btop-gemma3-12b-4060ti-1536x797.png 1536w, /wp-content/uploads/2025/05/btop-gemma3-12b-4060ti.png 1841w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Gemma3 27b:</p>
+<p><a href="/wp-content/uploads/2025/05/btop-gemma3-27b-4060ti.png" data-lbwps-width="1834" data-lbwps-height="962" data-lbwps-srcsmall="/wp-content/uploads/2025/05/btop-gemma3-27b-4060ti-500x262.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/btop-gemma3-27b-4060ti-500x262.png" alt="" width="500" height="262" class="aligncenter size-medium wp-image-7278" srcset="/wp-content/uploads/2025/05/btop-gemma3-27b-4060ti-500x262.png 500w, /wp-content/uploads/2025/05/btop-gemma3-27b-4060ti-1024x537.png 1024w, /wp-content/uploads/2025/05/btop-gemma3-27b-4060ti-768x403.png 768w, /wp-content/uploads/2025/05/btop-gemma3-27b-4060ti-1536x806.png 1536w, /wp-content/uploads/2025/05/btop-gemma3-27b-4060ti.png 1834w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>As anticipated, the 27B model&#8217;s size exceeds the GPU&#8217;s 16GB of VRAM, resulting in offloading to the CPU/RAM.</p>
+<p>A side-by-side comparison highlights this difference; the left box represents Gemma 3 12b, while the right box represents Gemma 3 27b:</p>
+<p><a href="/wp-content/uploads/2025/05/btop-gemma3-12b-vs-27b-4060ti-edit.png" data-lbwps-width="1896" data-lbwps-height="1010" data-lbwps-srcsmall="/wp-content/uploads/2025/05/btop-gemma3-12b-vs-27b-4060ti-edit-500x266.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/btop-gemma3-12b-vs-27b-4060ti-edit-500x266.png" alt="" width="500" height="266" class="aligncenter size-medium wp-image-7292" srcset="/wp-content/uploads/2025/05/btop-gemma3-12b-vs-27b-4060ti-edit-500x266.png 500w, /wp-content/uploads/2025/05/btop-gemma3-12b-vs-27b-4060ti-edit-1024x545.png 1024w, /wp-content/uploads/2025/05/btop-gemma3-12b-vs-27b-4060ti-edit-768x409.png 768w, /wp-content/uploads/2025/05/btop-gemma3-12b-vs-27b-4060ti-edit-1536x818.png 1536w, /wp-content/uploads/2025/05/btop-gemma3-12b-vs-27b-4060ti-edit.png 1896w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>NVIDIA also provides useful monitoring tools, including the NVIDIA System Management Interface, also known as the nvidia-smi command-line utility.</p>
+<p>Let&#8217;s try using these tools to monitor the same Gemma3 12b vs 27b test scenario.</p>
+<p>Basic usage, refreshing every 5 seconds:</p>
+<pre>
+# nvidia-smi -l 5
+</pre>
+<p>Gemma3 12b:</p>
+<p><a href="/wp-content/uploads/2025/05/smi-12b.png" data-lbwps-width="844" data-lbwps-height="364" data-lbwps-srcsmall="/wp-content/uploads/2025/05/smi-12b-500x216.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/smi-12b-500x216.png" alt="" width="500" height="216" class="aligncenter size-medium wp-image-7279" srcset="/wp-content/uploads/2025/05/smi-12b-500x216.png 500w, /wp-content/uploads/2025/05/smi-12b-768x331.png 768w, /wp-content/uploads/2025/05/smi-12b.png 844w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Gemma3 27b:</p>
+<p><a href="/wp-content/uploads/2025/05/smi-27b.png" data-lbwps-width="840" data-lbwps-height="369" data-lbwps-srcsmall="/wp-content/uploads/2025/05/smi-27b-500x220.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/smi-27b-500x220.png" alt="" width="500" height="220" class="aligncenter size-medium wp-image-7280" srcset="/wp-content/uploads/2025/05/smi-27b-500x220.png 500w, /wp-content/uploads/2025/05/smi-27b-768x337.png 768w, /wp-content/uploads/2025/05/smi-27b.png 840w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>The results here aren&#8217;t quite as obvious, but the GPU load never went beyond ~50% on the 27b test.</p>
+<p>Let&#8217;s try it again with the &#8220;pmon&#8221; parameter:</p>
+<pre>
+# nvidia-smi pmon
+</pre>
+<p>Gemma3 12b:</p>
+<p><a href="/wp-content/uploads/2025/05/pmon-12b.png" data-lbwps-width="715" data-lbwps-height="593" data-lbwps-srcsmall="/wp-content/uploads/2025/05/pmon-12b-500x415.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/pmon-12b-500x415.png" alt="" width="500" height="415" class="aligncenter size-medium wp-image-7281" srcset="/wp-content/uploads/2025/05/pmon-12b-500x415.png 500w, /wp-content/uploads/2025/05/pmon-12b.png 715w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Gemma3 27b:</p>
+<p><a href="/wp-content/uploads/2025/05/pmon-27b.png" data-lbwps-width="798" data-lbwps-height="373" data-lbwps-srcsmall="/wp-content/uploads/2025/05/pmon-27b-500x234.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/pmon-27b-500x234.png" alt="" width="500" height="234" class="aligncenter size-medium wp-image-7282" srcset="/wp-content/uploads/2025/05/pmon-27b-500x234.png 500w, /wp-content/uploads/2025/05/pmon-27b-768x359.png 768w, /wp-content/uploads/2025/05/pmon-27b.png 798w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Slightly different view and we see more of the same, the 27b model is not able to fully leverage the GPU since it is too large.</p>
+<p>Just for fun, here are the Open Webui session statistics for each test:</p>
+<p>Gemma3 12b:</p>
+<p><a href="/wp-content/uploads/2025/05/btop-gemma3-12b-stats-4060-ti.png" data-lbwps-width="1332" data-lbwps-height="783" data-lbwps-srcsmall="/wp-content/uploads/2025/05/btop-gemma3-12b-stats-4060-ti-500x294.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/btop-gemma3-12b-stats-4060-ti-500x294.png" alt="" width="500" height="294" class="aligncenter size-medium wp-image-7283" srcset="/wp-content/uploads/2025/05/btop-gemma3-12b-stats-4060-ti-500x294.png 500w, /wp-content/uploads/2025/05/btop-gemma3-12b-stats-4060-ti-1024x602.png 1024w, /wp-content/uploads/2025/05/btop-gemma3-12b-stats-4060-ti-768x451.png 768w, /wp-content/uploads/2025/05/btop-gemma3-12b-stats-4060-ti.png 1332w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Gemma3 27b:</p>
+<p><a href="/wp-content/uploads/2025/05/btop-gemma3-27b-stats-4060-ti.png" data-lbwps-width="1329" data-lbwps-height="778" data-lbwps-srcsmall="/wp-content/uploads/2025/05/btop-gemma3-27b-stats-4060-ti-500x293.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2025/05/btop-gemma3-27b-stats-4060-ti-500x293.png" alt="" width="500" height="293" class="aligncenter size-medium wp-image-7284" srcset="/wp-content/uploads/2025/05/btop-gemma3-27b-stats-4060-ti-500x293.png 500w, /wp-content/uploads/2025/05/btop-gemma3-27b-stats-4060-ti-1024x599.png 1024w, /wp-content/uploads/2025/05/btop-gemma3-27b-stats-4060-ti-768x450.png 768w, /wp-content/uploads/2025/05/btop-gemma3-27b-stats-4060-ti.png 1329w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<h3>Final Thoughts</h3>
+<p>Having already experimented with several AI tools and products to address specific, nuanced tasks, I started this project with a degree of skepticism, though I recognized the potential. I figured, worst case scenario I would invest in some new hardware, perform a bunch of testing, and then retire it to be a sweet hypervisor in my lab.</p>
+<p>However, as I continued working on this project, I found myself increasingly reliant on it, and my proficiency grew with each use. I discovered that LLMs are surprisingly adept at researching information within documentation – often outperforming Google, especially when prompted effectively. I went from sifting through links and synthesizing information from multiple sources to simply asking a question or two, usually finding what I needed quickly in a concise summary, without even needing to access the internet. This project has now effectively replaced my browser&#8217;s homepage.</p>
+<p>Here are some of my key takeaways:</p>
+<ul>
+<li>
+<strong>Host &#038; GPU Performance</strong> &#8211; The Dell Precision Tower 5810 performed exceptionally well across the board. I likely won&#8217;t need to upgrade the CPU, RAM, or disk combination. The Gigabyte 4060 Ti 16GB GPU proved more than capable, handling current models below 14 billion parameters effectively. This appears to be a sweet spot; I struggled to find noticeable differences in results when comparing 12b-14b models to larger ones. I will probably upgrade the GPU at some point in the future and explore this further.</li>
+<li>
+<strong>AI Fatigue</strong> &#8211; The pervasive attention surrounding AI while offering minimal substance, particularly from &#8220;influencers&#8221;, has proven to be a source of considerable fatigue. Because of this, I noticed myself having a tendency to emphasize shortcomings while underappreciating successes. Through experimentation with numerous models during this project, it became obvious that each model sort of has its own style and excels in different areas, and the results are greatly influenced by how you phrase the requests. Don&#8217;t be an AI hater&#8230;try this project and let it change your perspective.</li>
+<li>
+<strong>More Context Leads To Better Responses</strong> &#8211; When asking an LLM a question, it&#8217;s helpful to pause and consider: Could you answer that with the information provided? Initially, my answer was&#8230;no.</li>
+<li>
+<strong>AI Can Be Just Like Programming, A Little Saucy At Times</strong> &#8211;  Sometimes, the AI responds correctly, but you need to realize you phrased the question poorly or asked it in the wrong way&#8230;What I said vs What I meant. 🙂</li>
+<li>
+<strong>Do Not Blindly Ask Questions &#038; Trust Responses</strong> &#8211; Sometimes you might ask the question correctly, but the AI can still go&#8230;off the rails. Hallucinations happen, and if you&#8217;re unfamiliar with the subject matter, you may not even realize the response is wrong. Avoid asking about topics you&#8217;re completely unfamiliar with and do not blindly accept the answers.</li>
+<li>
+<strong>Speed Up The Writing Process</strong> &#8211; Need help crafting catchy one-liners for your slide deck? Look no further! Clean up some phrasing? No problem!</li>
+<li>
+<strong>Experiment With The Arena</strong> &#8211; The Open WebUI arena is a fantastic feature that really helps you see how different models respond to the same query, this is incredibly useful  when it comes to trying to decide what model to use for a particular type of work.</li>
+</ul>
+<h3>Cheat Sheets</h3>
+<p>This section is designed to be a quick reference of all of the commands used throughout the post.</p>
+<h5>Ollama</h5>
+<p></p>
+<pre>
+<strong>Installing Ollama</strong>
+
+Installing Ollama on Ubuntu:
+# <strong>curl -fsSL https://ollama.com/install.sh | sh</strong>
+
+Verify the service is running and working:
+# <strong>ss -antp | grep :11434</strong>
+# <strong>curl http://localhost:11434 -v</strong>
+
+<strong>Managing Ollama</strong>
+
+Ollama help:
+# <strong>ollama --help</strong>
+
+Download a model:
+# <strong>ollama pull gemma3:1b</strong>
+
+List locally installed models:
+# <strong>ollama list</strong>
+
+Remove a locally installed model:
+# <strong>ollama rm deepseek-r1:1.5b</strong>
+
+Run a model:
+# <strong>ollama run gemma3:1b --verbose</strong>
+
+Session help:
+&gt;&gt;&gt; <strong>/?</strong>
+
+Show model info:
+&gt;&gt;&gt; <strong>/show</strong>
+&gt;&gt;&gt; <strong>/show info</strong>
+
+Exit the running session:
+&gt;&gt;&gt; <strong>/bye</strong>
+</pre>
+<h5>Open WebUi</h5>
+<p></p>
+<pre>
+<strong>Installing Docker</strong>
+
+Check for Docker:
+# <strong>docker --version</strong>
+# <strong>docker info</strong>
+
+Find available Docker packages:
+# <strong>apt update && apt-cache search docker</strong>
+
+Install Docker:
+# <strong>apt install docker.io</strong>
+
+Enable Docker to start with the host
+# <strong>systemctl enable docker</strong>
+
+<strong>Nvidia Container Support</strong>
+
+Install the Nvidia Docker packages:
+# <strong>apt install nvidia-container-toolkit</strong>
+
+Configure the container runtime:
+# <strong>nvidia-ctk runtime configure --runtime=docker</strong>
+
+Restart the Docker service:
+# <strong>systemctl restart docker</strong>
+
+<strong>Installing Open WebUI</strong>
+
+Pulling down the Open WebUI Docker image:
+# <strong>docker pull ghcr.io/open-webui/open-webui:main</strong>
+
+<strong>Open WebUI – Docker Run Option 1 - --add-host=host.docker.internal:host-gateway</strong>
+
+# <strong>docker run -d -p 3000:8080 --gpus all --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main</strong>
+
+Requires Ollama reconfiguration from 127.0.0.1 to 0.0.0.0:
+# <strong>systemctl edit ollama.service</strong>
+
+Add:
+[Service]
+Environment="OLLAMA_HOST=0.0.0.0"
+
+Restart Ollama service:
+# <strong>systemctl restart ollama</strong>
+
+Open WebUI will be available at http://ip:3000.
+
+<strong>Open WebUI – Docker Run Option 2 - --network host</strong>
+
+# <strong>docker run -d --network host --restart always --gpus all -e OLLAMA_BASE_URL=http://127.0.0.1:11434 -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main</strong>
+
+Open WebUI will be available at http://ip:8080.
+
+<strong>Auto Updating Open WebUI With Watchtower</strong>
+
+Manually update Open WebUI:
+# <strong>docker stop open-webui</strong>
+# <strong>docker rm open-webui</strong>
+# <strong>docker pull ghcr.io/open-webui/open-webui:main</strong>
+# <strong>docker run -d --network host --restart always --gpus all -e OLLAMA_BASE_URL=http://127.0.0.1:11434 -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main</strong>
+
+Automated updates with Watchtower:
+# <strong>docker run -d --restart always --name watchtower --volume /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower -i 86400 open-webui</strong>
+</pre>
+</div>
+
+
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)"><div class="taxonomy-post_tag is-style-post-terms-1 is-style-post-terms-1--1 wp-block-post-terms">
+<a href="/tag/ai/" rel="tag">AI</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/llm/" rel="tag">LLM</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/ollama/" rel="tag">Ollama</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/open-webui/" rel="tag">Open WebUI</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/ubuntu/" rel="tag">Ubuntu</a>
+</div></div>
+
+
+
+<div class="wp-block-group alignwide is-layout-flow wp-block-group-is-layout-flow" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)">
+<nav class="wp-block-group alignwide is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-9b36172e wp-block-group-is-layout-flex" aria-label="Post navigation" style="border-top-color:var(--wp--preset--color--accent-6);border-top-width:1px;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><div class="post-navigation-link-previous wp-block-post-navigation-link">
+<span class="wp-block-post-navigation-link__arrow-previous is-arrow-arrow" aria-hidden="true">←</span><a href="/2025/03/purple-teaming-ad-with-bloodhound-community-edition-ad-miner/" rel="prev">Purple Teaming AD with BloodHound CE &#038; AD-Miner</a>
+</div>
+
+<div class="post-navigation-link-next wp-block-post-navigation-link">
+<a href="/2025/09/windows-edr-telemetry-sensors/" rel="next">Windows EDR: Telemetry &#038; Sensors &#8211; Mind Map</a><span class="wp-block-post-navigation-link__arrow-next is-arrow-arrow" aria-hidden="true">→</span>
+</div></nav>
+</div>
+
+
+</div>
+
+
+
+<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+<h2 class="wp-block-heading alignwide has-small-font-size" style="font-style:normal;font-weight:700;letter-spacing:1.4px;text-transform:uppercase">More posts</h2>
+
+
+
+<div class="wp-block-query alignwide is-layout-flow wp-block-query-is-layout-flow"><ul class="alignfull wp-block-post-template is-layout-flow wp-container-core-post-template-is-layout-3ee800f6 wp-block-post-template-is-layout-flow">
+<li class="wp-block-post post-7729 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-computers category-pen-testing category-security category-software category-tools tag-linux tag-omarchy tag-vmware">
+
+<div class="wp-block-group alignfull is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-154222c2 wp-block-group-is-layout-flex" style="border-bottom-color:var(--wp--preset--color--accent-6);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+<h3 class="wp-block-post-title has-large-font-size"><a href="/2025/11/installing-omarchy-on-vmware-workstation/" target="_self">Installing Omarchy On VMware Workstation</a></h3>
+
+<div class="has-text-align-right wp-block-post-date"><time datetime="2025-11-05T05:12:29-06:00"><a href="/2025/11/installing-omarchy-on-vmware-workstation/">November 5, 2025</a></time></div>
+</div>
+
+</li>
+<li class="wp-block-post post-7452 post type-post status-publish format-standard has-post-thumbnail hentry category-ai category-blog category-computers category-pen-testing category-security category-servers tag-dell tag-esxi tag-home-lab tag-linux tag-servers tag-windows">
+
+<div class="wp-block-group alignfull is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-154222c2 wp-block-group-is-layout-flex" style="border-bottom-color:var(--wp--preset--color--accent-6);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+<h3 class="wp-block-post-title has-large-font-size"><a href="/2025/10/home-lab-office-2025/" target="_self">Home Lab &#038; Office &#8211; 2025</a></h3>
+
+<div class="has-text-align-right wp-block-post-date"><time datetime="2025-10-04T18:10:14-05:00"><a href="/2025/10/home-lab-office-2025/">October 4, 2025</a></time></div>
+</div>
+
+</li>
+<li class="wp-block-post post-7442 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-pen-testing category-security category-servers tag-blue tag-bypass tag-edr tag-internals tag-purple tag-red tag-team tag-windows">
+
+<div class="wp-block-group alignfull is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-154222c2 wp-block-group-is-layout-flex" style="border-bottom-color:var(--wp--preset--color--accent-6);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+<h3 class="wp-block-post-title has-large-font-size"><a href="/2025/09/windows-edr-telemetry-sensors/" target="_self">Windows EDR: Telemetry &#038; Sensors &#8211; Mind Map</a></h3>
+
+<div class="has-text-align-right wp-block-post-date"><time datetime="2025-09-18T06:57:32-05:00"><a href="/2025/09/windows-edr-telemetry-sensors/">September 18, 2025</a></time></div>
+</div>
+
+</li>
+<li class="wp-block-post post-6836 post type-post status-publish format-standard has-post-thumbnail hentry category-ai category-blog category-pen-testing category-security category-servers category-tools tag-ai tag-llm tag-ollama tag-open-webui tag-ubuntu">
+
+<div class="wp-block-group alignfull is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-154222c2 wp-block-group-is-layout-flex" style="border-bottom-color:var(--wp--preset--color--accent-6);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+<h3 class="wp-block-post-title has-large-font-size"><a href="/2025/05/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui/" target="_self">Ultimate Local AI Setup Guide: Ubuntu, Ollama, &#038; Open WebUI</a></h3>
+
+<div class="has-text-align-right wp-block-post-date"><time datetime="2025-05-14T11:30:07-05:00"><a href="/2025/05/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui/">May 14, 2025</a></time></div>
+</div>
+
+</li>
+</ul></div>
+</div>
+</main>
+
+
+<footer class="wp-block-template-part">
+<div class="wp-block-group alignfull has-background-color is-layout-flow wp-block-group-is-layout-flow" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--30)"><footer class="wp-block-template-part">
+<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-group alignfull has-background-color is-layout-flow wp-block-group-is-layout-flow" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--30)">
+<div class="wp-block-group alignfull has-small-font-size is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-cc97c919 wp-block-group-is-layout-flex">
+<p class="has-text-align-left wp-block-site-title has-small-font-size wp-container-content-b0223bd5"><a href="/" target="_self" rel="home">RobWillis.info</a></p>
+
+
+<ul class="wp-block-social-links has-normal-icon-size is-style-logos-only wp-container-content-b0223bd5 is-content-justification-right is-nowrap is-layout-flex wp-container-core-social-links-is-layout-ad1cd33a wp-block-social-links-is-layout-flex">
+<li class="wp-social-link wp-social-link-twitter  wp-block-social-link"><a rel="https://x.com/b1t_r0t noopener nofollow" target="_blank" href="https://x.com/b1t_r0t" class="wp-block-social-link-anchor"><svg width="24" height="24" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M22.23,5.924c-0.736,0.326-1.527,0.547-2.357,0.646c0.847-0.508,1.498-1.312,1.804-2.27 c-0.793,0.47-1.671,0.812-2.606,0.996C18.324,4.498,17.257,4,16.077,4c-2.266,0-4.103,1.837-4.103,4.103 c0,0.322,0.036,0.635,0.106,0.935C8.67,8.867,5.647,7.234,3.623,4.751C3.27,5.357,3.067,6.062,3.067,6.814 c0,1.424,0.724,2.679,1.825,3.415c-0.673-0.021-1.305-0.206-1.859-0.513c0,0.017,0,0.034,0,0.052c0,1.988,1.414,3.647,3.292,4.023 c-0.344,0.094-0.707,0.144-1.081,0.144c-0.264,0-0.521-0.026-0.772-0.074c0.522,1.63,2.038,2.816,3.833,2.85 c-1.404,1.1-3.174,1.756-5.096,1.756c-0.331,0-0.658-0.019-0.979-0.057c1.816,1.164,3.973,1.843,6.29,1.843 c7.547,0,11.675-6.252,11.675-11.675c0-0.178-0.004-0.355-0.012-0.531C20.985,7.47,21.68,6.747,22.23,5.924z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Twitter</span></a></li>
+
+<li class="wp-social-link wp-social-link-github  wp-block-social-link"><a rel="https://github.com/robwillisinfo noopener nofollow" target="_blank" href="https://github.com/robwillisinfo" class="wp-block-social-link-anchor"><svg width="24" height="24" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12,2C6.477,2,2,6.477,2,12c0,4.419,2.865,8.166,6.839,9.489c0.5,0.09,0.682-0.218,0.682-0.484 c0-0.236-0.009-0.866-0.014-1.699c-2.782,0.602-3.369-1.34-3.369-1.34c-0.455-1.157-1.11-1.465-1.11-1.465 c-0.909-0.62,0.069-0.608,0.069-0.608c1.004,0.071,1.532,1.03,1.532,1.03c0.891,1.529,2.341,1.089,2.91,0.833 c0.091-0.647,0.349-1.086,0.635-1.337c-2.22-0.251-4.555-1.111-4.555-4.943c0-1.091,0.39-1.984,1.03-2.682 C6.546,8.54,6.202,7.524,6.746,6.148c0,0,0.84-0.269,2.75,1.025C10.295,6.95,11.15,6.84,12,6.836 c0.85,0.004,1.705,0.114,2.504,0.336c1.909-1.294,2.748-1.025,2.748-1.025c0.546,1.376,0.202,2.394,0.1,2.646 c0.64,0.699,1.026,1.591,1.026,2.682c0,3.841-2.337,4.687-4.565,4.935c0.359,0.307,0.679,0.917,0.679,1.852 c0,1.335-0.012,2.415-0.012,2.741c0,0.269,0.18,0.579,0.688,0.481C19.138,20.161,22,16.416,22,12C22,6.477,17.523,2,12,2z"></path></svg><span class="wp-block-social-link-label screen-reader-text">GitHub</span></a></li>
+
+<li class="wp-social-link wp-social-link-youtube  wp-block-social-link"><a rel="noopener nofollow" target="_blank" href="https://www.youtube.com/robwillisinfo" class="wp-block-social-link-anchor"><svg width="24" height="24" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M21.8,8.001c0,0-0.195-1.378-0.795-1.985c-0.76-0.797-1.613-0.801-2.004-0.847c-2.799-0.202-6.997-0.202-6.997-0.202 h-0.009c0,0-4.198,0-6.997,0.202C4.608,5.216,3.756,5.22,2.995,6.016C2.395,6.623,2.2,8.001,2.2,8.001S2,9.62,2,11.238v1.517 c0,1.618,0.2,3.237,0.2,3.237s0.195,1.378,0.795,1.985c0.761,0.797,1.76,0.771,2.205,0.855c1.6,0.153,6.8,0.201,6.8,0.201 s4.203-0.006,7.001-0.209c0.391-0.047,1.243-0.051,2.004-0.847c0.6-0.607,0.795-1.985,0.795-1.985s0.2-1.618,0.2-3.237v-1.517 C22,9.62,21.8,8.001,21.8,8.001z M9.935,14.594l-0.001-5.62l5.404,2.82L9.935,14.594z"></path></svg><span class="wp-block-social-link-label screen-reader-text">YouTube</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer></div>
+</footer>
+</div>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/twentytwentyfive\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="wp-block-template-skip-link-js-after">
+	( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
+
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
+
+		/*
+		 * Get the site wrapper.
+		 * The skip-link will be injected in the beginning of it.
+		 */
+		sibling = document.querySelector( '.wp-site-blocks' );
+
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
+
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
+
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.id = 'wp-skip-link';
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerText = 'Skip to content';
+
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );
+	
+</script>
+<script id="lbwps-photoswipe5-js-extra">
+var lbwpsOptions = {"label_facebook":"Share on Facebook","label_twitter":"Tweet","label_pinterest":"Pin it","label_download":"Download image","label_copyurl":"Copy image URL","label_ui_close":"Close [Esc]","label_ui_zoom":"Zoom","label_ui_prev":"Previous [←]","label_ui_next":"Next [→]","label_ui_error":"The image cannot be loaded","label_ui_fullscreen":"Toggle fullscreen [F]","share_facebook":"1","share_twitter":"1","share_pinterest":"1","share_download":"1","share_direct":"0","share_copyurl":"0","close_on_drag":"1","history":"1","show_counter":"1","show_fullscreen":"1","show_zoom":"1","show_caption":"1","loop":"0","pinchtoclose":"1","taptotoggle":"1","close_on_click":"1","fulldesktop":"0","use_alt":"0","usecaption":"1","desktop_slider":"1","share_custom_label":"","share_custom_link":"","wheelmode":"zoom","spacing":"12","idletime":"4000","hide_scrollbars":"1","caption_type":"overlay","bg_opacity":"100","padding_left":"0","padding_top":"0","padding_right":"0","padding_bottom":"0"};
+</script>
+<script type="module" src="/wp-content/plugins/lightbox-photoswipe/assets/ps5/frontend.min.js?ver=5.7.3"></script>
+</body>
+</html>

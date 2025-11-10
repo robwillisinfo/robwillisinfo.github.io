@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Failure | RobWillis.info</title>
+	<atom:link href="/tag/failure/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Thu, 12 Jul 2018 10:38:30 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Powershell scripts fail when deployed via Group Policy as Startup scripts with Event ID 1055 and 1130</title>
+		<link>/2017/10/powershell-scripts-fail-when-deployed-via-group-policy-as-startup-scripts-with-event-id-1055-and-1130/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 02 Oct 2017 07:27:23 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[1055]]></category>
+		<category><![CDATA[1130]]></category>
+		<category><![CDATA[2012]]></category>
+		<category><![CDATA[Event ID]]></category>
+		<category><![CDATA[Failure]]></category>
+		<category><![CDATA[GPO]]></category>
+		<category><![CDATA[Group Policy]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[R2]]></category>
+		<category><![CDATA[script]]></category>
+		<category><![CDATA[Startup]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3354</guid>
+
+					<description><![CDATA[<p>I recently went to deploy a new Powershell based Startup script in my test environment, and while the majority of my Windows machines happily complied, 2 of my test servers that were running Remote Desktop Services did not like the new Startup policy. The script itself was pretty straight forward &#8211; it pulled some files [&#8230;]</p>
+The post <a href="/2017/10/powershell-scripts-fail-when-deployed-via-group-policy-as-startup-scripts-with-event-id-1055-and-1130/">Powershell scripts fail when deployed via Group Policy as Startup scripts with Event ID 1055 and 1130</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

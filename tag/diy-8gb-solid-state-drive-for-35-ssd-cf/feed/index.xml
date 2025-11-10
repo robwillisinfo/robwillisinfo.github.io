@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>DIY - 8GB Solid State Drive for $35 SSD CF | RobWillis.info</title>
+	<atom:link href="/tag/diy-8gb-solid-state-drive-for-35-ssd-cf/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Tue, 13 Mar 2012 04:34:51 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>DIY &#8211; 8GB Solid State Drive for $35</title>
+		<link>/2012/03/diy-8gb-solid-state-drive-for-35/</link>
+					<comments>/2012/03/diy-8gb-solid-state-drive-for-35/#respond</comments>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sun, 11 Mar 2012 17:21:27 +0000</pubDate>
+				<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[DIY - 8GB Solid State Drive for $35 SSD CF]]></category>
+		<guid isPermaLink="false">/?p=381</guid>
+
+					<description><![CDATA[<p>Introduction: For my lab setup I run a VMWare ESXi 4 server based on a Intel Core 2 Quad setup. The ESXi server software has a relatively light foot print and doesn&#8217;t require much space at all for the OS install. Because of this, installing it on a hard drive is usually a waste of [&#8230;]</p>
+The post <a href="/2012/03/diy-8gb-solid-state-drive-for-35/">DIY – 8GB Solid State Drive for $35</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+					<wfw:commentRss>/2012/03/diy-8gb-solid-state-drive-for-35/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

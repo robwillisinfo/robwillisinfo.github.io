@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Driver Signature Enforcement Overrider 1.3b | RobWillis.info</title>
+	<atom:link href="/tag/driver-signature-enforcement-overrider-1-3b/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Sun, 01 Apr 2012 09:10:25 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Driver Signature Enforcement Overrider 1.3b</title>
+		<link>/2012/03/driver-signature-enforcement-overrider-1-3b/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sun, 25 Mar 2012 07:52:20 +0000</pubDate>
+				<category><![CDATA[Software]]></category>
+		<category><![CDATA[Driver Signature Enforcement Overrider 1.3b]]></category>
+		<guid isPermaLink="false">/?p=454</guid>
+
+					<description><![CDATA[<p>Link: Driver Signature Enforcement Overrider 1.3b Sign your own drivers and Enable &#8220;Test Mode&#8221; on Windows 7 x64. See Installing unsigned drivers under Windows 7 x64 for more info.</p>
+The post <a href="/2012/03/driver-signature-enforcement-overrider-1-3b/">Driver Signature Enforcement Overrider 1.3b</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

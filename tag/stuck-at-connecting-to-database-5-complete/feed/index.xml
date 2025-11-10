@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Stuck at &quot;Connecting to Database...&quot; 5% Complete | RobWillis.info</title>
+	<atom:link href="/tag/stuck-at-connecting-to-database-5-complete/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Sat, 25 May 2013 09:31:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Umbraco 6 &#8211; Stuck at &#8220;Connecting to Database&#8230;&#8221; 5% Complete when using IIS 7.5 &#038; MySQL (5.5)</title>
+		<link>/2013/04/umbraco-6-stuck-at-connecting-to-database-5-complete-when-using-iis-7-5-mysql-5-5/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Fri, 05 Apr 2013 01:05:26 +0000</pubDate>
+				<category><![CDATA[Servers]]></category>
+		<category><![CDATA[IIS 7.5]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[Stuck at "Connecting to Database..." 5% Complete]]></category>
+		<category><![CDATA[Umbraco 6]]></category>
+		<category><![CDATA[using]]></category>
+		<guid isPermaLink="false">/?p=1282</guid>
+
+					<description><![CDATA[<p>My first entry into ASP.NET Recently I built myself a nice IIS farm using a Dell PowerEdge 2950 GII server along with VMWare ESXi. Once I got the farm all configured properly and working well, I figured I would take some time to play around with ASP.NET as I have never touched it even after [&#8230;]</p>
+The post <a href="/2013/04/umbraco-6-stuck-at-connecting-to-database-5-complete-when-using-iis-7-5-mysql-5-5/">Umbraco 6 – Stuck at “Connecting to Database…” 5% Complete when using IIS 7.5 & MySQL (5.5)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

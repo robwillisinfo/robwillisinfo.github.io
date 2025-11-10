@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Knife | RobWillis.info</title>
+	<atom:link href="/tag/knife/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Wed, 02 Jan 2013 06:42:23 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Iain Sinclair&#8217;s Card Sharp 2, a stealthy pocket knife like you have never seen before!</title>
+		<link>/2012/09/iain-sinclairs-card-sharp-2-a-stealthy-pocket-knife-like-you-have-never-seen-before/</link>
+					<comments>/2012/09/iain-sinclairs-card-sharp-2-a-stealthy-pocket-knife-like-you-have-never-seen-before/#respond</comments>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 10 Sep 2012 02:08:20 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Card Sharp 2]]></category>
+		<category><![CDATA[Knife]]></category>
+		<guid isPermaLink="false">/?p=988</guid>
+
+					<description><![CDATA[<p>Card Sharp 2, an ultra thin and stealthy pocket knife &#160;&#160;&#160;&#160;&#160;Iain Sinclairs CardSharp 2 &#8211; I saw this on a few tech blogs and was waiting for this to come out. Iainsinclair.com&#8216;s CardSharp 2, is an amazing credit-card sized fold-able knife. For $25 US dollars, it&#8217;s a deal for the amazing piece that it is. [&#8230;]</p>
+The post <a href="/2012/09/iain-sinclairs-card-sharp-2-a-stealthy-pocket-knife-like-you-have-never-seen-before/">Iain Sinclair’s Card Sharp 2, a stealthy pocket knife like you have never seen before!</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+					<wfw:commentRss>/2012/09/iain-sinclairs-card-sharp-2-a-stealthy-pocket-knife-like-you-have-never-seen-before/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

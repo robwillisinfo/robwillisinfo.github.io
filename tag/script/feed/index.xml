@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>script | RobWillis.info</title>
+	<atom:link href="/tag/script/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Mon, 08 Sep 2025 07:00:57 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Introducing Invoke-EncryptionSimulator: A PowerShell Tool for Simulating Late-Stage Ransomware Attacks</title>
+		<link>/2024/03/powershell-script-invoke-encryptionsimulator/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Thu, 14 Mar 2024 04:53:37 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[AES]]></category>
+		<category><![CDATA[Detection Engineering]]></category>
+		<category><![CDATA[Encryption]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[Ransomware]]></category>
+		<category><![CDATA[script]]></category>
+		<guid isPermaLink="false">/?p=6120</guid>
+
+					<description><![CDATA[<p>Invoke-EncryptionSimulator Invoke-EncryptionSimulator is designed to be a simple and safe way to emulate the encryption stage of a ransomware deployment to aid in development and testing of controls focusing on file system level changes rather than process related telemetry. Invoke-EncryptionSimulator is designed to be a simple and safe way to emulate the encryption stage of [&#8230;]</p>
+The post <a href="/2024/03/powershell-script-invoke-encryptionsimulator/">Introducing Invoke-EncryptionSimulator: A PowerShell Tool for Simulating Late-Stage Ransomware Attacks</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>New Tool! Invoke-RPCMap: PowerShell Script for Remote RPC Service Enumeration</title>
+		<link>/2022/06/powershell-script-invoke-rpcmap/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 27 Jun 2022 02:13:00 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[RPC]]></category>
+		<category><![CDATA[Scanner]]></category>
+		<category><![CDATA[script]]></category>
+		<category><![CDATA[Tool]]></category>
+		<guid isPermaLink="false">/?p=5365</guid>
+
+					<description><![CDATA[<p>Invoke-RPCMap Invoke-RPCMap can be used to enumerate local and remote RPC services/ports via the RPC Endpoint Mapper service. This information can useful during an investigation where a connection to a remote port is known, but the service is running under a generic process like svchost.exe. This script will do the following: Create a local log [&#8230;]</p>
+The post <a href="/2022/06/powershell-script-invoke-rpcmap/">New Tool! Invoke-RPCMap: PowerShell Script for Remote RPC Service Enumeration</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>PowerShell Script &#8211; Set-PowerCfg</title>
+		<link>/2018/08/powershell-script-set-powercfg/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Tue, 14 Aug 2018 14:01:29 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[script]]></category>
+		<category><![CDATA[Set-PowerCfg]]></category>
+		<guid isPermaLink="false">/?p=3810</guid>
+
+					<description><![CDATA[<p>Set-PowerCfg is a simple script that can be used to easily set or check the current power scheme being applied on a Windows host, these are the same settings found in Control Panel > Power Options. This is particularly useful on laptops where CPU throttling may be an issue and you need to easily switch [&#8230;]</p>
+The post <a href="/2018/08/powershell-script-set-powercfg/">PowerShell Script – Set-PowerCfg</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Powershell scripts fail when deployed via Group Policy as Startup scripts with Event ID 1055 and 1130</title>
+		<link>/2017/10/powershell-scripts-fail-when-deployed-via-group-policy-as-startup-scripts-with-event-id-1055-and-1130/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 02 Oct 2017 07:27:23 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[1055]]></category>
+		<category><![CDATA[1130]]></category>
+		<category><![CDATA[2012]]></category>
+		<category><![CDATA[Event ID]]></category>
+		<category><![CDATA[Failure]]></category>
+		<category><![CDATA[GPO]]></category>
+		<category><![CDATA[Group Policy]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[R2]]></category>
+		<category><![CDATA[script]]></category>
+		<category><![CDATA[Startup]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3354</guid>
+
+					<description><![CDATA[<p>I recently went to deploy a new Powershell based Startup script in my test environment, and while the majority of my Windows machines happily complied, 2 of my test servers that were running Remote Desktop Services did not like the new Startup policy. The script itself was pretty straight forward &#8211; it pulled some files [&#8230;]</p>
+The post <a href="/2017/10/powershell-scripts-fail-when-deployed-via-group-policy-as-startup-scripts-with-event-id-1055-and-1130/">Powershell scripts fail when deployed via Group Policy as Startup scripts with Event ID 1055 and 1130</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>PowerShell Script: Find the largest files and folders for any drive</title>
+		<link>/2014/07/powershell-script-find-the-25-largest-files-and-list-folder-sizes-for-any-drive/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Wed, 09 Jul 2014 04:04:42 +0000</pubDate>
+				<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[files]]></category>
+		<category><![CDATA[find]]></category>
+		<category><![CDATA[folders]]></category>
+		<category><![CDATA[large]]></category>
+		<category><![CDATA[large files]]></category>
+		<category><![CDATA[large folders]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[scan]]></category>
+		<category><![CDATA[script]]></category>
+		<guid isPermaLink="false">/?p=2333</guid>
+
+					<description><![CDATA[<p>Update &#8211; 04.06.2021 &#8211; I have an updated version of this script that is a little more flexible and has better output, you can find the new script here: /2021/04/powershell-script-quickly-find-the-largest-files/ This is a super easy to use and flexible PowerShell script to find out what the largest files and folders are on a single drive. [&#8230;]</p>
+The post <a href="/2014/07/powershell-script-find-the-25-largest-files-and-list-folder-sizes-for-any-drive/">PowerShell Script: Find the largest files and folders for any drive</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Simple BGInfo AD logon script</title>
+		<link>/2014/01/simple-bginfo-ad-logon-script/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 27 Jan 2014 16:43:50 +0000</pubDate>
+				<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[2008]]></category>
+		<category><![CDATA[Active Directory]]></category>
+		<category><![CDATA[AD]]></category>
+		<category><![CDATA[BGInfo]]></category>
+		<category><![CDATA[GPO]]></category>
+		<category><![CDATA[Group Policy]]></category>
+		<category><![CDATA[Login]]></category>
+		<category><![CDATA[Logon]]></category>
+		<category><![CDATA[R2]]></category>
+		<category><![CDATA[script]]></category>
+		<guid isPermaLink="false">/?p=2247</guid>
+
+					<description><![CDATA[<p>This is my simple logon script for the popular BGInfo utility that uses a few batch scripts along with Group Policy to run at each user login. What this script does: Checks to see if bginfo.exe exist on the local machine, if not copy it from the network share to c:\bginfo\ Copy bg.jpg and default.bgi [&#8230;]</p>
+The post <a href="/2014/01/simple-bginfo-ad-logon-script/">Simple BGInfo AD logon script</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>PowerShell &#8211; Simple Mass Server Shutdown/Reboot Script with Menu &#038; Status Check (Video)</title>
+		<link>/2013/04/powershell-simple-mass-shutdownreboot-script-with-menu-status-check-video/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sat, 27 Apr 2013 15:29:57 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[check]]></category>
+		<category><![CDATA[hosts]]></category>
+		<category><![CDATA[mass]]></category>
+		<category><![CDATA[multiple]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[reboot]]></category>
+		<category><![CDATA[script]]></category>
+		<category><![CDATA[shutdown]]></category>
+		<category><![CDATA[status]]></category>
+		<category><![CDATA[txt]]></category>
+		<guid isPermaLink="false">/?p=1386</guid>
+
+					<description><![CDATA[<p>What is the purpose of this script? &#160;&#160;&#160;&#160;&#160;This is a simple script that can be used to mass shutdown or reboot any Windows hosts that are in the hosts.txt file. The script is menu driven and allows the user to view the hosts that are in the txt as well as edit it. There is [&#8230;]</p>
+The post <a href="/2013/04/powershell-simple-mass-shutdownreboot-script-with-menu-status-check-video/">PowerShell – Simple Mass Server Shutdown/Reboot Script with Menu & Status Check (Video)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

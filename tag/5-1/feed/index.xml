@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>5.1 | RobWillis.info</title>
+	<atom:link href="/tag/5-1/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Mon, 27 Jun 2022 05:00:50 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Dell CS24 ESXi 5.5 Install Stuck &#8220;Relocating modules and starting up the kernel&#8230;&#8221;</title>
+		<link>/2014/01/dell-cs24-esxi-5-5-install-stuck-relocating-modules-and-starting-up-the-kernel/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Thu, 09 Jan 2014 09:12:22 +0000</pubDate>
+				<category><![CDATA[Servers]]></category>
+		<category><![CDATA[5.1]]></category>
+		<category><![CDATA[5.5]]></category>
+		<category><![CDATA[CS24]]></category>
+		<category><![CDATA[cs24-sc]]></category>
+		<category><![CDATA[Dell]]></category>
+		<category><![CDATA[ESX]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[Relocating modules and starting up the kerne]]></category>
+		<guid isPermaLink="false">/?p=2159</guid>
+
+					<description><![CDATA[<p>&#160;&#160;&#160;&#160;&#160;I recently upgraded my ESXi boxes from ESXi 5.1 to 5.5, and while I had no issues when installing ESXi 5.1 originally, I did happen to run into a few hiccups with 5.5. The issues were mainly on my Dell CS24-SC servers, but I had no issues with my PowerEdge 1950 GII or 2950 GII [&#8230;]</p>
+The post <a href="/2014/01/dell-cs24-esxi-5-5-install-stuck-relocating-modules-and-starting-up-the-kernel/">Dell CS24 ESXi 5.5 Install Stuck “Relocating modules and starting up the kernel…”</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>How to &#8211; Building Virtual Machines with VMWare ESXi 5.1&#8230;(Video)</title>
+		<link>/2013/07/how-to-building-virtual-machines-with-vmware-esxi-5-1-video/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sun, 07 Jul 2013 11:20:36 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[5.1]]></category>
+		<category><![CDATA[BSD]]></category>
+		<category><![CDATA[ESX]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Virtuaization]]></category>
+		<category><![CDATA[Virtual Machine]]></category>
+		<category><![CDATA[VM]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[VSphere]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=1749</guid>
+
+					<description><![CDATA[<p>Virtual Machines in less than 5 minutes &#160;&#160;&#160;&#160;&#160;That&#8217;s right, it takes less than 5 minutes to get a VM up and running in VMWare ESXi 5.1 via the VSphere console. Not only does this allow for fast provisioning of machines and whole environments but it also supports Windows, Linux and a myriad of other OSs. [&#8230;]</p>
+The post <a href="/2013/07/how-to-building-virtual-machines-with-vmware-esxi-5-1-video/">How to – Building Virtual Machines with VMWare ESXi 5.1…(Video)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Quick and Easy backup for VMWare ESXi 5.1 using Veeam Backup &#038; Replication 6.5</title>
+		<link>/2013/01/quick-and-easy-backup-for-vmware-esxi-5-1-using-veeam-backup-replication-6-5/</link>
+					<comments>/2013/01/quick-and-easy-backup-for-vmware-esxi-5-1-using-veeam-backup-replication-6-5/#respond</comments>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 07 Jan 2013 05:54:00 +0000</pubDate>
+				<category><![CDATA[Servers]]></category>
+		<category><![CDATA[5.1]]></category>
+		<category><![CDATA[6.5]]></category>
+		<category><![CDATA[backup]]></category>
+		<category><![CDATA[Easy]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[Quick]]></category>
+		<category><![CDATA[Replication]]></category>
+		<category><![CDATA[Veeam]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<guid isPermaLink="false">/?p=1234</guid>
+
+					<description><![CDATA[<p>Veeam Backup and Replication &#160;&#160;&#160;&#160;&#160;The guys over at Veeam have been hard at work turning out some of the best software out there software for supporting your virtual machine infrastructure. They have received countless awards in the VMWare and Hyper-V realms. Today I will be using Veeam Backup Free Edition, this is also the replacement [&#8230;]</p>
+The post <a href="/2013/01/quick-and-easy-backup-for-vmware-esxi-5-1-using-veeam-backup-replication-6-5/">Quick and Easy backup for VMWare ESXi 5.1 using Veeam Backup & Replication 6.5</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+					<wfw:commentRss>/2013/01/quick-and-easy-backup-for-vmware-esxi-5-1-using-veeam-backup-replication-6-5/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>VMWare ESXi 5.1 Install and Basic Configuration, Dell PowerEdge 2950 GII (Video)</title>
+		<link>/2013/01/vmware-esxi-5-1-install-and-basic-configuration-dell-poweredge-2950-gii-video/</link>
+					<comments>/2013/01/vmware-esxi-5-1-install-and-basic-configuration-dell-poweredge-2950-gii-video/#respond</comments>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Wed, 02 Jan 2013 07:28:13 +0000</pubDate>
+				<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[2950]]></category>
+		<category><![CDATA[5.1]]></category>
+		<category><![CDATA[basic]]></category>
+		<category><![CDATA[configuration]]></category>
+		<category><![CDATA[Dell]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[GII]]></category>
+		<category><![CDATA[Install]]></category>
+		<category><![CDATA[PowerEdge]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[Video]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<guid isPermaLink="false">/?p=1167</guid>
+
+					<description><![CDATA[<p>VMWare ESXi 5.1 Hypervisor &#160;&#160;&#160;&#160;&#160;VMWare ESXi 5.1 is a fantastic hyper-visor it&#8217;s lightweight, reliable, efficient, Linux based and on top of all of that free. Not only that but ESXi is also capable of running a myriad of different operating systems from Windows to Linux to BSD/Unix and so on, making it perfect for a [&#8230;]</p>
+The post <a href="/2013/01/vmware-esxi-5-1-install-and-basic-configuration-dell-poweredge-2950-gii-video/">VMWare ESXi 5.1 Install and Basic Configuration, Dell PowerEdge 2950 GII (Video)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+					<wfw:commentRss>/2013/01/vmware-esxi-5-1-install-and-basic-configuration-dell-poweredge-2950-gii-video/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

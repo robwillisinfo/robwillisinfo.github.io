@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Guide | RobWillis.info</title>
+	<atom:link href="/tag/guide/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Mon, 27 Jun 2022 04:56:59 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Ultimate Serviio Media Server Setup Guide &#8211; Stream to PS3, XBOX 360, Android&#8230;(Video)</title>
+		<link>/2013/07/ultimate-serviio-media-server-setup-guide-stream-to-ps3-xbox-360-android/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 01 Jul 2013 05:22:43 +0000</pubDate>
+				<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Gaming PC/PS3/Xbox 360]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Android]]></category>
+		<category><![CDATA[DLNA]]></category>
+		<category><![CDATA[Guide]]></category>
+		<category><![CDATA[Media]]></category>
+		<category><![CDATA[PS3]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[Serviio]]></category>
+		<category><![CDATA[setup]]></category>
+		<category><![CDATA[Stream]]></category>
+		<category><![CDATA[Ultimate]]></category>
+		<category><![CDATA[Xbox 360]]></category>
+		<guid isPermaLink="false">/?p=1718</guid>
+
+					<description><![CDATA[<p>Running a media server? &#160;&#160;&#160;&#160;&#160;I have been running my own media server for a few years now and it really has become a part of our entertainment system. The Serviio application itself is completely free and allows you to stream all of your pictures, video and music from a pc directly to any DLNA supported [&#8230;]</p>
+The post <a href="/2013/07/ultimate-serviio-media-server-setup-guide-stream-to-ps3-xbox-360-android/">Ultimate Serviio Media Server Setup Guide – Stream to PS3, XBOX 360, Android…(Video)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

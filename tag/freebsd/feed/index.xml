@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>FreeBSD | RobWillis.info</title>
+	<atom:link href="/tag/freebsd/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Mon, 27 Jun 2022 04:01:18 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Home Lab Cooling Upgrade!</title>
+		<link>/2018/10/home-lab-cooling-upgrade/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 29 Oct 2018 03:24:14 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Cooling]]></category>
+		<category><![CDATA[Elastic]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[firewall]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[Home Lab]]></category>
+		<category><![CDATA[IDS]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[OPNsense]]></category>
+		<category><![CDATA[pfSense]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[snort]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3979</guid>
+
+					<description><![CDATA[<p>In this video I show off my latest project &#8211; Upgrading the cooling system on my home lab in hopes of making it a little more efficient while quieting things down a bit. The original setup consisted of the following: 2 x 6&#8243; Ducts with Fans 6&#8243; Flexible Ducting Originally there was just a single [&#8230;]</p>
+The post <a href="/2018/10/home-lab-cooling-upgrade/">Home Lab Cooling Upgrade!</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Home Lab Setup (2017)</title>
+		<link>/2018/02/home-lab-setup/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sun, 04 Feb 2018 15:51:15 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[blue]]></category>
+		<category><![CDATA[Elastic]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[firewall]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[Home Lab]]></category>
+		<category><![CDATA[IDS]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[OPNsense]]></category>
+		<category><![CDATA[pfSense]]></category>
+		<category><![CDATA[red]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[snort]]></category>
+		<category><![CDATA[team]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3508</guid>
+
+					<description><![CDATA[<p>In this post and video I give a quick run down of my Home Lab &#8211; everything from the rack itself, to the hardware and the basics of what everything is being used for. I started this project towards the end of 2012 with a single Dell PowerEdge 2950 GII and was hoping to teach [&#8230;]</p>
+The post <a href="/2018/02/home-lab-setup/">Home Lab Setup (2017)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

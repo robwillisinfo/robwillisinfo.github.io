@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Metasploit | RobWillis.info</title>
+	<atom:link href="/tag/metasploit/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Mon, 27 Jun 2022 04:06:43 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Metasploit Framework basics on Kali Linux &#8211; Owning a Windows Server</title>
+		<link>/2016/08/metasploit-framework-basics-on-kali-linux-owning-a-windows-server/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Thu, 18 Aug 2016 12:36:00 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[exploit]]></category>
+		<category><![CDATA[Kali]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Metasploit]]></category>
+		<category><![CDATA[MS08-067]]></category>
+		<category><![CDATA[msf]]></category>
+		<category><![CDATA[Payload]]></category>
+		<category><![CDATA[remote access]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=2912</guid>
+
+					<description><![CDATA[<p>In this post I want to talk about the basics of using the Metasploit Framework that is included on the latest version of Kali Linux. If you don&#8217;t already know the Metasploit Framework is a project that makes writing and utilizing exploits relatively easy and it&#8217;s components are very modularized. Metasploit has everything you need [&#8230;]</p>
+The post <a href="/2016/08/metasploit-framework-basics-on-kali-linux-owning-a-windows-server/">Metasploit Framework basics on Kali Linux – Owning a Windows Server</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

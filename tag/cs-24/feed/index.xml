@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>CS-24 | RobWillis.info</title>
+	<atom:link href="/tag/cs-24/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Tue, 25 Jun 2013 09:11:22 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Issues connecting to the Dell CS-24SC BMC web management?</title>
+		<link>/2013/06/issues-connecting-to-the-dell-cs-24sc-bmc-web-management/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 24 Jun 2013 04:44:44 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[baseboard management]]></category>
+		<category><![CDATA[bmc]]></category>
+		<category><![CDATA[CS-24]]></category>
+		<category><![CDATA[CS-24SC]]></category>
+		<category><![CDATA[Dell]]></category>
+		<category><![CDATA[issues]]></category>
+		<category><![CDATA[not working]]></category>
+		<category><![CDATA[remote access]]></category>
+		<category><![CDATA[web]]></category>
+		<category><![CDATA[web management]]></category>
+		<guid isPermaLink="false">/?p=1688</guid>
+
+					<description><![CDATA[<p>Not all Dell CS-24SC&#8217;s are created equal&#8230; &#160;&#160;&#160;&#160;&#160;After acquiring a few different Dell CS-24SC&#8217;s from around the web, it became pretty obvious that they are not all made the same. Most notably on mine, a few variations on motherboards. It appears some of the CS-24SC servers use the standard ports 80/443 for the BMC web [&#8230;]</p>
+The post <a href="/2013/06/issues-connecting-to-the-dell-cs-24sc-bmc-web-management/">Issues connecting to the Dell CS-24SC BMC web management?</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

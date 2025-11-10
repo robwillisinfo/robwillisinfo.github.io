@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Server | RobWillis.info</title>
+	<atom:link href="/tag/server/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Mon, 27 Jun 2022 04:55:35 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Gathering Windows, PowerShell and Sysmon Events with Winlogbeat &#8211; ELK 7 &#8211; Windows Server 2016 (Part II)</title>
+		<link>/2019/05/gathering-windows-powershell-and-sysmon-events-with-winlogbeat-elk-7-windows-server-2016/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Tue, 07 May 2019 02:43:19 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[2016]]></category>
+		<category><![CDATA[Elasticsearch]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[Kibana]]></category>
+		<category><![CDATA[Logs]]></category>
+		<category><![CDATA[Logstash]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[SIEM]]></category>
+		<category><![CDATA[Sysmon]]></category>
+		<category><![CDATA[Windows]]></category>
+		<category><![CDATA[Winlogbeat]]></category>
+		<guid isPermaLink="false">/?p=4162</guid>
+
+					<description><![CDATA[<p>In part I of this series, Installing ELK 7 (Elasticsearch, Logstash and Kibana) on Windows Server 2016, I covered the following: Installing and configuring Elasticsearch, Logstash, and Kibana as Windows services Installing and configuring Winlogbeat to forward logs from the ELK server into ELK Installing and configuring Curator as a scheduled task (optional) Now, in [&#8230;]</p>
+The post <a href="/2019/05/gathering-windows-powershell-and-sysmon-events-with-winlogbeat-elk-7-windows-server-2016/">Gathering Windows, PowerShell and Sysmon Events with Winlogbeat – ELK 7 – Windows Server 2016 (Part II)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Installing ELK 7 (Elasticsearch, Logstash and Kibana) &#8211; Windows Server 2016 (Part I)</title>
+		<link>/2019/05/installing-elk-7-elasticsearch-logstash-and-kibana-windows-server-2016/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Tue, 07 May 2019 02:42:55 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[2016]]></category>
+		<category><![CDATA[Elasticsearch]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[Kibana]]></category>
+		<category><![CDATA[Logs]]></category>
+		<category><![CDATA[Logstash]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[SIEM]]></category>
+		<category><![CDATA[Sysmon]]></category>
+		<category><![CDATA[Windows]]></category>
+		<category><![CDATA[Winlogbeat]]></category>
+		<guid isPermaLink="false">/?p=4058</guid>
+
+					<description><![CDATA[<p>I am a huge fan of the Elastic stack as it can provide a great deal of visibility into even the largest of environments, which can help enable both engineering and security teams rapidly triage technical issues or incidents at scale. There&#8217;s also the fact that unlike Splunk, the Elastic software is free to use [&#8230;]</p>
+The post <a href="/2019/05/installing-elk-7-elasticsearch-logstash-and-kibana-windows-server-2016/">Installing ELK 7 (Elasticsearch, Logstash and Kibana) – Windows Server 2016 (Part I)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Home Lab Cooling Upgrade!</title>
+		<link>/2018/10/home-lab-cooling-upgrade/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 29 Oct 2018 03:24:14 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Cooling]]></category>
+		<category><![CDATA[Elastic]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[firewall]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[Home Lab]]></category>
+		<category><![CDATA[IDS]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[OPNsense]]></category>
+		<category><![CDATA[pfSense]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[snort]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3979</guid>
+
+					<description><![CDATA[<p>In this video I show off my latest project &#8211; Upgrading the cooling system on my home lab in hopes of making it a little more efficient while quieting things down a bit. The original setup consisted of the following: 2 x 6&#8243; Ducts with Fans 6&#8243; Flexible Ducting Originally there was just a single [&#8230;]</p>
+The post <a href="/2018/10/home-lab-cooling-upgrade/">Home Lab Cooling Upgrade!</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Home Lab Setup (2017)</title>
+		<link>/2018/02/home-lab-setup/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sun, 04 Feb 2018 15:51:15 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[blue]]></category>
+		<category><![CDATA[Elastic]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[firewall]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[Home Lab]]></category>
+		<category><![CDATA[IDS]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[OPNsense]]></category>
+		<category><![CDATA[pfSense]]></category>
+		<category><![CDATA[red]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[snort]]></category>
+		<category><![CDATA[team]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3508</guid>
+
+					<description><![CDATA[<p>In this post and video I give a quick run down of my Home Lab &#8211; everything from the rack itself, to the hardware and the basics of what everything is being used for. I started this project towards the end of 2012 with a single Dell PowerEdge 2950 GII and was hoping to teach [&#8230;]</p>
+The post <a href="/2018/02/home-lab-setup/">Home Lab Setup (2017)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>ELK Stack Pt. 2: Collecting logs from remote servers via Beats</title>
+		<link>/2016/07/elk-stack-pt-2-collecting-logs-from-remote-servers-via-beats/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Tue, 12 Jul 2016 13:02:35 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[2012 R2]]></category>
+		<category><![CDATA[Analysis]]></category>
+		<category><![CDATA[Beats]]></category>
+		<category><![CDATA[Client]]></category>
+		<category><![CDATA[Elasticsearch]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[Indexing]]></category>
+		<category><![CDATA[Kibana]]></category>
+		<category><![CDATA[Logs]]></category>
+		<category><![CDATA[Logstash]]></category>
+		<category><![CDATA[remote]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[SIEM]]></category>
+		<category><![CDATA[Windows Server]]></category>
+		<guid isPermaLink="false">/?p=2838</guid>
+
+					<description><![CDATA[<p>In one of my recent posts, Installing Elasticsearch, Logstash and Kibana (ELK) on Windows Server 2012 R2, I explained how to setup and install an ELK server but it was only collecting logs from itself. That in itself isn&#8217;t very useful as the real value is when you begin collecting and indexing all of the [&#8230;]</p>
+The post <a href="/2016/07/elk-stack-pt-2-collecting-logs-from-remote-servers-via-beats/">ELK Stack Pt. 2: Collecting logs from remote servers via Beats</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Ultimate Media Server Setup Guide 2016 (Video)</title>
+		<link>/2016/03/ultimate-media-server-setup-guide-2016-video/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Thu, 03 Mar 2016 11:14:38 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Gaming PC/PS3/Xbox 360]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[DLNA]]></category>
+		<category><![CDATA[Home Theater]]></category>
+		<category><![CDATA[Media]]></category>
+		<category><![CDATA[Media PC]]></category>
+		<category><![CDATA[Plex]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[Windows 10]]></category>
+		<guid isPermaLink="false">/?p=2688</guid>
+
+					<description><![CDATA[<p>It has been awhile since I have made a video on media servers and boy has this space changed. I no longer use any of the media servers I previously made videos on and my personal setup along with the devices I use has changed quite a bit. That combined with the fact that this [&#8230;]</p>
+The post <a href="/2016/03/ultimate-media-server-setup-guide-2016-video/">Ultimate Media Server Setup Guide 2016 (Video)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Disabling TLS 1.0 with MS SQL 2012/2014 &#8211; Services won&#8217;t start &#038; SSMS fails to connect</title>
+		<link>/2015/08/disabling-tls-1-0-with-ms-sql-2014-services-wont-start/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sun, 16 Aug 2015 08:22:32 +0000</pubDate>
+				<category><![CDATA[Servers]]></category>
+		<category><![CDATA[.Net]]></category>
+		<category><![CDATA[MS SQL]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[Server Agent]]></category>
+		<category><![CDATA[Service won't start]]></category>
+		<category><![CDATA[services fail]]></category>
+		<category><![CDATA[SQL]]></category>
+		<category><![CDATA[ssl]]></category>
+		<category><![CDATA[ssms]]></category>
+		<category><![CDATA[tls]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=2417</guid>
+
+					<description><![CDATA[<p>Update &#8211; 2.1.2016 &#8211; I would really only use this as a last resort and I highly recommend testing this solution prior to putting it into production. At this time it does not appear that all of SQL&#8217;s features fully support disabling TLS 1.0 and you may run into issues with things like Reporting Services(SSRS). [&#8230;]</p>
+The post <a href="/2015/08/disabling-tls-1-0-with-ms-sql-2014-services-wont-start/">Disabling TLS 1.0 with MS SQL 2012/2014 – Services won’t start & SSMS fails to connect</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Fix the obsolete cryptography warning in Chrome on IIS 7 &#038; 8</title>
+		<link>/2015/05/fix-obsolete-cryptography-warning-in-chrome-on-iis-8/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sat, 02 May 2015 09:01:40 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[browser]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[cryptography]]></category>
+		<category><![CDATA[fix]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[iis 7]]></category>
+		<category><![CDATA[iis 8]]></category>
+		<category><![CDATA[obsolete cryptography]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[ssl]]></category>
+		<category><![CDATA[tls]]></category>
+		<category><![CDATA[warning]]></category>
+		<category><![CDATA[web site]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=2375</guid>
+
+					<description><![CDATA[<p>Update &#8211; 2.2.2016 &#8211; The ciphers originally listed in this post no longer work to fix the obsolete cryptography warning as Google has upped the requirement from DHE with AES_128_GCM to ECDHE with AES_128_GCM or CHACHA20_POLY1305. The only ciphers we have on Windows that are close to this requirement are all ECDHE-ECDSA which will require [&#8230;]</p>
+The post <a href="/2015/05/fix-obsolete-cryptography-warning-in-chrome-on-iis-8/">Fix the obsolete cryptography warning in Chrome on IIS 7 & 8</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Home Server Stack v2</title>
+		<link>/2014/03/home-server-stack-v2/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Tue, 25 Mar 2014 03:22:32 +0000</pubDate>
+				<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[1950]]></category>
+		<category><![CDATA[2950]]></category>
+		<category><![CDATA[CS24]]></category>
+		<category><![CDATA[Dell]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[Farm]]></category>
+		<category><![CDATA[Home]]></category>
+		<category><![CDATA[IDS]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[Pf Sense]]></category>
+		<category><![CDATA[PowerConnect]]></category>
+		<category><![CDATA[PowerEdge]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<guid isPermaLink="false">/?p=2270</guid>
+
+					<description><![CDATA[<p>&#160;&#160;&#160;&#160;&#160;It has been a year or so since I have done an update on my home server stack, there have been a considerable amount of changes and of course a lot of lessons learned. I recently changed jobs and had to move my stack over 1500 miles away, which ended up in a complete rethink [&#8230;]</p>
+The post <a href="/2014/03/home-server-stack-v2/">Home Server Stack v2</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>IIS 7/7.5 Hardening SSL TLS &#8211; Windows Server 2008 R2</title>
+		<link>/2013/09/iis-77-5-hardening-ssl-tls-windows-server-2008-r2/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sat, 21 Sep 2013 00:40:52 +0000</pubDate>
+				<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[beast]]></category>
+		<category><![CDATA[exploit]]></category>
+		<category><![CDATA[hardening]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[ssl]]></category>
+		<category><![CDATA[tls]]></category>
+		<category><![CDATA[vulnerability]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=2098</guid>
+
+					<description><![CDATA[<p>&#160;&#160;&#160;&#160;&#160;One of the first steps you should do when deploying a new public facing web server is hardening your server&#8217;s SSL/TLS connections. Disabling vulnerable protocols, ciphers, hashes and key exchange algorithms can help mitigate the now more common exploits like the BEAST attack. By default many weaker technologies are enabled, leaving IIS traffic vulnerable and [&#8230;]</p>
+The post <a href="/2013/09/iis-77-5-hardening-ssl-tls-windows-server-2008-r2/">IIS 7/7.5 Hardening SSL TLS – Windows Server 2008 R2</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

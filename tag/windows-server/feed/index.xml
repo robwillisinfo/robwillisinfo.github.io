@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Windows Server | RobWillis.info</title>
+	<atom:link href="/tag/windows-server/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Mon, 27 Jun 2022 04:54:04 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>ELK Stack Pt. 2: Collecting logs from remote servers via Beats</title>
+		<link>/2016/07/elk-stack-pt-2-collecting-logs-from-remote-servers-via-beats/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Tue, 12 Jul 2016 13:02:35 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[2012 R2]]></category>
+		<category><![CDATA[Analysis]]></category>
+		<category><![CDATA[Beats]]></category>
+		<category><![CDATA[Client]]></category>
+		<category><![CDATA[Elasticsearch]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[Indexing]]></category>
+		<category><![CDATA[Kibana]]></category>
+		<category><![CDATA[Logs]]></category>
+		<category><![CDATA[Logstash]]></category>
+		<category><![CDATA[remote]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[SIEM]]></category>
+		<category><![CDATA[Windows Server]]></category>
+		<guid isPermaLink="false">/?p=2838</guid>
+
+					<description><![CDATA[<p>In one of my recent posts, Installing Elasticsearch, Logstash and Kibana (ELK) on Windows Server 2012 R2, I explained how to setup and install an ELK server but it was only collecting logs from itself. That in itself isn&#8217;t very useful as the real value is when you begin collecting and indexing all of the [&#8230;]</p>
+The post <a href="/2016/07/elk-stack-pt-2-collecting-logs-from-remote-servers-via-beats/">ELK Stack Pt. 2: Collecting logs from remote servers via Beats</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>IIS 8 with ECC certificates &#8211; increasing your SSL Security on Windows Server 2012</title>
+		<link>/2016/02/iis-8-with-ecc-certificates-increasing-your-ssl-security-on-windows-server-2012/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Fri, 12 Feb 2016 10:20:26 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[2012]]></category>
+		<category><![CDATA[2012 R2]]></category>
+		<category><![CDATA[AES]]></category>
+		<category><![CDATA[CSR]]></category>
+		<category><![CDATA[ECC]]></category>
+		<category><![CDATA[ECDHE]]></category>
+		<category><![CDATA[ECDSA]]></category>
+		<category><![CDATA[Elliptic Curve Cryptography]]></category>
+		<category><![CDATA[GCM]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[Obsolete Cryotography]]></category>
+		<category><![CDATA[ssl]]></category>
+		<category><![CDATA[tls]]></category>
+		<category><![CDATA[Windows Server]]></category>
+		<guid isPermaLink="false">/?p=2624</guid>
+
+					<description><![CDATA[<p>What is an ECC Certificate and why would you need one? The main difference with an Elliptic Curve Cryptography (ECC) certificate is with how the certificate is signed, in this case the Elliptic Curve Digital Signature Algorithm (ECDSA) is used vs the standard RSA we are used to seeing. Once you have a certificate signed [&#8230;]</p>
+The post <a href="/2016/02/iis-8-with-ecc-certificates-increasing-your-ssl-security-on-windows-server-2012/">IIS 8 with ECC certificates – increasing your SSL Security on Windows Server 2012</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Using Windows Server 2012 R2 for Shared Storage via iSCSI with Microsoft Failover Clustering (Video How-to)</title>
+		<link>/2016/01/using-windows-server-2012-r2-for-shared-storage-with-microsoft-failover-clustering-video-how-to/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Fri, 29 Jan 2016 04:22:37 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[2012]]></category>
+		<category><![CDATA[Cluster]]></category>
+		<category><![CDATA[DAS]]></category>
+		<category><![CDATA[Failover]]></category>
+		<category><![CDATA[iSCSI]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[R2]]></category>
+		<category><![CDATA[SAN]]></category>
+		<category><![CDATA[Shared Storage]]></category>
+		<category><![CDATA[SQL]]></category>
+		<category><![CDATA[Windows Server]]></category>
+		<guid isPermaLink="false">/?p=2585</guid>
+
+					<description><![CDATA[<p>In this video I give a basic break down of how to install and configure shared storage on Windows Server 2012 R2 and then use that storage with a Microsoft Failover Cluster with Multi-path I/O (MPIO) support and 100% validation in cluster manager. Shared storage is often the biggest hurdle when getting into building your [&#8230;]</p>
+The post <a href="/2016/01/using-windows-server-2012-r2-for-shared-storage-with-microsoft-failover-clustering-video-how-to/">Using Windows Server 2012 R2 for Shared Storage via iSCSI with Microsoft Failover Clustering (Video How-to)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>IIS 7/7.5 &#8211; Configuring PHP via FastCGI on Windows Server 2008 R2</title>
+		<link>/2013/09/iis-77-5-configuring-php-via-fastcgi-on-windows-server-2008-r2/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sun, 29 Sep 2013 04:12:17 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[2008 R2]]></category>
+		<category><![CDATA[Fastcgi]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[Windows Server]]></category>
+		<guid isPermaLink="false">/?p=2120</guid>
+
+					<description><![CDATA[<p>&#160;&#160;&#160;&#160;&#160;PHP is a fantastic dynamic programing language which runs great on IIS, but can be a bit slow at times. Traditionally PHP runs on IIS either as an ISAPI extension or as a Common Gateway Interface (CGI) program, running PHP via FastCGI can be a great way to improve performance depending on your application. In [&#8230;]</p>
+The post <a href="/2013/09/iis-77-5-configuring-php-via-fastcgi-on-windows-server-2008-r2/">IIS 7/7.5 – Configuring PHP via FastCGI on Windows Server 2008 R2</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

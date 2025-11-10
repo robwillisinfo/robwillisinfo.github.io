@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>when the file really does exist | RobWillis.info</title>
+	<atom:link href="/tag/when-the-file-really-does-exist/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Fri, 23 Aug 2013 09:23:13 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>IIS 7 404 file not found, when the file really does exist</title>
+		<link>/2012/04/iis-7-404-file-not-found-when-the-file-really-does-exist/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sat, 07 Apr 2012 10:06:28 +0000</pubDate>
+				<category><![CDATA[Servers]]></category>
+		<category><![CDATA[IIS 7 404 file not found]]></category>
+		<category><![CDATA[when the file really does exist]]></category>
+		<guid isPermaLink="false">/?p=756</guid>
+
+					<description><![CDATA[<p>What the heck? I recently ran into an issue on an IIS 7.5 Server where I had uploaded a file to the server for a site, but when I went to view the file I received a 404 File not found error. Now I knew that the file did indeed exist, I even double checked [&#8230;]</p>
+The post <a href="/2012/04/iis-7-404-file-not-found-when-the-file-really-does-exist/">IIS 7 404 file not found, when the file really does exist</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

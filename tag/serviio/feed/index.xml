@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Serviio | RobWillis.info</title>
+	<atom:link href="/tag/serviio/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Mon, 27 Jun 2022 04:56:59 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>ServiiDroid &#8211; Remotely control your Serviio server via Android (Video)</title>
+		<link>/2013/07/serviidroid-remotely-control-your-serviio-server-via-android-video/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sun, 21 Jul 2013 22:11:38 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Gaming PC/PS3/Xbox 360]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Android]]></category>
+		<category><![CDATA[DLNA]]></category>
+		<category><![CDATA[Media Server]]></category>
+		<category><![CDATA[remote]]></category>
+		<category><![CDATA[remote control]]></category>
+		<category><![CDATA[ServiiDroid]]></category>
+		<category><![CDATA[Serviio]]></category>
+		<guid isPermaLink="false">/?p=1773</guid>
+
+					<description><![CDATA[<p>Making life easier&#8230; &#160;&#160;&#160;&#160;&#160;So your sitting on the couch watching a movie or TV series on your PS3 streaming from Serviio and everything is working well so far. The movie has a bunch of non sense at the beginning so you fast forward only to go to far and have to rewind, Serviio crashes as [&#8230;]</p>
+The post <a href="/2013/07/serviidroid-remotely-control-your-serviio-server-via-android-video/">ServiiDroid – Remotely control your Serviio server via Android (Video)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Serviio Plugin Install &#8211; Stream YouTube and Twitch.tv/Justin.tv channels to PS3, XBOX 360, Android</title>
+		<link>/2013/07/serviio-plugin-install-stream-youtube-and-twitch-tvjustin-tv-channels-to-ps3-xbox-360-android/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Tue, 16 Jul 2013 04:42:26 +0000</pubDate>
+				<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[DLNA]]></category>
+		<category><![CDATA[justin.tv]]></category>
+		<category><![CDATA[Plugin]]></category>
+		<category><![CDATA[PS3]]></category>
+		<category><![CDATA[Serviio]]></category>
+		<category><![CDATA[Stream]]></category>
+		<category><![CDATA[twitch.tv]]></category>
+		<category><![CDATA[xbox]]></category>
+		<category><![CDATA[youtube]]></category>
+		<guid isPermaLink="false">/?p=1761</guid>
+
+					<description><![CDATA[<p>Plugins for what? &#160;&#160;&#160;&#160;&#160;Plugins for Serviio offer support for all sorts of online media, most if not all can be downloaded for free from forum.serviio.org. In the video I demonstrate how to download and install a plugin pack called A.P.P, which is a whole collection of plugins. After the plugins are installed, feeds or web [&#8230;]</p>
+The post <a href="/2013/07/serviio-plugin-install-stream-youtube-and-twitch-tvjustin-tv-channels-to-ps3-xbox-360-android/">Serviio Plugin Install – Stream YouTube and Twitch.tv/Justin.tv channels to PS3, XBOX 360, Android</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Ultimate Serviio Media Server Setup Guide &#8211; Stream to PS3, XBOX 360, Android&#8230;(Video)</title>
+		<link>/2013/07/ultimate-serviio-media-server-setup-guide-stream-to-ps3-xbox-360-android/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 01 Jul 2013 05:22:43 +0000</pubDate>
+				<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Gaming PC/PS3/Xbox 360]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Android]]></category>
+		<category><![CDATA[DLNA]]></category>
+		<category><![CDATA[Guide]]></category>
+		<category><![CDATA[Media]]></category>
+		<category><![CDATA[PS3]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[Serviio]]></category>
+		<category><![CDATA[setup]]></category>
+		<category><![CDATA[Stream]]></category>
+		<category><![CDATA[Ultimate]]></category>
+		<category><![CDATA[Xbox 360]]></category>
+		<guid isPermaLink="false">/?p=1718</guid>
+
+					<description><![CDATA[<p>Running a media server? &#160;&#160;&#160;&#160;&#160;I have been running my own media server for a few years now and it really has become a part of our entertainment system. The Serviio application itself is completely free and allows you to stream all of your pictures, video and music from a pc directly to any DLNA supported [&#8230;]</p>
+The post <a href="/2013/07/ultimate-serviio-media-server-setup-guide-stream-to-ps3-xbox-360-android/">Ultimate Serviio Media Server Setup Guide – Stream to PS3, XBOX 360, Android…(Video)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

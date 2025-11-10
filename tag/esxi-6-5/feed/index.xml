@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ESXi 6.5 | RobWillis.info</title>
+	<atom:link href="/tag/esxi-6-5/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Fri, 20 Apr 2018 10:25:28 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>ESXi 6.5 &#8211; Error Loading /xorg.v00 Fatal Error: 33 (inconsistent data)</title>
+		<link>/2018/04/esxi-6-5-error-loading-xorg-v00-fatal-error-33-inconsistent-data/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Fri, 20 Apr 2018 10:13:58 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[ESXi 6.5]]></category>
+		<category><![CDATA[Fatal Error]]></category>
+		<category><![CDATA[Fatal Error 33]]></category>
+		<category><![CDATA[fix]]></category>
+		<category><![CDATA[s.v00]]></category>
+		<category><![CDATA[sb.v00]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[xorg.v00]]></category>
+		<guid isPermaLink="false">/?p=3716</guid>
+
+					<description><![CDATA[<p>The Error During a recent thunderstorm one of the ESXi 6.5 hosts in my lab environment that was not on a UPS, rebooted from a power fluctuation and when it rebooted I received the following error: Error loading /xorg.v00 Compressed MD5: d04cc03dd29bbe3fe547e9566f79674c Decompressed MD5: 00000000000000000000000000000000 As the error indicates, the file /xorg.v00 appears to be [&#8230;]</p>
+The post <a href="/2018/04/esxi-6-5-error-loading-xorg-v00-fatal-error-33-inconsistent-data/">ESXi 6.5 – Error Loading /xorg.v00 Fatal Error: 33 (inconsistent data)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

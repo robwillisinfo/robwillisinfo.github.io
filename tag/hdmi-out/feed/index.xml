@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>hdmi out | RobWillis.info</title>
+	<atom:link href="/tag/hdmi-out/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Mon, 27 Jun 2022 04:56:29 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Samsung Note 2 – HDMI/VGA out to a TV/Computer Monitor via MHL, no or blank output fix!</title>
+		<link>/2013/08/samsung-note-2-hdmivga-out-to-a-tvcomputer-monitor-via-mhl/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sat, 03 Aug 2013 14:06:00 +0000</pubDate>
+				<category><![CDATA[Android Hacks]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Android]]></category>
+		<category><![CDATA[dvi]]></category>
+		<category><![CDATA[hdcp]]></category>
+		<category><![CDATA[hdmi out]]></category>
+		<category><![CDATA[mhl]]></category>
+		<category><![CDATA[Note 2]]></category>
+		<category><![CDATA[Note II]]></category>
+		<category><![CDATA[S3]]></category>
+		<category><![CDATA[S4]]></category>
+		<category><![CDATA[Samsung]]></category>
+		<category><![CDATA[SIII]]></category>
+		<category><![CDATA[vga]]></category>
+		<category><![CDATA[video out]]></category>
+		<guid isPermaLink="false">/?p=1791</guid>
+
+					<description><![CDATA[<p>Android on the big screen &#160;&#160;&#160;&#160;&#160;Sharing out the screen of an Android device can be a very useful thing to have, allowing you to share video, presentations or even just because you want a larger screen for easy viewing. Most higher end Android devices come with some sort of HDMI out (often Micro-HDMI), making this [&#8230;]</p>
+The post <a href="/2013/08/samsung-note-2-hdmivga-out-to-a-tvcomputer-monitor-via-mhl/">Samsung Note 2 – HDMI/VGA out to a TV/Computer Monitor via MHL, no or blank output fix!</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

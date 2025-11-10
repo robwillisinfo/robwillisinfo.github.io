@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>testing | RobWillis.info</title>
+	<atom:link href="/tag/testing/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Fri, 09 May 2025 08:11:20 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Apache Struts CVE-2018-11776 &#8211; Testing, Analyzing, &#038; Detection</title>
+		<link>/2018/08/apache-struts-cve-2018-11776-testing-analyzing-detection/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Fri, 31 Aug 2018 13:49:06 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Analysis]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[CVE-2018-11776]]></category>
+		<category><![CDATA[Detection]]></category>
+		<category><![CDATA[exploit]]></category>
+		<category><![CDATA[Java]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Logs]]></category>
+		<category><![CDATA[Pcap]]></category>
+		<category><![CDATA[Struts]]></category>
+		<category><![CDATA[testing]]></category>
+		<category><![CDATA[Tomcat]]></category>
+		<category><![CDATA[Tomcat8]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[vulnerability]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3843</guid>
+
+					<description><![CDATA[<p>Intro Any time a new Apache Struts vulnerability comes out it should be taken pretty seriously as there are many &#8220;mission critical&#8221; systems that are leveraging the framework, with a considerable amount of them being public facing. Unfortunately, as a former Sys Ad I can tell you that many of these systems will go on [&#8230;]</p>
+The post <a href="/2018/08/apache-struts-cve-2018-11776-testing-analyzing-detection/">Apache Struts CVE-2018-11776 – Testing, Analyzing, & Detection</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Testing SMTP with Telnet and PowerShell (Cheat Sheet)</title>
+		<link>/2014/07/testing-smtp-with-telnet-and-powershell-cheat-sheet/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Thu, 24 Jul 2014 07:09:38 +0000</pubDate>
+				<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[e-mail]]></category>
+		<category><![CDATA[email]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[SMTP]]></category>
+		<category><![CDATA[Telnet]]></category>
+		<category><![CDATA[testing]]></category>
+		<category><![CDATA[troubleshooting]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=2351</guid>
+
+					<description><![CDATA[<p>This is my cheat sheet for sending E-Mail through a SMTP Server. This is particularly useful when configuring and testing a new SMTP server. PowerShell: Send-MailMessage -SMTPServer hostname -To youremail@domain.com -From none@none.com -Subject &#8220;This is a test email&#8221; -Body &#8220;This is the body of the test email sent via PS.&#8221; Telnet: C:\>telnet hostname 25 220 [&#8230;]</p>
+The post <a href="/2014/07/testing-smtp-with-telnet-and-powershell-cheat-sheet/">Testing SMTP with Telnet and PowerShell (Cheat Sheet)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

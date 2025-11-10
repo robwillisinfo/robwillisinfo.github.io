@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Car | RobWillis.info</title>
+	<atom:link href="/tag/car/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Mon, 27 Jun 2022 04:57:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Torque for Android &#8211; Connect your Android to your Car via BlueTooth(Video)</title>
+		<link>/2013/05/torque-for-android-connect-your-android-to-your-car-via-bluetooth/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 13 May 2013 08:29:14 +0000</pubDate>
+				<category><![CDATA[Android Hacks]]></category>
+		<category><![CDATA[Android]]></category>
+		<category><![CDATA[Bluetooth]]></category>
+		<category><![CDATA[BT]]></category>
+		<category><![CDATA[Car]]></category>
+		<category><![CDATA[ELM 327]]></category>
+		<category><![CDATA[ELM327]]></category>
+		<category><![CDATA[LS2]]></category>
+		<category><![CDATA[ODB2]]></category>
+		<category><![CDATA[ODBII]]></category>
+		<category><![CDATA[Torque]]></category>
+		<category><![CDATA[Trailblazer SS]]></category>
+		<guid isPermaLink="false">/?p=1574</guid>
+
+					<description><![CDATA[<p>How it works &#160;&#160;&#160;&#160;&#160;I never thought I&#8217;d be able to connect my Android phone to my vehicles&#8217; ODBII port for diagnostics and readings, but sure enough Torque for Android along with a BlueTooth ODBII Reader makes it entirely possible, and easy. The Bluetooth ODBII Reader sends the information from your cars ECU to your phone [&#8230;]</p>
+The post <a href="/2013/05/torque-for-android-connect-your-android-to-your-car-via-bluetooth/">Torque for Android – Connect your Android to your Car via BlueTooth(Video)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

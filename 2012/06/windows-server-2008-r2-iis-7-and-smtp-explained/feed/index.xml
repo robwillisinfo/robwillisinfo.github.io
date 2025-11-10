@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Windows Server 2008 R2 IIS 7 and SMTP explained, with basic setup How-To	</title>
+	<atom:link href="/2012/06/windows-server-2008-r2-iis-7-and-smtp-explained/feed/" rel="self" type="application/rss+xml" />
+	<link>/2012/06/windows-server-2008-r2-iis-7-and-smtp-explained/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Mon, 27 Jun 2022 05:04:27 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+</channel>
+</rss>

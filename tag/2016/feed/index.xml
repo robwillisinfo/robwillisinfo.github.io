@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>2016 | RobWillis.info</title>
+	<atom:link href="/tag/2016/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Mon, 27 Jun 2022 03:52:35 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Disabling PowerShell v2 with Group Policy</title>
+		<link>/2020/01/disabling-powershell-v2-with-group-policy/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 20 Jan 2020 11:39:09 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[10]]></category>
+		<category><![CDATA[2012]]></category>
+		<category><![CDATA[2016]]></category>
+		<category><![CDATA[2019]]></category>
+		<category><![CDATA[Disable]]></category>
+		<category><![CDATA[Dism]]></category>
+		<category><![CDATA[DismOpenSession failed]]></category>
+		<category><![CDATA[Downgrade Attack]]></category>
+		<category><![CDATA[Error code = 0x80040154]]></category>
+		<category><![CDATA[GPO]]></category>
+		<category><![CDATA[Group Policy]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[v2]]></category>
+		<category><![CDATA[Windows]]></category>
+		<category><![CDATA[WindowsOptionalFeature]]></category>
+		<guid isPermaLink="false">/?p=4855</guid>
+
+					<description><![CDATA[<p>In this post I am going to tackle something that I have been wanting to play around with for awhile, disabling PowerShell v2 at an enterprise scale. As a former systems engineer and now a security engineer, I have a love/hate relationship with PowerShell since it is amazingly useful but also incredibly dangerous in the [&#8230;]</p>
+The post <a href="/2020/01/disabling-powershell-v2-with-group-policy/">Disabling PowerShell v2 with Group Policy</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Gathering Windows, PowerShell and Sysmon Events with Winlogbeat &#8211; ELK 7 &#8211; Windows Server 2016 (Part II)</title>
+		<link>/2019/05/gathering-windows-powershell-and-sysmon-events-with-winlogbeat-elk-7-windows-server-2016/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Tue, 07 May 2019 02:43:19 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[2016]]></category>
+		<category><![CDATA[Elasticsearch]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[Kibana]]></category>
+		<category><![CDATA[Logs]]></category>
+		<category><![CDATA[Logstash]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[SIEM]]></category>
+		<category><![CDATA[Sysmon]]></category>
+		<category><![CDATA[Windows]]></category>
+		<category><![CDATA[Winlogbeat]]></category>
+		<guid isPermaLink="false">/?p=4162</guid>
+
+					<description><![CDATA[<p>In part I of this series, Installing ELK 7 (Elasticsearch, Logstash and Kibana) on Windows Server 2016, I covered the following: Installing and configuring Elasticsearch, Logstash, and Kibana as Windows services Installing and configuring Winlogbeat to forward logs from the ELK server into ELK Installing and configuring Curator as a scheduled task (optional) Now, in [&#8230;]</p>
+The post <a href="/2019/05/gathering-windows-powershell-and-sysmon-events-with-winlogbeat-elk-7-windows-server-2016/">Gathering Windows, PowerShell and Sysmon Events with Winlogbeat – ELK 7 – Windows Server 2016 (Part II)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Installing ELK 7 (Elasticsearch, Logstash and Kibana) &#8211; Windows Server 2016 (Part I)</title>
+		<link>/2019/05/installing-elk-7-elasticsearch-logstash-and-kibana-windows-server-2016/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Tue, 07 May 2019 02:42:55 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[2016]]></category>
+		<category><![CDATA[Elasticsearch]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[Kibana]]></category>
+		<category><![CDATA[Logs]]></category>
+		<category><![CDATA[Logstash]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[SIEM]]></category>
+		<category><![CDATA[Sysmon]]></category>
+		<category><![CDATA[Windows]]></category>
+		<category><![CDATA[Winlogbeat]]></category>
+		<guid isPermaLink="false">/?p=4058</guid>
+
+					<description><![CDATA[<p>I am a huge fan of the Elastic stack as it can provide a great deal of visibility into even the largest of environments, which can help enable both engineering and security teams rapidly triage technical issues or incidents at scale. There&#8217;s also the fact that unlike Splunk, the Elastic software is free to use [&#8230;]</p>
+The post <a href="/2019/05/installing-elk-7-elasticsearch-logstash-and-kibana-windows-server-2016/">Installing ELK 7 (Elasticsearch, Logstash and Kibana) – Windows Server 2016 (Part I)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

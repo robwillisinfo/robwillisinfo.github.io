@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>fix | RobWillis.info</title>
+	<atom:link href="/tag/fix/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Mon, 27 Jun 2022 04:55:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>ESXi 6.5 &#8211; Error Loading /xorg.v00 Fatal Error: 33 (inconsistent data)</title>
+		<link>/2018/04/esxi-6-5-error-loading-xorg-v00-fatal-error-33-inconsistent-data/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Fri, 20 Apr 2018 10:13:58 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[ESXi 6.5]]></category>
+		<category><![CDATA[Fatal Error]]></category>
+		<category><![CDATA[Fatal Error 33]]></category>
+		<category><![CDATA[fix]]></category>
+		<category><![CDATA[s.v00]]></category>
+		<category><![CDATA[sb.v00]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[xorg.v00]]></category>
+		<guid isPermaLink="false">/?p=3716</guid>
+
+					<description><![CDATA[<p>The Error During a recent thunderstorm one of the ESXi 6.5 hosts in my lab environment that was not on a UPS, rebooted from a power fluctuation and when it rebooted I received the following error: Error loading /xorg.v00 Compressed MD5: d04cc03dd29bbe3fe547e9566f79674c Decompressed MD5: 00000000000000000000000000000000 As the error indicates, the file /xorg.v00 appears to be [&#8230;]</p>
+The post <a href="/2018/04/esxi-6-5-error-loading-xorg-v00-fatal-error-33-inconsistent-data/">ESXi 6.5 – Error Loading /xorg.v00 Fatal Error: 33 (inconsistent data)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>VMware ESXi 6 crashes during install on Dell C2100, PF Exception 14 in world 32768</title>
+		<link>/2017/01/vmware-esxi-6-crashes-during-install-on-dell-c2100-pf-exception-14-in-world-32768/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sat, 21 Jan 2017 09:32:56 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[C2100]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[fix]]></category>
+		<category><![CDATA[how to]]></category>
+		<category><![CDATA[Install]]></category>
+		<category><![CDATA[PF Exception 14 in world 32768]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[VSphere]]></category>
+		<guid isPermaLink="false">/?p=2972</guid>
+
+					<description><![CDATA[<p>During the install of VMware ESXi 6 on my new Dell C2100 I ran into an issue where right before fully booting into the install it would consistently purple screen with the following error: PF Exception 14 in world 32768 Looking up some basic information on this error pointed me in the direction of either [&#8230;]</p>
+The post <a href="/2017/01/vmware-esxi-6-crashes-during-install-on-dell-c2100-pf-exception-14-in-world-32768/">VMware ESXi 6 crashes during install on Dell C2100, PF Exception 14 in world 32768</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Fix the obsolete cryptography warning in Chrome on IIS 7 &#038; 8</title>
+		<link>/2015/05/fix-obsolete-cryptography-warning-in-chrome-on-iis-8/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sat, 02 May 2015 09:01:40 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[browser]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[cryptography]]></category>
+		<category><![CDATA[fix]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[iis 7]]></category>
+		<category><![CDATA[iis 8]]></category>
+		<category><![CDATA[obsolete cryptography]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[ssl]]></category>
+		<category><![CDATA[tls]]></category>
+		<category><![CDATA[warning]]></category>
+		<category><![CDATA[web site]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=2375</guid>
+
+					<description><![CDATA[<p>Update &#8211; 2.2.2016 &#8211; The ciphers originally listed in this post no longer work to fix the obsolete cryptography warning as Google has upped the requirement from DHE with AES_128_GCM to ECDHE with AES_128_GCM or CHACHA20_POLY1305. The only ciphers we have on Windows that are close to this requirement are all ECDHE-ECDSA which will require [&#8230;]</p>
+The post <a href="/2015/05/fix-obsolete-cryptography-warning-in-chrome-on-iis-8/">Fix the obsolete cryptography warning in Chrome on IIS 7 & 8</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Manually unlock a Trailblazer lift gate, fix stuck gate! (Video)</title>
+		<link>/2013/09/manually-unlock-a-trailblazer-lift-gate-fix-stuck-gate-video/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Wed, 11 Sep 2013 06:25:33 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Cars]]></category>
+		<category><![CDATA[Envoy]]></category>
+		<category><![CDATA[fix]]></category>
+		<category><![CDATA[GMC]]></category>
+		<category><![CDATA[hatch]]></category>
+		<category><![CDATA[liftgate]]></category>
+		<category><![CDATA[manual unlock]]></category>
+		<category><![CDATA[Trailblazer]]></category>
+		<guid isPermaLink="false">/?p=2077</guid>
+
+					<description><![CDATA[<p>The Issue &#160;&#160;&#160;&#160;&#160;I come out to the Trailblazer unlock it twice, pull the handle to the life gate or hatch and it just does not open. I try unlocking it again from the inside switches, same thing. Well now, what do you do with that? There is no manual lock for the rear, or at [&#8230;]</p>
+The post <a href="/2013/09/manually-unlock-a-trailblazer-lift-gate-fix-stuck-gate-video/">Manually unlock a Trailblazer lift gate, fix stuck gate! (Video)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Quick Fix &#8211; WordPress 3.5 No Thumbnails?</title>
+		<link>/2013/05/quick-fix-wordpress-3-5-no-thumbnails/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 06 May 2013 20:58:44 +0000</pubDate>
+				<category><![CDATA[Servers]]></category>
+		<category><![CDATA[broken]]></category>
+		<category><![CDATA[fix]]></category>
+		<category><![CDATA[gd]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[not generating]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[php_gd2.dll]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[thumnail]]></category>
+		<category><![CDATA[tips]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<guid isPermaLink="false">/?p=1533</guid>
+
+					<description><![CDATA[<p>The Issue &#160;&#160;&#160;&#160;&#160;So I just recently noticed after upgrading to WordPress 3.5.1 and updating my servers PHP install that it seemed the process of creating thumbnails had broken. I was trying to create a gallery and getting full size images filling my content boxes. Checking the uploads folder showed there was no thumbnail output at [&#8230;]</p>
+The post <a href="/2013/05/quick-fix-wordpress-3-5-no-thumbnails/">Quick Fix – WordPress 3.5 No Thumbnails?</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

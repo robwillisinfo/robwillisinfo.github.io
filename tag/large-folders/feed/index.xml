@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>large folders | RobWillis.info</title>
+	<atom:link href="/tag/large-folders/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Tue, 06 Apr 2021 07:22:28 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>PowerShell Script: Find the largest files and folders for any drive</title>
+		<link>/2014/07/powershell-script-find-the-25-largest-files-and-list-folder-sizes-for-any-drive/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Wed, 09 Jul 2014 04:04:42 +0000</pubDate>
+				<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[files]]></category>
+		<category><![CDATA[find]]></category>
+		<category><![CDATA[folders]]></category>
+		<category><![CDATA[large]]></category>
+		<category><![CDATA[large files]]></category>
+		<category><![CDATA[large folders]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[scan]]></category>
+		<category><![CDATA[script]]></category>
+		<guid isPermaLink="false">/?p=2333</guid>
+
+					<description><![CDATA[<p>Update &#8211; 04.06.2021 &#8211; I have an updated version of this script that is a little more flexible and has better output, you can find the new script here: /2021/04/powershell-script-quickly-find-the-largest-files/ This is a super easy to use and flexible PowerShell script to find out what the largest files and folders are on a single drive. [&#8230;]</p>
+The post <a href="/2014/07/powershell-script-find-the-25-largest-files-and-list-folder-sizes-for-any-drive/">PowerShell Script: Find the largest files and folders for any drive</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>remote management | RobWillis.info</title>
+	<atom:link href="/tag/remote-management/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Mon, 27 Jun 2022 05:00:01 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Dell CS24-SC Using the on-board Baseboard Management Controller (BMC)&#038; IPMIView (Video)</title>
+		<link>/2013/04/dell-cs24-sc-first-steps-with-the-on-board-baseboard-management-controller-bmc-ipmiview-video/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Tue, 30 Apr 2013 02:11:58 +0000</pubDate>
+				<category><![CDATA[Servers]]></category>
+		<category><![CDATA[baseboard management]]></category>
+		<category><![CDATA[bmc]]></category>
+		<category><![CDATA[cs24-sc]]></category>
+		<category><![CDATA[Dell]]></category>
+		<category><![CDATA[drac]]></category>
+		<category><![CDATA[how to]]></category>
+		<category><![CDATA[ipmi]]></category>
+		<category><![CDATA[ipmiview]]></category>
+		<category><![CDATA[remote management]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[tips]]></category>
+		<guid isPermaLink="false">/?p=1426</guid>
+
+					<description><![CDATA[<p>The Dell CS24-SC and on-board BMC &#160;&#160;&#160;&#160;&#160;The Dell CS24-SC is a unique piece of server hardware, packed with CPU and RAM but limited on bells and whistles. With no DRAC option available, the only way to remotely manage this server is the built-in Baseboard Management Controller or BMC. Now this isn&#8217;t necessarily a bad thing [&#8230;]</p>
+The post <a href="/2013/04/dell-cs24-sc-first-steps-with-the-on-board-baseboard-management-controller-bmc-ipmiview-video/">Dell CS24-SC Using the on-board Baseboard Management Controller (BMC)& IPMIView (Video)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

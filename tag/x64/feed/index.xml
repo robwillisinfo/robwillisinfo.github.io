@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>x64 | RobWillis.info</title>
+	<atom:link href="/tag/x64/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Mon, 27 Jun 2022 05:06:18 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>How-To: Installing Unsigned Drivers on Windows 7 x64</title>
+		<link>/2012/03/how-to-installing-unsigned-drivers-on-windows-7-x64/</link>
+					<comments>/2012/03/how-to-installing-unsigned-drivers-on-windows-7-x64/#respond</comments>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sun, 04 Mar 2012 08:42:33 +0000</pubDate>
+				<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Driver Signature]]></category>
+		<category><![CDATA[DSEO]]></category>
+		<category><![CDATA[Unsigned Drivers]]></category>
+		<category><![CDATA[Windows 7]]></category>
+		<category><![CDATA[x64]]></category>
+		<guid isPermaLink="false">http://wp.robwillis.info/?p=158</guid>
+
+					<description><![CDATA[<p>Intro In this video I show how to install unsigned drivers on Windows 7 x64. Starting with Windows Vista x64, Windows requires that all drivers be digitally signed. This can be a good thing, like to preventing the installation of malicious drivers for example. However, what if the drivers aren&#8217;t malicious and you trust them? [&#8230;]</p>
+The post <a href="/2012/03/how-to-installing-unsigned-drivers-on-windows-7-x64/">How-To: Installing Unsigned Drivers on Windows 7 x64</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+					<wfw:commentRss>/2012/03/how-to-installing-unsigned-drivers-on-windows-7-x64/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

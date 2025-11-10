@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Linux | RobWillis.info</title>
+	<atom:link href="/tag/linux/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Wed, 05 Nov 2025 11:19:05 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Installing Omarchy On VMware Workstation</title>
+		<link>/2025/11/installing-omarchy-on-vmware-workstation/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Wed, 05 Nov 2025 11:12:29 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Omarchy]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<guid isPermaLink="false">/?p=7729</guid>
+
+					<description><![CDATA[<p>If you&#8217;re trying to run Omarchy on VMware Workstation, you might be experiencing some issues with the GUI after what appears to be a successful installation. With the basic graphics option configured on the virtual machine, Omarchy will boot but then fall to a black screen right after entering the password. Enabling accelerated graphics gets [&#8230;]</p>
+The post <a href="/2025/11/installing-omarchy-on-vmware-workstation/">Installing Omarchy On VMware Workstation</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Home Lab &#038; Office &#8211; 2025</title>
+		<link>/2025/10/home-lab-office-2025/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sat, 04 Oct 2025 23:10:14 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Dell]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[Home Lab]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=7452</guid>
+
+					<description><![CDATA[<p>It&#8217;s been a while since I&#8217;ve made a video, and even longer since I&#8217;ve shown my home lab setup! I&#8217;ve been doing some cleaning and thinking about upgrades, so I figured now would be a good time to show where everything currently stands.</p>
+The post <a href="/2025/10/home-lab-office-2025/">Home Lab & Office – 2025</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Manually Updating the Firmwares on a Dell PowerEdge R610</title>
+		<link>/2018/12/manually-updating-the-firmwares-on-a-dell-poweredge-r610/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 24 Dec 2018 03:44:47 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Dell]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[Firmware]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[PowerEdge]]></category>
+		<category><![CDATA[R610]]></category>
+		<category><![CDATA[SLI]]></category>
+		<category><![CDATA[Virtualization]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=4002</guid>
+
+					<description><![CDATA[<p>Updating firmwares yet again&#8230; Shortly after the last time I posted on updating firmwares on Dell PowerEdge R610, I found out that Dell dropped support for all 11G servers from the SUU package along with the Lifecycle controller packages which basically broke the entire method I posted. However all hope is not lost, and the [&#8230;]</p>
+The post <a href="/2018/12/manually-updating-the-firmwares-on-a-dell-poweredge-r610/">Manually Updating the Firmwares on a Dell PowerEdge R610</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Home Lab Cooling Upgrade!</title>
+		<link>/2018/10/home-lab-cooling-upgrade/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 29 Oct 2018 03:24:14 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Cooling]]></category>
+		<category><![CDATA[Elastic]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[firewall]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[Home Lab]]></category>
+		<category><![CDATA[IDS]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[OPNsense]]></category>
+		<category><![CDATA[pfSense]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[snort]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3979</guid>
+
+					<description><![CDATA[<p>In this video I show off my latest project &#8211; Upgrading the cooling system on my home lab in hopes of making it a little more efficient while quieting things down a bit. The original setup consisted of the following: 2 x 6&#8243; Ducts with Fans 6&#8243; Flexible Ducting Originally there was just a single [&#8230;]</p>
+The post <a href="/2018/10/home-lab-cooling-upgrade/">Home Lab Cooling Upgrade!</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Apache Struts CVE-2018-11776 &#8211; Testing, Analyzing, &#038; Detection</title>
+		<link>/2018/08/apache-struts-cve-2018-11776-testing-analyzing-detection/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Fri, 31 Aug 2018 13:49:06 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Analysis]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[CVE-2018-11776]]></category>
+		<category><![CDATA[Detection]]></category>
+		<category><![CDATA[exploit]]></category>
+		<category><![CDATA[Java]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Logs]]></category>
+		<category><![CDATA[Pcap]]></category>
+		<category><![CDATA[Struts]]></category>
+		<category><![CDATA[testing]]></category>
+		<category><![CDATA[Tomcat]]></category>
+		<category><![CDATA[Tomcat8]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[vulnerability]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3843</guid>
+
+					<description><![CDATA[<p>Intro Any time a new Apache Struts vulnerability comes out it should be taken pretty seriously as there are many &#8220;mission critical&#8221; systems that are leveraging the framework, with a considerable amount of them being public facing. Unfortunately, as a former Sys Ad I can tell you that many of these systems will go on [&#8230;]</p>
+The post <a href="/2018/08/apache-struts-cve-2018-11776-testing-analyzing-detection/">Apache Struts CVE-2018-11776 – Testing, Analyzing, & Detection</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Installing VMware ESXi on an Internal USB?!</title>
+		<link>/2018/02/installing-vmware-esxi-on-an-internal-usb/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Tue, 13 Feb 2018 16:09:07 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Dell]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[Home Lab]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[PowerEdge]]></category>
+		<category><![CDATA[R610]]></category>
+		<category><![CDATA[Virtualization]]></category>
+		<category><![CDATA[VM]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3611</guid>
+
+					<description><![CDATA[<p>One of the things I get the most questions about with my VMware ESXi posts/videos is about installing ESXi onto USB drives and booting it from there, and that question is usually followed by the concern of someone accidentally or even maliciously removing the drive from the chassis. In the case of the Dell PowerEdge [&#8230;]</p>
+The post <a href="/2018/02/installing-vmware-esxi-on-an-internal-usb/">Installing VMware ESXi on an Internal USB?!</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Dell PowerEdge R610 Review &#8211; Virtualization On The Cheap</title>
+		<link>/2018/02/dell-poweredge-r610-review-virtualization-on-the-cheap/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 12 Feb 2018 14:28:05 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Dell]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[Home Lab]]></category>
+		<category><![CDATA[iDrac]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[OPNsense]]></category>
+		<category><![CDATA[PowerEdge]]></category>
+		<category><![CDATA[R610]]></category>
+		<category><![CDATA[Virtualization]]></category>
+		<category><![CDATA[VM]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3603</guid>
+
+					<description><![CDATA[<p>One of the things I always find myself telling anyone wanting to build out a home lab, is that it does not have to be expensive. The Dell PowerEdge R610 is a prime example of this and in this case I was able to pick up a matching pair of decently spec&#8217;d R610s that are [&#8230;]</p>
+The post <a href="/2018/02/dell-poweredge-r610-review-virtualization-on-the-cheap/">Dell PowerEdge R610 Review – Virtualization On The Cheap</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Home Lab Setup (2017)</title>
+		<link>/2018/02/home-lab-setup/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sun, 04 Feb 2018 15:51:15 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[blue]]></category>
+		<category><![CDATA[Elastic]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[firewall]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[Home Lab]]></category>
+		<category><![CDATA[IDS]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[OPNsense]]></category>
+		<category><![CDATA[pfSense]]></category>
+		<category><![CDATA[red]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[snort]]></category>
+		<category><![CDATA[team]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3508</guid>
+
+					<description><![CDATA[<p>In this post and video I give a quick run down of my Home Lab &#8211; everything from the rack itself, to the hardware and the basics of what everything is being used for. I started this project towards the end of 2012 with a single Dell PowerEdge 2950 GII and was hoping to teach [&#8230;]</p>
+The post <a href="/2018/02/home-lab-setup/">Home Lab Setup (2017)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>ELK Stack &#8211; Installing and Configuring Curator</title>
+		<link>/2017/11/elk-stack-installing-and-configuring-curator/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Thu, 16 Nov 2017 15:42:29 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[Curator]]></category>
+		<category><![CDATA[Elastic]]></category>
+		<category><![CDATA[Elasticsearch]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[Kibana]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Logs]]></category>
+		<category><![CDATA[Logstash]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[SIEM]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3462</guid>
+
+					<description><![CDATA[<p>In this post I am going to quickly cover what is needed to get Curator up and running on the ELK stack. In the last few posts about the ELK stack I covered everything needed to get it installed, configured and ingesting logs reliably. If you missed those posts, you can find them here: ELK [&#8230;]</p>
+The post <a href="/2017/11/elk-stack-installing-and-configuring-curator/">ELK Stack – Installing and Configuring Curator</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>ELK Stack &#8211; Tips, Tricks and Troubleshooting</title>
+		<link>/2017/11/elk-stack-tips-tricks-and-troubleshooting/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Fri, 10 Nov 2017 02:55:43 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[Elastic]]></category>
+		<category><![CDATA[Elasticsearch]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[Kibana]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Logs]]></category>
+		<category><![CDATA[Logstash]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[SIEM]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3394</guid>
+
+					<description><![CDATA[<p>This post is going to be a sort of a follow up to my ELK 5 on Ubuntu 16.04 series. I am going to cover some of the lessons I have learned over the last few months of maintaining a running ELK stack instance. I am also going to cover some one liners that can [&#8230;]</p>
+The post <a href="/2017/11/elk-stack-tips-tricks-and-troubleshooting/">ELK Stack – Tips, Tricks and Troubleshooting</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

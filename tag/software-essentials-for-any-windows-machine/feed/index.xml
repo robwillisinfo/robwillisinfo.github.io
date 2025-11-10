@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Software Essentials for any Windows Machine | RobWillis.info</title>
+	<atom:link href="/tag/software-essentials-for-any-windows-machine/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Sun, 01 Apr 2012 09:29:53 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Must Have Software For Any Windows Machine</title>
+		<link>/2012/03/software-essentials-for-any-windows-machine/</link>
+					<comments>/2012/03/software-essentials-for-any-windows-machine/#respond</comments>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sun, 25 Mar 2012 09:40:43 +0000</pubDate>
+				<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Software Essentials for any Windows Machine]]></category>
+		<guid isPermaLink="false">/?p=515</guid>
+
+					<description><![CDATA[<p>Whether you bought a new PC or are re-imaging an old one, there&#8217;s always those few pieces of software that you must have on every computer, the essentials when building a Windows machine. Things like plug-Ins, browsers and pdf readers. I thought it&#8217;d be useful to share my list of must have installs that I [&#8230;]</p>
+The post <a href="/2012/03/software-essentials-for-any-windows-machine/">Must Have Software For Any Windows Machine</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+					<wfw:commentRss>/2012/03/software-essentials-for-any-windows-machine/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

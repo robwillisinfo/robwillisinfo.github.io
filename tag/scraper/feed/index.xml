@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Scraper | RobWillis.info</title>
+	<atom:link href="/tag/scraper/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Thu, 13 Apr 2017 09:03:37 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Stopping Bots and Website Scrapers from scanning your sites on IIS with URL Rewrite…</title>
+		<link>/2016/11/stopping-bots-and-website-scrapers-from-scanning-your-sites/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sat, 12 Nov 2016 18:45:24 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Block]]></category>
+		<category><![CDATA[Bot]]></category>
+		<category><![CDATA[ELK]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[Scraper]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[URL Rewrite]]></category>
+		<category><![CDATA[Web Scraping]]></category>
+		<guid isPermaLink="false">/?p=2917</guid>
+
+					<description><![CDATA[<p>Bots and Website Scrapers can be a serious annoyance to anyone who is responsible for administering a website and the more sites and servers you are responsible the more of a problem it can become. Every request a bot or scraper makes requires some amount of resources on the web server hosting the site, the [&#8230;]</p>
+The post <a href="/2016/11/stopping-bots-and-website-scrapers-from-scanning-your-sites/">Stopping Bots and Website Scrapers from scanning your sites on IIS with URL Rewrite…</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

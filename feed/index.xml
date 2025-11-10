@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>RobWillis.info</title>
+	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Wed, 05 Nov 2025 11:19:05 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Installing Omarchy On VMware Workstation</title>
+		<link>/2025/11/installing-omarchy-on-vmware-workstation/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Wed, 05 Nov 2025 11:12:29 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Omarchy]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<guid isPermaLink="false">/?p=7729</guid>
+
+					<description><![CDATA[<p>If you&#8217;re trying to run Omarchy on VMware Workstation, you might be experiencing some issues with the GUI after what appears to be a successful installation. With the basic graphics option configured on the virtual machine, Omarchy will boot but then fall to a black screen right after entering the password. Enabling accelerated graphics gets [&#8230;]</p>
+The post <a href="/2025/11/installing-omarchy-on-vmware-workstation/">Installing Omarchy On VMware Workstation</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Home Lab &#038; Office &#8211; 2025</title>
+		<link>/2025/10/home-lab-office-2025/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sat, 04 Oct 2025 23:10:14 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Dell]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[Home Lab]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=7452</guid>
+
+					<description><![CDATA[<p>It&#8217;s been a while since I&#8217;ve made a video, and even longer since I&#8217;ve shown my home lab setup! I&#8217;ve been doing some cleaning and thinking about upgrades, so I figured now would be a good time to show where everything currently stands.</p>
+The post <a href="/2025/10/home-lab-office-2025/">Home Lab & Office – 2025</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Windows EDR: Telemetry &#038; Sensors &#8211; Mind Map</title>
+		<link>/2025/09/windows-edr-telemetry-sensors/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Thu, 18 Sep 2025 11:57:32 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[blue]]></category>
+		<category><![CDATA[Bypass]]></category>
+		<category><![CDATA[EDR]]></category>
+		<category><![CDATA[Internals]]></category>
+		<category><![CDATA[Purple]]></category>
+		<category><![CDATA[red]]></category>
+		<category><![CDATA[team]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=7442</guid>
+
+					<description><![CDATA[<p>I recently read Evading EDR by Matt Hand. While not a lengthy book, it&#8217;s technically dense and packed with tons of valuable information about Windows and EDR internals. It&#8217;s a fantastic resource, and I highly recommend it: Evading EDR by Matt Hand To help solidify my understanding of the concepts and apply them in future [&#8230;]</p>
+The post <a href="/2025/09/windows-edr-telemetry-sensors/">Windows EDR: Telemetry & Sensors – Mind Map</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Ultimate Local AI Setup Guide: Ubuntu, Ollama, &#038; Open WebUI</title>
+		<link>/2025/05/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Wed, 14 May 2025 16:30:07 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[LLM]]></category>
+		<category><![CDATA[Ollama]]></category>
+		<category><![CDATA[Open WebUI]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<guid isPermaLink="false">/?p=6836</guid>
+
+					<description><![CDATA[<p>Intro &#038; Background It seems safe to say that artificial intelligence (AI), particularly large language models (LLMs), are here to stay. As a cybersecurity professional, it has been pretty easy to find use cases for AI in my daily work, from general penetration testing and writing tools to forensics and reverse engineering. However, as with [&#8230;]</p>
+The post <a href="/2025/05/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui/">Ultimate Local AI Setup Guide: Ubuntu, Ollama, & Open WebUI</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Purple Teaming AD with BloodHound CE &#038; AD-Miner</title>
+		<link>/2025/03/purple-teaming-ad-with-bloodhound-community-edition-ad-miner/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Wed, 12 Mar 2025 13:42:51 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[Active Directory]]></category>
+		<category><![CDATA[AD]]></category>
+		<category><![CDATA[BloodHound]]></category>
+		<category><![CDATA[blue]]></category>
+		<category><![CDATA[Purple]]></category>
+		<category><![CDATA[red]]></category>
+		<category><![CDATA[team]]></category>
+		<guid isPermaLink="false">/?p=6147</guid>
+
+					<description><![CDATA[<p>BloodHound is one of those tools that everyone in the industry seems to have heard of and it tends to generate a buzz amongst engineers anytime it&#8217;s brought up. This reputation is well-deserved with it being such a game changer when it comes to attacking and auditing Active Directory domains. Every organization running Active Directory [&#8230;]</p>
+The post <a href="/2025/03/purple-teaming-ad-with-bloodhound-community-edition-ad-miner/">Purple Teaming AD with BloodHound CE & AD-Miner</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Introducing Invoke-EncryptionSimulator: A PowerShell Tool for Simulating Late-Stage Ransomware Attacks</title>
+		<link>/2024/03/powershell-script-invoke-encryptionsimulator/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Thu, 14 Mar 2024 04:53:37 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[AES]]></category>
+		<category><![CDATA[Detection Engineering]]></category>
+		<category><![CDATA[Encryption]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[Ransomware]]></category>
+		<category><![CDATA[script]]></category>
+		<guid isPermaLink="false">/?p=6120</guid>
+
+					<description><![CDATA[<p>Invoke-EncryptionSimulator Invoke-EncryptionSimulator is designed to be a simple and safe way to emulate the encryption stage of a ransomware deployment to aid in development and testing of controls focusing on file system level changes rather than process related telemetry. Invoke-EncryptionSimulator is designed to be a simple and safe way to emulate the encryption stage of [&#8230;]</p>
+The post <a href="/2024/03/powershell-script-invoke-encryptionsimulator/">Introducing Invoke-EncryptionSimulator: A PowerShell Tool for Simulating Late-Stage Ransomware Attacks</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Analyzing &#038; Detecting IIS Backdoors</title>
+		<link>/2022/11/analyzing-detecting-iis-backdoors/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sat, 05 Nov 2022 08:00:12 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[Detection]]></category>
+		<category><![CDATA[Extensions]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[Kali]]></category>
+		<category><![CDATA[Logs]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[SIEM]]></category>
+		<category><![CDATA[Sysmon]]></category>
+		<category><![CDATA[Web Shell]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=5452</guid>
+
+					<description><![CDATA[<p>IIS Extensions As Backdoors Microsoft recently published an interesting blog explaining how they&#8217;ve noticed a new trend where attackers have been leveraging Internet Information Services (IIS) extensions to covertly backdoor Windows servers: https://www.microsoft.com/security/blog/2022/07/26/malicious-iis-extensions-quietly-open-persistent-backdoors-into-servers/ The Microsoft post contains a wealth of information on this topic, but I really wanted to dig through the specifics in order [&#8230;]</p>
+The post <a href="/2022/11/analyzing-detecting-iis-backdoors/">Analyzing & Detecting IIS Backdoors</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>New Tool! Invoke-RPCMap: PowerShell Script for Remote RPC Service Enumeration</title>
+		<link>/2022/06/powershell-script-invoke-rpcmap/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 27 Jun 2022 02:13:00 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[RPC]]></category>
+		<category><![CDATA[Scanner]]></category>
+		<category><![CDATA[script]]></category>
+		<category><![CDATA[Tool]]></category>
+		<guid isPermaLink="false">/?p=5365</guid>
+
+					<description><![CDATA[<p>Invoke-RPCMap Invoke-RPCMap can be used to enumerate local and remote RPC services/ports via the RPC Endpoint Mapper service. This information can useful during an investigation where a connection to a remote port is known, but the service is running under a generic process like svchost.exe. This script will do the following: Create a local log [&#8230;]</p>
+The post <a href="/2022/06/powershell-script-invoke-rpcmap/">New Tool! Invoke-RPCMap: PowerShell Script for Remote RPC Service Enumeration</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Revisiting &#038; Revising An Old PowerShell Tool &#8211; Quickly Find The Largest Files</title>
+		<link>/2021/04/powershell-script-quickly-find-the-largest-files/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Tue, 06 Apr 2021 07:05:37 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[Scripts]]></category>
+		<guid isPermaLink="false">/?p=5334</guid>
+
+					<description><![CDATA[<p>A few years ago I wrote a script to help find the largest files on a drive using PowerShell without the need to install any additional software. This script was extremely useful for quickly narrowing in on files that may be easy to remove in order to help free up disk space, particularly in situations [&#8230;]</p>
+The post <a href="/2021/04/powershell-script-quickly-find-the-largest-files/">Revisiting & Revising An Old PowerShell Tool – Quickly Find The Largest Files</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>VMware vCenter CVE-2021-21972 Scanner</title>
+		<link>/2021/02/vmware-vcenter-cve-2021-21972-scan-tool/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sat, 27 Feb 2021 10:31:52 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[CVE-2021-21972]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[scan]]></category>
+		<category><![CDATA[Tool]]></category>
+		<category><![CDATA[vCenter]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[vulnerability]]></category>
+		<guid isPermaLink="false">/?p=5318</guid>
+
+					<description><![CDATA[<p>In this post, I am releasing a PowerShell POC script that will scan the specified target hosts and attempt to detect those that are vulnerable to VMware vCenter CVE-2021-21972. You can find the script, Invoke-CVE-2021-21972-Scan.ps1, on my github here: https://github.com/robwillisinfo/VMware_vCenter_CVE-2021-21972 The script executes in the following order: Create a log file, default log name is [&#8230;]</p>
+The post <a href="/2021/02/vmware-vcenter-cve-2021-21972-scan-tool/">VMware vCenter CVE-2021-21972 Scanner</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

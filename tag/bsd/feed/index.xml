@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>BSD | RobWillis.info</title>
+	<atom:link href="/tag/bsd/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Mon, 27 Jun 2022 04:58:13 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>How to &#8211; Building Virtual Machines with VMWare ESXi 5.1&#8230;(Video)</title>
+		<link>/2013/07/how-to-building-virtual-machines-with-vmware-esxi-5-1-video/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sun, 07 Jul 2013 11:20:36 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[5.1]]></category>
+		<category><![CDATA[BSD]]></category>
+		<category><![CDATA[ESX]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Virtuaization]]></category>
+		<category><![CDATA[Virtual Machine]]></category>
+		<category><![CDATA[VM]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[VSphere]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=1749</guid>
+
+					<description><![CDATA[<p>Virtual Machines in less than 5 minutes &#160;&#160;&#160;&#160;&#160;That&#8217;s right, it takes less than 5 minutes to get a VM up and running in VMWare ESXi 5.1 via the VSphere console. Not only does this allow for fast provisioning of machines and whole environments but it also supports Windows, Linux and a myriad of other OSs. [&#8230;]</p>
+The post <a href="/2013/07/how-to-building-virtual-machines-with-vmware-esxi-5-1-video/">How to – Building Virtual Machines with VMWare ESXi 5.1…(Video)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>My Home Server &#038; Lab Setup (Video &#038; Gallery)</title>
+		<link>/2013/05/my-home-server-lab-setup-video-gallery/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Tue, 07 May 2013 02:30:44 +0000</pubDate>
+				<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[2950]]></category>
+		<category><![CDATA[5324]]></category>
+		<category><![CDATA[BSD]]></category>
+		<category><![CDATA[Dell]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[Home Server]]></category>
+		<category><![CDATA[Intel]]></category>
+		<category><![CDATA[Lab]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[PowerConnect]]></category>
+		<category><![CDATA[PowerEdge]]></category>
+		<category><![CDATA[Rack]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[White Box]]></category>
+		<category><![CDATA[Windows]]></category>
+		<category><![CDATA[Xeon]]></category>
+		<guid isPermaLink="false">/?p=1468</guid>
+
+					<description><![CDATA[<p>&#160; It all started with a single ESXi host&#8230; This whole thing really started with a single custom built pc I made out of a spare motherboard I had. The intention with that box was to run a few virtual machines to play around with Windows Server and IIS 7, maybe even some Linux. One [&#8230;]</p>
+The post <a href="/2013/05/my-home-server-lab-setup-video-gallery/">My Home Server & Lab Setup (Video & Gallery)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

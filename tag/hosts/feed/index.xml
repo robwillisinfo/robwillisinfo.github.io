@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>hosts | RobWillis.info</title>
+	<atom:link href="/tag/hosts/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Mon, 27 Jun 2022 05:00:09 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>PowerShell &#8211; Simple Mass Server Shutdown/Reboot Script with Menu &#038; Status Check (Video)</title>
+		<link>/2013/04/powershell-simple-mass-shutdownreboot-script-with-menu-status-check-video/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sat, 27 Apr 2013 15:29:57 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[check]]></category>
+		<category><![CDATA[hosts]]></category>
+		<category><![CDATA[mass]]></category>
+		<category><![CDATA[multiple]]></category>
+		<category><![CDATA[Powershell]]></category>
+		<category><![CDATA[reboot]]></category>
+		<category><![CDATA[script]]></category>
+		<category><![CDATA[shutdown]]></category>
+		<category><![CDATA[status]]></category>
+		<category><![CDATA[txt]]></category>
+		<guid isPermaLink="false">/?p=1386</guid>
+
+					<description><![CDATA[<p>What is the purpose of this script? &#160;&#160;&#160;&#160;&#160;This is a simple script that can be used to mass shutdown or reboot any Windows hosts that are in the hosts.txt file. The script is menu driven and allows the user to view the hosts that are in the txt as well as edit it. There is [&#8230;]</p>
+The post <a href="/2013/04/powershell-simple-mass-shutdownreboot-script-with-menu-status-check-video/">PowerShell – Simple Mass Server Shutdown/Reboot Script with Menu & Status Check (Video)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

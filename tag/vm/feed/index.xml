@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>VM | RobWillis.info</title>
+	<atom:link href="/tag/vm/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Mon, 27 Jun 2022 04:56:55 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Installing VMware ESXi on an Internal USB?!</title>
+		<link>/2018/02/installing-vmware-esxi-on-an-internal-usb/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Tue, 13 Feb 2018 16:09:07 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Dell]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[Home Lab]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[PowerEdge]]></category>
+		<category><![CDATA[R610]]></category>
+		<category><![CDATA[Virtualization]]></category>
+		<category><![CDATA[VM]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3611</guid>
+
+					<description><![CDATA[<p>One of the things I get the most questions about with my VMware ESXi posts/videos is about installing ESXi onto USB drives and booting it from there, and that question is usually followed by the concern of someone accidentally or even maliciously removing the drive from the chassis. In the case of the Dell PowerEdge [&#8230;]</p>
+The post <a href="/2018/02/installing-vmware-esxi-on-an-internal-usb/">Installing VMware ESXi on an Internal USB?!</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Dell PowerEdge R610 Review &#8211; Virtualization On The Cheap</title>
+		<link>/2018/02/dell-poweredge-r610-review-virtualization-on-the-cheap/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 12 Feb 2018 14:28:05 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Dell]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[Home Lab]]></category>
+		<category><![CDATA[iDrac]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[OPNsense]]></category>
+		<category><![CDATA[PowerEdge]]></category>
+		<category><![CDATA[R610]]></category>
+		<category><![CDATA[Virtualization]]></category>
+		<category><![CDATA[VM]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=3603</guid>
+
+					<description><![CDATA[<p>One of the things I always find myself telling anyone wanting to build out a home lab, is that it does not have to be expensive. The Dell PowerEdge R610 is a prime example of this and in this case I was able to pick up a matching pair of decently spec&#8217;d R610s that are [&#8230;]</p>
+The post <a href="/2018/02/dell-poweredge-r610-review-virtualization-on-the-cheap/">Dell PowerEdge R610 Review – Virtualization On The Cheap</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Installing and Configuring VMware vCenter 6.5 (VCSA)</title>
+		<link>/2017/11/installing-and-configuring-vmware-vcenter-6-5-vcsa/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Wed, 01 Nov 2017 13:35:24 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[6.5]]></category>
+		<category><![CDATA[Appliance]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[how to]]></category>
+		<category><![CDATA[Install]]></category>
+		<category><![CDATA[vCenter]]></category>
+		<category><![CDATA[VCSA]]></category>
+		<category><![CDATA[Virtual Machine]]></category>
+		<category><![CDATA[VM]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[VSphere]]></category>
+		<category><![CDATA[Web Console]]></category>
+		<guid isPermaLink="false">/?p=3380</guid>
+
+					<description><![CDATA[<p>In this third and final part of my VMware series, I go over all of the basics of getting the VMware vCenter 6.5 Server Appliance up and running. Everything that I show in the video can be done with the evaluation version of vCenter, which gives you up to 2 months of time to play [&#8230;]</p>
+The post <a href="/2017/11/installing-and-configuring-vmware-vcenter-6-5-vcsa/">Installing and Configuring VMware vCenter 6.5 (VCSA)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Installing VMware vSphere ESXi 6.5</title>
+		<link>/2017/07/installing-vmware-vsphere-esxi-6-5/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Wed, 26 Jul 2017 13:27:14 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[6.5]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[how to]]></category>
+		<category><![CDATA[Install]]></category>
+		<category><![CDATA[vCenter]]></category>
+		<category><![CDATA[Virtual Machine]]></category>
+		<category><![CDATA[VM]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[VSphere]]></category>
+		<category><![CDATA[Web Console]]></category>
+		<guid isPermaLink="false">/?p=3239</guid>
+
+					<description><![CDATA[<p>In this video I go over all of the basics of getting up and running with my favorite hypervisor, VMware vSphere ESXi 6.5. Here is a quick run down of everything covered: Where to install ESXi, hard drive or USB drive? Creating a bootable USB drive with the VMware ESXi ISO image and Rufus Booting [&#8230;]</p>
+The post <a href="/2017/07/installing-vmware-vsphere-esxi-6-5/">Installing VMware vSphere ESXi 6.5</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>How I cool my server rack!</title>
+		<link>/2016/08/how-i-cool-my-server-rack/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Tue, 09 Aug 2016 07:46:02 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Cooling]]></category>
+		<category><![CDATA[Dell]]></category>
+		<category><![CDATA[DIY]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[Home Lab]]></category>
+		<category><![CDATA[Network]]></category>
+		<category><![CDATA[pfSense]]></category>
+		<category><![CDATA[VM]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=2889</guid>
+
+					<description><![CDATA[<p>In this video I show my newest method of cooling my server rack, which so far has proved to work extremely well! I got this idea after seeing some video and pictures of newer data centers keeping the hot and cool air separate, then exhausting the hot air directly out. I thought why couldn&#8217;t I [&#8230;]</p>
+The post <a href="/2016/08/how-i-cool-my-server-rack/">How I cool my server rack!</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>How to install VMware vSphere ESXi 6 (Video)</title>
+		<link>/2016/03/how-to-install-vmware-vsphere-esxi-6-video/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sun, 20 Mar 2016 03:58:05 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[C2100]]></category>
+		<category><![CDATA[Dell]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[Virtual Machine]]></category>
+		<category><![CDATA[Virtualization]]></category>
+		<category><![CDATA[VM]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[VSphere]]></category>
+		<guid isPermaLink="false">/?p=2694</guid>
+
+					<description><![CDATA[<p>In this video I demo how to install VMware vSphere ESXi 6 onto a Dell C2100 Server and I take you through everything from basic installation and configuration all the way up to connecting and managing the instance via the vSphere client. You will need the following at the very minimum to run ESXi 6: [&#8230;]</p>
+The post <a href="/2016/03/how-to-install-vmware-vsphere-esxi-6-video/">How to install VMware vSphere ESXi 6 (Video)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>What is ESXi? (Video)</title>
+		<link>/2013/09/what-is-esxi-video/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Thu, 12 Sep 2013 01:40:46 +0000</pubDate>
+				<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[esxi. virtualization]]></category>
+		<category><![CDATA[Server]]></category>
+		<category><![CDATA[Virtual Machine]]></category>
+		<category><![CDATA[VM]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[what is esxi]]></category>
+		<guid isPermaLink="false">/?p=2088</guid>
+
+					<description><![CDATA[<p>&#160;&#160;&#160;&#160;&#160;I often find myself talking about VMWare&#8217;s ESXi and how useful it can be in lab and production environments where you need to make the most of your hardware. For those who aren&#8217;t familiar with ESXi or virtualization in general, the first question usually is &#8220;What exactly is ESXi?&#8221;. The answer however isn&#8217;t exactly all [&#8230;]</p>
+The post <a href="/2013/09/what-is-esxi-video/">What is ESXi? (Video)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>How to &#8211; Building Virtual Machines with VMWare ESXi 5.1&#8230;(Video)</title>
+		<link>/2013/07/how-to-building-virtual-machines-with-vmware-esxi-5-1-video/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Sun, 07 Jul 2013 11:20:36 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[5.1]]></category>
+		<category><![CDATA[BSD]]></category>
+		<category><![CDATA[ESX]]></category>
+		<category><![CDATA[ESXi]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Virtuaization]]></category>
+		<category><![CDATA[Virtual Machine]]></category>
+		<category><![CDATA[VM]]></category>
+		<category><![CDATA[VMWare]]></category>
+		<category><![CDATA[VSphere]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">/?p=1749</guid>
+
+					<description><![CDATA[<p>Virtual Machines in less than 5 minutes &#160;&#160;&#160;&#160;&#160;That&#8217;s right, it takes less than 5 minutes to get a VM up and running in VMWare ESXi 5.1 via the VSphere console. Not only does this allow for fast provisioning of machines and whole environments but it also supports Windows, Linux and a myriad of other OSs. [&#8230;]</p>
+The post <a href="/2013/07/how-to-building-virtual-machines-with-vmware-esxi-5-1-video/">How to – Building Virtual Machines with VMWare ESXi 5.1…(Video)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

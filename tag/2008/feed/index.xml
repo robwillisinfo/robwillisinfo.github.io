@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>2008 | RobWillis.info</title>
+	<atom:link href="/tag/2008/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Wed, 09 Jul 2014 02:54:58 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Simple BGInfo AD logon script</title>
+		<link>/2014/01/simple-bginfo-ad-logon-script/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 27 Jan 2014 16:43:50 +0000</pubDate>
+				<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[2008]]></category>
+		<category><![CDATA[Active Directory]]></category>
+		<category><![CDATA[AD]]></category>
+		<category><![CDATA[BGInfo]]></category>
+		<category><![CDATA[GPO]]></category>
+		<category><![CDATA[Group Policy]]></category>
+		<category><![CDATA[Login]]></category>
+		<category><![CDATA[Logon]]></category>
+		<category><![CDATA[R2]]></category>
+		<category><![CDATA[script]]></category>
+		<guid isPermaLink="false">/?p=2247</guid>
+
+					<description><![CDATA[<p>This is my simple logon script for the popular BGInfo utility that uses a few batch scripts along with Group Policy to run at each user login. What this script does: Checks to see if bginfo.exe exist on the local machine, if not copy it from the network share to c:\bginfo\ Copy bg.jpg and default.bgi [&#8230;]</p>
+The post <a href="/2014/01/simple-bginfo-ad-logon-script/">Simple BGInfo AD logon script</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

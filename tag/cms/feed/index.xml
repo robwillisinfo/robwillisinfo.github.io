@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>CMS | RobWillis.info</title>
+	<atom:link href="/tag/cms/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>#yolosec</description>
+	<lastBuildDate>Mon, 03 Jul 2017 09:23:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<item>
+		<title>Make a background image stretch or adjust with CSS (Works w/ WordPress)</title>
+		<link>/2013/05/make-a-background-image-stretch-or-adjust-with-css/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Mon, 13 May 2013 06:22:17 +0000</pubDate>
+				<category><![CDATA[PowerShell/Scripting]]></category>
+		<category><![CDATA[adjust]]></category>
+		<category><![CDATA[background]]></category>
+		<category><![CDATA[CMS]]></category>
+		<category><![CDATA[cover]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[fit]]></category>
+		<category><![CDATA[HTML]]></category>
+		<category><![CDATA[stretch]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<guid isPermaLink="false">/?p=1596</guid>
+
+					<description><![CDATA[<p>Stretching a background image with CSS &#160;&#160;&#160;&#160;&#160;This simple snippet of CSS will stretch or shrink a background image based on the resolution of the browser. Add the following CSS to your stylesheet(for WordPress add this under your themes stylesheet): body { &#160;&#160;&#160;&#160;&#160;background: url(images/bg.jpg) no-repeat center center fixed; &#160;&#160;&#160;&#160;&#160;-webkit-background-size: cover; &#160;&#160;&#160;&#160;&#160;-moz-background-size: cover; &#160;&#160;&#160;&#160;&#160;-o-background-size: cover; &#160;&#160;&#160;&#160;&#160;background-size: cover; [&#8230;]</p>
+The post <a href="/2013/05/make-a-background-image-stretch-or-adjust-with-css/">Make a background image stretch or adjust with CSS (Works w/ WordPress)</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>
