@@ -12,7 +12,7 @@
 	<atom:link href="/tag/active-directory/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>#yolosec</description>
-	<lastBuildDate>Thu, 18 Sep 2025 11:53:10 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 15 Dec 2025 02:19:47 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,6 +20,34 @@
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=6.8.3</generator>
 	<item>
+		<title>Revisiting Purple Teaming AD with BloodHound CE &#038; AD-Miner</title>
+		<link>/2025/12/revisiting-purple-teaming-ad-with-bloodhound-ce-ad-miner/</link>
+		
+		<dc:creator><![CDATA[robwillisinfo]]></dc:creator>
+		<pubDate>Fri, 05 Dec 2025 01:07:35 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Computers]]></category>
+		<category><![CDATA[Pen Testing]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Servers]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Tools]]></category>
+		<category><![CDATA[Active Directory]]></category>
+		<category><![CDATA[AD Miner]]></category>
+		<category><![CDATA[BloodHound]]></category>
+		<category><![CDATA[blue]]></category>
+		<category><![CDATA[Purple]]></category>
+		<category><![CDATA[red]]></category>
+		<category><![CDATA[team]]></category>
+		<guid isPermaLink="false">/?p=7703</guid>
+
+					<description><![CDATA[<p>A few months ago, I published a blog post that involved managing Bloodhound CE with Docker Compose: Purple Teaming AD with BloodHound CE &#038; AD-Miner Since then, BloodHound CE has seen some pretty significant improvements, including new tools to simplify container management. Because of this, I wanted to revisit this setup and put together an [&#8230;]</p>
+The post <a href="/2025/12/revisiting-purple-teaming-ad-with-bloodhound-ce-ad-miner/">Revisiting Purple Teaming AD with BloodHound CE & AD-Miner</a> first appeared on <a href="/">RobWillis.info</a>.]]></description>
+		
+		
+		
+			</item>
+		<item>
 		<title>Purple Teaming AD with BloodHound CE &#038; AD-Miner</title>
 		<link>/2025/03/purple-teaming-ad-with-bloodhound-community-edition-ad-miner/</link>
 		
