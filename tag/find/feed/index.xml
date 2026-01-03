@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<generator>https://wordpress.org/?v=6.9</generator>
 	<item>
 		<title>PowerShell Script: Find the largest files and folders for any drive</title>
 		<link>/2014/07/powershell-script-find-the-25-largest-files-and-list-folder-sizes-for-any-drive/</link>

@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<generator>https://wordpress.org/?v=6.9</generator>
 	<item>
 		<title>Umbraco 6 &#8211; Stuck at &#8220;Connecting to Database&#8230;&#8221; 5% Complete when using IIS 7.5 &#038; MySQL (5.5)</title>
 		<link>/2013/04/umbraco-6-stuck-at-connecting-to-database-5-complete-when-using-iis-7-5-mysql-5-5/</link>

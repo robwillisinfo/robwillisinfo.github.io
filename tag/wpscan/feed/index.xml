@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<generator>https://wordpress.org/?v=6.9</generator>
 	<item>
 		<title>Modifying HTTP Response Headers in IIS 8 with URL Rewrite</title>
 		<link>/2016/06/modifying-http-response-headers-in-iis-8-with-url-rewrite/</link>

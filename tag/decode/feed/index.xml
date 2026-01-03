@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<generator>https://wordpress.org/?v=6.9</generator>
 	<item>
 		<title>Invoke-Decoder &#8211; A PowerShell script to decode/deobfuscate malware samples</title>
 		<link>/2020/08/invoke-decoder-a-powershell-script-to-decode-deobfuscate-malware-samples/</link>

@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<generator>https://wordpress.org/?v=6.9</generator>
 	<item>
 		<title>Fix the obsolete cryptography warning in Chrome on IIS 7 &#038; 8</title>
 		<link>/2015/05/fix-obsolete-cryptography-warning-in-chrome-on-iis-8/</link>

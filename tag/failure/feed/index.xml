@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<generator>https://wordpress.org/?v=6.9</generator>
 	<item>
 		<title>Powershell scripts fail when deployed via Group Policy as Startup scripts with Event ID 1055 and 1130</title>
 		<link>/2017/10/powershell-scripts-fail-when-deployed-via-group-policy-as-startup-scripts-with-event-id-1055-and-1130/</link>

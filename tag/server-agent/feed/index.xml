@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<generator>https://wordpress.org/?v=6.9</generator>
 	<item>
 		<title>Disabling TLS 1.0 with MS SQL 2012/2014 &#8211; Services won&#8217;t start &#038; SSMS fails to connect</title>
 		<link>/2015/08/disabling-tls-1-0-with-ms-sql-2014-services-wont-start/</link>

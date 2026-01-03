@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<generator>https://wordpress.org/?v=6.9</generator>
 	<item>
 		<title>New Tool! Invoke-RPCMap: PowerShell Script for Remote RPC Service Enumeration</title>
 		<link>/2022/06/powershell-script-invoke-rpcmap/</link>

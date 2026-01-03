@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<generator>https://wordpress.org/?v=6.9</generator>
 	<item>
 		<title>ELK Stack Pt. 2: Collecting logs from remote servers via Beats</title>
 		<link>/2016/07/elk-stack-pt-2-collecting-logs-from-remote-servers-via-beats/</link>

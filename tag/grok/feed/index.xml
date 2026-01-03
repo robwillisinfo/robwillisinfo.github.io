@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<generator>https://wordpress.org/?v=6.9</generator>
 	<item>
 		<title>ELK 5: Setting up a Grok filter for IIS Logs</title>
 		<link>/2017/05/elk-5-setting-up-a-grok-filter-for-iis-logs/</link>

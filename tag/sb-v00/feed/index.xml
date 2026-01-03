@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<generator>https://wordpress.org/?v=6.9</generator>
 	<item>
 		<title>ESXi 6.5 &#8211; Error Loading /xorg.v00 Fatal Error: 33 (inconsistent data)</title>
 		<link>/2018/04/esxi-6-5-error-loading-xorg-v00-fatal-error-33-inconsistent-data/</link>

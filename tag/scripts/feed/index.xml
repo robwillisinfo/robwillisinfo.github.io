@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<generator>https://wordpress.org/?v=6.9</generator>
 	<item>
 		<title>Revisiting &#038; Revising An Old PowerShell Tool &#8211; Quickly Find The Largest Files</title>
 		<link>/2021/04/powershell-script-quickly-find-the-largest-files/</link>

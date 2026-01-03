@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<generator>https://wordpress.org/?v=6.9</generator>
 	<item>
 		<title>VMware ESXi 6 crashes during install on Dell C2100, PF Exception 14 in world 32768</title>
 		<link>/2017/01/vmware-esxi-6-crashes-during-install-on-dell-c2100-pf-exception-14-in-world-32768/</link>
