@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This sitemap was dynamically generated on February 23, 2026 at 7:11 PM by All in One SEO v4.9.3 - the original SEO plugin for WordPress. -->
+<!-- This sitemap was dynamically generated on February 23, 2026 at 9:49 PM by All in One SEO v4.9.3 - the original SEO plugin for WordPress. -->
 
 <?xml-stylesheet type="text/xsl" href="/main-sitemap.xsl"?>
 <urlset
@@ -7,6 +7,26 @@
 	xmlns:xhtml="http://www.w3.org/1999/xhtml"
 	xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
 >
+	<url>
+		<loc><![CDATA[/2026/02/building-a-purple-team-lab-module-1-lab-overview-outline/purpleteam101-5/]]></loc>
+		<lastmod><![CDATA[2026-02-24T03:47:20+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2026/02/PurpleTeam101.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/02/building-a-purple-team-lab-module-1-lab-overview-outline/lab-arch-4/]]></loc>
+		<lastmod><![CDATA[2026-02-24T03:26:23+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2026/02/Lab-Arch.png]]>			</image:loc>
+		</image:image>
+	</url>
 	<url>
 		<loc><![CDATA[/2026/01/trilium-notes-self-hosted-server-setup/triliumnetwork/]]></loc>
 		<lastmod><![CDATA[2026-01-16T08:00:43+00:00]]></lastmod>
@@ -135,6 +155,76 @@
 		<image:image>
 			<image:loc>
 				<![CDATA[/wp-content/uploads/2025/10/Lab-Arch-BloodHoundCE.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/02/building-a-purple-team-lab-module-1-lab-overview-outline/lab-arch-3/]]></loc>
+		<lastmod><![CDATA[2025-10-14T23:31:55+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Lab-Arch-2.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/02/building-a-purple-team-lab-module-1-lab-overview-outline/lab-arch-2/]]></loc>
+		<lastmod><![CDATA[2025-10-14T23:30:55+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Lab-Arch-1.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/02/building-a-purple-team-lab-module-1-lab-overview-outline/lab-arch/]]></loc>
+		<lastmod><![CDATA[2025-10-13T04:17:13+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Lab-Arch.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/02/building-a-purple-team-lab-module-1-lab-overview-outline/purpleteam101-4/]]></loc>
+		<lastmod><![CDATA[2025-10-11T04:12:51+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/PurpleTeam101-3.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/02/building-a-purple-team-lab-module-1-lab-overview-outline/purpleteam101-3/]]></loc>
+		<lastmod><![CDATA[2025-10-11T02:56:14+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/PurpleTeam101-2.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/02/building-a-purple-team-lab-module-1-lab-overview-outline/purpleteam101-2/]]></loc>
+		<lastmod><![CDATA[2025-10-11T01:05:19+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/PurpleTeam101-1.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/02/building-a-purple-team-lab-module-1-lab-overview-outline/purpleteam101/]]></loc>
+		<lastmod><![CDATA[2025-10-11T01:02:37+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/PurpleTeam101.png]]>			</image:loc>
 		</image:image>
 	</url>
 	<url>

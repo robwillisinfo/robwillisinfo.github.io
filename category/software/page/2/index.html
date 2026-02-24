@@ -7,7 +7,7 @@
 		<!-- All in One SEO 4.9.3 - aioseo.com -->
 	<meta name="description" content="- Part 2">
 	<meta name="robots" content="noindex, nofollow, max-image-preview:large">
-	<meta name="keywords" content="vmware,vsphere,esxi,vcenter,6.5,vm,virtual machine,web console,install,how to,vcsa,appliance,linux,windows,apache,tomcat,struts,exploit,vulnerability,reverse shell,python,cve-2017-9805,differences,console,web,access,html 5,elastic,elasticsearch,logstash,kibana,elk,ubuntu,logs,iis,security,siem,dell,c2100,bmc,password,reset,ipmi,ipmitool,metasploit,kali,msf,payload,ms08-067,remote access,beats,remote,client,server,windows server,2012 r2,analysis,indexing,how to">
+	<meta name="keywords" content="elastic,elasticsearch,logstash,kibana,elk,ubuntu,logs,iis,windows,security,apache,linux,siem,curator,vmware,vsphere,esxi,vcenter,6.5,vm,virtual machine,web console,install,how to,vcsa,appliance,tomcat,struts,exploit,vulnerability,reverse shell,python,cve-2017-9805,differences,console,web,access,html 5,dell,c2100,bmc,password,reset,ipmi,ipmitool,metasploit,kali,msf,payload,ms08-067,remote access,beats,remote,client,server,windows server,2012 r2,analysis,indexing">
 	<link rel="canonical" href="/category/software/page/2/">
 	<link rel="prev" href="/category/software/">
 	<link rel="next" href="/category/software/page/3/">
@@ -263,7 +263,33 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
 
 
 <div class="wp-block-group alignwide is-layout-flow wp-block-group-is-layout-flow">
-<div class="wp-block-query is-layout-flow wp-block-query-is-layout-flow"><ul class="wp-block-post-template is-layout-flow wp-block-post-template-is-layout-flow"><li class="wp-block-post post-3380 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-computers category-servers category-software tag-6-5 tag-appliance tag-esxi tag-how-to tag-install tag-vcenter tag-vcsa tag-virtual-machine tag-vm tag-vmware tag-vsphere tag-web-console">
+<div class="wp-block-query is-layout-flow wp-block-query-is-layout-flow"><ul class="wp-block-post-template is-layout-flow wp-block-post-template-is-layout-flow"><li class="wp-block-post post-3462 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-computers category-security category-servers category-software category-tools tag-apache tag-curator tag-elastic tag-elasticsearch tag-elk tag-iis tag-kibana tag-linux tag-logs tag-logstash tag-security tag-siem tag-ubuntu tag-windows">
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-de8b6f7f wp-block-columns-is-layout-flex" style="border-top-color:var(--wp--preset--color--accent-6);border-top-width:1px;padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:20%"><div class="wp-block-post-date"><time datetime="2017-11-16T09:42:29-06:00"><a href="/2017/11/elk-stack-installing-and-configuring-curator/">November 16, 2017</a></time></div></div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><h2 class="wp-block-post-title"><a href="/2017/11/elk-stack-installing-and-configuring-curator/" target="_self">ELK Stack – Installing and Configuring Curator</a></h2>
+
+<div style="text-transform:uppercase;letter-spacing:1.4px" class="taxonomy-category wp-block-post-terms"><a href="/category/blog/" rel="tag">Blog</a><span class="wp-block-post-terms__separator">, </span><a href="/category/computers/" rel="tag">Computers</a><span class="wp-block-post-terms__separator">, </span><a href="/category/security/" rel="tag">Security</a><span class="wp-block-post-terms__separator">, </span><a href="/category/servers/" rel="tag">Servers</a><span class="wp-block-post-terms__separator">, </span><a href="/category/software/" rel="tag">Software</a><span class="wp-block-post-terms__separator">, </span><a href="/category/tools/" rel="tag">Tools</a></div>
+
+<div class="wp-block-post-excerpt has-medium-font-size"><p class="wp-block-post-excerpt__excerpt">In this post I am going to quickly cover what is needed to get Curator up and running on the ELK stack. In the last few posts about the ELK stack I covered everything needed to get it installed, configured and ingesting logs reliably. If you missed those posts, you can find them here: ELK… </p></div>
+
+
+<div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-a192882d wp-block-group-is-layout-flex">
+<p class="has-accent-4-color has-text-color has-link-color has-small-font-size wp-elements-5539ff1c3a794d680631b07b165d017f">Written by</p>
+
+
+<div class="wp-block-post-author-name has-small-font-size"><a href="/author/bit_rot/" target="_self" class="wp-block-post-author-name__link">robwillisinfo</a></div></div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:20%"><figure style="aspect-ratio:auto;" class="wp-block-post-featured-image"><img width="300" height="125" src="/wp-content/uploads/2017/11/Curator-Config-300x125.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="width:100%;height:100%;object-fit:cover;" decoding="async"></figure></div>
+</div>
+
+</li><li class="wp-block-post post-3380 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-computers category-servers category-software tag-6-5 tag-appliance tag-esxi tag-how-to tag-install tag-vcenter tag-vcsa tag-virtual-machine tag-vm tag-vmware tag-vsphere tag-web-console">
 
 <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-de8b6f7f wp-block-columns-is-layout-flex" style="border-top-color:var(--wp--preset--color--accent-6);border-top-width:1px;padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:20%"><div class="wp-block-post-date"><time datetime="2017-11-01T08:35:24-05:00"><a href="/2017/11/installing-and-configuring-vmware-vcenter-6-5-vcsa/">November 1, 2017</a></time></div></div>
@@ -338,7 +364,7 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
 
 
 
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:20%"><figure style="aspect-ratio:auto;" class="wp-block-post-featured-image"><img width="300" height="125" src="/wp-content/uploads/2017/07/How-to-install-feat-small-300x125.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="width:100%;height:100%;object-fit:cover;" decoding="async"></figure></div>
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:20%"><figure style="aspect-ratio:auto;" class="wp-block-post-featured-image"><img width="300" height="125" src="/wp-content/uploads/2017/07/How-to-install-feat-small-300x125.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="width:100%;height:100%;object-fit:cover;" decoding="async" loading="lazy"></figure></div>
 </div>
 
 </li><li class="wp-block-post post-3230 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-computers category-servers category-software tag-6-5 tag-access tag-console tag-differences tag-esxi tag-html-5 tag-vcenter tag-vmware tag-vsphere tag-web">
@@ -495,32 +521,6 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
 
 
 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:20%"><figure style="aspect-ratio:auto;" class="wp-block-post-featured-image"><img width="300" height="125" src="/wp-content/uploads/2016/07/kibana-300x125.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="width:100%;height:100%;object-fit:cover;" decoding="async" loading="lazy"></figure></div>
-</div>
-
-</li><li class="wp-block-post post-2707 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-servers category-software category-tools tag-beats tag-elasticsearch tag-elk tag-how-to tag-kibana tag-logstash tag-siem tag-windows">
-
-<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-de8b6f7f wp-block-columns-is-layout-flex" style="border-top-color:var(--wp--preset--color--accent-6);border-top-width:1px;padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:20%"><div class="wp-block-post-date"><time datetime="2016-05-26T18:50:15-05:00"><a href="/2016/05/installing-elasticsearch-logstash-and-kibana-elk-on-windows-server-2012-r2/">May 26, 2016</a></time></div></div>
-
-
-
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><h2 class="wp-block-post-title"><a href="/2016/05/installing-elasticsearch-logstash-and-kibana-elk-on-windows-server-2012-r2/" target="_self">ELK Stack Pt. 1: Installing Elasticsearch, Logstash and Kibana (ELK) on Windows Server 2012 R2</a></h2>
-
-<div style="text-transform:uppercase;letter-spacing:1.4px" class="taxonomy-category wp-block-post-terms"><a href="/category/blog/" rel="tag">Blog</a><span class="wp-block-post-terms__separator">, </span><a href="/category/servers/" rel="tag">Servers</a><span class="wp-block-post-terms__separator">, </span><a href="/category/software/" rel="tag">Software</a><span class="wp-block-post-terms__separator">, </span><a href="/category/tools/" rel="tag">Tools</a></div>
-
-<div class="wp-block-post-excerpt has-medium-font-size"><p class="wp-block-post-excerpt__excerpt">An updated version of this post can be found here: Installing ELK 7 (Elasticsearch, Logstash and Kibana) – Windows Server 2016 What is an ELK stack and why would you want one in your environment? Elasticsearch, Logstash and Kibana (ELK) is the combination of 3 separate pieces of software from the same vendor, Elastic. The… </p></div>
-
-
-<div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-a192882d wp-block-group-is-layout-flex">
-<p class="has-accent-4-color has-text-color has-link-color has-small-font-size wp-elements-5539ff1c3a794d680631b07b165d017f">Written by</p>
-
-
-<div class="wp-block-post-author-name has-small-font-size"><a href="/author/bit_rot/" target="_self" class="wp-block-post-author-name__link">robwillisinfo</a></div></div>
-</div>
-
-
-
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:20%"><figure style="aspect-ratio:auto;" class="wp-block-post-featured-image"><img width="300" height="125" src="/wp-content/uploads/2016/05/kibana-300x125.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="width:100%;height:100%;object-fit:cover;" decoding="async" loading="lazy"></figure></div>
 </div>
 
 </li></ul>

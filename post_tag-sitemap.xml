@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This sitemap was dynamically generated on February 23, 2026 at 7:11 PM by All in One SEO v4.9.3 - the original SEO plugin for WordPress. -->
+<!-- This sitemap was dynamically generated on February 23, 2026 at 9:49 PM by All in One SEO v4.9.3 - the original SEO plugin for WordPress. -->
 
 <?xml-stylesheet type="text/xsl" href="/main-sitemap.xsl"?>
 <urlset
@@ -2931,6 +2931,18 @@
 	</url>
 	<url>
 		<loc><![CDATA[/tag/docker/]]></loc>
+		<lastmod><![CDATA[1970-01-01T00:00:00+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/tag/purple-team/]]></loc>
+		<lastmod><![CDATA[1970-01-01T00:00:00+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/tag/atomic-red-team/]]></loc>
 		<lastmod><![CDATA[1970-01-01T00:00:00+00:00]]></lastmod>
 		<changefreq><![CDATA[monthly]]></changefreq>
 		<priority><![CDATA[0.3]]></priority>

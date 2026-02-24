@@ -10,6 +10,7 @@
 
 ## Posts
 
+- [Building A Purple Team Lab - Module 1: Lab Overview & Outline](https://robwillis.info/2026/02/building-a-purple-team-lab-module-1-lab-overview-outline/) - Overview This will be a multi-part series focused on setting up a Purple Team lab with the following high-level goals in mind: Locally hosted using open-source software where possible (Free) Deploy & configure an Endpoint Detection & Response (EDR) solution Gain hands on experience testing basic red team tactics, techniques, and procedures (TTPs) on Windows
 - [Installing Omarchy On VMware Workstation](https://robwillis.info/2025/11/installing-omarchy-on-vmware-workstation/) - Update - February 23, 2026 After some great feedback from the YouTube community, here's a list of additional tips and troubleshooting steps for those still experiencing issues: VMware Workstation Specific Ensure Open VM Tools is installed and running Keep the VM in full screen mode and the mouse focused Set the resolution lower than the
 - [Trilium Notes - Self-Hosted Server Setup](https://robwillis.info/2026/01/trilium-notes-self-hosted-server-setup/) - I've been looking for a OneNote alternative for a few years now, but haven't been able to find anything that combines the same basic functionality with a simple, clean interface. As I'm increasingly moving away from Microsoft products, I realized it was time to find a dedicated solution and stick with it. I'm excited to
 - [Revisiting Purple Teaming AD with BloodHound CE & AD-Miner](https://robwillis.info/2025/12/revisiting-purple-teaming-ad-with-bloodhound-ce-ad-miner/) - A few months ago, I published a blog post that involved managing Bloodhound CE with Docker Compose: Purple Teaming AD with BloodHound CE & AD-Miner Since then, BloodHound CE has seen some pretty significant improvements, including new tools to simplify container management. Because of this, I wanted to revisit this setup and put together an
@@ -658,4 +659,6 @@
 - [OneNote](https://robwillis.info/tag/onenote/)
 - [Trilium](https://robwillis.info/tag/trilium/)
 - [Docker](https://robwillis.info/tag/docker/)
+- [Purple Team](https://robwillis.info/tag/purple-team/)
+- [Atomic Red Team](https://robwillis.info/tag/atomic-red-team/)
 
