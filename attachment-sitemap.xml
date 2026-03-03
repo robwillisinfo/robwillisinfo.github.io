@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This sitemap was dynamically generated on February 24, 2026 at 5:13 PM by All in One SEO v4.9.3 - the original SEO plugin for WordPress. -->
+<!-- This sitemap was dynamically generated on March 2, 2026 at 9:06 PM by All in One SEO v4.9.3 - the original SEO plugin for WordPress. -->
 
 <?xml-stylesheet type="text/xsl" href="/main-sitemap.xsl"?>
 <urlset
@@ -7,6 +7,12 @@
 	xmlns:xhtml="http://www.w3.org/1999/xhtml"
 	xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
 >
+	<url>
+		<loc><![CDATA[/2026/03/building-a-purple-team-lab-module-2-edr-deployment/elastic-security/]]></loc>
+		<lastmod><![CDATA[2026-03-03T02:55:03+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
 	<url>
 		<loc><![CDATA[/2026/02/building-a-purple-team-lab-module-1-lab-overview-outline/purpleteam101-5/]]></loc>
 		<lastmod><![CDATA[2026-02-24T03:47:20+00:00]]></lastmod>
@@ -158,6 +164,16 @@
 		</image:image>
 	</url>
 	<url>
+		<loc><![CDATA[/2026/03/building-a-purple-team-lab-module-2-edr-deployment/event-collections/]]></loc>
+		<lastmod><![CDATA[2025-10-22T00:49:25+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Event-Collections.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
 		<loc><![CDATA[/2026/02/building-a-purple-team-lab-module-1-lab-overview-outline/lab-arch-3/]]></loc>
 		<lastmod><![CDATA[2025-10-14T23:31:55+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
@@ -185,6 +201,186 @@
 		<image:image>
 			<image:loc>
 				<![CDATA[/wp-content/uploads/2025/10/Lab-Arch.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/03/building-a-purple-team-lab-module-2-edr-deployment/security-rules-2/]]></loc>
+		<lastmod><![CDATA[2025-10-13T02:47:10+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Security-Rules-2.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/03/building-a-purple-team-lab-module-2-edr-deployment/security-rules-1/]]></loc>
+		<lastmod><![CDATA[2025-10-13T02:47:07+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Security-Rules-1.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/03/building-a-purple-team-lab-module-2-edr-deployment/security-rules/]]></loc>
+		<lastmod><![CDATA[2025-10-13T02:47:05+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Security-Rules.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/03/building-a-purple-team-lab-module-2-edr-deployment/fleet-agent-policy-5-logs/]]></loc>
+		<lastmod><![CDATA[2025-10-13T02:42:00+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Fleet-Agent-Policy-5-Logs.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/03/building-a-purple-team-lab-module-2-edr-deployment/defender-av/]]></loc>
+		<lastmod><![CDATA[2025-10-13T02:40:40+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Defender-AV.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/03/building-a-purple-team-lab-module-2-edr-deployment/fleet-agent-policy-4-regav/]]></loc>
+		<lastmod><![CDATA[2025-10-13T02:24:54+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Fleet-Agent-Policy-4-RegAV.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/03/building-a-purple-team-lab-module-2-edr-deployment/fleet-agent-policy-3-detect/]]></loc>
+		<lastmod><![CDATA[2025-10-13T02:24:36+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Fleet-Agent-Policy-3-Detect.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/03/building-a-purple-team-lab-module-2-edr-deployment/fleet-agent-policy-2/]]></loc>
+		<lastmod><![CDATA[2025-10-13T02:24:17+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Fleet-Agent-Policy-2.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/03/building-a-purple-team-lab-module-2-edr-deployment/fleet-agent-policy/]]></loc>
+		<lastmod><![CDATA[2025-10-13T02:23:42+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Fleet-Agent-Policy.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/03/building-a-purple-team-lab-module-2-edr-deployment/agent-install-fleet/]]></loc>
+		<lastmod><![CDATA[2025-10-13T02:13:13+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Agent-Install-Fleet.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/03/building-a-purple-team-lab-module-2-edr-deployment/agent-install/]]></loc>
+		<lastmod><![CDATA[2025-10-13T02:12:54+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Agent-Install.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/03/building-a-purple-team-lab-module-2-edr-deployment/fleet-3/]]></loc>
+		<lastmod><![CDATA[2025-10-13T02:05:23+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Fleet-3.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/03/building-a-purple-team-lab-module-2-edr-deployment/fleet-2/]]></loc>
+		<lastmod><![CDATA[2025-10-13T02:04:40+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Fleet-2.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/03/building-a-purple-team-lab-module-2-edr-deployment/fleet-1/]]></loc>
+		<lastmod><![CDATA[2025-10-13T02:04:27+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Fleet-1.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/03/building-a-purple-team-lab-module-2-edr-deployment/env/]]></loc>
+		<lastmod><![CDATA[2025-10-13T01:52:15+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/ENV.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/03/building-a-purple-team-lab-module-2-edr-deployment/kibana-1/]]></loc>
+		<lastmod><![CDATA[2025-10-13T01:49:46+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Kibana-1.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/03/building-a-purple-team-lab-module-2-edr-deployment/ecp-1/]]></loc>
+		<lastmod><![CDATA[2025-10-13T01:49:31+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/ECP-1.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/03/building-a-purple-team-lab-module-2-edr-deployment/ecp-arch/]]></loc>
+		<lastmod><![CDATA[2025-10-11T04:48:05+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/ECP-Arch.png]]>			</image:loc>
 		</image:image>
 	</url>
 	<url>
