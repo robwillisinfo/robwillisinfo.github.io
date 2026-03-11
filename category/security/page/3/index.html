@@ -7,7 +7,7 @@
 		<!-- All in One SEO 4.9.3 - aioseo.com -->
 	<meta name="description" content="- Part 3">
 	<meta name="robots" content="noindex, nofollow, max-image-preview:large">
-	<meta name="keywords" content="oscp,offensive security certified professional,security,penetration testing,pen testing,home lab,vmware,linux,windows,freebsd,esxi,server,opnsense,pfsense,red,blue,team,elk,elastic,iis,nginx,firewall,ids,snort,elasticsearch,logstash,kibana,ubuntu,logs,apache,siem,curator,tomcat,struts,exploit,vulnerability,reverse shell,python,cve-2017-9805,grok">
+	<meta name="keywords" content="apache,struts,cve-2018-11776,testing,analysis,detection,pcap,tomcat8,ubuntu,linux,windows,java,logs,exploit,vulnerability,tomcat,,oscp,offensive security certified professional,security,penetration testing,pen testing,home lab,vmware,freebsd,esxi,server,opnsense,pfsense,red,blue,team,elk,elastic,iis,nginx,firewall,ids,snort,elasticsearch,logstash,kibana,siem,curator,tomcat,reverse shell,python,cve-2017-9805,grok">
 	<link rel="canonical" href="/category/security/page/3/">
 	<link rel="prev" href="/category/security/page/2/">
 	<meta name="generator" content="All in One SEO (AIOSEO) 4.9.3">
@@ -32,7 +32,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 .wp-block-navigation .wp-block-navigation-item__label{overflow-wrap:break-word}.wp-block-navigation .wp-block-navigation-item__description{display:none}.link-ui-tools{outline:1px solid #f0f0f0;padding:8px}.link-ui-block-inserter{padding-top:8px}.link-ui-block-inserter__back{margin-left:8px;text-transform:uppercase}
 /*# sourceURL=/wp-includes/blocks/navigation-link/style.min.css */
 </style>
-<link rel="stylesheet" id="wp-block-navigation-css" href="/wp-includes/blocks/navigation/style.min.css?ver=6.9.1" media="all">
+<link rel="stylesheet" id="wp-block-navigation-css" href="/wp-includes/blocks/navigation/style.min.css?ver=6.9.3" media="all">
 <style id="wp-block-group-inline-css">
 .wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}
 /*# sourceURL=/wp-includes/blocks/group/style.min.css */
@@ -222,7 +222,7 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
 <script src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
 <script src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
 <link rel="https://api.w.org/" href="/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/categories/393"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
-<meta name="generator" content="WordPress 6.9.1">
+<meta name="generator" content="WordPress 6.9.3">
 <script type="importmap" id="wp-importmap">
 {"imports":{"@wordpress/interactivity":"/wp-includes/js/dist/script-modules/interactivity/index.min.js?ver=66c613f68580994bb00a"}}
 </script>
@@ -262,7 +262,33 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
 
 
 <div class="wp-block-group alignwide is-layout-flow wp-block-group-is-layout-flow">
-<div class="wp-block-query is-layout-flow wp-block-query-is-layout-flow"><ul class="wp-block-post-template is-layout-flow wp-block-post-template-is-layout-flow"><li class="wp-block-post post-3745 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-pen-testing category-security category-servers category-tools tag-offensive-security-certified-professional tag-oscp tag-pen-testing tag-penetration-testing tag-security">
+<div class="wp-block-query is-layout-flow wp-block-query-is-layout-flow"><ul class="wp-block-post-template is-layout-flow wp-block-post-template-is-layout-flow"><li class="wp-block-post post-3843 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-computers category-pen-testing category-security category-servers tag-analysis tag-apache tag-cve-2018-11776 tag-detection tag-exploit tag-java tag-linux tag-logs tag-pcap tag-struts tag-testing tag-tomcat tag-tomcat8 tag-ubuntu tag-vulnerability tag-windows">
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-de8b6f7f wp-block-columns-is-layout-flex" style="border-top-color:var(--wp--preset--color--accent-6);border-top-width:1px;padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:20%"><div class="wp-block-post-date"><time datetime="2018-08-31T08:49:06-05:00"><a href="/2018/08/apache-struts-cve-2018-11776-testing-analyzing-detection/">August 31, 2018</a></time></div></div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><h2 class="wp-block-post-title"><a href="/2018/08/apache-struts-cve-2018-11776-testing-analyzing-detection/" target="_self">Apache Struts CVE-2018-11776 – Testing, Analyzing, &amp; Detection</a></h2>
+
+<div style="text-transform:uppercase;letter-spacing:1.4px" class="taxonomy-category wp-block-post-terms"><a href="/category/blog/" rel="tag">Blog</a><span class="wp-block-post-terms__separator">, </span><a href="/category/computers/" rel="tag">Computers</a><span class="wp-block-post-terms__separator">, </span><a href="/category/pen-testing/" rel="tag">Pen Testing</a><span class="wp-block-post-terms__separator">, </span><a href="/category/security/" rel="tag">Security</a><span class="wp-block-post-terms__separator">, </span><a href="/category/servers/" rel="tag">Servers</a></div>
+
+<div class="wp-block-post-excerpt has-medium-font-size"><p class="wp-block-post-excerpt__excerpt">Intro Any time a new Apache Struts vulnerability comes out it should be taken pretty seriously as there are many “mission critical” systems that are leveraging the framework, with a considerable amount of them being public facing. Unfortunately, as a former Sys Ad I can tell you that many of these systems will go on… </p></div>
+
+
+<div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-a192882d wp-block-group-is-layout-flex">
+<p class="has-accent-4-color has-text-color has-link-color has-small-font-size wp-elements-5539ff1c3a794d680631b07b165d017f">Written by</p>
+
+
+<div class="wp-block-post-author-name has-small-font-size"><a href="/author/bit_rot/" target="_self" class="wp-block-post-author-name__link">robwillisinfo</a></div></div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:20%"><figure style="aspect-ratio:auto;" class="wp-block-post-featured-image"><img width="300" height="125" src="/wp-content/uploads/2018/08/feat-300x125.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="width:100%;height:100%;object-fit:cover;" decoding="async"></figure></div>
+</div>
+
+</li><li class="wp-block-post post-3745 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-pen-testing category-security category-servers category-tools tag-offensive-security-certified-professional tag-oscp tag-pen-testing tag-penetration-testing tag-security">
 
 <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-de8b6f7f wp-block-columns-is-layout-flex" style="border-top-color:var(--wp--preset--color--accent-6);border-top-width:1px;padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:20%"><div class="wp-block-post-date"><time datetime="2018-07-13T08:28:40-05:00"><a href="/2018/07/my-journey-into-the-oscp/">July 13, 2018</a></time></div></div>
@@ -337,7 +363,7 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
 
 
 
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:20%"><figure style="aspect-ratio:auto;" class="wp-block-post-featured-image"><img width="300" height="125" src="/wp-content/uploads/2017/11/Curator-Config-300x125.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="width:100%;height:100%;object-fit:cover;" decoding="async"></figure></div>
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:20%"><figure style="aspect-ratio:auto;" class="wp-block-post-featured-image"><img width="300" height="125" src="/wp-content/uploads/2017/11/Curator-Config-300x125.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="width:100%;height:100%;object-fit:cover;" decoding="async" loading="lazy"></figure></div>
 </div>
 
 </li><li class="wp-block-post post-3255 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-pen-testing category-security category-servers category-software tag-apache tag-cve-2017-9805 tag-exploit tag-linux tag-python tag-reverse-shell tag-struts tag-tomcat tag-vulnerability tag-windows">
@@ -544,7 +570,7 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
 <a class="ez-toc-close-icon" href="#" onclick="ezTOC_hideBar(event)" aria-label="×"><span aria-hidden="true">×</span></a>
 </div>
 <div id="ez-toc-sticky-container" class="ez-toc-sticky-container ez-toc-sticky-v2_0_80 counter-flat ez-toc-sticky-toggle-counter">
-<nav class="ez-toc-sticky-toggle-direction"><ul class="ez-toc-sticky-list ez-toc-sticky-list-level-1 "><li class="ez-toc-sticky-page-1 ez-toc-sticky-heading-level-2"><a class="ez-toc-link ez-toc-heading-1" href="#Intro">Intro</a></li><li class="ez-toc-sticky-page-1 ez-toc-sticky-heading-level-2"><a class="ez-toc-link ez-toc-heading-2" href="#My_Background_Experience">My Background &amp; Experience</a></li><li class="ez-toc-sticky-page-1 ez-toc-sticky-heading-level-2"><a class="ez-toc-link ez-toc-heading-3" href="#Going_Though_OSCP_With_Peers">Going Though OSCP With Peers</a></li><li class="ez-toc-sticky-page-1 ez-toc-sticky-heading-level-2"><a class="ez-toc-link ez-toc-heading-4" href="#The_OffSec_VM">The OffSec VM</a></li><li class="ez-toc-sticky-page-1 ez-toc-sticky-heading-level-2"><a class="ez-toc-link ez-toc-heading-5" href="#The_Course_Materials">The Course &amp; Materials</a></li><li class="ez-toc-sticky-page-1 ez-toc-sticky-heading-level-2"><a class="ez-toc-link ez-toc-heading-6" href="#The_Lab">The Lab</a></li><li class="ez-toc-sticky-page-1 ez-toc-sticky-heading-level-2"><a class="ez-toc-link ez-toc-heading-7" href="#The_Exam">The Exam</a></li><li class="ez-toc-sticky-page-1 ez-toc-sticky-heading-level-2"><a class="ez-toc-link ez-toc-heading-8" href="#Failing_The_Exam">Failing The Exam</a></li><li class="ez-toc-sticky-page-1 ez-toc-sticky-heading-level-2"><a class="ez-toc-link ez-toc-heading-9" href="#Wrapping_It_Up">Wrapping It Up</a></li><li class="ez-toc-sticky-page-1 ez-toc-sticky-heading-level-2"><a class="ez-toc-link ez-toc-heading-10" href="#Useful_Links_Blogs">Useful Links &amp; Blogs</a></li><li class="ez-toc-sticky-page-1 ez-toc-sticky-heading-level-2"><a class="ez-toc-link ez-toc-heading-11" href="#Books">Books</a></li></ul></nav></div>
+<nav class="ez-toc-sticky-toggle-direction"><ul class="ez-toc-sticky-list ez-toc-sticky-list-level-1 "><li class="ez-toc-sticky-page-1 ez-toc-sticky-heading-level-2"><a class="ez-toc-link ez-toc-heading-1" href="#Intro">Intro</a></li><li class="ez-toc-sticky-page-1 ez-toc-sticky-heading-level-2"><a class="ez-toc-link ez-toc-heading-2" href="#Building_a_Vulnerable_Machine">Building a Vulnerable Machine</a><ul class="ez-toc-sticky-list-level-3"><li class="ez-toc-sticky-heading-level-3"><a class="ez-toc-link ez-toc-heading-3" href="#Installing_Tomcat_8">Installing Tomcat 8</a></li><li class="ez-toc-sticky-page-1 ez-toc-sticky-heading-level-3"><a class="ez-toc-link ez-toc-heading-4" href="#Deploying_the_vulnerable_packages">Deploying the vulnerable packages</a></li></ul></li><li class="ez-toc-sticky-page-1 ez-toc-sticky-heading-level-2"><a class="ez-toc-link ez-toc-heading-5" href="#Testing_and_Introducing_the_Vulnerability">Testing and Introducing the Vulnerability</a><ul class="ez-toc-sticky-list-level-3"><li class="ez-toc-sticky-heading-level-3"><a class="ez-toc-link ez-toc-heading-6" href="#Test_1_%E2%80%93_Not_Vulnerable">Test 1 – Not Vulnerable</a></li><li class="ez-toc-sticky-page-1 ez-toc-sticky-heading-level-3"><a class="ez-toc-link ez-toc-heading-7" href="#Introducing_the_Vulnerability">Introducing the Vulnerability</a></li><li class="ez-toc-sticky-page-1 ez-toc-sticky-heading-level-3"><a class="ez-toc-link ez-toc-heading-8" href="#Test_2_%E2%80%93_Vulnerable_But_Not_Everywhere">Test 2 – Vulnerable But Not Everywhere</a></li></ul></li><li class="ez-toc-sticky-page-1 ez-toc-sticky-heading-level-2"><a class="ez-toc-link ez-toc-heading-9" href="#Running_the_Exploit">Running the Exploit</a></li><li class="ez-toc-sticky-page-1 ez-toc-sticky-heading-level-2"><a class="ez-toc-link ez-toc-heading-10" href="#Testing_Additional_Packages">Testing Additional Packages</a></li><li class="ez-toc-sticky-page-1 ez-toc-sticky-heading-level-2"><a class="ez-toc-link ez-toc-heading-11" href="#Detection">Detection</a><ul class="ez-toc-sticky-list-level-3"><li class="ez-toc-sticky-heading-level-3"><a class="ez-toc-link ez-toc-heading-12" href="#Scenario">Scenario</a></li><li class="ez-toc-sticky-page-1 ez-toc-sticky-heading-level-3"><a class="ez-toc-link ez-toc-heading-13" href="#Attackers_Perspective">Attackers Perspective</a></li><li class="ez-toc-sticky-page-1 ez-toc-sticky-heading-level-3"><a class="ez-toc-link ez-toc-heading-14" href="#Endpoint_Activity">Endpoint Activity</a></li><li class="ez-toc-sticky-page-1 ez-toc-sticky-heading-level-3"><a class="ez-toc-link ez-toc-heading-15" href="#Tomcat_logs">Tomcat logs</a></li><li class="ez-toc-sticky-page-1 ez-toc-sticky-heading-level-3"><a class="ez-toc-link ez-toc-heading-16" href="#On_the_wire">On the wire</a></li></ul></li><li class="ez-toc-sticky-page-1 ez-toc-sticky-heading-level-2"><a class="ez-toc-link ez-toc-heading-17" href="#Summary">Summary</a></li></ul></nav></div>
 </div>
 						</div>
 						<a class="ez-toc-open-icon" href="#" onclick="ezTOC_showBar(event)">
@@ -618,7 +644,7 @@ var eztoc_sticky_local = {"close_on_link_click":""};
 </script>
 <script src="/wp-content/plugins/easy-table-of-contents/assets/js/ez-toc-sticky.min.js?ver=2.0.80-1767421590" id="ez-toc-sticky-js"></script>
 <script id="wp-emoji-settings" type="application/json">
-{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=6.9.1"}}
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=6.9.3"}}
 </script>
 <script type="module">
 /*! This file is auto-generated */
