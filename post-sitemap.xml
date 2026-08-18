@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This sitemap was dynamically generated on March 12, 2026 at 8:46 PM by All in One SEO v4.9.5.1 - the original SEO plugin for WordPress. -->
+<!-- This sitemap was dynamically generated on August 17, 2026 at 9:11 PM by All in One SEO v5.0.0.1 - the original SEO plugin for WordPress. -->
 
 <?xml-stylesheet type="text/xsl" href="/main-sitemap.xsl"?>
 <urlset
@@ -8,8 +8,166 @@
 	xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
 >
 	<url>
+		<loc><![CDATA[/2022/11/analyzing-detecting-iis-backdoors/]]></loc>
+		<lastmod><![CDATA[2026-08-18T01:52:29+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/10/IIS-Raid-Feat.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-Host-Headers-Edit.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/10/IIS-w3wps-1.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-ApplicationPool-Adv-Set.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/Get-IISSite.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/Kali-Linux-WebShells.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/Kali-Linux-cmdaspaspx.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/Kali-Webshell-Attacker-View.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-Web-Shell-IIS-Logs-1.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-Web-Shell-Sysmon-EID-1.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-Web-shell-pcap-edit.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-WebShell-Webroot.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-Web-Shell-Defender.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Functionsh.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Build.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Files.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Windows-Defender.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Strings-2.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/10/IIS-Raid-Upload.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/10/IIS-Raid-Upload-2.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Fail.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-AppPool-System.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-AppPool-System-Webshell.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success-Sysmon-EID-1.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success-IIS-Manager.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Whoami-Hostname.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-webserver-logs.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Whoami-Hostname-EID-1.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Pcap-Edit-2.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Pcap-2-edit.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-Default-Document-Edit.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Sysmon-Module-Load-Legit-1.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Sysmon-Module-Load-Backdoor-1.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-w3wp-taskmanager-minidump.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-w3wp-dmp.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/09/IIS-w3wp-dmp-backdoor.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/10/IIS-Backdoor-Strings.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
 		<loc><![CDATA[/2026/03/building-a-purple-team-lab-module-3-atomic-red-team/]]></loc>
-		<lastmod><![CDATA[2026-03-13T01:45:39+00:00]]></lastmod>
+		<lastmod><![CDATA[2026-03-13T02:07:15+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
 		<image:image>
@@ -1091,164 +1249,6 @@
 		<image:image>
 			<image:loc>
 				<![CDATA[/wp-content/uploads/2021/02/AMSI-Bypass-Tweet.png]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2022/11/analyzing-detecting-iis-backdoors/]]></loc>
-		<lastmod><![CDATA[2022-11-06T09:23:08+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/10/IIS-Raid-Feat.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-Host-Headers-Edit.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/10/IIS-w3wps-1.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-ApplicationPool-Adv-Set.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/Get-IISSite.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/Kali-Linux-WebShells.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/Kali-Linux-cmdaspaspx.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/Kali-Webshell-Attacker-View.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-Web-Shell-IIS-Logs-1.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-Web-Shell-Sysmon-EID-1.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-Web-shell-pcap-edit.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-WebShell-Webroot.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-Web-Shell-Defender.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Functionsh.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Build.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Files.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Windows-Defender.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Strings-2.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/10/IIS-Raid-Upload.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/10/IIS-Raid-Upload-2.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Fail.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-AppPool-System.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-AppPool-System-Webshell.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success-Sysmon-EID-1.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Install-AppCmd-Success-IIS-Manager.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Whoami-Hostname.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-webserver-logs.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Whoami-Hostname-EID-1.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Pcap-Edit-2.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Pcap-2-edit.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-Default-Document-Edit.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Sysmon-Module-Load-Legit-1.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-Sysmon-Module-Load-Backdoor-1.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-Raid-w3wp-taskmanager-minidump.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-w3wp-dmp.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/09/IIS-w3wp-dmp-backdoor.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/10/IIS-Backdoor-Strings.png]]>			</image:loc>
 		</image:image>
 	</url>
 	<url>
