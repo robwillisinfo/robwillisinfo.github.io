@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This sitemap was dynamically generated on August 26, 2026 at 1:59 AM by All in One SEO v5.0.0.1 - the original SEO plugin for WordPress. -->
+<!-- This sitemap was dynamically generated on August 27, 2026 at 1:17 AM by All in One SEO v5.0.0.1 - the original SEO plugin for WordPress. -->
 
 <?xml-stylesheet type="text/xsl" href="/main-sitemap.xsl"?>
 <urlset
@@ -9,7 +9,7 @@
 >
 	<url>
 		<loc><![CDATA[/2026/08/goodbye-windows-hello-desktop-linux/]]></loc>
-		<lastmod><![CDATA[2026-08-26T06:15:09+00:00]]></lastmod>
+		<lastmod><![CDATA[2026-08-27T06:16:19+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
 		<image:image>
@@ -46,8 +46,940 @@
 		</image:image>
 	</url>
 	<url>
+		<loc><![CDATA[/2018/12/manually-updating-the-firmwares-on-a-dell-poweredge-r610/]]></loc>
+		<lastmod><![CDATA[2026-08-27T06:02:30+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/12/1-feat-small.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/12/2-dell-sli-500x281.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/12/3-rufus-395x525.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/12/4-bios-f11-boot-mgr-500x347.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/12/5-boot-usb-500x310.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/12/6-exfat-500x111.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/12/7-exfat-500x57.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/12/8-usb-location.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/12/9-usb-sli-500x238.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2018/03/poweredge-r610-updating-firmwares-when-the-lifecycle-controller-fails/]]></loc>
+		<lastmod><![CDATA[2026-08-27T06:01:24+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/02/feat.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/02/1-f10-500x363.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/02/2-USC-500x397.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/02/3-Network-500x404.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/02/4-platformupdate-500x404.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/02/5-ftpserver-500x405.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/02/6-ftp2-500x404.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/02/7-catalog-500x404.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/02/8-updates-500x406.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/02/9-liveimage-500x265.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/02/10-suu-500x262.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/02/11-rufususb-403x525.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/02/12-suufolder-500x392.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/02/13-mountiso-476x525.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/02/14-selectsuufiles-500x393.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/02/15-files-copied-500x235.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/02/16-biosbootmgr-500x311.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/02/17-lin-boot-500x281.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/02/18-filesystem-500x354.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/02/19-cd-suu-500x84.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/02/20-suu-help-500x333.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2018/10/home-lab-cooling-upgrade/]]></loc>
+		<lastmod><![CDATA[2026-08-27T06:00:04+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/10/feat-img.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/10/Server-Cooling-SS-before-edit-500x321.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/10/Server-Cooling-SS-after-edit-500x335.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/10/New-cooling-final-500x372.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2018/08/apache-struts-cve-2018-11776-testing-analyzing-detection/]]></loc>
+		<lastmod><![CDATA[2026-08-27T05:59:45+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/08/feat.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/08/detection-attackerview-500x286.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/08/1-Tomcat-Users-500x316.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/08/2-Working-Tomcat-500x338.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/08/3-Deploying-wars-edited-500x337.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/08/4-struts-2.3.12-loaded-edited-500x338.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/08/5-struts-showcase-500x338.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/08/6-Not-Vulnerable-500x123.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/08/7-vuln-test2-500x162.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/08/8-it-worked-500x169.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/08/9-it-doesnt-work-everywhere-500x174.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/08/45260-exploit-fail-500x98.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/08/45260-exploit-fail-wireshark-500x150.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/08/45260-exploit-fix-500x252.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/08/45260-exploit-success-500x138.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/08/detectiontomcatlogs-500x177.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/08/wireshark-http-500x164.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/08/wiresharkhttpstream-500x302.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2018/08/powershell-script-set-powercfg/]]></loc>
+		<lastmod><![CDATA[2026-08-27T05:59:37+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/08/cpu-clock-hl.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/08/Set-PowerCfg-500x325.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/08/cpu-clock-hl-500x207.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2019/08/dell-xps-15-9570-thermal-mods/]]></loc>
+		<lastmod><![CDATA[2026-08-27T05:59:07+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/08/00_2_75_Undervolt.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/08/01_xps_15-463x525.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/08/02_supplies-287x525.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/08/07_thermal_paste-500x247.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/08/04_xps_bottom_stock-500x275.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/08/05_xps_bottom_modded-500x291.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/08/06_xps_open_bottom_stock2_edited-500x243.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/08/03_heat_spreaders-500x243.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/08/08_mb_pre_heat_spreaders-500x243.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/08/09_mb_with_heat_spreaders-500x243.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/08/10_mb2_with_heat_spreaders-500x243.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/08/06_xps_open_bottom_stock2_edited_airflow-1-500x243.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/08/11_thermal_tape_mod-500x329.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/08/12_thermal_tape_mod_closeup_edit-500x197.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/08/13_coolpad_1-500x243.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/08/14_coolpad_usb-500x243.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/08/00_1_0_Undervolt-Edit-500x392.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/08/00_2_75_Undervolt-500x392.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/08/00_3_110_Undervolt-500x392.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/08/00_Idle_Modded_HighPerf_vs_Balanced-500x384.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2019/05/installing-elk-7-elasticsearch-logstash-and-kibana-windows-server-2016/]]></loc>
+		<lastmod><![CDATA[2026-08-27T05:58:06+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/ELK-Basic-Flow.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/ELK-Basic-Flow-500x281.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/Kibana-Access-Logs-6-500x281.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/Java-Install-Dir-500x274.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/JAVA_HOME-500x402.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/Elasticsearch-Install-500x337.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/Elasticsearch-Test-500x404.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/Logstash-Install-Dir-500x284.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/logstash-nssm-1-500x314.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/logstash-nssm-2.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/logstash-running-500x221.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/kibana-install-dir-500x286.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/kibana-nssm-1-500x355.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/kibana-nssm-2-1.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/firewall-500x246.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/Kibana-Services-500x220.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/Kibana-Loads-500x272.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/Winlogbeat-Dir-500x284.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/Winlogbeat-Service-500x285.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/Kibana-Access-Logs-1-500x522.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/Kibana-Access-Logs-2-500x211.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/Kibana-Access-Logs-3-500x184.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/Kibana-Access-Logs-4-500x185.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/Kibana-Access-Logs-5-500x259.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/Kibana-Access-Logs-7-1-500x281.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/curator-500x143.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/curator-2-500x211.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2019/05/gathering-windows-powershell-and-sysmon-events-with-winlogbeat-elk-7-windows-server-2016/]]></loc>
+		<lastmod><![CDATA[2026-08-27T05:57:56+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/winlogbeat-updated-logs-kibana.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/Winlogbeat-Dir-500x284.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/Winlogbeat-Service-500x285.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/Sysmon-Install-Dir-500x205.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/sysmon-install-500x160.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/Sysmon-Logs-500x393.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/Sysmon-Logs-2-500x288.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/PS-Logs-GPO-500x256.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/ps-logs-500x288.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/04/winlogbeat-updated-logs-kibana-500x244.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2018/07/my-journey-into-the-oscp/]]></loc>
+		<lastmod><![CDATA[2026-08-27T05:50:02+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/07/offsec-student-certified-emblem-rgb-oscp.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/07/offsec-student-certified-emblem-rgb-oscp-500x64.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/07/Servers-edit-445x525.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/07/Kali-Laptop-edit-419x525.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2018/07/rwinfolab-237x525.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2020/01/disabling-powershell-v2-with-group-policy/]]></loc>
+		<lastmod><![CDATA[2026-08-27T05:40:47+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/01/PSv2-Feature.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/01/PSv2-Feature-500x206.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/01/GPO-1-500x260.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/01/GPO-2-500x249.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/01/Script-Test-500x228.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/01/GPO-3-500x275.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2019/10/everything-you-need-to-know-to-get-started-logging-powershell/]]></loc>
+		<lastmod><![CDATA[2026-08-27T05:40:43+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/feat.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/feat-500x348.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/Clients-gt-servers-500x200.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/PS_Logs-500x141.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/EventVwr_PS_Log.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/EventVwr_PS_Ops_Log.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/Source_Code-500x353.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/4104-500x338.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/4103-500x340.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/Trans_Log-1-500x267.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/Warning_01-500x202.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/4104-Warning-500x317.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/GPO_1-500x169.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/10/Scriptblock-GPO-500x457.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/GPO_3-500x301.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/GPO_2-500x300.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/Security_Log-500x237.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/PS_SD-500x124.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/Security_SD-500x124.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/Convertfrom-sddlstring-500x120.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/Reg.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/SD_GPO_2.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/Ops_SD.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/CustomSD.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/GP_Reg-500x226.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/Access_Denied-500x269.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/Downgrade_1-500x204.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/Downgrade_Log1-500x306.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/Downgrade_2-500x205.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/Downgrade_Log2-500x305.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/Downgrade_Log3-1-500x332.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/Obfuscated-500x346.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/source-500x206.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/Import-Module-500x53.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/Invoke-Obfuscation-500x314.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/Invoke-Obfuscation-2-500x314.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/Obfuscated-2-1-500x367.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/Obfuscated-2-2-500x368.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/Get-PSLogSizeEstimate-500x144.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/Get-PSLogSizeEstimate2-500x255.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2019/09/W10-Dev-500x256.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2020/08/invoke-decoder-a-powershell-script-to-decode-deobfuscate-malware-samples/]]></loc>
+		<lastmod><![CDATA[2026-08-27T05:40:05+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/08/08-1.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/08/08-1-500x152.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/08/Invoke-Decoder-500x356.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/08/Output-500x153.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/08/02-500x479.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/08/03-500x275.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/08/04-500x245.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/08/05-500x488.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/08/06-500x268.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/08/07-500x262.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/08/08-500x158.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2021/02/defending-against-powershell-attacks/]]></loc>
+		<lastmod><![CDATA[2026-08-27T05:39:43+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/11/Script-Highlight.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/11/PowerShell.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/11/Invoke-Webrequest.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/11/Invoke-Downloader.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/11/Invoke-Downloader-2.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/11/Oneliner.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/11/Emotet_Macro_Featured.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/11/Oneliner-3-1.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2020/11/Invoke-BaseConfig.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2021/01/01-powershell-command.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2021/01/01-command.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2021/02/01-Script.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2021/01/02-PowerShell-Scriptblock-4104.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2021/01/02-PowerShell-Module-4103.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2021/01/02-PowerShell-Trans.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2021/01/Invoke-Obfuscation.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2021/01/03-PowerShell-4104-Deepscript-1-1.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2021/01/04-Manual-Decode-Edit.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2021/01/05-Backdoor-Final.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2021/02/06-Invoke-Decoder-01-Edit.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2021/02/06-Invoke-Decoder-03-Edit.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2021/02/06-Invoke-Decoder-04-Edit.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2021/02/08-contrained-language-1.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2021/02/09-jea.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2021/02/10-AppLocker.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2021/02/07-PSv2-Dg-1.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2021/02/AMSI-Bypass-Tweet.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2021/02/vmware-vcenter-cve-2021-21972-scan-tool/]]></loc>
+		<lastmod><![CDATA[2026-08-27T05:39:30+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2021/02/example-1-vuln-edit.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2021/02/example-1-vuln.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2021/02/example-1-notvuln.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2021/02/example-1-notvuln-force.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2021/04/powershell-script-quickly-find-the-largest-files/]]></loc>
+		<lastmod><![CDATA[2026-08-27T05:39:20+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2021/04/Get-LargestFiles.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2022/06/powershell-script-invoke-rpcmap/]]></loc>
+		<lastmod><![CDATA[2026-08-27T05:38:01+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/06/Invoke-RPCMap-Edit.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2022/06/Invoke-RPCMap-Edit-Full.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
 		<loc><![CDATA[/2022/11/analyzing-detecting-iis-backdoors/]]></loc>
-		<lastmod><![CDATA[2026-08-18T05:27:56+00:00]]></lastmod>
+		<lastmod><![CDATA[2026-08-27T05:36:59+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
 		<image:image>
@@ -204,216 +1136,22 @@
 		</image:image>
 	</url>
 	<url>
-		<loc><![CDATA[/2026/03/building-a-purple-team-lab-module-3-atomic-red-team/]]></loc>
-		<lastmod><![CDATA[2026-03-13T02:07:15+00:00]]></lastmod>
+		<loc><![CDATA[/2024/03/powershell-script-invoke-encryptionsimulator/]]></loc>
+		<lastmod><![CDATA[2026-08-27T05:35:50+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
 		<image:image>
 			<image:loc>
-				<![CDATA[/wp-content/uploads/2026/03/Elastic-145-Alerts.png]]>			</image:loc>
+				<![CDATA[/wp-content/uploads/2024/03/Invoke-EncryptionSimulator-C.png]]>			</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>
-				<![CDATA[/wp-content/uploads/2026/03/Elastic-Security-Alerts.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2026/03/Elastic-Security-Analyze.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2026/03/Elastic-Alert-Review.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2026/03/Elastic-security-details.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2026/03/Elastic-1.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2026/03/Elastic-2.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2026/03/Elastic-3.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2026/03/Elastic-Discover-New.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2026/03/Elastic-Discover-New-Edit.png]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2026/03/building-a-purple-team-lab-module-2-edr-deployment/]]></loc>
-		<lastmod><![CDATA[2026-03-11T01:33:06+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2026/03/Elastic-Security.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/10/ECP-Arch.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/10/ENV.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/10/ECP-1.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/10/Kibana-1.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/10/Fleet-1.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/10/Fleet-2.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/10/Fleet-3.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/10/Agent-Install.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/10/Agent-Install-Fleet.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/10/Fleet-Agent-Policy.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/10/Fleet-Agent-Policy-2.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/10/Fleet-Agent-Policy-3-Detect.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/10/Event-Collections.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/10/Fleet-Agent-Policy-4-RegAV.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/10/Defender-AV.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/10/Fleet-Agent-Policy-5-Logs.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/10/Security-Rules.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/10/Security-Rules-1.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/10/Security-Rules-2.png]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2026/02/building-a-purple-team-lab-module-1-lab-overview-outline/]]></loc>
-		<lastmod><![CDATA[2026-03-11T01:31:08+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2026/02/Lab-Arch.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2026/02/PurpleTeam101.png]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2025/11/installing-omarchy-on-vmware-workstation/]]></loc>
-		<lastmod><![CDATA[2026-02-24T01:05:49+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/11/Omarchy.png]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2026/01/trilium-notes-self-hosted-server-setup/]]></loc>
-		<lastmod><![CDATA[2026-01-29T11:34:22+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2026/01/Trilium-Main-2.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2026/01/TriliumNetwork.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2026/01/Server-Init.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2026/01/Sync.png]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2025/12/revisiting-purple-teaming-ad-with-bloodhound-ce-ad-miner/]]></loc>
-		<lastmod><![CDATA[2025-12-15T02:19:47+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/12/Thumbnail-Site.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/10/Lab-Arch-BloodHoundCE.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/10/Defender-AV.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/11/Download.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/11/Upload.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/11/Report.png]]>			</image:loc>
+				<![CDATA[/wp-content/uploads/2024/03/Invoke-EncryptionSimulator.png]]>			</image:loc>
 		</image:image>
 	</url>
 	<url>
 		<loc><![CDATA[/2025/03/purple-teaming-ad-with-bloodhound-community-edition-ad-miner/]]></loc>
-		<lastmod><![CDATA[2025-11-09T05:18:52+00:00]]></lastmod>
+		<lastmod><![CDATA[2026-08-27T05:34:34+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
 		<image:image>
@@ -618,28 +1356,8 @@
 		</image:image>
 	</url>
 	<url>
-		<loc><![CDATA[/2025/10/home-lab-office-2025/]]></loc>
-		<lastmod><![CDATA[2025-11-09T05:17:20+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/10/Servers-1.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2025/09/windows-edr-telemetry-sensors/]]></loc>
-		<lastmod><![CDATA[2025-10-28T00:13:38+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2025/09/Windows-EDR-Telemetry-and-Sensors-Edit.png]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc><![CDATA[/2025/05/ultimate-local-ai-setup-guide-ubuntu-ollama-open-webui/]]></loc>
-		<lastmod><![CDATA[2025-10-28T00:08:56+00:00]]></lastmod>
+		<lastmod><![CDATA[2026-08-27T05:32:11+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
 		<image:image>
@@ -960,6 +1678,234 @@
 		</image:image>
 	</url>
 	<url>
+		<loc><![CDATA[/2025/10/home-lab-office-2025/]]></loc>
+		<lastmod><![CDATA[2026-08-27T05:31:05+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Servers-1.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2025/11/installing-omarchy-on-vmware-workstation/]]></loc>
+		<lastmod><![CDATA[2026-08-27T05:29:45+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/11/Omarchy.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2025/12/revisiting-purple-teaming-ad-with-bloodhound-ce-ad-miner/]]></loc>
+		<lastmod><![CDATA[2026-08-27T05:27:35+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/12/Thumbnail-Site.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Lab-Arch-BloodHoundCE.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Defender-AV.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/11/Download.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/11/Upload.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/11/Report.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/01/trilium-notes-self-hosted-server-setup/]]></loc>
+		<lastmod><![CDATA[2026-08-27T05:26:53+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2026/01/Trilium-Main-2.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2026/01/TriliumNetwork.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2026/01/Server-Init.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2026/01/Sync.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/03/building-a-purple-team-lab-module-3-atomic-red-team/]]></loc>
+		<lastmod><![CDATA[2026-03-13T02:07:15+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2026/03/Elastic-145-Alerts.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2026/03/Elastic-Security-Alerts.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2026/03/Elastic-Security-Analyze.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2026/03/Elastic-Alert-Review.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2026/03/Elastic-security-details.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2026/03/Elastic-1.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2026/03/Elastic-2.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2026/03/Elastic-3.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2026/03/Elastic-Discover-New.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2026/03/Elastic-Discover-New-Edit.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/03/building-a-purple-team-lab-module-2-edr-deployment/]]></loc>
+		<lastmod><![CDATA[2026-03-11T01:33:06+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2026/03/Elastic-Security.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/ECP-Arch.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/ENV.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/ECP-1.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Kibana-1.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Fleet-1.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Fleet-2.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Fleet-3.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Agent-Install.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Agent-Install-Fleet.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Fleet-Agent-Policy.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Fleet-Agent-Policy-2.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Fleet-Agent-Policy-3-Detect.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Event-Collections.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Fleet-Agent-Policy-4-RegAV.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Defender-AV.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Fleet-Agent-Policy-5-Logs.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Security-Rules.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Security-Rules-1.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/10/Security-Rules-2.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2026/02/building-a-purple-team-lab-module-1-lab-overview-outline/]]></loc>
+		<lastmod><![CDATA[2026-03-11T01:31:08+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2026/02/Lab-Arch.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2026/02/PurpleTeam101.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2025/09/windows-edr-telemetry-sensors/]]></loc>
+		<lastmod><![CDATA[2025-10-28T00:13:38+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2025/09/Windows-EDR-Telemetry-and-Sensors-Edit.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
 		<loc><![CDATA[/2016/12/dell-c2100-bmc-password-reset-via-ipmitool/]]></loc>
 		<lastmod><![CDATA[2025-09-08T07:03:10+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
@@ -975,102 +1921,6 @@
 		<image:image>
 			<image:loc>
 				<![CDATA[/wp-content/uploads/2016/12/bmc-500x248.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2018/08/powershell-script-set-powercfg/]]></loc>
-		<lastmod><![CDATA[2025-09-08T07:00:57+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/08/cpu-clock-hl.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/08/Set-PowerCfg-500x325.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/08/cpu-clock-hl-500x207.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2018/08/apache-struts-cve-2018-11776-testing-analyzing-detection/]]></loc>
-		<lastmod><![CDATA[2025-05-09T08:11:20+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/08/feat.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/08/detection-attackerview-500x286.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/08/1-Tomcat-Users-500x316.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/08/2-Working-Tomcat-500x338.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/08/3-Deploying-wars-edited-500x337.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/08/4-struts-2.3.12-loaded-edited-500x338.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/08/5-struts-showcase-500x338.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/08/6-Not-Vulnerable-500x123.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/08/7-vuln-test2-500x162.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/08/8-it-worked-500x169.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/08/9-it-doesnt-work-everywhere-500x174.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/08/45260-exploit-fail-500x98.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/08/45260-exploit-fail-wireshark-500x150.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/08/45260-exploit-fix-500x252.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/08/45260-exploit-success-500x138.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/08/detectiontomcatlogs-500x177.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/08/wireshark-http-500x164.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/08/wiresharkhttpstream-500x302.png]]>			</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -1113,180 +1963,6 @@
 		<image:image>
 			<image:loc>
 				<![CDATA[/wp-content/uploads/2017/09/norton-log-cve-9805-1-500x245.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2021/02/vmware-vcenter-cve-2021-21972-scan-tool/]]></loc>
-		<lastmod><![CDATA[2025-04-22T09:00:01+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2021/02/example-1-vuln-edit.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2021/02/example-1-vuln.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2021/02/example-1-notvuln.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2021/02/example-1-notvuln-force.png]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2021/04/powershell-script-quickly-find-the-largest-files/]]></loc>
-		<lastmod><![CDATA[2025-04-22T08:59:35+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2021/04/Get-LargestFiles.png]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2022/06/powershell-script-invoke-rpcmap/]]></loc>
-		<lastmod><![CDATA[2025-04-22T08:54:14+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/06/Invoke-RPCMap-Edit.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2022/06/Invoke-RPCMap-Edit-Full.png]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2024/03/powershell-script-invoke-encryptionsimulator/]]></loc>
-		<lastmod><![CDATA[2025-04-22T08:48:21+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2024/03/Invoke-EncryptionSimulator-C.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2024/03/Invoke-EncryptionSimulator.png]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2021/02/defending-against-powershell-attacks/]]></loc>
-		<lastmod><![CDATA[2025-04-22T07:19:35+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/11/Script-Highlight.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/11/PowerShell.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/11/Invoke-Webrequest.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/11/Invoke-Downloader.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/11/Invoke-Downloader-2.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/11/Oneliner.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/11/Emotet_Macro_Featured.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/11/Oneliner-3-1.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/11/Invoke-BaseConfig.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2021/01/01-powershell-command.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2021/01/01-command.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2021/02/01-Script.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2021/01/02-PowerShell-Scriptblock-4104.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2021/01/02-PowerShell-Module-4103.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2021/01/02-PowerShell-Trans.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2021/01/Invoke-Obfuscation.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2021/01/03-PowerShell-4104-Deepscript-1-1.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2021/01/04-Manual-Decode-Edit.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2021/01/05-Backdoor-Final.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2021/02/06-Invoke-Decoder-01-Edit.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2021/02/06-Invoke-Decoder-03-Edit.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2021/02/06-Invoke-Decoder-04-Edit.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2021/02/08-contrained-language-1.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2021/02/09-jea.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2021/02/10-AppLocker.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2021/02/07-PSv2-Dg-1.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2021/02/AMSI-Bypass-Tweet.png]]>			</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -2320,320 +2996,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc><![CDATA[/2018/03/poweredge-r610-updating-firmwares-when-the-lifecycle-controller-fails/]]></loc>
-		<lastmod><![CDATA[2022-06-27T04:00:38+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/02/feat.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/02/1-f10-500x363.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/02/2-USC-500x397.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/02/3-Network-500x404.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/02/4-platformupdate-500x404.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/02/5-ftpserver-500x405.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/02/6-ftp2-500x404.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/02/7-catalog-500x404.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/02/8-updates-500x406.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/02/9-liveimage-500x265.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/02/10-suu-500x262.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/02/11-rufususb-403x525.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/02/12-suufolder-500x392.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/02/13-mountiso-476x525.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/02/14-selectsuufiles-500x393.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/02/15-files-copied-500x235.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/02/16-biosbootmgr-500x311.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/02/17-lin-boot-500x281.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/02/18-filesystem-500x354.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/02/19-cd-suu-500x84.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/02/20-suu-help-500x333.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2018/10/home-lab-cooling-upgrade/]]></loc>
-		<lastmod><![CDATA[2022-06-27T03:53:07+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/10/feat-img.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/10/Server-Cooling-SS-before-edit-500x321.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/10/Server-Cooling-SS-after-edit-500x335.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/10/New-cooling-final-500x372.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2019/05/installing-elk-7-elasticsearch-logstash-and-kibana-windows-server-2016/]]></loc>
-		<lastmod><![CDATA[2022-06-27T03:52:35+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/ELK-Basic-Flow.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/ELK-Basic-Flow-500x281.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/Kibana-Access-Logs-6-500x281.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/Java-Install-Dir-500x274.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/JAVA_HOME-500x402.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/Elasticsearch-Install-500x337.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/Elasticsearch-Test-500x404.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/Logstash-Install-Dir-500x284.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/logstash-nssm-1-500x314.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/logstash-nssm-2.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/logstash-running-500x221.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/kibana-install-dir-500x286.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/kibana-nssm-1-500x355.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/kibana-nssm-2-1.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/firewall-500x246.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/Kibana-Services-500x220.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/Kibana-Loads-500x272.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/Winlogbeat-Dir-500x284.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/Winlogbeat-Service-500x285.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/Kibana-Access-Logs-1-500x522.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/Kibana-Access-Logs-2-500x211.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/Kibana-Access-Logs-3-500x184.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/Kibana-Access-Logs-4-500x185.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/Kibana-Access-Logs-5-500x259.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/Kibana-Access-Logs-7-1-500x281.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/curator-500x143.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/curator-2-500x211.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2018/12/manually-updating-the-firmwares-on-a-dell-poweredge-r610/]]></loc>
-		<lastmod><![CDATA[2022-06-27T03:52:30+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/12/1-feat-small.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/12/2-dell-sli-500x281.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/12/3-rufus-395x525.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/12/4-bios-f11-boot-mgr-500x347.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/12/5-boot-usb-500x310.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/12/6-exfat-500x111.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/12/7-exfat-500x57.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/12/8-usb-location.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/12/9-usb-sli-500x238.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2019/05/gathering-windows-powershell-and-sysmon-events-with-winlogbeat-elk-7-windows-server-2016/]]></loc>
-		<lastmod><![CDATA[2022-06-27T03:49:29+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/winlogbeat-updated-logs-kibana.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/Winlogbeat-Dir-500x284.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/Winlogbeat-Service-500x285.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/Sysmon-Install-Dir-500x205.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/sysmon-install-500x160.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/Sysmon-Logs-500x393.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/Sysmon-Logs-2-500x288.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/PS-Logs-GPO-500x256.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/ps-logs-500x288.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/04/winlogbeat-updated-logs-kibana-500x244.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc><![CDATA[/2014/07/powershell-script-find-the-25-largest-files-and-list-folder-sizes-for-any-drive/]]></loc>
 		<lastmod><![CDATA[2021-04-06T07:22:28+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
@@ -2662,86 +3024,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc><![CDATA[/2020/08/invoke-decoder-a-powershell-script-to-decode-deobfuscate-malware-samples/]]></loc>
-		<lastmod><![CDATA[2020-08-02T03:57:08+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/08/08-1.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/08/08-1-500x152.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/08/Invoke-Decoder-500x356.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/08/Output-500x153.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/08/02-500x479.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/08/03-500x275.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/08/04-500x245.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/08/05-500x488.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/08/06-500x268.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/08/07-500x262.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/08/08-500x158.png]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2020/01/disabling-powershell-v2-with-group-policy/]]></loc>
-		<lastmod><![CDATA[2020-01-20T11:48:39+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/01/PSv2-Feature.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/01/PSv2-Feature-500x206.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/01/GPO-1-500x260.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/01/GPO-2-500x249.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/01/Script-Test-500x228.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2020/01/GPO-3-500x275.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc><![CDATA[/2013/05/using-php-to-display-all-server-variables/]]></loc>
 		<lastmod><![CDATA[2020-01-15T01:48:08+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
@@ -2753,288 +3035,6 @@
 		<image:image>
 			<image:loc>
 				<![CDATA[/wp-content/uploads/2013/05/php.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2019/10/everything-you-need-to-know-to-get-started-logging-powershell/]]></loc>
-		<lastmod><![CDATA[2019-10-07T00:15:30+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/feat.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/feat-500x348.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/Clients-gt-servers-500x200.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/PS_Logs-500x141.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/EventVwr_PS_Log.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/EventVwr_PS_Ops_Log.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/Source_Code-500x353.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/4104-500x338.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/4103-500x340.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/Trans_Log-1-500x267.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/Warning_01-500x202.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/4104-Warning-500x317.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/GPO_1-500x169.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/10/Scriptblock-GPO-500x457.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/GPO_3-500x301.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/GPO_2-500x300.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/Security_Log-500x237.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/PS_SD-500x124.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/Security_SD-500x124.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/Convertfrom-sddlstring-500x120.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/Reg.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/SD_GPO_2.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/Ops_SD.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/CustomSD.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/GP_Reg-500x226.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/Access_Denied-500x269.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/Downgrade_1-500x204.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/Downgrade_Log1-500x306.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/Downgrade_2-500x205.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/Downgrade_Log2-500x305.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/Downgrade_Log3-1-500x332.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/Obfuscated-500x346.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/source-500x206.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/Import-Module-500x53.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/Invoke-Obfuscation-500x314.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/Invoke-Obfuscation-2-500x314.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/Obfuscated-2-1-500x367.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/Obfuscated-2-2-500x368.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/Get-PSLogSizeEstimate-500x144.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/Get-PSLogSizeEstimate2-500x255.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/09/W10-Dev-500x256.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2019/08/dell-xps-15-9570-thermal-mods/]]></loc>
-		<lastmod><![CDATA[2019-08-21T05:37:51+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/08/00_2_75_Undervolt.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/08/01_xps_15-463x525.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/08/02_supplies-287x525.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/08/07_thermal_paste-500x247.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/08/04_xps_bottom_stock-500x275.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/08/05_xps_bottom_modded-500x291.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/08/06_xps_open_bottom_stock2_edited-500x243.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/08/03_heat_spreaders-500x243.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/08/08_mb_pre_heat_spreaders-500x243.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/08/09_mb_with_heat_spreaders-500x243.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/08/10_mb2_with_heat_spreaders-500x243.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/08/06_xps_open_bottom_stock2_edited_airflow-1-500x243.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/08/11_thermal_tape_mod-500x329.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/08/12_thermal_tape_mod_closeup_edit-500x197.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/08/13_coolpad_1-500x243.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/08/14_coolpad_usb-500x243.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/08/00_1_0_Undervolt-Edit-500x392.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/08/00_2_75_Undervolt-500x392.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/08/00_3_110_Undervolt-500x392.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2019/08/00_Idle_Modded_HighPerf_vs_Balanced-500x384.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2018/07/my-journey-into-the-oscp/]]></loc>
-		<lastmod><![CDATA[2018-07-13T13:28:40+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/07/offsec-student-certified-emblem-rgb-oscp.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/07/offsec-student-certified-emblem-rgb-oscp-500x64.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/07/Servers-edit-445x525.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/07/Kali-Laptop-edit-419x525.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2018/07/rwinfolab-237x525.jpg]]>			</image:loc>
 		</image:image>
 	</url>
 	<url>
