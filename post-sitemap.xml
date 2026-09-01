@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This sitemap was dynamically generated on August 28, 2026 at 12:17 AM by All in One SEO v5.0.0.1 - the original SEO plugin for WordPress. -->
+<!-- This sitemap was dynamically generated on August 31, 2026 at 10:30 PM by All in One SEO v5.0.1.1 - the original SEO plugin for WordPress. -->
 
 <?xml-stylesheet type="text/xsl" href="/main-sitemap.xsl"?>
 <urlset
@@ -7,6 +7,1214 @@
 	xmlns:xhtml="http://www.w3.org/1999/xhtml"
 	xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
 >
+	<url>
+		<loc><![CDATA[/2012/03/how-to-tversity-media-server/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:57+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/03/how-to-installing-unsigned-drivers-on-windows-7-x64/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:57+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/03/how-to-setting-up-a-ps3-media-server/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:57+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/03/how-to-rooting-a-moto-droid-3-with-the-one-click-method/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:57+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/droid_3.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/03/how-to-loading-custom-roms-on-a-motorola-droid-3/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:57+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/safestrap_blog_small.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/safestrap_install_small.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/safestrap_splash_small.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/safestrap_main_menu_small.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/safestrap_togglesafe_small.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/safestrap_advanced_small.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/safestrap_mountsandstorage_small.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/03/how-to-iis-7-quick-install-on-windows-server-2008-r2/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:56+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/03/how-to-windows-server-2008-iis-7-part-2-secure-ftp-setup/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:56+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/03/diy-8gb-solid-state-drive-for-35/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:56+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/cf_4_small.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/cf_1_small.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/cf_2_small.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/cf_5_small.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/cf_3_small.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/cf_6_small.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/cf_7_small.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/03/7-zip/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:56+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/7zip.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/03/windirstat/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:56+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/windirstat_small.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/03/i8kfangui/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:56+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/i8kfangui_logo_small.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/03/driver-signature-enforcement-overrider-1-3b/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:56+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/dseo.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/03/vlc/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:56+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/vlc_logo.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/03/divx/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:56+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/divx_logo.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/03/notepad/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:56+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/notepadplusplus_logo.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/03/firefox/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:56+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/firefox_logo.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/03/no-script-firefox-add-on/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:56+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/noscriptaddon_logo.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/03/openoffice-org/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:56+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/writer_small.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/03/calc_small.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/03/software-essentials-for-any-windows-machine/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:56+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/03/powershell-remote-file-query/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:56+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/04/iis-7-404-file-not-found-when-the-file-really-does-exist/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:20+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/04/IIS-Console_small.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/04/IIS-Mimetype_small.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/04/getting-around-mobile-sites-with-dolphin-browser-hd-on-android/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:20+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/04/screenshot-1335084600046-168x300.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/04/screenshot-1335084674775-168x300.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/04/droid-3-as-a-3g-desktop-using-bluetooth-hdmi/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:20+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/04/android_graphic-300x225.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/04/20120421_182538-300x226.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/04/20120422_122716-300x129.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/05/song-from-the-new-internet-explorer-9-ie9-commercial/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:20+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/06/windows-server-2008-r2-iis-7-and-smtp-explained/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:20+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/07/samsung-galaxy-s3-the-best-android-phone-out-there-i-think-so/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:20+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/07/Samsung_Galaxy_S3_08-380-75.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/07/crosman-1322-air-pistol-with-a-few-mods/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:20+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/07/1322_redot-300x139.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/07/1322_reddot2-300x193.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/07/1322_ncstarredot-300x225.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/07/1322_reddotflight-300x169.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/08/modded-crosman-1322-update/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:20+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/08/1322_modded7-300x147.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/08/1322_modded8-300x164.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/08/1322_modded1-300x151.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/08/1322_modded2-300x169.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/08/1322_modded3-300x169.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/08/1322_modded4-300x169.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/08/1322_modded5-300x169.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/08/1322_modded6-300x169.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/08/1322_modded9-300x169.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/08/veeam-backup-recovery-v6-free-install-unable-to-install-new-sql-instance-error/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:20+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/08/error-300x290.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/09/iain-sinclairs-card-sharp-2-a-stealthy-pocket-knife-like-you-have-never-seen-before/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:20+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/09/cardsharp_1-300x129.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/09/cardsharp_2-300x130.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/09/serviio-org-media-server/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:20+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/09/benjamin-trail-np-review-with-jsb-monsters-polymags-crosman-hollow-points-pointed-and-gamo-rocket-ammo/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:20+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/09/2012-09-14_17-25-04_985_2.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/09/2012-09-14_17-26-04_635-150x150.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/09/2012-09-14_17-23-20_682_2.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/09/2012-09-14_18-34-57_990-300x211.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/09/2012-09-14_17-24-17_365-300x135.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/09/benjamin-trail-np-22-shooting-predator-polymags/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:20+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/12/benjamin-trail-np-bi-pod-install/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:20+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/12/20121209_151222-300x154.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/12/20121209_151305-150x150.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/12/20121209_151239-162x300.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/12/20121209_151255-225x300.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/12/20121209_151348-300x225.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/12/lock-picking-tools-review-great-kits-for-getting-started/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:20+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/12/pickset_1-300x171.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/12/pickset_1_2-200x300.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/12/pickset_2-300x243.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/12/pickset_3-300x217.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2012/12/pickset_3_2-300x297.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/12/dell-powerconnect-5324-cable-tips-basic-setup-and-configuration-via-putty/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:20+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/2012/12/drac-5-install-on-a-dell-poweredge-2950-gii-with-basic-configuration-and-demo/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:20+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/01/vmware-esxi-5-1-install-and-basic-configuration-dell-poweredge-2950-gii-video/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:20+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/01/esxi_booted_up-300x225.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/01/HTTP_ESXi-296x300.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/01/vsphere_login-300x267.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/01/vsphere_client-300x260.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/01/quick-and-easy-backup-for-vmware-esxi-5-1-using-veeam-backup-replication-6-5/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:20+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/01/nintendo-wii-homebrew-soft-hack/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:29:20+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/04/iis-7-web-farm-basics-with-arr-nlb-and-mysql/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:28:51+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/04/trafficflow_thumb.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/04/trafficflow_thumb.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/04/serverconfiguration_thumb.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/04/making-bootable-usb-drives-from-iso-images-in-minutes-with-rufus/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:28:50+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/04/rufus_thumb.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/04/rufus_thumb.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/04/powershell-simple-mass-shutdownreboot-script-with-menu-status-check-video/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:28:50+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/04/Server_RS_script_thumb2.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/04/Server_RS_script_thumb.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/04/dell-cs24-sc-first-steps-with-the-on-board-baseboard-management-controller-bmc-ipmiview-video/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:28:50+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/04/IPMIView_Sensors_thumb.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/04/IPMIView_Sensors_thumb.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/04/IPMIView_Reboot_thumb.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/05/using-php-to-display-all-server-variables/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:28:50+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/php.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/php.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/05/quick-fix-wordpress-3-5-no-thumbnails/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:28:50+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/wp_thumbissue_feature.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/wp_thumbissue_feature.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/wp_thumbissue-300x168.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/05/my-home-server-lab-setup-video-gallery/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:28:50+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/Cube_feat.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/DSC00460.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/Dell5324_Switch.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/Custom_Server.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/Dell_2950.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/Dell_CS24SC.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/Dell_PowerEdge_2950.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/IOGear_KVM.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/Server_Console.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/Servers.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/Back_of_Servers.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/Cube.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/Dell5324_Switch_thumb.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/Cube_feat.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/Custom_Server_thumb.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/Dell_PowerEdge_2950_thumb.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/Dell_CS24SC_thumb.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/05/make-a-background-image-stretch-or-adjust-with-css/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:28:50+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/wordpress_bgstretch_thumb.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/wordpress_bgstretch_thumb.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/05/torque-for-android-connect-your-android-to-your-car-via-bluetooth/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:28:50+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/Torque_thumb.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/05/Torque_thumb.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/06/how-to-dell-cs24-sc-bmc-ikvm-access/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:28:50+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/06/new_servers_feature.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/06/new_servers_feature.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/06/issues-connecting-to-the-dell-cs-24sc-bmc-web-management/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:28:50+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/06/CS24_BMCTip.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/06/CS24_BMCTip.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/06/setting-up-remote-desktop-for-easy-access-via-pc-or-android/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:28:50+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/06/RDP_feat.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/06/RDP_feat.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/07/ultimate-serviio-media-server-setup-guide-stream-to-ps3-xbox-360-android/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:28:50+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/07/Serviio_feat.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/07/serviio_info_network_feat.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/07/Serviio_feat.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/07/how-to-building-virtual-machines-with-vmware-esxi-5-1-video/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:28:50+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/07/vsphere.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/07/vsphere.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/07/serviio-plugin-install-stream-youtube-and-twitch-tvjustin-tv-channels-to-ps3-xbox-360-android/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:28:50+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/07/serviio_plugin_ss2.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/07/serviio_plugin_ss2.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/07/serviidroid-remotely-control-your-serviio-server-via-android-video/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:28:50+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/07/serviidroid_feat_small.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/08/samsung-note-2-hdmivga-out-to-a-tvcomputer-monitor-via-mhl/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:28:50+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/08/Cable_setup.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/08/Cable_setup-525x292.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/08/samsung-note-2-mobile-desktop-with-a-bluetooth-keyboardmouse-and-mhl/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:28:50+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/08/screen_shot.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/08/screen_shot-500x279.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/08/setting-up-a-dedicated-minecraft-server-video/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:28:50+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/08/server_desktop.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/08/server_desktop.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/08/minecraft_server.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/08/serverproperties.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/08/firewall.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/04/umbraco-6-stuck-at-connecting-to-database-5-complete-when-using-iis-7-5-mysql-5-5/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:25:13+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/04/umbraco1_thumb.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/04/umbraco1_thumb.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/04/umbraco2_thumb.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/09/customizing-minecraft-with-texture-packs-video/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:24:33+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/09/chromahills1.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/09/chromahills1.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/09/manually-unlock-a-trailblazer-lift-gate-fix-stuck-gate-video/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:24:33+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/09/tbss_manualunlock.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/09/what-is-esxi-video/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:24:33+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/09/what_isEXSi.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/09/iis-77-5-hardening-ssl-tls-windows-server-2008-r2/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:24:33+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/09/iis7_hardeningssltls.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/09/steams-big-picture/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:24:33+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/09/valve_editjpg.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/09/iis-77-5-configuring-php-via-fastcgi-on-windows-server-2008-r2/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:24:33+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/09/php_feature.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/09/module_mapping.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2013/10/android-ip-security-cam-with-motion-detection-and-recording/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:24:33+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2013/10/screen_shot.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2014/01/dell-cs24-esxi-5-5-install-stuck-relocating-modules-and-starting-up-the-kernel/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:24:33+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/01/esxi55_feat1.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/01/stuck_screen_thumb.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/01/shift-o-500x378.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/01/ignoreheadless_install-500x377.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/01/loading-500x378.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/01/esxi-f2-500x377.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/01/enable_shell-500x378.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/01/esxi_shell-500x379.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2014/01/using-powershell-to-filter-and-sort-iis-binding-info/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:24:33+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/01/iis_pslogo_edit.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/01/gci_sites-500x113.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/01/gci_sites2-500x78.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/01/gci_sites3-500x49.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/01/webbinding-500x113.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/01/webbinding2-500x80.png]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2014/01/simple-bginfo-ad-logon-script/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:24:33+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/01/bginfo_feat.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/01/bginfo-500x313.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2014/03/home-server-stack-v2/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:24:33+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/03/Network_Diag_feat_sm.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/03/DSC00689.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/03/DSC00699.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/03/DSC00704.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/03/DSC00713.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/03/DSC00700-500x198.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/03/Network_Diag-500x281.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/03/DSC00693-405x525.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/03/DSC00687-260x525.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2014/05/dell-cs24-sc-bios-bmc-v2-5-firmware-download/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:24:33+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/05/DSC00713.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/05/DSC00713-500x350.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2014/07/powershell-script-find-the-25-largest-files-and-list-folder-sizes-for-any-drive/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:24:32+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/07/largestFilesandFolders.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2014/07/testing-smtp-with-telnet-and-powershell-cheat-sheet/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:24:32+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/07/20140707_2330421.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2014/07/20140707_2330421-500x324.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2015/05/fix-obsolete-cryptography-warning-in-chrome-on-iis-8/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:24:32+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2015/05/obsolete_feature.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2015/05/obsolete.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2015/05/iis_crypto1-500x387.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2015/05/modern.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2015/08/disabling-tls-1-0-with-ms-sql-2014-services-wont-start/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:24:32+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2015/08/Evnt-Vwr-Errors.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2015/08/IIS-Crypto-500x388.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2015/08/Evnt-Vwr-Errors-500x267.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2015/08/ssms-error-500x277.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2015/08/dell-cs24-sc-bmc-remote-control-not-working-change-your-java-version/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:24:32+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2015/08/KVM-working.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2015/08/KVM-working-500x376.jpg]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2015/08/Auth-Failure-500x376.jpg]]>			</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/2015/10/hardening-ssl-tls-connections-on-windows-server-2008-r2-2012-r2/]]></loc>
+		<lastmod><![CDATA[2026-09-01T02:24:32+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2015/10/SSL-Scan-Main.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2015/10/SSL-Scan-Main-500x338.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2015/10/Schannel-registry-500x281.png]]>			</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>
+				<![CDATA[/wp-content/uploads/2015/10/IISCrypto-Arrows1-500x387.png]]>			</image:loc>
+		</image:image>
+	</url>
 	<url>
 		<loc><![CDATA[/2018/08/powershell-script-set-powercfg/]]></loc>
 		<lastmod><![CDATA[2026-08-28T05:16:45+00:00]]></lastmod>
@@ -1966,638 +3174,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc><![CDATA[/2012/03/how-to-tversity-media-server/]]></loc>
-		<lastmod><![CDATA[2022-06-27T05:06:23+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/03/how-to-installing-unsigned-drivers-on-windows-7-x64/]]></loc>
-		<lastmod><![CDATA[2022-06-27T05:06:18+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/03/how-to-setting-up-a-ps3-media-server/]]></loc>
-		<lastmod><![CDATA[2022-06-27T05:06:02+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/03/how-to-iis-7-quick-install-on-windows-server-2008-r2/]]></loc>
-		<lastmod><![CDATA[2022-06-27T05:04:49+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/03/how-to-windows-server-2008-iis-7-part-2-secure-ftp-setup/]]></loc>
-		<lastmod><![CDATA[2022-06-27T05:04:44+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/04/droid-3-as-a-3g-desktop-using-bluetooth-hdmi/]]></loc>
-		<lastmod><![CDATA[2022-06-27T05:04:33+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/04/android_graphic-300x225.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/04/20120421_182538-300x226.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/04/20120422_122716-300x129.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/06/windows-server-2008-r2-iis-7-and-smtp-explained/]]></loc>
-		<lastmod><![CDATA[2022-06-27T05:04:27+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/07/crosman-1322-air-pistol-with-a-few-mods/]]></loc>
-		<lastmod><![CDATA[2022-06-27T05:04:11+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/07/1322_redot-300x139.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/07/1322_reddot2-300x193.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/07/1322_ncstarredot-300x225.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/07/1322_reddotflight-300x169.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/08/modded-crosman-1322-update/]]></loc>
-		<lastmod><![CDATA[2022-06-27T05:02:26+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/08/1322_modded7-300x147.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/08/1322_modded8-300x164.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/08/1322_modded1-300x151.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/08/1322_modded2-300x169.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/08/1322_modded3-300x169.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/08/1322_modded4-300x169.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/08/1322_modded5-300x169.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/08/1322_modded6-300x169.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/08/1322_modded9-300x169.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/09/serviio-org-media-server/]]></loc>
-		<lastmod><![CDATA[2022-06-27T05:02:15+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/09/benjamin-trail-np-22-shooting-predator-polymags/]]></loc>
-		<lastmod><![CDATA[2022-06-27T05:02:00+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/12/benjamin-trail-np-bi-pod-install/]]></loc>
-		<lastmod><![CDATA[2022-06-27T05:01:55+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/12/20121209_151222-300x154.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/12/20121209_151305-150x150.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/12/20121209_151239-162x300.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/12/20121209_151255-225x300.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/12/20121209_151348-300x225.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/12/lock-picking-tools-review-great-kits-for-getting-started/]]></loc>
-		<lastmod><![CDATA[2022-06-27T05:01:04+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/12/pickset_1-300x171.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/12/pickset_1_2-200x300.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/12/pickset_2-300x243.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/12/pickset_3-300x217.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/12/pickset_3_2-300x297.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/12/dell-powerconnect-5324-cable-tips-basic-setup-and-configuration-via-putty/]]></loc>
-		<lastmod><![CDATA[2022-06-27T05:00:59+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/12/drac-5-install-on-a-dell-poweredge-2950-gii-with-basic-configuration-and-demo/]]></loc>
-		<lastmod><![CDATA[2022-06-27T05:00:55+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/01/vmware-esxi-5-1-install-and-basic-configuration-dell-poweredge-2950-gii-video/]]></loc>
-		<lastmod><![CDATA[2022-06-27T05:00:50+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/01/esxi_booted_up-300x225.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/01/HTTP_ESXi-296x300.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/01/vsphere_login-300x267.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/01/vsphere_client-300x260.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/01/nintendo-wii-homebrew-soft-hack/]]></loc>
-		<lastmod><![CDATA[2022-06-27T05:00:42+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/04/iis-7-web-farm-basics-with-arr-nlb-and-mysql/]]></loc>
-		<lastmod><![CDATA[2022-06-27T05:00:20+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/04/trafficflow_thumb.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/04/trafficflow_thumb.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/04/serverconfiguration_thumb.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/04/making-bootable-usb-drives-from-iso-images-in-minutes-with-rufus/]]></loc>
-		<lastmod><![CDATA[2022-06-27T05:00:15+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/04/rufus_thumb.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/04/rufus_thumb.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/04/powershell-simple-mass-shutdownreboot-script-with-menu-status-check-video/]]></loc>
-		<lastmod><![CDATA[2022-06-27T05:00:09+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/04/Server_RS_script_thumb2.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/04/Server_RS_script_thumb.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/04/dell-cs24-sc-first-steps-with-the-on-board-baseboard-management-controller-bmc-ipmiview-video/]]></loc>
-		<lastmod><![CDATA[2022-06-27T05:00:01+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/04/IPMIView_Sensors_thumb.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/04/IPMIView_Sensors_thumb.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/04/IPMIView_Reboot_thumb.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/05/my-home-server-lab-setup-video-gallery/]]></loc>
-		<lastmod><![CDATA[2022-06-27T04:58:13+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/Cube_feat.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/DSC00460.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/Dell5324_Switch.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/Custom_Server.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/Dell_2950.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/Dell_CS24SC.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/Dell_PowerEdge_2950.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/IOGear_KVM.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/Server_Console.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/Servers.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/Back_of_Servers.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/Cube.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/Dell5324_Switch_thumb.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/Cube_feat.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/Custom_Server_thumb.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/Dell_PowerEdge_2950_thumb.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/Dell_CS24SC_thumb.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/05/torque-for-android-connect-your-android-to-your-car-via-bluetooth/]]></loc>
-		<lastmod><![CDATA[2022-06-27T04:57:56+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/Torque_thumb.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/Torque_thumb.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/06/how-to-dell-cs24-sc-bmc-ikvm-access/]]></loc>
-		<lastmod><![CDATA[2022-06-27T04:57:50+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/06/new_servers_feature.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/06/new_servers_feature.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/06/setting-up-remote-desktop-for-easy-access-via-pc-or-android/]]></loc>
-		<lastmod><![CDATA[2022-06-27T04:57:04+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/06/RDP_feat.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/06/RDP_feat.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/07/ultimate-serviio-media-server-setup-guide-stream-to-ps3-xbox-360-android/]]></loc>
-		<lastmod><![CDATA[2022-06-27T04:56:59+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/07/Serviio_feat.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/07/serviio_info_network_feat.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/07/Serviio_feat.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/07/how-to-building-virtual-machines-with-vmware-esxi-5-1-video/]]></loc>
-		<lastmod><![CDATA[2022-06-27T04:56:55+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/07/vsphere.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/07/vsphere.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/07/serviio-plugin-install-stream-youtube-and-twitch-tvjustin-tv-channels-to-ps3-xbox-360-android/]]></loc>
-		<lastmod><![CDATA[2022-06-27T04:56:39+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/07/serviio_plugin_ss2.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/07/serviio_plugin_ss2.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/07/serviidroid-remotely-control-your-serviio-server-via-android-video/]]></loc>
-		<lastmod><![CDATA[2022-06-27T04:56:33+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/07/serviidroid_feat_small.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/08/samsung-note-2-hdmivga-out-to-a-tvcomputer-monitor-via-mhl/]]></loc>
-		<lastmod><![CDATA[2022-06-27T04:56:29+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/08/Cable_setup.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/08/Cable_setup-525x292.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/08/samsung-note-2-mobile-desktop-with-a-bluetooth-keyboardmouse-and-mhl/]]></loc>
-		<lastmod><![CDATA[2022-06-27T04:56:24+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/08/screen_shot.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/08/screen_shot-500x279.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/08/setting-up-a-dedicated-minecraft-server-video/]]></loc>
-		<lastmod><![CDATA[2022-06-27T04:55:59+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/08/server_desktop.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/08/server_desktop.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/08/minecraft_server.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/08/serverproperties.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/08/firewall.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/09/customizing-minecraft-with-texture-packs-video/]]></loc>
-		<lastmod><![CDATA[2022-06-27T04:55:52+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/09/chromahills1.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/09/chromahills1.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/09/manually-unlock-a-trailblazer-lift-gate-fix-stuck-gate-video/]]></loc>
-		<lastmod><![CDATA[2022-06-27T04:55:45+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/09/tbss_manualunlock.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/09/what-is-esxi-video/]]></loc>
-		<lastmod><![CDATA[2022-06-27T04:55:39+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/09/what_isEXSi.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/09/iis-77-5-hardening-ssl-tls-windows-server-2008-r2/]]></loc>
-		<lastmod><![CDATA[2022-06-27T04:55:35+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/09/iis7_hardeningssltls.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/09/steams-big-picture/]]></loc>
-		<lastmod><![CDATA[2022-06-27T04:54:44+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/09/valve_editjpg.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/09/iis-77-5-configuring-php-via-fastcgi-on-windows-server-2008-r2/]]></loc>
-		<lastmod><![CDATA[2022-06-27T04:54:04+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/09/php_feature.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/09/module_mapping.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/10/android-ip-security-cam-with-motion-detection-and-recording/]]></loc>
-		<lastmod><![CDATA[2022-06-27T04:53:57+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/10/screen_shot.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2014/03/home-server-stack-v2/]]></loc>
-		<lastmod><![CDATA[2022-06-27T04:53:48+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/03/Network_Diag_feat_sm.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/03/DSC00689.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/03/DSC00699.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/03/DSC00704.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/03/DSC00713.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/03/DSC00700-500x198.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/03/Network_Diag-500x281.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/03/DSC00693-405x525.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/03/DSC00687-260x525.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc><![CDATA[/2016/01/using-windows-server-2012-r2-for-shared-storage-with-microsoft-failover-clustering-video-how-to/]]></loc>
 		<lastmod><![CDATA[2022-06-27T04:52:59+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
@@ -2996,48 +3572,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc><![CDATA[/2014/07/powershell-script-find-the-25-largest-files-and-list-folder-sizes-for-any-drive/]]></loc>
-		<lastmod><![CDATA[2021-04-06T07:22:28+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/07/largestFilesandFolders.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/05/quick-fix-wordpress-3-5-no-thumbnails/]]></loc>
-		<lastmod><![CDATA[2021-01-11T00:27:46+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/wp_thumbissue_feature.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/wp_thumbissue_feature.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/wp_thumbissue-300x168.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/05/using-php-to-display-all-server-variables/]]></loc>
-		<lastmod><![CDATA[2020-01-15T01:48:08+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/php.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/php.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc><![CDATA[/2017/10/powershell-scripts-fail-when-deployed-via-group-policy-as-startup-scripts-with-event-id-1055-and-1130/]]></loc>
 		<lastmod><![CDATA[2018-07-12T10:38:30+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
@@ -3118,44 +3652,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc><![CDATA[/2014/01/dell-cs24-esxi-5-5-install-stuck-relocating-modules-and-starting-up-the-kernel/]]></loc>
-		<lastmod><![CDATA[2018-01-30T12:52:26+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/01/esxi55_feat1.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/01/stuck_screen_thumb.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/01/shift-o-500x378.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/01/ignoreheadless_install-500x377.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/01/loading-500x378.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/01/esxi-f2-500x377.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/01/enable_shell-500x378.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/01/esxi_shell-500x379.png]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc><![CDATA[/2017/04/elk-5-on-ubuntu-16-04/]]></loc>
 		<lastmod><![CDATA[2017-11-16T15:51:30+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
@@ -3171,118 +3667,6 @@
 		<image:image>
 			<image:loc>
 				<![CDATA[/wp-content/uploads/2017/04/elk-500x284.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/05/make-a-background-image-stretch-or-adjust-with-css/]]></loc>
-		<lastmod><![CDATA[2017-07-03T09:23:44+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/wordpress_bgstretch_thumb.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/05/wordpress_bgstretch_thumb.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2014/07/testing-smtp-with-telnet-and-powershell-cheat-sheet/]]></loc>
-		<lastmod><![CDATA[2017-04-13T09:03:38+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/07/20140707_2330421.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/07/20140707_2330421-500x324.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2015/05/fix-obsolete-cryptography-warning-in-chrome-on-iis-8/]]></loc>
-		<lastmod><![CDATA[2017-04-13T09:03:38+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2015/05/obsolete_feature.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2015/05/obsolete.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2015/05/iis_crypto1-500x387.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2015/05/modern.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2015/08/disabling-tls-1-0-with-ms-sql-2014-services-wont-start/]]></loc>
-		<lastmod><![CDATA[2017-04-13T09:03:38+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2015/08/Evnt-Vwr-Errors.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2015/08/IIS-Crypto-500x388.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2015/08/Evnt-Vwr-Errors-500x267.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2015/08/ssms-error-500x277.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2015/08/dell-cs24-sc-bmc-remote-control-not-working-change-your-java-version/]]></loc>
-		<lastmod><![CDATA[2017-04-13T09:03:38+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2015/08/KVM-working.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2015/08/KVM-working-500x376.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2015/08/Auth-Failure-500x376.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2015/10/hardening-ssl-tls-connections-on-windows-server-2008-r2-2012-r2/]]></loc>
-		<lastmod><![CDATA[2017-04-13T09:03:38+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2015/10/SSL-Scan-Main.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2015/10/SSL-Scan-Main-500x338.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2015/10/Schannel-registry-500x281.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2015/10/IISCrypto-Arrows1-500x387.png]]>			</image:loc>
 		</image:image>
 	</url>
 	<url>
@@ -3493,390 +3877,6 @@
 		<image:image>
 			<image:loc>
 				<![CDATA[/wp-content/uploads/2017/01/VT-d-Dsiabled-500x394.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2014/05/dell-cs24-sc-bios-bmc-v2-5-firmware-download/]]></loc>
-		<lastmod><![CDATA[2017-02-06T15:01:21+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/05/DSC00713.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/05/DSC00713-500x350.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/03/how-to-loading-custom-roms-on-a-motorola-droid-3/]]></loc>
-		<lastmod><![CDATA[2016-12-09T13:49:31+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/safestrap_blog_small.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/safestrap_install_small.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/safestrap_splash_small.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/safestrap_main_menu_small.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/safestrap_togglesafe_small.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/safestrap_advanced_small.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/safestrap_mountsandstorage_small.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2014/01/simple-bginfo-ad-logon-script/]]></loc>
-		<lastmod><![CDATA[2014-07-09T02:54:58+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/01/bginfo_feat.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/01/bginfo-500x313.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2014/01/using-powershell-to-filter-and-sort-iis-binding-info/]]></loc>
-		<lastmod><![CDATA[2014-01-22T10:01:21+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/01/iis_pslogo_edit.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/01/gci_sites-500x113.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/01/gci_sites2-500x78.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/01/gci_sites3-500x49.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/01/webbinding-500x113.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2014/01/webbinding2-500x80.png]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/04/iis-7-404-file-not-found-when-the-file-really-does-exist/]]></loc>
-		<lastmod><![CDATA[2013-08-23T09:23:13+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/04/IIS-Console_small.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/04/IIS-Mimetype_small.png]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/06/issues-connecting-to-the-dell-cs-24sc-bmc-web-management/]]></loc>
-		<lastmod><![CDATA[2013-06-25T09:11:22+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/06/CS24_BMCTip.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/06/CS24_BMCTip.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/01/quick-and-easy-backup-for-vmware-esxi-5-1-using-veeam-backup-replication-6-5/]]></loc>
-		<lastmod><![CDATA[2013-05-25T09:32:06+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[/2013/04/umbraco-6-stuck-at-connecting-to-database-5-complete-when-using-iis-7-5-mysql-5-5/]]></loc>
-		<lastmod><![CDATA[2013-05-25T09:31:52+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/04/umbraco1_thumb.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/04/umbraco1_thumb.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2013/04/umbraco2_thumb.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/03/powershell-remote-file-query/]]></loc>
-		<lastmod><![CDATA[2013-04-28T06:29:05+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/03/how-to-rooting-a-moto-droid-3-with-the-one-click-method/]]></loc>
-		<lastmod><![CDATA[2013-04-27T14:51:21+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/droid_3.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/09/benjamin-trail-np-review-with-jsb-monsters-polymags-crosman-hollow-points-pointed-and-gamo-rocket-ammo/]]></loc>
-		<lastmod><![CDATA[2013-01-02T07:51:40+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/09/2012-09-14_17-25-04_985_2.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/09/2012-09-14_17-26-04_635-150x150.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/09/2012-09-14_17-23-20_682_2.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/09/2012-09-14_18-34-57_990-300x211.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/09/2012-09-14_17-24-17_365-300x135.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/09/iain-sinclairs-card-sharp-2-a-stealthy-pocket-knife-like-you-have-never-seen-before/]]></loc>
-		<lastmod><![CDATA[2013-01-02T06:42:23+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/09/cardsharp_1-300x129.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/09/cardsharp_2-300x130.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/08/veeam-backup-recovery-v6-free-install-unable-to-install-new-sql-instance-error/]]></loc>
-		<lastmod><![CDATA[2013-01-02T06:39:26+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/08/error-300x290.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/07/samsung-galaxy-s3-the-best-android-phone-out-there-i-think-so/]]></loc>
-		<lastmod><![CDATA[2013-01-02T06:36:41+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/07/Samsung_Galaxy_S3_08-380-75.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/05/song-from-the-new-internet-explorer-9-ie9-commercial/]]></loc>
-		<lastmod><![CDATA[2012-07-07T23:47:34+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/04/getting-around-mobile-sites-with-dolphin-browser-hd-on-android/]]></loc>
-		<lastmod><![CDATA[2012-04-22T09:37:25+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/04/screenshot-1335084600046-168x300.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/04/screenshot-1335084674775-168x300.png]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/03/software-essentials-for-any-windows-machine/]]></loc>
-		<lastmod><![CDATA[2012-04-01T09:29:53+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/03/7-zip/]]></loc>
-		<lastmod><![CDATA[2012-04-01T09:16:34+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/7zip.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/03/windirstat/]]></loc>
-		<lastmod><![CDATA[2012-04-01T09:15:07+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/windirstat_small.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/03/i8kfangui/]]></loc>
-		<lastmod><![CDATA[2012-04-01T09:13:44+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/i8kfangui_logo_small.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/03/openoffice-org/]]></loc>
-		<lastmod><![CDATA[2012-04-01T09:12:09+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/writer_small.png]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/calc_small.png]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/03/driver-signature-enforcement-overrider-1-3b/]]></loc>
-		<lastmod><![CDATA[2012-04-01T09:10:25+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/dseo.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/03/vlc/]]></loc>
-		<lastmod><![CDATA[2012-04-01T09:08:21+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/vlc_logo.png]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/03/divx/]]></loc>
-		<lastmod><![CDATA[2012-04-01T09:06:00+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/divx_logo.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/03/notepad/]]></loc>
-		<lastmod><![CDATA[2012-04-01T08:59:37+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/notepadplusplus_logo.png]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/03/firefox/]]></loc>
-		<lastmod><![CDATA[2012-04-01T08:57:20+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/firefox_logo.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/03/no-script-firefox-add-on/]]></loc>
-		<lastmod><![CDATA[2012-04-01T08:53:11+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/noscriptaddon_logo.jpg]]>			</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[/2012/03/diy-8gb-solid-state-drive-for-35/]]></loc>
-		<lastmod><![CDATA[2012-03-13T04:34:51+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/cf_4_small.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/cf_1_small.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/cf_2_small.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/cf_5_small.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/cf_3_small.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/cf_6_small.jpg]]>			</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>
-				<![CDATA[/wp-content/uploads/2012/03/cf_7_small.jpg]]>			</image:loc>
 		</image:image>
 	</url>
 </urlset>
